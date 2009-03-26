@@ -1,0 +1,57 @@
+[INFO]RECV(220):220 163.com Anti-spam GT for Coremail System (163com[071018])
+
+[INFO]SEND:HELO yangfei
+
+[INFO]RECV(250):250 OK
+
+[INFO]SEND:AUTH LOGIN
+
+[INFO]RECV(334):334 dXNlcm5hbWU6
+
+[INFO]SEND:eWZzdW95b3U=
+
+[INFO]RECV(334):334 UGFzc3dvcmQ6
+
+[INFO]SEND:YXV0b2V4ZWMuYmF0
+
+[INFO]RECV(235):235 Authentication successful
+
+[INFO]SEND:MAIL FROM: <yfsuoyou@163.com>
+
+[INFO]RECV(250):250 Mail OK
+
+[INFO]SEND:RCPT TO: <yangfei@founder.com>
+
+[INFO]RECV(250):250 Mail OK
+
+[INFO]SEND:DATA
+
+[INFO]RECV(354):354 End data with <CR><LF>.<CR><LF>
+
+[INFO]SEND:From: "morning" <yfsuoyou@163.com>
+To: "²âÊÔ" <yangfei@founder.com>
+Date: Tue, 19 Aug 08 16:53:16 +0800
+Subject: a test mail
+X-Mailer: SMailer
+X-Priority: 3
+MIME-Version: 1.0
+Content-type: multipart/mixed; boundary="#BOUNDARY#"
+
+
+[INFO]SEND:--#BOUNDARY#
+Content-Type: text/plain; charset=gb2312
+Content-Transfer-Encoding: 8bit
+
+ÓÊ¼þÕýÎÄ
+
+
+[INFO]SEND:
+--#BOUNDARY#--
+.
+
+[INFO]RECV(250):250 Mail OK queued as smtp2,DNGowLDbWiT_iapIoIvMEA==.6567S2 1219
+136000
+
+[INFO]SEND:QUIT
+
+[INFO]RECV(221):221 Bye
