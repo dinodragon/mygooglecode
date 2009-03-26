@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "连续正整数", "连续正整数\连续正整数.vcproj", "{276A8857-97A8-45FC-9BCB-9C23DC2FF306}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "重叠区间大小", "重叠区间大小\重叠区间大小.vcproj", "{2DD54031-E817-4AF3-8CB6-195BB79DB792}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = 连续正整数\\连续正整数.vcproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = 连续正整数\\
+		SccProjectUniqueName2 = 重叠区间大小\\重叠区间大小.vcproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = 重叠区间大小\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{276A8857-97A8-45FC-9BCB-9C23DC2FF306}.Debug|Win32.ActiveCfg = Debug|Win32
+		{276A8857-97A8-45FC-9BCB-9C23DC2FF306}.Debug|Win32.Build.0 = Debug|Win32
+		{276A8857-97A8-45FC-9BCB-9C23DC2FF306}.Release|Win32.ActiveCfg = Release|Win32
+		{276A8857-97A8-45FC-9BCB-9C23DC2FF306}.Release|Win32.Build.0 = Release|Win32
+		{2DD54031-E817-4AF3-8CB6-195BB79DB792}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2DD54031-E817-4AF3-8CB6-195BB79DB792}.Debug|Win32.Build.0 = Debug|Win32
+		{2DD54031-E817-4AF3-8CB6-195BB79DB792}.Release|Win32.ActiveCfg = Release|Win32
+		{2DD54031-E817-4AF3-8CB6-195BB79DB792}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

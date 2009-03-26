@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RemoteControlServer", "RemoteControlServer\RemoteControlServer.vcproj", "{AE31CEBF-09BA-4C8B-A99C-CD6E252C282C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RemoteControlClient", "RemoteControlClient\RemoteControlClient.vcproj", "{07658B0C-29A3-4080-BE40-84C9C5DD06AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "原文件", "原文件", "{112A6AB7-1043-4FF7-8E0F-FF9BE38D45E5}"
+	ProjectSection(SolutionItems) = preProject
+		RemoteControlClient.zip = RemoteControlClient.zip
+		RemoteControlServer.zip = RemoteControlServer.zip
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = RemoteControlClient\\RemoteControlClient.vcproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = RemoteControlClient\\
+		SccProjectUniqueName2 = RemoteControlServer\\RemoteControlServer.vcproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = RemoteControlServer\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE31CEBF-09BA-4C8B-A99C-CD6E252C282C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AE31CEBF-09BA-4C8B-A99C-CD6E252C282C}.Debug|Win32.Build.0 = Debug|Win32
+		{AE31CEBF-09BA-4C8B-A99C-CD6E252C282C}.Release|Win32.ActiveCfg = Release|Win32
+		{AE31CEBF-09BA-4C8B-A99C-CD6E252C282C}.Release|Win32.Build.0 = Release|Win32
+		{07658B0C-29A3-4080-BE40-84C9C5DD06AB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{07658B0C-29A3-4080-BE40-84C9C5DD06AB}.Debug|Win32.Build.0 = Debug|Win32
+		{07658B0C-29A3-4080-BE40-84C9C5DD06AB}.Release|Win32.ActiveCfg = Release|Win32
+		{07658B0C-29A3-4080-BE40-84C9C5DD06AB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

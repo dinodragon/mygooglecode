@@ -1,0 +1,5 @@
+LIBRARY	"dll1"
+
+EXPORTS
+	add
+	sub

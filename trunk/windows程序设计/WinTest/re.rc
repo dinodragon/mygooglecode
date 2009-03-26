@@ -1,0 +1,175 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "文件 (&F)"
+    BEGIN
+        MENUITEM "新建 (&N)",                     ID_40001
+        POPUP "打开 (&O)"
+        BEGIN
+            MENUITEM "对话框1",                        ID_40005
+            MENUITEM "对话框2",                        ID_40006
+            MENUITEM "整个窗口无效",                      ID_40007
+        END
+        MENUITEM "关闭　(E&xit)",                  ID_DESTROY
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ABOUTBOX DIALOG  32, 32, 180, 100
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,66,80,50,14
+    ICON            "ABOUT1",IDC_STATIC,7,7,21,20
+    CTEXT           "About1",IDC_STATIC,40,12,100,8
+    CTEXT           "About Box Demo Program",IDC_STATIC,7,40,166,8
+    CTEXT           "(c) Charles Petzold,1998",IDC_STATIC,7,52,166,8
+END
+
+IDD_DIALOG1 DIALOGEX 40, 40, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,33,60,50,14
+    PUSHBUTTON      "取消",IDCANCEL,107,61,50,14
+    LTEXT           "这是一个自制的对话框!",IDC_STATIC,47,25,86,16,SS_CENTERIMAGE
+END
+
+ABOUTBOX2 DIALOGEX 32, 32, 198, 228
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            "ABOUT2",IDC_STATIC,7,7,21,23
+    CTEXT           "About2",IDC_STATIC,57,12,86,8
+    CTEXT           "About Box Demo Program",IDC_STATIC,7,40,186,8
+    LTEXT           "",IDC_PAINT,114,67,74,72
+    GROUPBOX        "&Color",IDC_STATIC,7,60,84,143
+    RADIOBUTTON     "&Black",IDC_BLACK,16,76,64,8,WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "B&lue",IDC_BLUE,16,92,64,8
+    RADIOBUTTON     "&Green",IDC_GREEN,16,108,64,8
+    RADIOBUTTON     "Cya&n",IDC_CYAN,16,124,64,8
+    RADIOBUTTON     "&Red",IDC_RED,16,140,64,8
+    RADIOBUTTON     "&Magenta",IDC_MAGENTA,16,156,64,8
+    RADIOBUTTON     "&Yellow",IDC_YELLOW,16,172,64,8
+    RADIOBUTTON     "&White",IDC_WHITE,16,188,64,8
+    GROUPBOX        "&Figure",IDC_STATIC,109,156,84,46,WS_GROUP
+    RADIOBUTTON     "Rec&tangle",IDC_RECT,116,172,65,8,WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "&Ellipse",IDC_ELLIPSE,116,188,64,8
+    DEFPUSHBUTTON   "OK",IDOK,35,212,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,113,212,50,14,WS_GROUP
+END
+
+IDD_DIALOG6 DIALOGEX 0, 0, 354, 226
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,297,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,297,24,50,14
+    PUSHBUTTON      "Button1",IDC_BUTTON1,15,14,50,14
+    CONTROL         "选中1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,82,16,36,10
+    EDITTEXT        IDC_EDIT1,25,41,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,99,43,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,139,64,100,15
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,319,49,11,14
+    CONTROL         "",IDC_HOTKEY1,"msctls_hotkey32",WS_BORDER | WS_TABSTOP,256,74,80,14
+    CONTROL         "",IDC_TREE1,"SysTreeView32",WS_BORDER | WS_TABSTOP,14,62,105,53
+    CONTROL         "",IDC_RICHEDIT21,"RichEdit20A",ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP,266,113,68,33
+    CONTROL         "",IDC_MONTHCALENDAR1,"SysMonthCal32",MCS_NOTODAY | WS_TABSTOP,112,0,140,100
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,158,19,100,15
+    CONTROL         "",IDC_COMBOBOXEX1,"ComboBoxEx32",CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP,157,42,48,30
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    "IDD_DIALOG6", DIALOG
+    BEGIN
+        RIGHTMARGIN, 347
+        BOTTOMMARGIN, 211
+        , 69, 7
+        , 71, 347
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
