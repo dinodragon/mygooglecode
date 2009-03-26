@@ -236,6 +236,7 @@ void CBase64Dlg::OnBnClickedAutoconvert()
 	encode->EnableWindow(!m_autoconvert);
 }
 
+//将原码进行加密
 void CBase64Dlg::Encode(void)
 {
 	UpdateData();
@@ -278,6 +279,7 @@ void CBase64Dlg::Encode(void)
 	m_source.ReleaseBuffer();
 }
 
+//解密
 void CBase64Dlg::Decode(void)
 {
 	UpdateData();
