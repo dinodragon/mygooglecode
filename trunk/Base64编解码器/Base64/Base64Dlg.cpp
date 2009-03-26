@@ -221,12 +221,6 @@ void CBase64Dlg::OnEnChangeBase64()
 
 void CBase64Dlg::OnBnClickedHelp()
 {
-	// TODO: 在此添加控件通知处理程序代码
-	//CString m_help = "\t\t\t欢迎使用Base64编码解码器\nBase64是网络上最常见的用于传输8Bit字节代码的编码方式之一。\n";
-	//m_help += "主要用在发送电子邮件，服务器认证的用户名、密码和附件都需要用Base64编码。\n\n";
-	//m_help += "使用方法：\n编码:进行编码时只需在上面的框输入原始信息即可。\n";
-	//m_help += "解码:在下面的框输入Base64编码即可，系统会自动过滤非base64编码值。";
-	//MessageBox(m_help);
 	ShellExecute(NULL,TEXT("open"),TEXT("http://www.cpp521.cn/post/base64.html?from=base64v1.4"),NULL,NULL,SW_SHOWNORMAL);
 }
 
