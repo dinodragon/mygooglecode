@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectX例子", "DirectX例子\DirectX例子.vcproj", "{68050D56-43A3-45E6-A3A2-B4511A110E0D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "D3DTest", "D3DTest\D3DTest.vcproj", "{E905A96F-B848-4350-A6C2-92590039DBA6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "D3DIndexTest", "D3DIndexTest\D3DIndexTest.vcproj", "{31006D9C-EC78-4A76-8B81-A004E22576DD}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DirectX例子\\DirectX例子.vcproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = DirectX例子\\
+		SccProjectUniqueName2 = D3DTest\\D3DTest.vcproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = D3DTest\\
+		SccProjectUniqueName3 = D3DIndexTest\\D3DIndexTest.vcproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = D3DIndexTest\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68050D56-43A3-45E6-A3A2-B4511A110E0D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{68050D56-43A3-45E6-A3A2-B4511A110E0D}.Debug|Win32.Build.0 = Debug|Win32
+		{68050D56-43A3-45E6-A3A2-B4511A110E0D}.Release|Win32.ActiveCfg = Release|Win32
+		{68050D56-43A3-45E6-A3A2-B4511A110E0D}.Release|Win32.Build.0 = Release|Win32
+		{E905A96F-B848-4350-A6C2-92590039DBA6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E905A96F-B848-4350-A6C2-92590039DBA6}.Debug|Win32.Build.0 = Debug|Win32
+		{E905A96F-B848-4350-A6C2-92590039DBA6}.Release|Win32.ActiveCfg = Release|Win32
+		{E905A96F-B848-4350-A6C2-92590039DBA6}.Release|Win32.Build.0 = Release|Win32
+		{31006D9C-EC78-4A76-8B81-A004E22576DD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{31006D9C-EC78-4A76-8B81-A004E22576DD}.Debug|Win32.Build.0 = Debug|Win32
+		{31006D9C-EC78-4A76-8B81-A004E22576DD}.Release|Win32.ActiveCfg = Release|Win32
+		{31006D9C-EC78-4A76-8B81-A004E22576DD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

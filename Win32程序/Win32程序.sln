@@ -1,0 +1,108 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Win32程序", "Win32程序\Win32程序.vcproj", "{8DF359DF-21CC-4D8F-9535-E46D1ED970EA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CallDll", "CallDll\CallDll.vcproj", "{EADA830D-C377-4811-A47B-DEC50339073F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dll1", "dll1\dll1.vcproj", "{0EF4608E-38C8-4354-AE87-680BC1D4D83E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFC", "MFC\MFC.vcproj", "{FCB409F8-B1EC-4FD8-AA2D-99CFA1AABC5F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFC2", "MFC2\MFC2.vcproj", "{ED8DAAC0-2B0A-44FF-9F1B-BF6B3F915B63}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCApp", "MFCApp\MFCApp.vcproj", "{FFB24CB3-AD41-4F32-8660-6649F42830B7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFC3", "MFC3\MFC3.vcproj", "{71F0E31B-7EBE-4C44-821A-AD03347CD7FB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcproj", "{15BEBD97-1A47-44E7-A09F-3D0A000A4252}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SdtMfcApp", "SdtMfcApp\SdtMfcApp.vcproj", "{720F2F74-DD32-45A5-B8E4-D282BA8DB687}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MDIMFC", "MDIMFC\MDIMFC.vcproj", "{018B15FC-8CF4-4B53-BC94-D82C7B7CA27C}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 11
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CallDll\\CallDll.vcproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = CallDll\\
+		SccProjectUniqueName2 = dll1\\dll1.vcproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = dll1\\
+		SccProjectUniqueName3 = MFC2\\MFC2.vcproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = MFC2\\
+		SccProjectUniqueName4 = MFC3\\MFC3.vcproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = MFC3\\
+		SccProjectUniqueName5 = MFC\\MFC.vcproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = MFC\\
+		SccProjectUniqueName6 = MFCApp\\MFCApp.vcproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = MFCApp\\
+		SccProjectUniqueName7 = test\\test.vcproj
+		SccLocalPath7 = .
+		SccProjectFilePathRelativizedFromConnection7 = test\\
+		SccProjectUniqueName8 = Win32程序\\Win32程序.vcproj
+		SccLocalPath8 = .
+		SccProjectFilePathRelativizedFromConnection8 = Win32程序\\
+		SccProjectUniqueName9 = SdtMfcApp\\SdtMfcApp.vcproj
+		SccLocalPath9 = .
+		SccProjectFilePathRelativizedFromConnection9 = SdtMfcApp\\
+		SccProjectUniqueName10 = MDIMFC\\MDIMFC.vcproj
+		SccLocalPath10 = .
+		SccProjectFilePathRelativizedFromConnection10 = MDIMFC\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DF359DF-21CC-4D8F-9535-E46D1ED970EA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8DF359DF-21CC-4D8F-9535-E46D1ED970EA}.Debug|Win32.Build.0 = Debug|Win32
+		{8DF359DF-21CC-4D8F-9535-E46D1ED970EA}.Release|Win32.ActiveCfg = Release|Win32
+		{8DF359DF-21CC-4D8F-9535-E46D1ED970EA}.Release|Win32.Build.0 = Release|Win32
+		{EADA830D-C377-4811-A47B-DEC50339073F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EADA830D-C377-4811-A47B-DEC50339073F}.Debug|Win32.Build.0 = Debug|Win32
+		{EADA830D-C377-4811-A47B-DEC50339073F}.Release|Win32.ActiveCfg = Release|Win32
+		{EADA830D-C377-4811-A47B-DEC50339073F}.Release|Win32.Build.0 = Release|Win32
+		{0EF4608E-38C8-4354-AE87-680BC1D4D83E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0EF4608E-38C8-4354-AE87-680BC1D4D83E}.Debug|Win32.Build.0 = Debug|Win32
+		{0EF4608E-38C8-4354-AE87-680BC1D4D83E}.Release|Win32.ActiveCfg = Release|Win32
+		{0EF4608E-38C8-4354-AE87-680BC1D4D83E}.Release|Win32.Build.0 = Release|Win32
+		{FCB409F8-B1EC-4FD8-AA2D-99CFA1AABC5F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FCB409F8-B1EC-4FD8-AA2D-99CFA1AABC5F}.Debug|Win32.Build.0 = Debug|Win32
+		{FCB409F8-B1EC-4FD8-AA2D-99CFA1AABC5F}.Release|Win32.ActiveCfg = Release|Win32
+		{FCB409F8-B1EC-4FD8-AA2D-99CFA1AABC5F}.Release|Win32.Build.0 = Release|Win32
+		{ED8DAAC0-2B0A-44FF-9F1B-BF6B3F915B63}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ED8DAAC0-2B0A-44FF-9F1B-BF6B3F915B63}.Debug|Win32.Build.0 = Debug|Win32
+		{ED8DAAC0-2B0A-44FF-9F1B-BF6B3F915B63}.Release|Win32.ActiveCfg = Release|Win32
+		{ED8DAAC0-2B0A-44FF-9F1B-BF6B3F915B63}.Release|Win32.Build.0 = Release|Win32
+		{FFB24CB3-AD41-4F32-8660-6649F42830B7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FFB24CB3-AD41-4F32-8660-6649F42830B7}.Debug|Win32.Build.0 = Debug|Win32
+		{FFB24CB3-AD41-4F32-8660-6649F42830B7}.Release|Win32.ActiveCfg = Release|Win32
+		{FFB24CB3-AD41-4F32-8660-6649F42830B7}.Release|Win32.Build.0 = Release|Win32
+		{71F0E31B-7EBE-4C44-821A-AD03347CD7FB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{71F0E31B-7EBE-4C44-821A-AD03347CD7FB}.Debug|Win32.Build.0 = Debug|Win32
+		{71F0E31B-7EBE-4C44-821A-AD03347CD7FB}.Release|Win32.ActiveCfg = Release|Win32
+		{71F0E31B-7EBE-4C44-821A-AD03347CD7FB}.Release|Win32.Build.0 = Release|Win32
+		{15BEBD97-1A47-44E7-A09F-3D0A000A4252}.Debug|Win32.ActiveCfg = Debug|Win32
+		{15BEBD97-1A47-44E7-A09F-3D0A000A4252}.Debug|Win32.Build.0 = Debug|Win32
+		{15BEBD97-1A47-44E7-A09F-3D0A000A4252}.Release|Win32.ActiveCfg = Release|Win32
+		{15BEBD97-1A47-44E7-A09F-3D0A000A4252}.Release|Win32.Build.0 = Release|Win32
+		{720F2F74-DD32-45A5-B8E4-D282BA8DB687}.Debug|Win32.ActiveCfg = Debug|Win32
+		{720F2F74-DD32-45A5-B8E4-D282BA8DB687}.Debug|Win32.Build.0 = Debug|Win32
+		{720F2F74-DD32-45A5-B8E4-D282BA8DB687}.Release|Win32.ActiveCfg = Release|Win32
+		{720F2F74-DD32-45A5-B8E4-D282BA8DB687}.Release|Win32.Build.0 = Release|Win32
+		{018B15FC-8CF4-4B53-BC94-D82C7B7CA27C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{018B15FC-8CF4-4B53-BC94-D82C7B7CA27C}.Debug|Win32.Build.0 = Debug|Win32
+		{018B15FC-8CF4-4B53-BC94-D82C7B7CA27C}.Release|Win32.ActiveCfg = Release|Win32
+		{018B15FC-8CF4-4B53-BC94-D82C7B7CA27C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

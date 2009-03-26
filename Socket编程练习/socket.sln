@@ -1,0 +1,108 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "socket", "socket\socket.vcproj", "{22791C6A-31A9-4001-92FC-8AC64361DF69}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TCP_Recv", "TCP_Recv\TCP_Recv.vcproj", "{3042165F-E122-4E64-A8FA-E22ACEB9624D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TCP_Send", "TCP_Send\TCP_Send.vcproj", "{9E201F2A-5D50-416A-891E-3466CCC57326}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\Client.vcproj", "{A28C9390-8326-494C-A408-4177E0F34C1C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\Server.vcproj", "{EA4AAEF9-9C3F-4002-93B4-6923C537ABD4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FTP client", "FTP client\FTP client.vcproj", "{58D547F0-DA38-4619-B4D8-42AED5689E52}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "thread", "thread\thread.vcproj", "{453FA649-3193-49A8-B269-211FEBC6DA0B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FTP_DATASEND", "FTP_DATASEND\FTP_DATASEND.vcproj", "{6BBFBC61-DB86-4BA6-934E-5160B113AAA0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FTP", "FTP\FTP.vcproj", "{404B90D6-AF27-43DF-B763-28FA6C12D045}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "singelTEST", "singelTEST\singelTEST.vcproj", "{4EC771E6-238E-4870-92BD-DAB127607655}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 11
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Client\\Client.vcproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = Client\\
+		SccProjectUniqueName2 = FTP\u0020client\\FTP\u0020client.vcproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = FTP\u0020client\\
+		SccProjectUniqueName3 = FTP\\FTP.vcproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = FTP\\
+		SccProjectUniqueName4 = FTP_DATASEND\\FTP_DATASEND.vcproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = FTP_DATASEND\\
+		SccProjectUniqueName5 = Server\\Server.vcproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = Server\\
+		SccProjectUniqueName6 = singelTEST\\singelTEST.vcproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = singelTEST\\
+		SccProjectUniqueName7 = socket\\socket.vcproj
+		SccLocalPath7 = .
+		SccProjectFilePathRelativizedFromConnection7 = socket\\
+		SccProjectUniqueName8 = TCP_Recv\\TCP_Recv.vcproj
+		SccLocalPath8 = .
+		SccProjectFilePathRelativizedFromConnection8 = TCP_Recv\\
+		SccProjectUniqueName9 = TCP_Send\\TCP_Send.vcproj
+		SccLocalPath9 = .
+		SccProjectFilePathRelativizedFromConnection9 = TCP_Send\\
+		SccProjectUniqueName10 = thread\\thread.vcproj
+		SccLocalPath10 = .
+		SccProjectFilePathRelativizedFromConnection10 = thread\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22791C6A-31A9-4001-92FC-8AC64361DF69}.Debug|Win32.ActiveCfg = Debug|Win32
+		{22791C6A-31A9-4001-92FC-8AC64361DF69}.Debug|Win32.Build.0 = Debug|Win32
+		{22791C6A-31A9-4001-92FC-8AC64361DF69}.Release|Win32.ActiveCfg = Release|Win32
+		{22791C6A-31A9-4001-92FC-8AC64361DF69}.Release|Win32.Build.0 = Release|Win32
+		{3042165F-E122-4E64-A8FA-E22ACEB9624D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3042165F-E122-4E64-A8FA-E22ACEB9624D}.Debug|Win32.Build.0 = Debug|Win32
+		{3042165F-E122-4E64-A8FA-E22ACEB9624D}.Release|Win32.ActiveCfg = Release|Win32
+		{3042165F-E122-4E64-A8FA-E22ACEB9624D}.Release|Win32.Build.0 = Release|Win32
+		{9E201F2A-5D50-416A-891E-3466CCC57326}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9E201F2A-5D50-416A-891E-3466CCC57326}.Debug|Win32.Build.0 = Debug|Win32
+		{9E201F2A-5D50-416A-891E-3466CCC57326}.Release|Win32.ActiveCfg = Release|Win32
+		{9E201F2A-5D50-416A-891E-3466CCC57326}.Release|Win32.Build.0 = Release|Win32
+		{A28C9390-8326-494C-A408-4177E0F34C1C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A28C9390-8326-494C-A408-4177E0F34C1C}.Debug|Win32.Build.0 = Debug|Win32
+		{A28C9390-8326-494C-A408-4177E0F34C1C}.Release|Win32.ActiveCfg = Release|Win32
+		{A28C9390-8326-494C-A408-4177E0F34C1C}.Release|Win32.Build.0 = Release|Win32
+		{EA4AAEF9-9C3F-4002-93B4-6923C537ABD4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EA4AAEF9-9C3F-4002-93B4-6923C537ABD4}.Debug|Win32.Build.0 = Debug|Win32
+		{EA4AAEF9-9C3F-4002-93B4-6923C537ABD4}.Release|Win32.ActiveCfg = Release|Win32
+		{EA4AAEF9-9C3F-4002-93B4-6923C537ABD4}.Release|Win32.Build.0 = Release|Win32
+		{58D547F0-DA38-4619-B4D8-42AED5689E52}.Debug|Win32.ActiveCfg = Debug|Win32
+		{58D547F0-DA38-4619-B4D8-42AED5689E52}.Debug|Win32.Build.0 = Debug|Win32
+		{58D547F0-DA38-4619-B4D8-42AED5689E52}.Release|Win32.ActiveCfg = Release|Win32
+		{58D547F0-DA38-4619-B4D8-42AED5689E52}.Release|Win32.Build.0 = Release|Win32
+		{453FA649-3193-49A8-B269-211FEBC6DA0B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{453FA649-3193-49A8-B269-211FEBC6DA0B}.Debug|Win32.Build.0 = Debug|Win32
+		{453FA649-3193-49A8-B269-211FEBC6DA0B}.Release|Win32.ActiveCfg = Release|Win32
+		{453FA649-3193-49A8-B269-211FEBC6DA0B}.Release|Win32.Build.0 = Release|Win32
+		{6BBFBC61-DB86-4BA6-934E-5160B113AAA0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6BBFBC61-DB86-4BA6-934E-5160B113AAA0}.Debug|Win32.Build.0 = Debug|Win32
+		{6BBFBC61-DB86-4BA6-934E-5160B113AAA0}.Release|Win32.ActiveCfg = Release|Win32
+		{6BBFBC61-DB86-4BA6-934E-5160B113AAA0}.Release|Win32.Build.0 = Release|Win32
+		{404B90D6-AF27-43DF-B763-28FA6C12D045}.Debug|Win32.ActiveCfg = Debug|Win32
+		{404B90D6-AF27-43DF-B763-28FA6C12D045}.Debug|Win32.Build.0 = Debug|Win32
+		{404B90D6-AF27-43DF-B763-28FA6C12D045}.Release|Win32.ActiveCfg = Release|Win32
+		{404B90D6-AF27-43DF-B763-28FA6C12D045}.Release|Win32.Build.0 = Release|Win32
+		{4EC771E6-238E-4870-92BD-DAB127607655}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4EC771E6-238E-4870-92BD-DAB127607655}.Debug|Win32.Build.0 = Debug|Win32
+		{4EC771E6-238E-4870-92BD-DAB127607655}.Release|Win32.ActiveCfg = Release|Win32
+		{4EC771E6-238E-4870-92BD-DAB127607655}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
