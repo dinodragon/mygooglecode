@@ -4,9 +4,7 @@
 #include "stdafx.h"
 #include "Base64.h"
 #include "Base64Dlg.h"
-#include <fstream>
 #include <vector>
-
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -405,8 +403,9 @@ void CBase64Dlg::OnBnClickedDecodetofile()
 			sourceByte[i] = sourceChars[i];
 		}
 		CString pathName = fileDlg.GetPathName();
-		std::ofstream fout(pathName, std::ios::binary);
-		fout.write(sourceByte,sourceLen);
+		CFile file(pathName,CFile::modeCreate | CFile::modeWrite);
+		file.Write(sourceByte,sourceLen);
+		file.Close();
 		delete[] sourceByte;
 	}
 
