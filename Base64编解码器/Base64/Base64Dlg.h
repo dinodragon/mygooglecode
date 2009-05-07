@@ -56,4 +56,6 @@ public:
 public:
 	afx_msg void OnClose();
 	BOOL m_lastOperEncode; //最后一次转换是否为加密，这是为了在切换编码时也可自动进行编码或者解码。
+public:
+	afx_msg void OnBnClickedDecodetofile();
 };
