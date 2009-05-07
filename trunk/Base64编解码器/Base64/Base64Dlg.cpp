@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "Base64.h"
 #include "Base64Dlg.h"
+#include <fstream>
 #include <vector>
 
 
@@ -108,6 +109,7 @@ BEGIN_MESSAGE_MAP(CBase64Dlg, CDialog)
 	ON_BN_CLICKED(IDC_UTF8, &CBase64Dlg::OnBnClickedUtf8)
 	ON_BN_CLICKED(IDC_Unicode, &CBase64Dlg::OnBnClickedUnicode)
 	ON_WM_CLOSE()
+	ON_BN_CLICKED(IDC_DECODETOFILE, &CBase64Dlg::OnBnClickedDecodetofile)
 END_MESSAGE_MAP()
 
 
@@ -221,7 +223,7 @@ void CBase64Dlg::OnEnChangeBase64()
 
 void CBase64Dlg::OnBnClickedHelp()
 {
-	ShellExecute(NULL,TEXT("open"),TEXT("http://www.cpp521.cn/post/base64.html?from=base64v1.4"),NULL,NULL,SW_SHOWNORMAL);
+	ShellExecute(NULL,TEXT("open"),TEXT("http://www.cpp521.cn/post/base64.html?from=base64v1.5"),NULL,NULL,SW_SHOWNORMAL);
 }
 
 void CBase64Dlg::OnBnClickedAutoconvert()
@@ -384,4 +386,28 @@ void CBase64Dlg::OnClose()
 	long lReturn=RegSetValueEx(hKey,TEXT("AutoConvert"),0L,REG_DWORD,(const BYTE *) &m_autoconvert,sizeof(DWORD));
 	RegSetValueEx(hKey,TEXT("CodePage"),0L,REG_DWORD,(const BYTE *) &m_codepage,sizeof(DWORD));
 	CDialog::OnClose();
+}
+
+void CBase64Dlg::OnBnClickedDecodetofile()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	UpdateData();
+	char szFilters[]=
+		"All Files (*.*)|*.*|";
+	CFileDialog fileDlg(FALSE,"txt",NULL,OFN_HIDEREADONLY,szFilters);
+	if( fileDlg.DoModal ()==IDOK )
+	{
+		std::vector<char> sourceChars = base64.decode(std::string(m_base64));
+		size_t sourceLen = sourceChars.size();
+		char * sourceByte = new char[sourceLen];
+		for (size_t i = 0;i<sourceLen ;i++ )
+		{
+			sourceByte[i] = sourceChars[i];
+		}
+		CString pathName = fileDlg.GetPathName();
+		std::ofstream fout(pathName, std::ios::binary);
+		fout.write(sourceByte,sourceLen);
+		delete[] sourceByte;
+	}
+
 }

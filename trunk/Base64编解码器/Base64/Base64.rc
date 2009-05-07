@@ -77,7 +77,7 @@ CAPTION "关于 Base64"
 FONT 9, "宋体", 0, 0, 0x1
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,11,15,20,20
-    LTEXT           "Base64 编码解码器 1.4 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Base64 编码解码器 1.5 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
     DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
     LTEXT           "作者：e彩飞扬",IDC_STATIC,40,21,53,8
     LTEXT           "http://www.cpp521.cn",IDC_STATIC,39,32,85,8
@@ -86,7 +86,7 @@ END
 IDD_BASE64_DIALOG DIALOGEX 0, 0, 328, 282
 STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
 EXSTYLE WS_EX_APPWINDOW
-CAPTION "Base64 编码 解码器 V1.4"
+CAPTION "Base64 编码 解码器 V1.5"
 FONT 9, "宋体", 0, 0, 0x1
 BEGIN
     EDITTEXT        IDC_SOURCE,17,18,292,85,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
@@ -95,14 +95,15 @@ BEGIN
     GROUPBOX        "Base64编码信息:",IDC_STATIC,7,150,314,106
     LTEXT           "http://www.cpp521.cn",IDC_STATIC,167,266,81,8
     PUSHBUTTON      "使用说明",IDC_Help,263,260,50,14
-    CONTROL         "自动转换",IDC_AUTOCONVERT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,127,48,10
-    PUSHBUTTON      "↓编码",IDC_ENCODE,67,125,36,14,WS_DISABLED
-    PUSHBUTTON      "↑解码",IDC_DECODE,111,125,36,14,WS_DISABLED
-    GROUPBOX        "编码方式",IDC_STATIC,189,117,125,25
-    CONTROL         "ANSI",IDC_ANSI,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,195,127,32,10
-    CONTROL         "UTF-8",IDC_UTF8,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,227,127,36,10
-    CONTROL         "Unicode",IDC_Unicode,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,263,127,44,10
-    GROUPBOX        "操作",IDC_STATIC,7,117,151,25
+    CONTROL         "自动转换",IDC_AUTOCONVERT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,127,48,10
+    PUSHBUTTON      "↓编码",IDC_ENCODE,58,125,32,14,WS_DISABLED
+    PUSHBUTTON      "↑解码",IDC_DECODE,95,125,32,14,WS_DISABLED
+    GROUPBOX        "编码方式",IDC_STATIC,196,117,118,25
+    CONTROL         "ANSI",IDC_ANSI,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,203,127,32,10
+    CONTROL         "UTF-8",IDC_UTF8,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,235,127,36,10
+    CONTROL         "Unicode",IDC_Unicode,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,271,127,44,10
+    GROUPBOX        "操作",IDC_STATIC,7,117,183,25
+    PUSHBUTTON      "解码到文件",IDC_DECODETOFILE,134,125,50,14
 END
 
 
@@ -112,8 +113,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,0,4
- PRODUCTVERSION 1,0,0,4
+ FILEVERSION 1,0,0,5
+ PRODUCTVERSION 1,0,0,5
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -129,12 +130,12 @@ BEGIN
         BLOCK "080403a8"
         BEGIN
             VALUE "CompanyName", "E彩工作室http://www.cpp521.cn"
-            VALUE "FileDescription", "一个很好的Base64编码解码工具"
-            VALUE "FileVersion", "1.4.0.1"
+            VALUE "FileDescription", "Base64编码解码工具，支持UTF8，Unicode，支持解码到文件。"
+            VALUE "FileVersion", "1.5.0.1"
             VALUE "InternalName", "Base64.exe"
             VALUE "OriginalFilename", "Base64.exe"
             VALUE "ProductName", "一个很好的Base64编码解码工具"
-            VALUE "ProductVersion", "1.4.0.1"
+            VALUE "ProductVersion", "1.5.0.1"
         END
     END
     BLOCK "VarFileInfo"
