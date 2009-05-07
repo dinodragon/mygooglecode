@@ -18,6 +18,7 @@
 #define IDC_UTF8                        1011
 #define IDC_Unicode                     1012
 #define IDC_BUTTON2                     1013
+#define IDC_DECODETOFILE                1013
 
 // Next default values for new objects
 // 
