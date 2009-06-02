@@ -78,8 +78,8 @@ std::string Base64Helper::encode(const char * in_str,size_t len)
 std::vector<char> Base64Helper::decode(const std::string in_str)
 {
     char c1, c2, c3, c4;
-    int i = 0;
-    int len = in_str.length();
+    size_t i = 0;
+    size_t len = in_str.length();
 	std::vector<char> out_chars;
 	
 
