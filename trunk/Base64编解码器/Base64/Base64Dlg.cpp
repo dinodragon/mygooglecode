@@ -404,7 +404,7 @@ void CBase64Dlg::OnBnClickedDecodetofile()
 		}
 		CString pathName = fileDlg.GetPathName();
 		CFile file(pathName,CFile::modeCreate | CFile::modeWrite);
-		file.Write(sourceByte,sourceLen);
+		file.Write(sourceByte,(UINT)sourceLen);
 		file.Close();
 		delete[] sourceByte;
 	}
