@@ -1,16 +1,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 // General utilities : Base64 encode/decode helper class
 //
-// Copyright (c) 2003 by Morning
-// http://morningspace.51.net
-// mailto:moyingzz@etang.com
+// Copyright (c) 2003 by Yangfei
+// http://www.cpp521.cn
 //
-// Permission to use, copy, modify, distribute and sell this program for any 
-// purpose is hereby granted without fee, provided that the above copyright 
-// notice appear in all copies and that both that copyright notice and this 
-// permission notice appear in supporting documentation.
-//
-// It is provided "as is" without express or implied warranty.
 ////////////////////////////////////////////////////////////////////////////////
 #include "stdafx.h"
 #include "Base64Helper.h"
