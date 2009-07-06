@@ -21,40 +21,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SdtMfcApp", "SdtMfcApp\SdtM
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MDIMFC", "MDIMFC\MDIMFC.vcproj", "{018B15FC-8CF4-4B53-BC94-D82C7B7CA27C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CStringArraySort", "CStringArraySort\CStringArraySort.vcproj", "{6B511074-2B16-432A-895B-EE62CBDE32D7}"
+EndProject
 Global
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 11
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = CallDll\\CallDll.vcproj
-		SccLocalPath1 = .
-		SccProjectFilePathRelativizedFromConnection1 = CallDll\\
-		SccProjectUniqueName2 = dll1\\dll1.vcproj
-		SccLocalPath2 = .
-		SccProjectFilePathRelativizedFromConnection2 = dll1\\
-		SccProjectUniqueName3 = MFC2\\MFC2.vcproj
-		SccLocalPath3 = .
-		SccProjectFilePathRelativizedFromConnection3 = MFC2\\
-		SccProjectUniqueName4 = MFC3\\MFC3.vcproj
-		SccLocalPath4 = .
-		SccProjectFilePathRelativizedFromConnection4 = MFC3\\
-		SccProjectUniqueName5 = MFC\\MFC.vcproj
-		SccLocalPath5 = .
-		SccProjectFilePathRelativizedFromConnection5 = MFC\\
-		SccProjectUniqueName6 = MFCApp\\MFCApp.vcproj
-		SccLocalPath6 = .
-		SccProjectFilePathRelativizedFromConnection6 = MFCApp\\
-		SccProjectUniqueName7 = test\\test.vcproj
-		SccLocalPath7 = .
-		SccProjectFilePathRelativizedFromConnection7 = test\\
-		SccProjectUniqueName8 = Win32程序\\Win32程序.vcproj
-		SccLocalPath8 = .
-		SccProjectFilePathRelativizedFromConnection8 = Win32程序\\
-		SccProjectUniqueName9 = SdtMfcApp\\SdtMfcApp.vcproj
-		SccLocalPath9 = .
-		SccProjectFilePathRelativizedFromConnection9 = SdtMfcApp\\
-		SccProjectUniqueName10 = MDIMFC\\MDIMFC.vcproj
-		SccLocalPath10 = .
-		SccProjectFilePathRelativizedFromConnection10 = MDIMFC\\
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -101,6 +73,10 @@ Global
 		{018B15FC-8CF4-4B53-BC94-D82C7B7CA27C}.Debug|Win32.Build.0 = Debug|Win32
 		{018B15FC-8CF4-4B53-BC94-D82C7B7CA27C}.Release|Win32.ActiveCfg = Release|Win32
 		{018B15FC-8CF4-4B53-BC94-D82C7B7CA27C}.Release|Win32.Build.0 = Release|Win32
+		{6B511074-2B16-432A-895B-EE62CBDE32D7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6B511074-2B16-432A-895B-EE62CBDE32D7}.Debug|Win32.Build.0 = Debug|Win32
+		{6B511074-2B16-432A-895B-EE62CBDE32D7}.Release|Win32.ActiveCfg = Release|Win32
+		{6B511074-2B16-432A-895B-EE62CBDE32D7}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
