@@ -136,9 +136,12 @@ void CLSIDtoString(const CLSID& clsid,
 	HRESULT hr = StringFromCLSID(clsid, &wszCLSID) ;
 	assert(SUCCEEDED(hr)) ;
 
+#ifdef UNICODE
+	StrCpy(szCLSID,wszCLSID);
+#else
 	// Covert from wide characters to non-wide.
-	//wcstombs(szCLSID, wszCLSID, length) ;
-
+	wcstombs(szCLSID, wszCLSID, length) ;
+#endif
 	// Free memory.
 	CoTaskMemFree(wszCLSID) ;
 }
@@ -218,7 +221,7 @@ BOOL SetKeyAndValue(const TCHAR* szKey,
 	{
 		RegSetValueEx(hKey, NULL, 0, REG_SZ, 
 			(BYTE *)szValue, 
-			_tcslen(szValue)+1) ;
+			(DWORD)(_tcslen(szValue)+1)*sizeof(*szValue));
 	}
 
 	RegCloseKey(hKey) ;
