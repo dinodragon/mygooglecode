@@ -60,5 +60,7 @@ int main()
 	if (hResult == S_OK) {
 		cout<<x<<"+"<<y<<"="<<result<<endl;
 	}
-	
+
+	pCale->Release();
+	pMyUnknown->Release();
 }
