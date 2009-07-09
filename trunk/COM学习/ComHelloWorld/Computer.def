@@ -1,0 +1,6 @@
+LIBRARY	"ComHelloWorld"
+
+EXPORTS
+    ; Explicit exports can go here
+	CreateObject @1
+	
