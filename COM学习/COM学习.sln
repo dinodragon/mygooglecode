@@ -10,6 +10,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComHelloWorld", "ComHelloWo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CallComHelloWorld", "CallComHelloWorld\CallComHelloWorld.vcproj", "{7C3F2BC0-A448-4E6A-886F-CC8CD89F2D3A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComHelloWorldReg", "ComHelloWorldReg\ComHelloWorldReg.vcproj", "{AFBFEB08-9203-43BD-A09A-A174A3BFAFD5}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -28,6 +30,10 @@ Global
 		{7C3F2BC0-A448-4E6A-886F-CC8CD89F2D3A}.Debug|Win32.Build.0 = Debug|Win32
 		{7C3F2BC0-A448-4E6A-886F-CC8CD89F2D3A}.Release|Win32.ActiveCfg = Release|Win32
 		{7C3F2BC0-A448-4E6A-886F-CC8CD89F2D3A}.Release|Win32.Build.0 = Release|Win32
+		{AFBFEB08-9203-43BD-A09A-A174A3BFAFD5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AFBFEB08-9203-43BD-A09A-A174A3BFAFD5}.Debug|Win32.Build.0 = Debug|Win32
+		{AFBFEB08-9203-43BD-A09A-A174A3BFAFD5}.Release|Win32.ActiveCfg = Release|Win32
+		{AFBFEB08-9203-43BD-A09A-A174A3BFAFD5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
