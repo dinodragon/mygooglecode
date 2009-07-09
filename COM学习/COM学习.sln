@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9699D3B1-0E86-4A11-B7A2-5768C893A71A}"
 	ProjectSection(SolutionItems) = preProject
-		COM技术的原理与应用.zip = COM技术的原理与应用.zip
+		COM技术的原理与应用(源码).zip = COM技术的原理与应用(源码).zip
 	EndProjectSection
 EndProject
 Global
