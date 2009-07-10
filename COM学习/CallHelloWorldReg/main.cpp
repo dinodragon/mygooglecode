@@ -36,9 +36,6 @@ BOOL CreateObject(const CLSID& clsid, const IID& iid, void **ppv)
 	return TRUE;
 }
 
-
-
-
 int main()
 {
 	hModual = NULL;

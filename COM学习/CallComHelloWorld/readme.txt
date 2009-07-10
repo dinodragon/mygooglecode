@@ -1,0 +1,2 @@
+直接查找Dll的方式调用Com接口。
+调用ComHelloWorld项目生成的dll
