@@ -12,6 +12,7 @@ BOOL APIENTRY DllMain( HANDLE hModule,
                        LPVOID lpReserved
 					 )
 {
+	g_hModule = hModule;
     return TRUE;
 }
 
