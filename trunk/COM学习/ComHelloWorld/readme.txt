@@ -1,0 +1,2 @@
+以Dll方式提供的Com接口，不提供自注册接口。
+调用项目为CallComHelloWorld

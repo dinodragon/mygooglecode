@@ -1,0 +1,1 @@
+通过系统注册表的方式调用ComHelloWorldReg那个项目注册的Com接口。
