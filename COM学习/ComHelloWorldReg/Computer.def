@@ -2,6 +2,6 @@ LIBRARY	"ComHelloWorldReg"
 
 EXPORTS
     ; Explicit exports can go here
-	CreateObject @1
 	DllRegisterServer PRIVATE
 	DllUnregisterServer PRIVATE
+	DllGetClassObject PRIVATE
