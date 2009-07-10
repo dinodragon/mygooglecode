@@ -1,9 +1,11 @@
 // DictComp.cpp : Defines the entry point for the DLL application.
 //
 #include <comutil.h>
+#include "factory.h"
 #include "IComputer.h"
 #include "olectl.h"
 #include "Registry.h"
+
 
 HANDLE	 g_hModule;
 
@@ -21,14 +23,28 @@ extern "C" const GUID CLSID_Computer =
 		{ 0x54bf6567, 0x1007, 0x11d1,
 		{ 0xb0, 0xaa, 0x44, 0x45, 0x53, 0x54, 0x00, 0x00} } ;
 
-BOOL __stdcall CreateObject(const CLSID& clsid, const IID& iid, void **ppv)
+// {54BF6568-1007-11D1-B0AA-444553540000}
+extern "C" const GUID IID_Computer = 
+		{ 0x54bf6568, 0x1007, 0x11d1,
+		{ 0xb0, 0xaa, 0x44, 0x45, 0x53, 0x54, 0x00, 0x00} } ;
+
+
+extern "C" HRESULT __stdcall DllGetClassObject(const CLSID& clsid, const IID& iid, void **ppv)
 {
 	if (clsid == CLSID_Computer ) {
-		CComputer *pObject = new CComputer;
-		HRESULT result = pObject->QueryInterface(iid, ppv);
-		return (result == S_OK) ? TRUE : FALSE;
+
+		CComputerFactory *pFactory = new CComputerFactory;
+
+		if (pFactory == NULL) {
+			return E_OUTOFMEMORY ;
+		}
+
+		HRESULT result = pFactory->QueryInterface(iid, ppv);
+
+		return result;
+	} else {
+		return CLASS_E_CLASSNOTAVAILABLE;
 	}
-	return FALSE;
 }
 // class CComputer implementation
 
