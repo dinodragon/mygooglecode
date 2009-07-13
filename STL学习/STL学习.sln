@@ -16,30 +16,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "map学习", "map学习\map学习.vcproj", "{0510B552-E2F1-4F89-B30C-2DFE94352978}"
 EndProject
 Global
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 8
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = 各个容器插入性能比较\\各个容器插入性能比较.vcproj
-		SccLocalPath1 = .
-		SccProjectFilePathRelativizedFromConnection1 = 各个容器插入性能比较\\
-		SccProjectUniqueName2 = 指针迭代器\\指针迭代器.vcproj
-		SccLocalPath2 = .
-		SccProjectFilePathRelativizedFromConnection2 = 指针迭代器\\
-		SccProjectUniqueName3 = 容器迭代器\\容器迭代器.vcproj
-		SccLocalPath3 = .
-		SccProjectFilePathRelativizedFromConnection3 = 容器迭代器\\
-		SccProjectUniqueName4 = 流和迭代器\\流和迭代器.vcproj
-		SccLocalPath4 = .
-		SccProjectFilePathRelativizedFromConnection4 = 流和迭代器\\
-		SccProjectUniqueName5 = 输出迭代器\\输出迭代器.vcproj
-		SccLocalPath5 = .
-		SccProjectFilePathRelativizedFromConnection5 = 输出迭代器\\
-		SccProjectUniqueName6 = 插入迭代器\\插入迭代器.vcproj
-		SccLocalPath6 = .
-		SccProjectFilePathRelativizedFromConnection6 = 插入迭代器\\
-		SccProjectUniqueName7 = map学习\\map学习.vcproj
-		SccLocalPath7 = .
-		SccProjectFilePathRelativizedFromConnection7 = map学习\\
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
