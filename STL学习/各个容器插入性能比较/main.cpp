@@ -70,7 +70,7 @@ int main(void)
 	multiset<int> multiset1;
 
 	//数组
-	cout<<"开始插入100000个随机整数"<<endl;
+	cout<<"开始插入"<<size<<"个随机整数"<<endl;
 	begin=(double)clock()/CLK_TCK;
 	arrayInsert<int>(array1,s_data,size);
 	end=(double)clock()/CLK_TCK;
