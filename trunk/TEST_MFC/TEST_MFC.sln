@@ -45,6 +45,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CLR TEST", "CLR TEST\CLR TE
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "单文档多视图可保存", "SDI\SDI.vcproj", "{7B807BFF-A217-4C43-BAB1-E16525C04AC4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirWatch", "DirWatch\DirWatch.vcproj", "{EADEFCE6-A3F8-405D-A82F-67B0287E16AD}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -143,6 +145,10 @@ Global
 		{7B807BFF-A217-4C43-BAB1-E16525C04AC4}.Debug|Win32.Build.0 = Debug|Win32
 		{7B807BFF-A217-4C43-BAB1-E16525C04AC4}.Release|Win32.ActiveCfg = Release|Win32
 		{7B807BFF-A217-4C43-BAB1-E16525C04AC4}.Release|Win32.Build.0 = Release|Win32
+		{EADEFCE6-A3F8-405D-A82F-67B0287E16AD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EADEFCE6-A3F8-405D-A82F-67B0287E16AD}.Debug|Win32.Build.0 = Debug|Win32
+		{EADEFCE6-A3F8-405D-A82F-67B0287E16AD}.Release|Win32.ActiveCfg = Release|Win32
+		{EADEFCE6-A3F8-405D-A82F-67B0287E16AD}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
