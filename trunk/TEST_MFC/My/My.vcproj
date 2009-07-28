@@ -2,7 +2,7 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="8.00"
-	Name="My"
+	Name="SimpleMFCDemo"
 	ProjectGUID="{3AFBF656-F74C-4AC8-8DDB-58EC57F9BF77}"
 	RootNamespace="My"
 	SccProjectName="SAK"
