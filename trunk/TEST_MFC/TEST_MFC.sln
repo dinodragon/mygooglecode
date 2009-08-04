@@ -5,7 +5,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TEST_ALT", "TEST_ALT\TEST_A
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CTEST", "CTEST\CTEST.vcproj", "{457754C9-8228-4EEC-A3EE-2544F0993A89}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "My", "My\My.vcproj", "{3AFBF656-F74C-4AC8-8DDB-58EC57F9BF77}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleMFCDemo", "My\My.vcproj", "{3AFBF656-F74C-4AC8-8DDB-58EC57F9BF77}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "一个最简单的MFC程序", "MyMFC\MyMFC.vcproj", "{DB95C704-A39A-42F2-97E7-9909F5F4C287}"
 EndProject
@@ -46,6 +46,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "单文档多视图可保存", "SDI\SDI.vcproj", "{7B807BFF-A217-4C43-BAB1-E16525C04AC4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirWatch", "DirWatch\DirWatch.vcproj", "{EADEFCE6-A3F8-405D-A82F-67B0287E16AD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KillProcess", "KillProcess\KillProcess.vcproj", "{C866BE65-F952-4B8F-A63C-17D38089A9A0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KillProcessEx", "KillProcessEx\kp.vcproj", "{24BA793F-6E6E-4730-970A-2688BB7DF9BB}"
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
@@ -149,6 +153,14 @@ Global
 		{EADEFCE6-A3F8-405D-A82F-67B0287E16AD}.Debug|Win32.Build.0 = Debug|Win32
 		{EADEFCE6-A3F8-405D-A82F-67B0287E16AD}.Release|Win32.ActiveCfg = Release|Win32
 		{EADEFCE6-A3F8-405D-A82F-67B0287E16AD}.Release|Win32.Build.0 = Release|Win32
+		{C866BE65-F952-4B8F-A63C-17D38089A9A0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C866BE65-F952-4B8F-A63C-17D38089A9A0}.Debug|Win32.Build.0 = Debug|Win32
+		{C866BE65-F952-4B8F-A63C-17D38089A9A0}.Release|Win32.ActiveCfg = Release|Win32
+		{C866BE65-F952-4B8F-A63C-17D38089A9A0}.Release|Win32.Build.0 = Release|Win32
+		{24BA793F-6E6E-4730-970A-2688BB7DF9BB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{24BA793F-6E6E-4730-970A-2688BB7DF9BB}.Debug|Win32.Build.0 = Debug|Win32
+		{24BA793F-6E6E-4730-970A-2688BB7DF9BB}.Release|Win32.ActiveCfg = Release|Win32
+		{24BA793F-6E6E-4730-970A-2688BB7DF9BB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
