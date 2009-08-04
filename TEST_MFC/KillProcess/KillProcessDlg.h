@@ -25,6 +25,10 @@ protected:
 
 	// 生成的消息映射函数
 	virtual BOOL OnInitDialog();
+	//关闭进程
+	BOOL CloseProcess(DWORD dwProcessId,BOOL bForce = TRUE);
+
+	BOOL IsProcessContainModName(DWORD dwProcessId,LPCTSTR szModeName);
 	afx_msg void OnSysCommand(UINT nID, LPARAM lParam);
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();

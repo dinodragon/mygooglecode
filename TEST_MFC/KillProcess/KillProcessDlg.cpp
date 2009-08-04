@@ -153,45 +153,59 @@ HCURSOR CKillProcessDlg::OnQueryDragIcon()
 void CKillProcessDlg::OnBnClickedOk()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	DWORD m_count;
+	DWORD dwCount;
 	DWORD * m_pids;
 	DWORD nalloc = 1024;
-	TCHAR name[_MAX_PATH];
-	std::vector<DWORD> list;
 	m_pids = new DWORD[nalloc];
-	HMODULE * hModules = NULL;
-	DWORD m_dwModCount = 0;
-	if (EnumProcesses(m_pids, nalloc*sizeof(DWORD), &m_count))
+	if (EnumProcesses(m_pids, nalloc*sizeof(DWORD), &dwCount))
 	{
-		m_count /= sizeof(DWORD);
+		dwCount /= sizeof(DWORD);
 	}
-	for (DWORD i=1;i < m_count;i++)
+	for (DWORD i=1;i < dwCount;i++)
 	{
-		HANDLE handle = OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ,FALSE,m_pids[i]);
-		if (handle) 
+		if (IsProcessContainModName(m_pids[i],TEXT("WinWord.exe")))
 		{
-			hModules = new HMODULE[nalloc];
-			if (EnumProcessModules(handle, hModules,nalloc*sizeof(HMODULE), &m_dwModCount)) 
-			{
-				m_dwModCount /= sizeof(HMODULE);
-			}
-			for (DWORD j = 0 ;j<m_dwModCount ;j++)
-			{
-				GetModuleBaseName(handle,hModules[j],name,_MAX_PATH);
-				CString sModName = TEXT("winword.exe");
-				if (sModName.CompareNoCase(name)==0)
-				{
-					//找到word进程。
-					HANDLE hp = OpenProcess(SYNCHRONIZE|PROCESS_TERMINATE,FALSE,m_pids[i]);
-					TerminateProcess(hp,0);
-					break;
-				}
-			}
-			delete[] hModules;
-		}
-		CloseHandle(handle);
-		handle = NULL;
+			CloseProcess(m_pids[i]);
+		}		
 	}
 	delete[] m_pids;
 	OnOK();
+}
+
+BOOL CKillProcessDlg::CloseProcess(DWORD dwProcessId,BOOL bForce)
+{
+	HANDLE hp = OpenProcess(SYNCHRONIZE|PROCESS_TERMINATE,FALSE,dwProcessId);
+	TerminateProcess(hp,0);
+	return FALSE;
+}
+
+BOOL CKillProcessDlg::IsProcessContainModName(DWORD dwProcessId,LPCTSTR szModeName)
+{
+	CString NeedKillModName(szModeName);
+	HMODULE * hModules = NULL;
+	DWORD m_dwModCount = 0;
+	DWORD nalloc = 1024;
+	BOOL result = FALSE;
+	TCHAR modName[_MAX_PATH];
+	HANDLE handle = OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ,FALSE,dwProcessId);
+	if (handle) 
+	{
+		hModules = new HMODULE[nalloc];
+		if (EnumProcessModules(handle, hModules,nalloc*sizeof(HMODULE), &m_dwModCount)) 
+		{
+			m_dwModCount /= sizeof(HMODULE);
+		}
+		for (DWORD j = 0 ;j<m_dwModCount ;j++)
+		{
+			GetModuleBaseName(handle,hModules[j],modName,_MAX_PATH);
+			if (NeedKillModName.CompareNoCase(modName)==0)
+			{
+				result = TRUE;
+				break;
+			}
+		}
+		delete[] hModules;
+	}
+	CloseHandle(handle);
+	return result;
 }
