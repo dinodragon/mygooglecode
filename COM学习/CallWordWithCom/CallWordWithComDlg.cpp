@@ -9,7 +9,6 @@
 #define new DEBUG_NEW
 #endif
 
-using namespace Word;
 // 用于应用程序“关于”菜单项的 CAboutDlg 对话框
 
 class CAboutDlg : public CDialog
@@ -43,14 +42,20 @@ END_MESSAGE_MAP()
 
 // CCallWordWithComDlg 对话框
 
-
-
+_ApplicationPtr CCallWordWithComDlg::m_app;
 
 CCallWordWithComDlg::CCallWordWithComDlg(CWnd* pParent /*=NULL*/)
 	: CDialog(CCallWordWithComDlg::IDD, pParent)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
+	//CoInitialize(NULL);
 }
+
+CCallWordWithComDlg::~CCallWordWithComDlg()
+{
+	//CoUninitialize();
+}
+
 
 void CCallWordWithComDlg::DoDataExchange(CDataExchange* pDX)
 {
@@ -63,6 +68,7 @@ BEGIN_MESSAGE_MAP(CCallWordWithComDlg, CDialog)
 	ON_WM_QUERYDRAGICON()
 	//}}AFX_MSG_MAP
 	ON_BN_CLICKED(IDOK, &CCallWordWithComDlg::OnBnClickedOk)
+	ON_BN_CLICKED(IDCANCEL, &CCallWordWithComDlg::OnBnClickedCancel)
 END_MESSAGE_MAP()
 
 
@@ -152,26 +158,41 @@ HCURSOR CCallWordWithComDlg::OnQueryDragIcon()
 
 void CCallWordWithComDlg::OnBnClickedOk()
 {
+
+	::CreateThread(NULL,0,CCallWordWithComDlg::Proc1,this,0,NULL);
 	// TODO: 在此添加控件通知处理程序代码
+
+	//OnOK();
+}
+
+DWORD WINAPI CCallWordWithComDlg::Proc1(PVOID pParam)
+{
 	CoInitialize(NULL);
-	_ApplicationPtr app;
-	HRESULT hr = app.CreateInstance("Word.Application");
+	HRESULT hr = m_app.CreateInstance("Word.Application");
 	ASSERT(SUCCEEDED(hr));
-	DocumentsPtr pDocumentsPtr = app->GetDocuments();
+	DocumentsPtr pDocumentsPtr = m_app->GetDocuments();
 	_variant_t vtReadOnly = true;
 	_variant_t vtWordFileName = TEXT("E:\\aa.docx");
 	_DocumentPtr pDocPtr = pDocumentsPtr->Open(&vtWordFileName,&vtMissing,&vtReadOnly);
-	app->Quit();
-
-
-
-
-
-
-
-
-
-	app.Release();
+	//Sleep(10000);
+	pDocPtr->Close();
+	pDocPtr.Release();
+	pDocumentsPtr.Release();
+	_variant_t saveChange = wdDoNotSaveChanges;
+	hr = m_app->Quit(&saveChange);
+	ASSERT(SUCCEEDED(hr));
+	m_app.Release();
 	CoUninitialize();
-	OnOK();
+	return TRUE;
+}
+
+void CCallWordWithComDlg::OnBnClickedCancel()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	//CoInitialize(NULL);
+	//_variant_t saveChange = wdDoNotSaveChanges;
+	//HRESULT hr = m_app->Quit(&saveChange);
+	//ASSERT(SUCCEEDED(hr));
+	//CoUninitialize();
+	OnCancel();
 }
