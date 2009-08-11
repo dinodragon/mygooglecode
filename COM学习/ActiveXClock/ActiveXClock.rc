@@ -1,0 +1,170 @@
+//Microsoft Visual C++ 生成的资源脚本。
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// 从 TEXTINCLUDE 2 资源生成。
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+	"resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+	"#include ""afxres.h""\r\n"
+	"\0"
+END
+
+3 TEXTINCLUDE  
+BEGIN
+	"1 TYPELIB ""ActiveXClock.tlb""\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 版本
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ActiveXClock.ocx"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "ActiveXClock.ocx"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+            VALUE "OLESelfRegister", ""
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+		VALUE "Translation", 0x0804, 936
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 图标
+//
+
+// ID 值最低的图标放在最前面，以确保应用程序图标
+// 在所有系统中保持一致。
+IDI_ABOUTDLL    ICON         "ActiveXClock.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 位图
+//
+
+IDB_ACTIVEXCLOCK   BITMAP   "ActiveXClockCtrl.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 对话框
+//
+
+IDD_ABOUTBOX_ACTIVEXCLOCK DIALOG   34, 22, 260, 55
+CAPTION "关于 ActiveXClock Control"
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 9, "宋体, MS Sans Serif"
+BEGIN
+	ICON            IDI_ABOUTDLL,IDC_STATIC,10,10,20,20
+	LTEXT           "ActiveXClock Control 1.0 版",IDC_STATIC,40,10,170,8
+	LTEXT           "Copyright (C) 2009, ",IDC_STATIC,40,25,170,8
+	DEFPUSHBUTTON   "确定",IDOK,221,7,32,16,WS_GROUP
+END
+
+IDD_PROPPAGE_ACTIVEXCLOCK DIALOG   0, 0, 250, 62
+STYLE WS_CHILD
+FONT 9, "宋体, MS Sans Serif"
+BEGIN
+    LTEXT           "TODO: 将用于操作 ActiveXClock Control 的属性的控件放置在此对话框上。",
+                    IDC_STATIC,7,25,229,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO  
+BEGIN
+    IDD_ABOUTBOX_ACTIVEXCLOCK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+    IDD_PROPPAGE_ACTIVEXCLOCK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 字符串表
+//
+
+STRINGTABLE 
+BEGIN
+	IDS_ACTIVEXCLOCK               "ActiveXClock Control"
+	IDS_ACTIVEXCLOCK_PPG           "ActiveXClock Property Page"
+	IDS_ACTIVEXCLOCK_PPG_CAPTION   "常规"
+
+END
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// 从 TEXTINCLUDE 3 资源生成。
+//
+1 TYPELIB "ActiveXClock.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // 不是 APSTUDIO_INVOKED
+
