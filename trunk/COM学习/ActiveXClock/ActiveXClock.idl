@@ -1,0 +1,52 @@
+// ActiveXClock.idl : ActiveX 控件项目的类型库源。
+
+// 此文件将由 MIDL 编译器工具处理以
+// 产生类型库(ActiveXClock.tlb)，该类型库将成为
+// ActiveXClock.ocx 中的资源。
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(F6D71A34-EEF1-4693-9608-79A3B6E88F04), version(1.0),
+  helpfile("ActiveXClock.hlp"),
+  helpstring("ActiveXClock ActiveX 控件模块"),
+  control ]
+library ActiveXClockLib
+{
+	importlib(STDOLE_TLB);
+
+	//  CActiveXClockCtrl 的主调度接口
+
+	[ uuid(4B8D1E02-DDBC-439A-A928-044D08F508EE),
+	  helpstring("ActiveXClock Control 的调度接口")]
+	dispinterface _DActiveXClock
+	{
+		properties:
+		methods:
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  CActiveXClockCtrl 的事件调度接口
+
+	[ uuid(AA689136-03C6-421A-9421-E62AC4AFC2C7),
+	  helpstring("ActiveXClock Control 的事件接口") ]
+	dispinterface _DActiveXClockEvents
+	{
+		properties:
+			//  事件接口没有任何属性
+
+		methods:
+	};
+
+	//  CActiveXClockCtrl 的类信息
+
+	[ uuid(797CCF2A-E994-4EAE-B240-EBDF3677A469),
+	  helpstring("ActiveXClock Control"), control ]
+	coclass ActiveXClock
+	{
+		[default] dispinterface _DActiveXClock;
+		[default, source] dispinterface _DActiveXClockEvents;
+	};
+
+};
