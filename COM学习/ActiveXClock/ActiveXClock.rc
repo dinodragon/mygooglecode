@@ -1,16 +1,25 @@
-//Microsoft Visual C++ 生成的资源脚本。
+// Microsoft Visual C++ generated resource script.
 //
 #include "resource.h"
 
 #define APSTUDIO_READONLY_SYMBOLS
 /////////////////////////////////////////////////////////////////////////////
 //
-// 从 TEXTINCLUDE 2 资源生成。
+// Generated from the TEXTINCLUDE 2 resource.
 //
 #include "afxres.h"
 
 /////////////////////////////////////////////////////////////////////////////
 #undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -20,28 +29,27 @@
 
 1 TEXTINCLUDE 
 BEGIN
-	"resource.h\0"
+    "resource.h\0"
 END
 
 2 TEXTINCLUDE 
 BEGIN
-	"#include ""afxres.h""\r\n"
-	"\0"
-END
-
-3 TEXTINCLUDE  
-BEGIN
-	"1 TYPELIB ""ActiveXClock.tlb""\r\n"
+    "#include ""afxres.h""\r\n"
     "\0"
 END
 
-/////////////////////////////////////////////////////////////////////////////
+3 TEXTINCLUDE 
+BEGIN
+    "1 TYPELIB ""ActiveXClock.tlb""\r\n"
+    "\0"
+END
+
 #endif    // APSTUDIO_INVOKED
 
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// 版本
+// Version
 //
 
 VS_VERSION_INFO VERSIONINFO
@@ -69,53 +77,53 @@ BEGIN
             VALUE "OriginalFilename", "ActiveXClock.ocx"
             VALUE "ProductName", "TODO: <产品名>"
             VALUE "ProductVersion", "1.0.0.1"
-            VALUE "OLESelfRegister", ""
         END
     END
     BLOCK "VarFileInfo"
     BEGIN
-		VALUE "Translation", 0x0804, 936
+        VALUE "Translation", 0x804, 936
     END
 END
 
-/////////////////////////////////////////////////////////////////////////////
-//
-// 图标
-//
-
-// ID 值最低的图标放在最前面，以确保应用程序图标
-// 在所有系统中保持一致。
-IDI_ABOUTDLL    ICON         "ActiveXClock.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// 位图
+// Icon
 //
 
-IDB_ACTIVEXCLOCK   BITMAP   "ActiveXClockCtrl.bmp"
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ABOUTDLL            ICON                    "ActiveXClock.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// 对话框
+// Bitmap
 //
 
-IDD_ABOUTBOX_ACTIVEXCLOCK DIALOG   34, 22, 260, 55
+IDB_ACTIVEXCLOCK        BITMAP                  "ActiveXClockCtrl.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX_ACTIVEXCLOCK DIALOG  34, 22, 260, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "关于 ActiveXClock Control"
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 FONT 9, "宋体, MS Sans Serif"
 BEGIN
-	ICON            IDI_ABOUTDLL,IDC_STATIC,10,10,20,20
-	LTEXT           "ActiveXClock Control 1.0 版",IDC_STATIC,40,10,170,8
-	LTEXT           "Copyright (C) 2009, ",IDC_STATIC,40,25,170,8
-	DEFPUSHBUTTON   "确定",IDOK,221,7,32,16,WS_GROUP
+    ICON            IDI_ABOUTDLL,IDC_STATIC,10,10,20,20
+    LTEXT           "ActiveXClock Control 1.0 版",IDC_STATIC,40,10,170,8
+    LTEXT           "Copyright (C) 2009, ",IDC_STATIC,40,25,170,8
+    DEFPUSHBUTTON   "确定",IDOK,221,7,32,16,WS_GROUP
 END
 
-IDD_PROPPAGE_ACTIVEXCLOCK DIALOG   0, 0, 250, 62
-STYLE WS_CHILD
-FONT 9, "宋体, MS Sans Serif"
+IDD_PROPPAGE_ACTIVEXCLOCK DIALOGEX 0, 0, 250, 62
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体, MS Sans Serif", 0, 0, 0x0
 BEGIN
-    LTEXT           "TODO: 将用于操作 ActiveXClock Control 的属性的控件放置在此对话框上。",
-                    IDC_STATIC,7,25,229,16
+    LTEXT           "更新时间间隔：",IDC_STATIC,33,22,57,8
+    EDITTEXT        IDC_INTERVALEDIT,95,20,40,14,ES_AUTOHSCROLL
 END
 
 
@@ -125,7 +133,7 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO  
+GUIDELINES DESIGNINFO 
 BEGIN
     IDD_ABOUTBOX_ACTIVEXCLOCK, DIALOG
     BEGIN
@@ -134,6 +142,7 @@ BEGIN
         TOPMARGIN, 7
         BOTTOMMARGIN, 48
     END
+
     IDD_PROPPAGE_ACTIVEXCLOCK, DIALOG
     BEGIN
         LEFTMARGIN, 7
@@ -144,27 +153,35 @@ BEGIN
 END
 #endif    // APSTUDIO_INVOKED
 
+
 /////////////////////////////////////////////////////////////////////////////
 //
-// 字符串表
+// String Table
 //
 
 STRINGTABLE 
 BEGIN
-	IDS_ACTIVEXCLOCK               "ActiveXClock Control"
-	IDS_ACTIVEXCLOCK_PPG           "ActiveXClock Property Page"
-	IDS_ACTIVEXCLOCK_PPG_CAPTION   "常规"
-
+    IDS_ACTIVEXCLOCK        "ActiveXClock Control"
+    IDS_ACTIVEXCLOCK_PPG    "ActiveXClock Property Page"
 END
+
+STRINGTABLE 
+BEGIN
+    IDS_ACTIVEXCLOCK_PPG_CAPTION "常规"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
 
 
 #ifndef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
 //
-// 从 TEXTINCLUDE 3 资源生成。
+// Generated from the TEXTINCLUDE 3 resource.
 //
 1 TYPELIB "ActiveXClock.tlb"
 
 /////////////////////////////////////////////////////////////////////////////
-#endif    // 不是 APSTUDIO_INVOKED
+#endif    // not APSTUDIO_INVOKED
 

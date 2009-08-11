@@ -24,5 +24,7 @@ protected:
 // œ˚œ¢”≥…‰
 protected:
 	DECLARE_MESSAGE_MAP()
+public:
+	short m_updateInterval;
 };
 

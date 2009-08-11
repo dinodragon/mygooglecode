@@ -45,7 +45,8 @@ BOOL CActiveXClockPropPage::CActiveXClockPropPageFactory::UpdateRegistry(BOOL bR
 
 CActiveXClockPropPage::CActiveXClockPropPage() :
 	COlePropertyPage(IDD, IDS_ACTIVEXCLOCK_PPG_CAPTION)
-{
+		, m_updateInterval(0)
+	{
 }
 
 
@@ -55,6 +56,7 @@ CActiveXClockPropPage::CActiveXClockPropPage() :
 void CActiveXClockPropPage::DoDataExchange(CDataExchange* pDX)
 {
 	DDP_PostProcessing(pDX);
+	DDX_Text(pDX, IDC_INTERVALEDIT, m_updateInterval);
 }
 
 

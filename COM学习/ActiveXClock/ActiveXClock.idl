@@ -22,9 +22,13 @@ library ActiveXClockLib
 	dispinterface _DActiveXClock
 	{
 		properties:
-		methods:
+			[id(DISPID_BACKCOLOR), helpstring("属性 BackColor"), bindable, requestedit] OLE_COLOR BackColor;
+			[id(DISPID_FORECOLOR), helpstring("属性 ForeColor"), bindable, requestedit] OLE_COLOR ForeColor;
+			[id(1) , helpstring("属性 Interval")] SHORT Interval;
+	methods:
 
 			[id(DISPID_ABOUTBOX)] void AboutBox();
+			[id(2), helpstring("方法Hello")] void Hello(void);
 	};
 
 	//  CActiveXClockCtrl 的事件调度接口

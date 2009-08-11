@@ -42,8 +42,14 @@ protected:
 // 调度和事件 ID
 public:
 	enum {
+		dispidHello = 2L,
+		dispidInterval = 1
 	};
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 	afx_msg void OnTimer(UINT_PTR nIDEvent);
+protected:
+	void OnIntervalChanged(void);
+	SHORT m_Interval;
+	void Hello(void);
 };
 

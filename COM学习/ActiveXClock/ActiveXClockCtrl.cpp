@@ -29,6 +29,10 @@ END_MESSAGE_MAP()
 
 BEGIN_DISPATCH_MAP(CActiveXClockCtrl, COleControl)
 	DISP_FUNCTION_ID(CActiveXClockCtrl, "AboutBox", DISPID_ABOUTBOX, AboutBox, VT_EMPTY, VTS_NONE)
+	DISP_STOCKPROP_BACKCOLOR()
+	DISP_STOCKPROP_FORECOLOR()
+	DISP_PROPERTY_NOTIFY_ID(CActiveXClockCtrl, "Interval", dispidInterval, m_Interval, OnIntervalChanged, VT_I2)
+	DISP_FUNCTION_ID(CActiveXClockCtrl, "Hello", dispidHello, Hello, VT_EMPTY, VTS_NONE)
 END_DISPATCH_MAP()
 
 
@@ -43,8 +47,9 @@ END_EVENT_MAP()
 // 属性页
 
 // TODO: 按需要添加更多属性页。请记住增加计数!
-BEGIN_PROPPAGEIDS(CActiveXClockCtrl, 1)
+BEGIN_PROPPAGEIDS(CActiveXClockCtrl, 2)
 	PROPPAGEID(CActiveXClockPropPage::guid)
+	PROPPAGEID(CLSID_CColorPropPage)
 END_PROPPAGEIDS(CActiveXClockCtrl)
 
 
@@ -141,8 +146,9 @@ void CActiveXClockCtrl::OnDraw(
 		return;
 
 	// TODO: 用您自己的绘图代码替换下面的代码。
-	//pdc->FillRect(rcBounds, CBrush::FromHandle((HBRUSH)GetStockObject(WHITE_BRUSH)));
-	//pdc->Ellipse(rcBounds);
+	CBrush brush(TranslateColor(GetBackColor()));
+	pdc->FillRect(rcBounds,&brush);
+	pdc->SetTextColor(TranslateColor(GetForeColor()));
 	CTime time = CTime::GetCurrentTime();
 	pdc->TextOut(0,0,time.Format("%H:%M:%S"));
 }
@@ -201,4 +207,27 @@ void CActiveXClockCtrl::OnTimer(UINT_PTR nIDEvent)
 	//Invalidate();
 	InvalidateControl();//强制控件重绘自身
 	COleControl::OnTimer(nIDEvent);
+}
+
+void CActiveXClockCtrl::OnIntervalChanged(void)
+{
+	AFX_MANAGE_STATE(AfxGetStaticModuleState());
+
+	// TODO: 在此添加属性处理程序代码
+	if(m_Interval < 0 || m_Interval>6000)
+		m_Interval = 1000;
+	else
+	{	
+		KillTimer(1);
+		SetTimer(1,m_Interval,NULL);
+	}
+	SetModifiedFlag();
+}
+
+void CActiveXClockCtrl::Hello(void)
+{
+	AFX_MANAGE_STATE(AfxGetStaticModuleState());
+
+	// TODO: 在此添加调度处理程序代码
+	MessageBox(TEXT("Hello World!"));
 }
