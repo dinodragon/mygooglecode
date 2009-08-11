@@ -16,6 +16,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CallHelloWorldReg", "CallHe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CallWordWithCom", "CallWordWithCom\CallWordWithCom.vcproj", "{8985A7FC-163C-4BF9-8661-57D43D64FA7E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ActiveXClock", "ActiveXClock\ActiveXClock.vcproj", "{BFC6E638-B2C6-470C-983B-5E481F5821D4}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -46,6 +48,10 @@ Global
 		{8985A7FC-163C-4BF9-8661-57D43D64FA7E}.Debug|Win32.Build.0 = Debug|Win32
 		{8985A7FC-163C-4BF9-8661-57D43D64FA7E}.Release|Win32.ActiveCfg = Release|Win32
 		{8985A7FC-163C-4BF9-8661-57D43D64FA7E}.Release|Win32.Build.0 = Release|Win32
+		{BFC6E638-B2C6-470C-983B-5E481F5821D4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BFC6E638-B2C6-470C-983B-5E481F5821D4}.Debug|Win32.Build.0 = Debug|Win32
+		{BFC6E638-B2C6-470C-983B-5E481F5821D4}.Release|Win32.ActiveCfg = Release|Win32
+		{BFC6E638-B2C6-470C-983B-5E481F5821D4}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
