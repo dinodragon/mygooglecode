@@ -16,6 +16,8 @@
 
 #define IDI_ABOUTDLL				1
 
+#define IDC_INTERVALEDIT			3
+
 #define _APS_NEXT_RESOURCE_VALUE        201
 #define _APS_NEXT_CONTROL_VALUE         201
 #define _APS_NEXT_SYMED_VALUE           101
