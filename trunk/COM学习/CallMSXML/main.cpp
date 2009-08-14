@@ -26,4 +26,6 @@ void main()
 	long len = 0;
 	XMLChildNodes->get_length(&len);
 	cout<<len<<endl;
+	XMLRoot->Release();
+	XMLFile.Release();
 }
