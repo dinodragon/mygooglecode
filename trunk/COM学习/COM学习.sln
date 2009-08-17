@@ -20,6 +20,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ActiveXClock", "ActiveXCloc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CallMSXML", "CallMSXML\CallMSXML.vcproj", "{2179A750-2246-440A-890B-6A2EE54E84CD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultipleInheritance", "MultipleInheritance\MultipleInheritance.vcproj", "{3B24CD62-5705-476B-B04D-EAE4CD947672}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -58,6 +60,10 @@ Global
 		{2179A750-2246-440A-890B-6A2EE54E84CD}.Debug|Win32.Build.0 = Debug|Win32
 		{2179A750-2246-440A-890B-6A2EE54E84CD}.Release|Win32.ActiveCfg = Release|Win32
 		{2179A750-2246-440A-890B-6A2EE54E84CD}.Release|Win32.Build.0 = Release|Win32
+		{3B24CD62-5705-476B-B04D-EAE4CD947672}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3B24CD62-5705-476B-B04D-EAE4CD947672}.Debug|Win32.Build.0 = Debug|Win32
+		{3B24CD62-5705-476B-B04D-EAE4CD947672}.Release|Win32.ActiveCfg = Release|Win32
+		{3B24CD62-5705-476B-B04D-EAE4CD947672}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
