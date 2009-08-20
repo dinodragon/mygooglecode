@@ -28,9 +28,10 @@ public:
 
 void fun()
 {
-	std::auto_ptr<A> p;
-	p = new A();
-	//p->fun();
+	//std::auto_ptr<A> p;
+	A * p = new A();
+	p->fun();
+	delete p;
 }
 //ÖÇÄÜÖ¸Õë
 void main()
