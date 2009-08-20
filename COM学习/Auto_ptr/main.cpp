@@ -1,12 +1,13 @@
 #include <iostream>
 #include <memory>
+#include <crtdbg.h>
 
 using namespace std;
 
 class A
 {
 public:
-	int *p;
+	int * p;
 
 	A()
 	{
@@ -41,7 +42,7 @@ void fun2()
 	A *p = new A();
 	p->fun();
 	//如果此时发生了异常则A不会被释放
-	delete p;
+	//delete p;
 }
 
 void main()
@@ -49,4 +50,7 @@ void main()
 	fun();
 	cout<<"============================="<<endl;
 	fun2();
+	cout<<"sizeof(A):"<<sizeof(A)<<endl;
+	cout<<"_CrtDumpMemoryLeaks:"<<_CrtDumpMemoryLeaks()<<endl;
+	getchar();
 }
