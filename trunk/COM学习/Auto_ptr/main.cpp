@@ -51,6 +51,7 @@ void main()
 	cout<<"============================="<<endl;
 	fun2();
 	cout<<"sizeof(A):"<<sizeof(A)<<endl;
-	cout<<"_CrtDumpMemoryLeaks:"<<_CrtDumpMemoryLeaks()<<endl;
+	//可在debug模式诊断内存泄露
+	_CrtDumpMemoryLeaks();
 	getchar();
 }
