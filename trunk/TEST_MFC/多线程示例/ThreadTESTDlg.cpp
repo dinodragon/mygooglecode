@@ -175,11 +175,9 @@ DWORD WINAPI Proc1(PVOID pParam)
 	for(int i=0;i<10;i++)
 	{
 		CAutoLock<CMutex> lock(&g_Mutex);
-		//g_Mutex.Lock();
 		((CThreadTESTDlg *)pParam)->GetDlgItemText(IDC_RICHEDIT21,temp);
 		add1(temp);
 		((CThreadTESTDlg *)pParam)->SetDlgItemText(IDC_RICHEDIT21,temp);
-		//g_Mutex.Unlock();
 	}
 	return 0;
 }
@@ -190,20 +188,16 @@ DWORD WINAPI Proc2(PVOID pParam)
 	for(int i=0;i<10;i++)
 	{
 		CAutoLock<CMutex> lock(&g_Mutex);
-		//g_Mutex.Lock();
 		((CThreadTESTDlg *)pParam)->GetDlgItemText(IDC_RICHEDIT21,temp);
 		add2(temp);
 		((CThreadTESTDlg *)pParam)->SetDlgItemText(IDC_RICHEDIT21,temp);
-		//g_Mutex.Unlock();
 	}
 	return 0;
 }
 
 VOID add1(CString &str)
 {
-	//g_Mutex.Lock();
 	str += TEXT("œﬂ≥Ã“ª£°\n");
-	//g_Mutex.Unlock();
 }
 
 VOID add2(CString &str)
