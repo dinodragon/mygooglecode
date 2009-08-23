@@ -1,2 +1,2 @@
-#import <MSXML4.dll>
+#import <MSXML6.dll>
 #include <MSXML2.h> 
