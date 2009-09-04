@@ -6,7 +6,7 @@ public:
 	CBase(){}
 	~CBase(){}
 
-	void Method()
+	void BaseMethod()
 	{
 		cout<<"Call CBase Method"<<endl;
 	}
@@ -17,7 +17,7 @@ class CMath: public CBase
 public:
 	CMath(){}
 	~CMath(){}
-	void Method()
+	void BaseMethod()
 	{
 		cout<<"Call CMath Method"<<endl;
 	}
@@ -32,6 +32,6 @@ public:
 	void CallBaseMethod()
 	{
 		T * pT = static_cast<T *>(this);
-		pT->Method();
+		pT->BaseMethod();
 	}
 };

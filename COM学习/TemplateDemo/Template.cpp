@@ -55,10 +55,14 @@ int main( int argc, char *argv[] )
 
 	cout<<"---------------------------------------------"<<endl;
 
-	CMath math;
-	math.Method();
-	((CBase)math).Method();
+	//CMath math;
+	//math.BaseMethod();
+	//((CBase)math).BaseMethod();
 
+	//用户自定义CMath类，new CComObject<CMath>()调用相应的方法就会调用到CMath的方法
+	//
+	//相当于CMath类是基类，CComObjcet是有虚函数的基类，
+	//CMath类指针转成CComObjcet指针后可以调用到函数在CMath类中的最新实现
 	CComObject<CMath> *pMath = new CComObject<CMath>();
 	pMath->CallBaseMethod();
 	delete pMath;
