@@ -24,6 +24,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultipleInheritance", "Mult
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Auto_ptr", "Auto_ptr\Auto_ptr.vcproj", "{A6B4A47A-66AF-4340-B876-8B5CFC978958}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemplateDemo", "TemplateDemo\TemplateDemo.vcproj", "{30286561-38FE-4673-B759-3C6837BCAED5}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -70,6 +72,10 @@ Global
 		{A6B4A47A-66AF-4340-B876-8B5CFC978958}.Debug|Win32.Build.0 = Debug|Win32
 		{A6B4A47A-66AF-4340-B876-8B5CFC978958}.Release|Win32.ActiveCfg = Release|Win32
 		{A6B4A47A-66AF-4340-B876-8B5CFC978958}.Release|Win32.Build.0 = Release|Win32
+		{30286561-38FE-4673-B759-3C6837BCAED5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{30286561-38FE-4673-B759-3C6837BCAED5}.Debug|Win32.Build.0 = Debug|Win32
+		{30286561-38FE-4673-B759-3C6837BCAED5}.Release|Win32.ActiveCfg = Release|Win32
+		{30286561-38FE-4673-B759-3C6837BCAED5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
