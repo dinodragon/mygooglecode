@@ -1,0 +1,55 @@
+VARIANT、COleVariant 和_variant_t
+
+在OLE、ActiveX和COM中，VARIANT数据类型提供了一种非常有效的机制，由于它既包含了数据本身，也包含了数据的类型，因而它可以实现各种不同的自动化数据的传输。下面让我们来看看OAIDL.H文件中VARIANT定义的一个简化版：
+
+struct tagVARIANT {
+　VARTYPE vt;
+　union {
+　　short iVal; // VT_I2.
+　　long lVal; // VT_I4.
+　　float fltVal; // VT_R4.
+　　double dblVal; // VT_R8.
+　　DATE date; // VT_DATE.
+　　BSTR bstrVal; // VT_BSTR.
+　　…
+　　short * piVal; // VT_BYREF|VT_I2.
+　　long * plVal; // VT_BYREF|VT_I4.
+　　float * pfltVal; // VT_BYREF|VT_R4.
+　　double * pdblVal; // VT_BYREF|VT_R8.
+　　DATE * pdate; // VT_BYREF|VT_DATE.
+　　BSTR * pbstrVal; // VT_BYREF|VT_BSTR.
+　};
+}; 
+
+　　显然，VARIANT类型是一个C结构，它包含了一个类型成员vt、一些保留字节以及一个大的union类型。例如，如果vt为VT_I2，那么我们可以从iVal中读出VARIANT的值。同样，当给一个VARIANT变量赋值时，也要先指明其类型。例如：
+
+VARIANT va;
+:: VariantInit(&va); // 初始化
+int a = 2002;
+va.vt = VT_I4; // 指明long数据类型
+va.lVal = a; // 赋值 
+
+　　为了方便处理VARIANT类型的变量，Windows还提供了这样一些非常有用的函数：
+
+　　VariantInit —— 将变量初始化为VT_EMPTY；
+
+　　VariantClear —— 消除并初始化VARIANT；
+
+　　VariantChangeType —— 改变VARIANT的类型；
+
+　　VariantCopy —— 释放与目标VARIANT相连的内存并复制源VARIANT。
+
+　　COleVariant类是对VARIANT结构的封装。它的构造函数具有极为强大大的功能，当对象构造时首先调用VariantInit进行初始化，然后根据参数中的标准类型调用相应的构造函数，并使用VariantCopy进行转换赋值操作，当VARIANT对象不在有效范围时，它的析构函数就会被自动调用，由于析构函数调用了VariantClear，因而相应的内存就会被自动清除。除此之外，COleVariant的赋值操作符在与VARIANT类型转换中为我们提供极大的方便。例如下面的代码：
+
+COleVariant v1("This is a test"); // 直接构造
+COleVariant v2 = "This is a test"; 
+// 结果是VT_BSTR类型，值为"This is a test"
+COleVariant v3((long)2002);
+COleVariant v4 = (long)2002;
+// 结果是VT_I4类型，值为2002 
+
+　　_variant_t是一个用于COM的VARIANT类，它的功能与COleVariant相似。不过在Visual C++.NET的MFC应用程序中使用时需要在代码文件前面添加下列两句：
+
+　　#include "comutil.h"
+
+　　#pragma comment( lib, "comsupp.lib" )
