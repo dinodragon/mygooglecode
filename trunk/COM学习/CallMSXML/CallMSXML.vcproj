@@ -199,6 +199,10 @@
 			RelativePath=".\test.xml"
 			>
 		</File>
+		<File
+			RelativePath=".\相关知识.txt"
+			>
+		</File>
 	</Files>
 	<Globals>
 	</Globals>
