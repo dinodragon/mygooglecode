@@ -3,12 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TEST_FTP", "TEST_MyLogin.vcproj", "{3EB7A608-1770-4483-A101-018D0831EFA8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FtpDownLoader", "FtpDownLoader\FtpDownLoader.vcproj", "{42E3D0B5-2CE5-4D81-A3B5-B16FC90F4895}"
+EndProject
 Global
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 2
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = TEST_MyLogin.vcproj
-		SccLocalPath1 = .
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +19,10 @@ Global
 		{3EB7A608-1770-4483-A101-018D0831EFA8}.Debug|Win32.Build.0 = Debug|Win32
 		{3EB7A608-1770-4483-A101-018D0831EFA8}.Release|Win32.ActiveCfg = Release|Win32
 		{3EB7A608-1770-4483-A101-018D0831EFA8}.Release|Win32.Build.0 = Release|Win32
+		{42E3D0B5-2CE5-4D81-A3B5-B16FC90F4895}.Debug|Win32.ActiveCfg = Debug|Win32
+		{42E3D0B5-2CE5-4D81-A3B5-B16FC90F4895}.Debug|Win32.Build.0 = Debug|Win32
+		{42E3D0B5-2CE5-4D81-A3B5-B16FC90F4895}.Release|Win32.ActiveCfg = Release|Win32
+		{42E3D0B5-2CE5-4D81-A3B5-B16FC90F4895}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
