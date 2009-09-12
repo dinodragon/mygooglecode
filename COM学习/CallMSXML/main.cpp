@@ -25,6 +25,7 @@ void main()
 		return;
 	}
 
+	//variant_t 是VARIANT的包装类
 	variant_t varXML(L"..\\CallMSXML\\test.XML");
 	VARIANT_BOOL varOut;
 	hr = XMLFile->load(varXML, &varOut);
@@ -33,10 +34,11 @@ void main()
 	assert(SUCCEEDED(hr));
 
 	BSTR version = SysAllocString(L"");
+	//VARIANT 是一种可存储多数类型的结构
 	VARIANT verValue;
 	hr = XMLRoot->getAttribute(L"version",&verValue);
-	wcout<<wstring(verValue.bstrVal).c_str()<<endl;
 	assert(SUCCEEDED(hr));
+	wcout<<"Version:"<<wstring(verValue.bstrVal).c_str()<<endl;
 
 	hr = XMLFile->selectSingleNode(L"root/Error",&pNode);
 	assert(SUCCEEDED(hr));
