@@ -8,8 +8,9 @@ void main()
 {
 	IXMLDOMDocumentPtr XMLFile = NULL; 
 	IXMLDOMElement * XMLRoot = NULL; 
-	IXMLDOMNodeList * XMLChildNodes = NULL;
-	IXMLDOMNode * pRootNode= NULL;
+	IXMLDOMNodeList * pNodeList = NULL;
+	IXMLDOMNode * pNode= NULL;
+	IXMLDOMNamedNodeMap * pNodeMap = NULL;
 	long len = 0;
 	HRESULT hr = S_FALSE;
 
@@ -31,19 +32,32 @@ void main()
 	hr = XMLFile->get_documentElement(&XMLRoot); 
 	assert(SUCCEEDED(hr));
 
-	hr = XMLFile->selectSingleNode(L"root/name",&pRootNode);
+	BSTR version = SysAllocString(L"");
+	VARIANT verValue;
+	hr = XMLRoot->getAttribute(L"version",&verValue);
+	wcout<<wstring(verValue.bstrVal).c_str()<<endl;
 	assert(SUCCEEDED(hr));
 
-	BSTR text = SysAllocStringLen(L"",100);
-	hr = pRootNode->get_text(&text);
-	wstring str = wstring(text);
-	cout<<str.c_str()<<endl;
+	hr = XMLFile->selectSingleNode(L"root/Error",&pNode);
+	assert(SUCCEEDED(hr));
+	hr = pNode->get_attributes(&pNodeMap);
 	assert(SUCCEEDED(hr));
 
-	hr = XMLRoot->get_childNodes(&XMLChildNodes);
+	BSTR nodeName = SysAllocString(L"");
+	BSTR text = SysAllocString(L"");
+	hr = XMLFile->selectSingleNode(L"root/SessionId",&pNode);
+	assert(SUCCEEDED(hr));
+	hr = pNode->get_text(&text);
+	assert(SUCCEEDED(hr));
+	hr = pNode->get_nodeName(&nodeName);
+	assert(SUCCEEDED(hr));
+	wcout<<wstring(nodeName).c_str()<<":"<<wstring(text).c_str()<<endl;
+
+
+	hr = XMLRoot->get_childNodes(&pNodeList);
 	assert(SUCCEEDED(hr));
 
-	hr = XMLChildNodes->get_length(&len);
+	hr = pNodeList->get_length(&len);
 	assert(SUCCEEDED(hr));
 
 	cout<<len<<endl;
