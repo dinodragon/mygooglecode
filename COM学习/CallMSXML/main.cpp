@@ -62,7 +62,7 @@ void main()
 	hr = pNodeList->get_length(&len);
 	assert(SUCCEEDED(hr));
 
-	cout<<len<<endl;
+	cout<<"ChildNodesLength:"<<len<<endl;
 	XMLRoot->Release();
 	XMLFile.Release();
 }
