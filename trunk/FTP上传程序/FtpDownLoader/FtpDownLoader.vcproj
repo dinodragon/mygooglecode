@@ -2,13 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="8.00"
-	Name="TEST_FTP"
-	ProjectGUID="{3EB7A608-1770-4483-A101-018D0831EFA8}"
-	RootNamespace="TEST_MyLogin"
-	SccProjectName="Svn"
-	SccAuxPath="Svn"
-	SccLocalPath="Svn"
-	SccProvider="SubversionScc"
+	Name="FtpDownLoader"
+	ProjectGUID="{42E3D0B5-2CE5-4D81-A3B5-B16FC90F4895}"
+	RootNamespace="FtpDownLoader"
 	Keyword="MFCProj"
 	>
 	<Platforms>
@@ -25,7 +21,7 @@
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
 			UseOfMFC="2"
-			CharacterSet="2"
+			CharacterSet="1"
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
@@ -106,8 +102,8 @@
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
-			UseOfMFC="1"
-			CharacterSet="2"
+			UseOfMFC="2"
+			CharacterSet="1"
 			WholeProgramOptimization="1"
 			>
 			<Tool
@@ -132,7 +128,7 @@
 				Name="VCCLCompilerTool"
 				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG"
 				MinimalRebuild="false"
-				RuntimeLibrary="0"
+				RuntimeLibrary="2"
 				UsePrecompiledHeader="2"
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="true"
@@ -194,11 +190,11 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\DataSocket.cpp"
+				RelativePath=".\FtpDownLoader.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\ListenSocket.cpp"
+				RelativePath=".\FtpDownLoaderDlg.cpp"
 				>
 			</File>
 			<File
@@ -221,22 +217,6 @@
 					/>
 				</FileConfiguration>
 			</File>
-			<File
-				RelativePath=".\TEST_MyLogin.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\TEST_MyLoginDlg.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\UpdateAHost.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\upsock.cpp"
-				>
-			</File>
 		</Filter>
 		<Filter
 			Name="头文件"
@@ -244,11 +224,11 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath=".\DataSocket.h"
+				RelativePath=".\FtpDownLoader.h"
 				>
 			</File>
 			<File
-				RelativePath=".\ListenSocket.h"
+				RelativePath=".\FtpDownLoaderDlg.h"
 				>
 			</File>
 			<File
@@ -259,22 +239,6 @@
 				RelativePath=".\stdafx.h"
 				>
 			</File>
-			<File
-				RelativePath=".\TEST_MyLogin.h"
-				>
-			</File>
-			<File
-				RelativePath=".\TEST_MyLoginDlg.h"
-				>
-			</File>
-			<File
-				RelativePath=".\UpdateAHost.h"
-				>
-			</File>
-			<File
-				RelativePath=".\upsock.h"
-				>
-			</File>
 		</Filter>
 		<Filter
 			Name="资源文件"
@@ -282,15 +246,15 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 			<File
-				RelativePath=".\res\TEST_MyLogin.ico"
+				RelativePath=".\res\FtpDownLoader.ico"
 				>
 			</File>
 			<File
-				RelativePath=".\TEST_MyLogin.rc"
+				RelativePath=".\FtpDownLoader.rc"
 				>
 			</File>
 			<File
-				RelativePath=".\res\TEST_MyLogin.rc2"
+				RelativePath=".\res\FtpDownLoader.rc2"
 				>
 			</File>
 		</Filter>
@@ -302,7 +266,7 @@
 	<Globals>
 		<Global
 			Name="RESOURCE_FILE"
-			Value="TEST_MyLogin.rc"
+			Value="FtpDownLoader.rc"
 		/>
 	</Globals>
 </VisualStudioProject>
