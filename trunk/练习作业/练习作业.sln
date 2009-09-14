@@ -59,6 +59,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "向量操作练习", "向�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DLL学习", "DLL学习\DLL学习.vcproj", "{98FE10EB-48C3-4B2D-A97B-24983441400D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "内存分配", "内存分配\内存分配.vcproj", "{97722AAB-C8B7-416C-B309-C7A66143DA91}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -185,6 +187,10 @@ Global
 		{98FE10EB-48C3-4B2D-A97B-24983441400D}.Debug|Win32.Build.0 = Debug|Win32
 		{98FE10EB-48C3-4B2D-A97B-24983441400D}.Release|Win32.ActiveCfg = Release|Win32
 		{98FE10EB-48C3-4B2D-A97B-24983441400D}.Release|Win32.Build.0 = Release|Win32
+		{97722AAB-C8B7-416C-B309-C7A66143DA91}.Debug|Win32.ActiveCfg = Debug|Win32
+		{97722AAB-C8B7-416C-B309-C7A66143DA91}.Debug|Win32.Build.0 = Debug|Win32
+		{97722AAB-C8B7-416C-B309-C7A66143DA91}.Release|Win32.ActiveCfg = Release|Win32
+		{97722AAB-C8B7-416C-B309-C7A66143DA91}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
