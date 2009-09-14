@@ -2,64 +2,196 @@
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "菱形图案", "菱形图案\菱形图案.vcproj", "{04A11956-EECD-4F11-BB15-7D3725949D32}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "进位制转换", "进位制转换2\进位制转换2.vcproj", "{4AE764C4-CFBB-47A4-813D-6E352EB0D58A}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "两数相除", "两数相除\两数相除.vcproj", "{758DC675-7B30-41CD-8385-E15304025459}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "计算阶乘", "计算阶乘\计算阶乘.vcproj", "{9E1CC97F-A017-4676-9113-CF9AD0E32976}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "表达式", "表达式\表达式.vcproj", "{5F225C70-4AB9-4346-969C-ED3F0AE6FB13}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "变量占用字节数", "变量占用字节数\变量占用字节数.vcproj", "{13693E07-23D8-46EC-9AFD-55892BE3B15D}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "计算PI", "计算PI\计算PI.vcproj", "{780804CB-4CAD-4F1E-8DE4-39858585C163}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "打印素数表", "打印素数表\打印素数表.vcproj", "{249DE325-219A-4053-ADCE-60C0A8A46C6A}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "迷宫问题", "迷宫问题\迷宫问题.vcproj", "{9FD82687-154A-4F86-9334-E5A5B7A503EB}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "链表练习", "链表练习\链表练习.vcproj", "{3DD74386-98C7-486C-BB7F-81C9A6816DCE}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "求解PI的怪异代码", "求解PI的怪异代码\求解PI的怪异代码.vcproj", "{0098E12F-F1C9-48BF-A85B-DA2AF4F792D8}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "打印整数二进制位", "打印整数二进制位\打印整数二进制位.vcproj", "{44738111-B109-432D-89A2-F4C7076C4995}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "计算均方差", "计算均方差\计算均方差.vcproj", "{34459558-62CD-4481-8DFE-A964AC6B4692}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C3_9读取文件汇总日期", "C3_9读取文件汇总日期\C3_9读取文件汇总日期.vcproj", "{6C007A1E-D7FF-486B-B2F5-393379DE9174}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "重载操作符练习", "重载操作符练习\重载操作符练习.vcproj", "{A059DE14-86F6-44E1-B1DD-2013CD3137B4}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "枚举类型", "枚举类型\枚举类型.vcproj", "{B47886D2-8FDF-4FCF-9316-4C928C9D7A28}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "组合练习", "组合练习\组合练习.vcproj", "{CDE8C3DE-6DED-4843-99A5-61749ACE89B0}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "计算素数个数", "计算素数个数\计算素数个数.vcproj", "{C81A6F9D-7155-47FF-AC11-AEEB3D0F981B}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "菲波切纳", "菲波切纳\菲波切纳.vcproj", "{B68C9EDD-DF9E-41E6-9D84-AFDB16EA415D}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "西格玛数列", "西格玛数列\西格玛数列.vcproj", "{E59EFA7A-7555-483D-BC4C-0D6E435B38B1}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "字符串可排列相等", "字符串可排列相等\字符串可排列相等.vcproj", "{88F7AF5B-4798-46AB-AE1C-CB5E63E2ADB8}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "求平均数", "求平均数\求平均数.vcproj", "{94BC0097-62F9-42B2-B7D7-B5411A94F2F0}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCM编码", "PCM编码\PCM编码.vcproj", "{DF24E332-68F4-4F26-B122-D6663E8C08AA}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCM译码", "PCM译码\PCM译码.vcproj", "{053B9470-F9DE-4EAD-8F85-EDEC251BFA28}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "程序组织结构练习", "程序组织结构练习\程序组织结构练习.vcproj", "{7DFA1745-C034-4DC3-8CE4-592DBF1E95AA}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "二进制转十进制", "二进制转十进制\二进制转十进制.vcproj", "{F9579693-7F8D-4C56-AF0C-FD8FFF1FFE09}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "统计负数个数", "统计负数个数\统计负数个数.vcproj", "{64A76798-DBD6-4035-964F-F680ACF50405}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "向量操作练习", "向量操作练习\向量操作练习.vcproj", "{2CD0C888-F0CC-4B9B-8A66-7872051BBF43}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DLL学习", "DLL学习\DLL学习.vcproj", "{98FE10EB-48C3-4B2D-A97B-24983441400D}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "内存分配", "内存分配\内存分配.vcproj", "{97722AAB-C8B7-416C-B309-C7A66143DA91}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "C++程序设计习题", "C++程序设计习题", "{35041915-7269-4372-86BE-D15F0F7B7F0B}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PCM", "PCM", "{C8082EEA-9402-48FE-8A4C-12F69BCB05D5}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
@@ -194,5 +326,21 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6C007A1E-D7FF-486B-B2F5-393379DE9174} = {35041915-7269-4372-86BE-D15F0F7B7F0B}
+		{B68C9EDD-DF9E-41E6-9D84-AFDB16EA415D} = {35041915-7269-4372-86BE-D15F0F7B7F0B}
+		{9E1CC97F-A017-4676-9113-CF9AD0E32976} = {35041915-7269-4372-86BE-D15F0F7B7F0B}
+		{34459558-62CD-4481-8DFE-A964AC6B4692} = {35041915-7269-4372-86BE-D15F0F7B7F0B}
+		{C81A6F9D-7155-47FF-AC11-AEEB3D0F981B} = {35041915-7269-4372-86BE-D15F0F7B7F0B}
+		{4AE764C4-CFBB-47A4-813D-6E352EB0D58A} = {35041915-7269-4372-86BE-D15F0F7B7F0B}
+		{758DC675-7B30-41CD-8385-E15304025459} = {35041915-7269-4372-86BE-D15F0F7B7F0B}
+		{04A11956-EECD-4F11-BB15-7D3725949D32} = {35041915-7269-4372-86BE-D15F0F7B7F0B}
+		{E59EFA7A-7555-483D-BC4C-0D6E435B38B1} = {35041915-7269-4372-86BE-D15F0F7B7F0B}
+		{64A76798-DBD6-4035-964F-F680ACF50405} = {35041915-7269-4372-86BE-D15F0F7B7F0B}
+		{94BC0097-62F9-42B2-B7D7-B5411A94F2F0} = {35041915-7269-4372-86BE-D15F0F7B7F0B}
+		{44738111-B109-432D-89A2-F4C7076C4995} = {35041915-7269-4372-86BE-D15F0F7B7F0B}
+		{053B9470-F9DE-4EAD-8F85-EDEC251BFA28} = {C8082EEA-9402-48FE-8A4C-12F69BCB05D5}
+		{DF24E332-68F4-4F26-B122-D6663E8C08AA} = {C8082EEA-9402-48FE-8A4C-12F69BCB05D5}
 	EndGlobalSection
 EndGlobal
