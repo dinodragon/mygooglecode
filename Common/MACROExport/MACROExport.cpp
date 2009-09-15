@@ -7,5 +7,6 @@ using namespace std;
 void main()
 {
 	cout<<SHOWMACOR(HELLO)<<endl;
+	cout<<HELLO<<endl;
 }
 
