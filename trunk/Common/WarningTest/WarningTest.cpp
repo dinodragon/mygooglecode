@@ -1,4 +1,4 @@
-#include <iostream>
+#include "stdafx.h"
 //该头文件中会产生一个4244警告
 #include "WarningTest.h"
 using namespace std;
