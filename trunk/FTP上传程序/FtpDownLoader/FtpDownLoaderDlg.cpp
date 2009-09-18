@@ -91,8 +91,8 @@ HCURSOR CFtpDownLoaderDlg::OnQueryDragIcon()
 void CFtpDownLoaderDlg::OnBnClickedOk()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	CInternetSession * m_pInetSession = new CInternetSession;   
-	CFtpConnection *  m_pFtpConnection = m_pInetSession->GetFtpConnection(TEXT("bookserver"),TEXT("aa"),TEXT("aa"),21,FALSE);   
+	std::auto_ptr<CInternetSession> m_pInetSession(new CInternetSession);   
+	std::auto_ptr<CFtpConnection> m_pFtpConnection(m_pInetSession->GetFtpConnection(TEXT("bookserver"),TEXT("aa"),TEXT("aa"),21,FALSE));
 
 	if(m_pFtpConnection->GetFile(TEXT("a\\trace.log"),TEXT("c:\\1.log"),FALSE,FILE_ATTRIBUTE_NORMAL,FTP_TRANSFER_TYPE_BINARY,1))
 	{   
@@ -102,10 +102,5 @@ void CFtpDownLoaderDlg::OnBnClickedOk()
 	m_pFtpConnection->GetCurrentDirectory(str);
 	m_pInetSession->Close();
 	m_pFtpConnection->Close();
-	delete m_pFtpConnection;
-	m_pFtpConnection = NULL;
- 	delete m_pInetSession;
-	m_pInetSession = NULL;
-	
 	//OnOK();
 }
