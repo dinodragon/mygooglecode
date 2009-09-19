@@ -240,7 +240,6 @@
 		<Filter
 			Name="生成的文件"
 			UniqueIdentifier="{67DA6AC5-F800-4c08-8B7A-83BB121AAD01}"
-			SourceControlFiles="false"
 			>
 			<File
 				RelativePath=".\localhost.h"
