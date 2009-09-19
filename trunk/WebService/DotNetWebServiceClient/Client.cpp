@@ -1,6 +1,6 @@
-#include <iostream>
-#include <assert.h>
+#include "stdafx.h"
 #include "WebService.h"
+
 using namespace std;
 using namespace MyService;
 
@@ -12,5 +12,6 @@ void main()
 	HRESULT hr = p->Add(234,4,&result);
 	cout<<result<<endl;
 	assert(SUCCEEDED(hr));
+	_CrtDumpMemoryLeaks();
 	CoUninitialize();
 }
