@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tools", "Tools\Tools.vcproj", "{9E10D399-4479-4EFC-A329-3F38FDF4E54F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelectFolder", "SelectFolder\SelectFolder.vcproj", "{E8C6B023-1E28-4B56-A788-A6EBF1F08D14}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -17,6 +19,10 @@ Global
 		{9E10D399-4479-4EFC-A329-3F38FDF4E54F}.Debug|Win32.Build.0 = Debug|Win32
 		{9E10D399-4479-4EFC-A329-3F38FDF4E54F}.Release|Win32.ActiveCfg = Release|Win32
 		{9E10D399-4479-4EFC-A329-3F38FDF4E54F}.Release|Win32.Build.0 = Release|Win32
+		{E8C6B023-1E28-4B56-A788-A6EBF1F08D14}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E8C6B023-1E28-4B56-A788-A6EBF1F08D14}.Debug|Win32.Build.0 = Debug|Win32
+		{E8C6B023-1E28-4B56-A788-A6EBF1F08D14}.Release|Win32.ActiveCfg = Release|Win32
+		{E8C6B023-1E28-4B56-A788-A6EBF1F08D14}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
