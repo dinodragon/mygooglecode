@@ -101,7 +101,7 @@ BOOL CShowCompileTimeDlg::OnInitDialog()
 	std::string strTime(__TIME__);
 	std::string strDate(__DATE__);
 	std::string strDateTime = strDate + "  " + strTime;
-	std::wstring wstrDateTime(strDateTime.begin(),strDateTime.end()); 
+	std::wstring wstrDateTime(strDateTime.begin(),strDateTime.end()); //这种转换方式不支持中文
 	SetDlgItemText(IDC_SHOWTIME,wstrDateTime.c_str());
 
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
@@ -164,7 +164,7 @@ BOOL CAboutDlg::OnInitDialog()
 	std::string strTime(__TIME__);
 	std::string strDate(__DATE__);
 	std::string strDateTime = strDate + "  " + strTime;
-	std::wstring wstrDateTime(strDateTime.begin(),strDateTime.end()); 
+	std::wstring wstrDateTime(strDateTime.begin(),strDateTime.end()); //这种方式不支持中文
 	SetDlgItemText(IDC_COMPILETIME,wstrDateTime.c_str());
 	return TRUE;  // return TRUE unless you set the focus to a control
 	// 异常: OCX 属性页应返回 FALSE
