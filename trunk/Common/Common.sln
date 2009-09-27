@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PackSizeofTest", "PackSizeo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Precompiler", "Precompiler\Precompiler.vcproj", "{834D2A5B-57C5-4292-8222-6D65CBCDE2B1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShowCompileTime", "ShowCompileTime\ShowCompileTime.vcproj", "{DB0E2F2B-60AC-421D-8D83-AEDF18268EDA}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -35,6 +37,10 @@ Global
 		{834D2A5B-57C5-4292-8222-6D65CBCDE2B1}.Debug|Win32.Build.0 = Debug|Win32
 		{834D2A5B-57C5-4292-8222-6D65CBCDE2B1}.Release|Win32.ActiveCfg = Release|Win32
 		{834D2A5B-57C5-4292-8222-6D65CBCDE2B1}.Release|Win32.Build.0 = Release|Win32
+		{DB0E2F2B-60AC-421D-8D83-AEDF18268EDA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DB0E2F2B-60AC-421D-8D83-AEDF18268EDA}.Debug|Win32.Build.0 = Debug|Win32
+		{DB0E2F2B-60AC-421D-8D83-AEDF18268EDA}.Release|Win32.ActiveCfg = Release|Win32
+		{DB0E2F2B-60AC-421D-8D83-AEDF18268EDA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
