@@ -78,24 +78,77 @@ void CSelectFolderDlg::OnPaint()
 }
 
 //当用户拖动最小化窗口时系统调用此函数取得光标显示。
-//
 HCURSOR CSelectFolderDlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+int CALLBACK BrowseCallbackProc(HWND hwnd, UINT uMsg, LPARAM lParam, LPARAM lpData) 
+{ 
+	static HWND hWndEdit = NULL;
+	switch(uMsg)
+	{ 
+	case BFFM_INITIALIZED:
+		{
+			HWND hChildWindow;
+			hChildWindow = GetWindow(hwnd, GW_CHILD);
+			while(hChildWindow)
+			{
+				TCHAR szClass[MAX_PATH];
+				GetClassName(hChildWindow, szClass, MAX_PATH);
+				if(0 == wcscmp(szClass, L"Edit"))
+				{
+					hWndEdit = hChildWindow;
+					break;
+				}
+				hChildWindow = GetNextWindow(hChildWindow, GW_HWNDNEXT);
+			}
+			::SendMessage(hwnd,BFFM_SETSELECTION,TRUE,lpData); 
+		}
+		break;
+	case BFFM_VALIDATEFAILED:
+		{
+			MessageBoxW(hwnd, _T("路径不合法，请重新输入！"), _T("自动监控"), MB_ICONWARNING|MB_OK);
+			return 1;
+		}
+		break;
+	case BFFM_SELCHANGED:
+		{
+			TCHAR buf[MAX_PATH];
+			if (::SHGetPathFromIDList((LPITEMIDLIST) lParam ,buf)) 
+			{
+				if(hWndEdit != NULL)
+					SetWindowText(hWndEdit, buf);
+			}
+			else
+				::SendMessage(hwnd, BFFM_ENABLEOK, 0, 0);
+		}
+		break;
+	}
+	return 0; 
+} 
 
 void CSelectFolderDlg::OnBnClickedOk()
 {
-	// TODO: 在此添加控件通知处理程序代码
-	CString pathSelected;
-	CFolderDialog dlg(&pathSelected);
-	if (dlg.DoModal() == IDOK)
-	{
-		// pathSelected contain the selected folder.
-		AfxMessageBox(pathSelected); 
-	}
-
+	CoInitialize(NULL);
+	BROWSEINFO bi;
+	TCHAR   Buffer[512]=L"";   
+	TCHAR   FullPath[512]=L"";   
+	bi.hwndOwner = m_hWnd; 
+	bi.pidlRoot = NULL;   
+	bi.pszDisplayName   =   Buffer; 
+	bi.lpszTitle   =   L"选择监控目录"; 
+	bi.ulFlags   =  BIF_EDITBOX|BIF_VALIDATE | BIF_NEWDIALOGSTYLE|BIF_NONEWFOLDERBUTTON  ;
+	bi.lpfn   =   BrowseCallbackProc;
+	TCHAR initPath[] = L"";
+	bi.lParam   =  (LPARAM)initPath;   
+	bi.iImage   =   0;   
+	ITEMIDLIST* pidl = ::SHBrowseForFolder(&bi);
+	if(::SHGetPathFromIDList(pidl,FullPath))
+	{   
+		AfxMessageBox(FullPath);
+	}   
+	CoUninitialize();
 	//OnOK();
 }
 
