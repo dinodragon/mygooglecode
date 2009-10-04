@@ -4,7 +4,7 @@
 #pragma once
 #import   "C:\Program Files\Common Files\Microsoft Shared\OFFICE12\MSO.DLL"   
 #import   "C:\Program Files\Common Files\Microsoft Shared\VBA\VBA6\VBE6EXT.OLB"   
-#import   "C:\Program Files\Microsoft Office\Office12\msword.olb"  rename("FindText","_FindText"), rename("ExitWindows","_ExitWindows")   
+#import   "D:\Program Files\Microsoft Office\Office12\msword.olb"  rename("FindText","_FindText"), rename("ExitWindows","_ExitWindows")   
 using namespace Word;
 
 // CCallWordWithComDlg ¶Ô»°¿ò
