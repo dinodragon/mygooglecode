@@ -5,6 +5,7 @@
 #include "Windows.h"
 #include "psapi.h"
 #include <string>
+#pragma 
 using namespace std;
 
 BOOL IsProcessContainModName(DWORD dwProcessId,LPCTSTR szModeName);
@@ -13,7 +14,7 @@ BOOL GetProcessMemInfo(LPCTSTR,PROCESS_MEMORY_COUNTERS *);
 int _tmain(int argc, _TCHAR* argv[])
 {
 	PROCESS_MEMORY_COUNTERS pmc;
-	BOOL b = GetProcessMemInfo(L"QaQ.exe",&pmc);
+	BOOL b = GetProcessMemInfo(L"QQ.exe",&pmc);
 	if (!b)
 	{
 		return 0;
@@ -26,10 +27,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	wsprintf(chBuf,_T("\t缺页中断次数: %d\n"), pmc.PageFaultCount/1024 );
 	OutputDebugString(chBuf);
 
-	wsprintf(chBuf,_T("\t工作集高峰: %d\n"), pmc.PeakWorkingSetSize/1024);
+	wsprintf(chBuf,_T("\t内存使用高峰: %d\n"), pmc.PeakWorkingSetSize/1024);
 	OutputDebugString(chBuf);
 
-	wsprintf(chBuf,_T("\t工作集: %d\n"), pmc.WorkingSetSize/1024 );
+	wsprintf(chBuf,_T("\t内存使用: %d\n"), pmc.WorkingSetSize/1024 );
 	OutputDebugString(chBuf);
 
 	wsprintf(chBuf,_T("\t使用页面缓存池高峰: %d\n"),pmc.QuotaPeakPagedPoolUsage/1024);
