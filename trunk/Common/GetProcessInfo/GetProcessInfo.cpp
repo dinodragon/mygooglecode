@@ -2,6 +2,7 @@
 //
 
 #include "stdafx.h"
+#include <iostream>
 #include "Windows.h"
 #include "psapi.h"
 #include <string>
@@ -14,7 +15,7 @@ BOOL GetProcessMemInfo(LPCTSTR,PROCESS_MEMORY_COUNTERS *);
 int _tmain(int argc, _TCHAR* argv[])
 {
 	PROCESS_MEMORY_COUNTERS pmc;
-	BOOL b = GetProcessMemInfo(L"QQ.exe",&pmc);
+	BOOL b = GetProcessMemInfo(_T("QQ.exe"),&pmc);
 	if (!b)
 	{
 		return 0;
@@ -23,35 +24,34 @@ int _tmain(int argc, _TCHAR* argv[])
 	const int nBufSize = 512;
 	TCHAR chBuf[nBufSize];
 	ZeroMemory(chBuf,nBufSize);
+	wsprintf(chBuf,_T("缺页中断次数: %d"), pmc.PageFaultCount/1024 );
+	wcout<<chBuf<<endl;
 
-	wsprintf(chBuf,_T("\t缺页中断次数: %d\n"), pmc.PageFaultCount/1024 );
-	OutputDebugString(chBuf);
+	wsprintf(chBuf,_T("内存使用高峰: %d"), pmc.PeakWorkingSetSize/1024);
+	wcout<<chBuf<<endl;
 
-	wsprintf(chBuf,_T("\t内存使用高峰: %d\n"), pmc.PeakWorkingSetSize/1024);
-	OutputDebugString(chBuf);
+	wsprintf(chBuf,_T("内存使用: %d"), pmc.WorkingSetSize/1024 );
+	wcout<<chBuf<<endl;
 
-	wsprintf(chBuf,_T("\t内存使用: %d\n"), pmc.WorkingSetSize/1024 );
-	OutputDebugString(chBuf);
+	wsprintf(chBuf,_T("使用页面缓存池高峰: %d"),pmc.QuotaPeakPagedPoolUsage/1024);
+	wcout<<chBuf<<endl;
 
-	wsprintf(chBuf,_T("\t使用页面缓存池高峰: %d\n"),pmc.QuotaPeakPagedPoolUsage/1024);
-	OutputDebugString(chBuf);
+	wsprintf(chBuf,_T("使用页面缓存池: %d"),pmc.QuotaPagedPoolUsage/1024);
+	wcout<<chBuf<<endl;
 
-	wsprintf(chBuf,_T("\t使用页面缓存池: %d\n"),pmc.QuotaPagedPoolUsage/1024);
-	OutputDebugString(chBuf);
+	wsprintf(chBuf,_T("使用非分页缓存池高峰: %d"),pmc.QuotaPeakNonPagedPoolUsage/1024);
+	wcout<<chBuf<<endl;
 
-	wsprintf(chBuf,_T("\t使用非分页缓存池高峰: %d\n"),pmc.QuotaPeakNonPagedPoolUsage/1024);
-	OutputDebugString(chBuf);
+	wsprintf(chBuf,_T("使用非分页缓存池: %d"),pmc.QuotaNonPagedPoolUsage/1024);
+	wcout<<chBuf<<endl;
 
-	wsprintf(chBuf,_T("\t使用非分页缓存池: %d\n"),pmc.QuotaNonPagedPoolUsage/1024);
-	OutputDebugString(chBuf);
+	wsprintf(chBuf,_T("使用分页文件: %d"), pmc.PagefileUsage/1024); 
+	wcout<<chBuf<<endl;
 
-	wsprintf(chBuf,_T("\t使用分页文件: %d\n"), pmc.PagefileUsage/1024); 
-	OutputDebugString(chBuf);
+	wsprintf(chBuf,_T("使用分页文件的高峰: %d"), pmc.PeakPagefileUsage/1024);
+	wcout<<chBuf<<endl;
 
-	wsprintf(chBuf,_T("\t使用分页文件的高峰: %d\n"), pmc.PeakPagefileUsage/1024);
-	OutputDebugString(chBuf);
-
-	wsprintf(chBuf,_T("\t使用分页文件的高峰: %d\n"), pmc.PeakPagefileUsage );
+	wsprintf(chBuf,_T("使用分页文件的高峰: %d"), pmc.PeakPagefileUsage );
 
 	return 0;
 }
@@ -86,7 +86,7 @@ BOOL GetProcessMemInfo(LPCTSTR szModeName ,PROCESS_MEMORY_COUNTERS * ppmc)
 
 BOOL IsProcessContainModName(DWORD dwProcessId,LPCTSTR szModeName)
 {
-	wstring NeedFindModName(szModeName);
+	string NeedFindModName(szModeName);
 	HMODULE * hModules = NULL;
 	DWORD m_dwModCount = 0;
 	DWORD nalloc = 1024;
