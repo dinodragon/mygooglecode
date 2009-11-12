@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" loadImage="GetImages" onLoad="Ribbon_Load" >
+  <ribbon startFromScratch="false">
+    <tabs>
+      <tab id="CustomTab" label="自定义插件">
+        <group id="SampleGroup" label="标签">
+          <toggleButton id="ToggleButton1" size="large" label="标签    " getEnabled="GetEnabled" image="Label.png" getPressed="GetPressed" onAction="OnStandardToggle" supertip="打开标签任务窗格."/>
+          <toggleButton id="ToggleButton2" size="large" label="结构    " getEnabled="GetEnabled" image="Struct.png" getPressed="GetPressed" onAction="OnStandardToggle"  supertip="打开结构任务窗格."/>
+          <toggleButton id="ToggleButton3" size="large" label="属性    " getEnabled="GetEnabled" image="Attribute.png" getPressed="GetPressed" onAction="OnStandardToggle" supertip="打开属性任务窗格." />
+          <dialogBoxLauncher>
+            <button id="Launcher1" screentip="模板和加载项" getEnabled="GetEnabled" onAction="OnStandardLauncher" supertip="管理附加到此文档的XML架构，或添加新架构."/>
+          </dialogBoxLauncher>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
