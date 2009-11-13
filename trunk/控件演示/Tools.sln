@@ -5,6 +5,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tools", "Tools\Tools.vcproj
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelectFolder", "SelectFolder\SelectFolder.vcproj", "{E8C6B023-1E28-4B56-A788-A6EBF1F08D14}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelFolderDll", "SelFolderDll\SelFolderDll.vcproj", "{BF4713DB-F6F9-4CA8-AD01-AF064DB08912}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CallSelFolderDll", "CallSelFolderDll\CallSelFolderDll.vcproj", "{19ED5133-BAD5-4EE0-99F2-B5426E994340}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -23,6 +27,14 @@ Global
 		{E8C6B023-1E28-4B56-A788-A6EBF1F08D14}.Debug|Win32.Build.0 = Debug|Win32
 		{E8C6B023-1E28-4B56-A788-A6EBF1F08D14}.Release|Win32.ActiveCfg = Release|Win32
 		{E8C6B023-1E28-4B56-A788-A6EBF1F08D14}.Release|Win32.Build.0 = Release|Win32
+		{BF4713DB-F6F9-4CA8-AD01-AF064DB08912}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BF4713DB-F6F9-4CA8-AD01-AF064DB08912}.Debug|Win32.Build.0 = Debug|Win32
+		{BF4713DB-F6F9-4CA8-AD01-AF064DB08912}.Release|Win32.ActiveCfg = Release|Win32
+		{BF4713DB-F6F9-4CA8-AD01-AF064DB08912}.Release|Win32.Build.0 = Release|Win32
+		{19ED5133-BAD5-4EE0-99F2-B5426E994340}.Debug|Win32.ActiveCfg = Debug|Win32
+		{19ED5133-BAD5-4EE0-99F2-B5426E994340}.Debug|Win32.Build.0 = Debug|Win32
+		{19ED5133-BAD5-4EE0-99F2-B5426E994340}.Release|Win32.ActiveCfg = Release|Win32
+		{19ED5133-BAD5-4EE0-99F2-B5426E994340}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
