@@ -103,4 +103,5 @@ extern "C" BOOL PASCAL EXPORT SelectFolder(const wchar_t * initPath,wchar_t * re
 	{
 		return FALSE;
 	}
+	return TRUE;
 }

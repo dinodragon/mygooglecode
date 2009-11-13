@@ -155,19 +155,16 @@ void CCallSelFolderDllDlg::OnBnClickedOk()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	HMODULE hModule = LoadLibrary(_T("SelFolderDll.Dll"));
-	typedef int (*pSelFolder)(const wchar_t *,wchar_t *);
+	typedef int (_stdcall *pSelFolder)(const wchar_t *,wchar_t *);
 	pSelFolder pSelectFolderFunc = (pSelFolder)GetProcAddress(hModule,"SelectFolder");
-	//wchar_t resultPath[80];
-	CString strResultPath;
-	wchar_t * pResultPath = strResultPath.GetBufferSetLength(100);
-	std::wstring initPath = _T("C:\\");
-
+	wchar_t resultPath[MAX_PATH];
+	std::wstring initPath = _T("\\\\founder-epub");
 	HRESULT hResult = 1;;
 	if(pSelectFolderFunc)
 	{
-		hResult = (*pSelectFolderFunc)(initPath.c_str(),pResultPath);
+		hResult = (*pSelectFolderFunc)(initPath.c_str(),resultPath);
 	}
-	strResultPath.ReleaseBuffer(100);
 	FreeLibrary(hModule);
-	OnOK();
+	MessageBox(resultPath);
+	//OnOK();
 }
