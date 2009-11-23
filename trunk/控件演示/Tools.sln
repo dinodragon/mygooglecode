@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelFolderDll", "SelFolderDl
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CallSelFolderDll", "CallSelFolderDll\CallSelFolderDll.vcproj", "{19ED5133-BAD5-4EE0-99F2-B5426E994340}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CopyDelDir", "CopyDelDir\CopyDelDir.vcproj", "{AC792C59-29AA-4196-AE87-54D0A4A7C3BF}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -35,6 +37,10 @@ Global
 		{19ED5133-BAD5-4EE0-99F2-B5426E994340}.Debug|Win32.Build.0 = Debug|Win32
 		{19ED5133-BAD5-4EE0-99F2-B5426E994340}.Release|Win32.ActiveCfg = Release|Win32
 		{19ED5133-BAD5-4EE0-99F2-B5426E994340}.Release|Win32.Build.0 = Release|Win32
+		{AC792C59-29AA-4196-AE87-54D0A4A7C3BF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AC792C59-29AA-4196-AE87-54D0A4A7C3BF}.Debug|Win32.Build.0 = Debug|Win32
+		{AC792C59-29AA-4196-AE87-54D0A4A7C3BF}.Release|Win32.ActiveCfg = Release|Win32
+		{AC792C59-29AA-4196-AE87-54D0A4A7C3BF}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
