@@ -98,82 +98,81 @@ void CCopyDelDirDlg::OnBnClickedOk()
 
 BOOL CopyDirectory(LPCTSTR strSrcPath, LPCTSTR strDestPath)   
 {   
-	HANDLE HResult;   
 	WIN32_FIND_DATA FindFileData;
-	TCHAR strSrcFileName[MAX_PATH],strDestFileName[MAX_PATH];   
-	BOOL blResult;   
-	HResult = FindFirstFile(strSrcPath,&FindFileData);   
+	TCHAR strSrcFileName[MAX_PATH],strDestFileName[MAX_PATH];
+	BOOL blResult;
 
-	if(HResult == INVALID_HANDLE_VALUE)   
-	{   
-		return FALSE   ;   
-	}   
+	HANDLE handleSrc = FindFirstFile(strSrcPath,&FindFileData);
+	if(handleSrc == INVALID_HANDLE_VALUE)   
+	{
+		return FALSE;
+	}
+	FindClose(handleSrc);
 
 	_tcscpy_s(strSrcFileName,strSrcPath);
 	_tcscpy_s(strDestFileName,strDestPath);
-
 	if(strSrcFileName[_tcslen(strSrcPath) - 1] == '\\')   
-		strSrcFileName[_tcslen(strSrcPath) - 1] =   '\0';   
+		strSrcFileName[_tcslen(strSrcPath) - 1] = '\0';   
+	if(strDestFileName[_tcslen(strDestPath) - 1] == '\\')   
+		strDestFileName[_tcslen(strDestPath) - 1] = '\0';   
 
-	if(strDestFileName[_tcslen(strDestPath) - 1]   ==   '\\')   
-		strDestFileName[_tcslen(strDestPath) - 1]   =   '\0';   
-
-	HResult   =     FindFirstFile(strDestPath,   &FindFileData);   
-
-	if(HResult   ==   INVALID_HANDLE_VALUE)   
+	HANDLE handleDes = FindFirstFile(strDestPath,&FindFileData);   
+	if(handleDes == INVALID_HANDLE_VALUE)   
 	{   
-		CreateDirectory(strDestPath   ,NULL);   
-	}   
+		CreateDirectory(strDestPath ,NULL);   
+	}
+	FindClose(handleDes);
 
 	_tcscat_s(strSrcFileName,_T("\\*"));   
-	HResult = FindFirstFile(strSrcFileName,&FindFileData);   
-	if(HResult   ==   INVALID_HANDLE_VALUE)   
+	HANDLE handleFinder = FindFirstFile(strSrcFileName,&FindFileData);   
+	if(handleFinder == INVALID_HANDLE_VALUE)   
 	{   
-		return   FALSE;   
+		return FALSE;   
 	}   
-	if(_tcscmp(FindFileData.cFileName,_T(".")) &&   _tcscmp(FindFileData.cFileName   ,_T(".."))   )   
+	if(_tcscmp(FindFileData.cFileName,_T(".")) && _tcscmp(FindFileData.cFileName , _T("..")))   
 	{   
 		_tcscpy_s(strSrcFileName,strSrcPath);   
 		_tcscat_s(strSrcFileName,_T("\\"));   
 		_tcscat_s(strSrcFileName,FindFileData.cFileName);   
 		_tcscpy_s(strDestFileName,strDestPath);   
 		_tcscat_s(strDestFileName,_T("\\"));   
-		_tcscat_s(strDestFileName,FindFileData.cFileName);   
+		_tcscat_s(strDestFileName,FindFileData.cFileName);
 
-		if((FindFileData.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) == FILE_ATTRIBUTE_DIRECTORY)   
-		{   
-			CopyDirectory(strSrcFileName,strDestFileName);   
-		}   
-		else   
-		{   
-			CopyFile(strSrcFileName,strDestFileName,FALSE);   
-		}   
-	}   
-	while(1)   
-	{   
-		blResult   =   FindNextFile(HResult,&FindFileData);   
-		if(!blResult)   
-			break;   
-		if(_tcscmp(FindFileData.cFileName   ,   _T("."))     &&   _tcscmp(FindFileData.cFileName   ,_T(".."))   )   
-		{   
-			_tcscpy_s(strSrcFileName,strSrcPath);   
+		if((FindFileData.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) == FILE_ATTRIBUTE_DIRECTORY)
+		{
+			CopyDirectory(strSrcFileName,strDestFileName);
+		}
+		else
+		{
+			CopyFile(strSrcFileName,strDestFileName,FALSE);
+		}
+	}
+	while(true)
+	{
+		blResult = FindNextFile(handleFinder,&FindFileData);
+		if(!blResult)
+			break;
+		if(_tcscmp(FindFileData.cFileName , _T(".")) && _tcscmp(FindFileData.cFileName,_T("..")))
+		{
+			_tcscpy_s(strSrcFileName,strSrcPath);
 			_tcscat_s(strSrcFileName,_T("\\"));
-			_tcscat_s(strSrcFileName,FindFileData.cFileName);   
-			_tcscpy_s(strDestFileName,strDestPath);   
-			_tcscat_s(strDestFileName,_T("\\"));   
-			_tcscat_s(strDestFileName,FindFileData.cFileName);   
+			_tcscat_s(strSrcFileName,FindFileData.cFileName);
+			_tcscpy_s(strDestFileName,strDestPath);
+			_tcscat_s(strDestFileName,_T("\\"));
+			_tcscat_s(strDestFileName,FindFileData.cFileName);
 
-			if((FindFileData.dwFileAttributes   &   FILE_ATTRIBUTE_DIRECTORY)   ==   FILE_ATTRIBUTE_DIRECTORY)   
-			{   
-				CopyDirectory(strSrcFileName,strDestFileName);   
-			}   
+			if((FindFileData.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) == FILE_ATTRIBUTE_DIRECTORY)
+			{
+				CopyDirectory(strSrcFileName,strDestFileName);
+			}
 			else   
-			{   
-				CopyFile(strSrcFileName,strDestFileName,FALSE);   
-			}   
-		}   
-	}   
-	return   TRUE;    
+			{
+				CopyFile(strSrcFileName,strDestFileName,FALSE);
+			}
+		}
+	}
+	FindClose(handleFinder);
+	return TRUE;
 }
 
 BOOL DeleteDirectory(LPCTSTR sDirName) 
