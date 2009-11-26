@@ -19,6 +19,18 @@ namespace WordAddIn
             return Properties.Resources.Ribbon;
         }
 
+        public void Login_Click(Office.IRibbonControl control)
+        {
+            if (control.Id == "Login")
+            {
+                MessageBox.Show("登陆");
+            }
+        }
+
+
+
+        #region 帮助器
+
         //在此创建回调方法。有关添加回调方法的详细信息，请在解决方案资源管理器中选择“功能区 XML”项，然后按 F1
         public void Ribbon_Load(Office.IRibbonUI ribbonUI)
         {
@@ -30,8 +42,7 @@ namespace WordAddIn
             return PictureConverter.ImageToPictureDisp(
                 Properties.Resources.ResourceManager.GetObject(imageName) as Image);
         }
-
-
+        
         internal class PictureConverter : AxHost
         {
             private PictureConverter() : base(String.Empty) { }
@@ -52,15 +63,7 @@ namespace WordAddIn
             }
         }
 
-
-
-        public void Login_Click(Office.IRibbonControl control)
-        {
-            if (control.Id == "Launcher1")
-            {
-
-            }
-        }
+    #endregion
 
     }
 
