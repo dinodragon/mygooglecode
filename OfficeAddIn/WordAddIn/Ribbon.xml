@@ -1,15 +1,43 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" loadImage="GetImages" onLoad="Ribbon_Load" >
-  <ribbon startFromScratch="false">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2006/01/customui" loadImage="GetImage">
+  <ribbon>
     <tabs>
-      <tab id="CustomTab" label="自定义插件">
-        <group id="SampleGroup" label="标签">
-          <toggleButton id="ToggleButton1" size="large" label="标签    " getEnabled="GetEnabled" image="Label.png" getPressed="GetPressed" onAction="OnStandardToggle" supertip="打开标签任务窗格."/>
-          <toggleButton id="ToggleButton2" size="large" label="结构    " getEnabled="GetEnabled" image="Struct.png" getPressed="GetPressed" onAction="OnStandardToggle"  supertip="打开结构任务窗格."/>
-          <toggleButton id="ToggleButton3" size="large" label="属性    " getEnabled="GetEnabled" image="Attribute.png" getPressed="GetPressed" onAction="OnStandardToggle" supertip="打开属性任务窗格." />
+      <tab id="CollaborativeEdit" label="协同编辑">
+        <group id="WorkFlow" label="工作流">
+          <button id="Login" image="Login1" onAction="Login_Click" screentip="登录" supertip="在协同编辑系统中登录" label="登录" />
+          <button id="Quit" onAction="Quit_Click" screentip="登出" supertip="退出协同编辑系统" enabled="false" label="登出" />
+          <button id="Setting" onAction="Setting_Click" screentip="设置" supertip="设置工作路径" enabled="false" label="设置" />
+          <toggleButton id="PersonalMission" onAction="PersonalMission_Click" keytip="111" screentip="个人任务" supertip="打开个人任务面板" enabled="false" label="个人任务                 " size="large" />
+        </group>
+        <group id="Style" label="样式">
+          <button id="CheckStyle" onAction="CheckStyle_Click" screentip="样式检查" supertip="进行样式和格式的检查与替换" enabled="false" label="检查     " size="large" />
+        </group>
+        <group id="HotObject" label="热对象">
+          <button id="NewHotObject" onAction="NewHotObject_Click" supertip="在文档中选中部分内容，创建热对象" enabled="false" label="新建" />
+          <button id="Return" onAction="LookupHotObject_Click" supertip="退出热对象的编辑" enabled="false" label="退出编辑" />
+          <button id="Update" onAction="Update_Click" supertip="将选择的热对象更新为指定的版本" enabled="false" label="更新    " size="large" />
+          <button id="CancelQuote" onAction="CancelQuote_Click" supertip="取消对被选热对象的引用" enabled="false" label="取消引用           " size="large" />
+          <button id="Inspect" onAction="Inspect_Click" supertip="检查文档中使用的热对象是否有新的版本" enabled="false" label="预飞      " size="large" />
           <dialogBoxLauncher>
-            <button id="Launcher1" screentip="模板和加载项" getEnabled="GetEnabled" onAction="OnStandardLauncher" supertip="管理附加到此文档的XML架构，或添加新架构."/>
+            <button id="HotObject__btn" />
           </dialogBoxLauncher>
+        </group>
+        <group id="Revision" label="修订">
+          <toggleButton id="LookOverRevision" onAction="LookOverRevision_Click" supertip="打开修订列表的面板，查看修订信息" enabled="false" label="查看修订列表                    " size="large" />
+        </group>
+        <group id="Templates" label="模板">
+          <button id="ExportTemplate" onAction="ExportTemplate_Click" supertip="从文档中提取创建新的模板" enabled="false" label=" 提取      " size="large" />
+          <button id="ReplaceTemplate" onAction="ReplaceTemplate_Click" supertip="用新的模板替换文档中当前使用的模板" enabled="false" label=" 替换      " size="large" />
+          <toggleButton id="DoucmentTree" onAction="DoucmentTree_Click" enabled="false" label="文档框架         " size="large" />
+          <dialogBoxLauncher>
+            <button id="Templates__btn" />
+          </dialogBoxLauncher>
+        </group>
+        <group id="WorkPlatform" label="工作平台">
+          <button id="WebLink" onAction="WebLink_Click" supertip="网站链接：信息架构师可以直接访问WEB页面" enabled="false" label="网站链接            " size="large" />
+        </group>
+        <group id="Help" label="帮助">
+          <button id="About" onAction="About_Click" supertip="协同编辑系统帮助信息" label="关于系统          " size="large" />
         </group>
       </tab>
     </tabs>
