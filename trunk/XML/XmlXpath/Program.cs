@@ -10,6 +10,7 @@ namespace XmlXpath
 {
     class Program
     {
+        //根据高位低位的值，使用XPATH来查找所需的值
         static void Main(string[] args)
         {
             int high = 2;
