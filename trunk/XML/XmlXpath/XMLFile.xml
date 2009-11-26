@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ErrorCode>
+  <High value = "0" content = "成功"/>
+  <High value = "1" content = "无法处理"/>
+  <High value = "2" content = "错误">
+    <Low value ="1" content = "加载模块失败"/>
+    <Low value ="2" content = "包已经处理过"/>
+    <Low value ="3" content = "加密狗加载失败"/>
+    <Low value ="4" content = "下载文件失败"/>
+    <Low value ="5" content = "上传文件失败"/>
+    <Low value ="6" content = "压缩失败"/>
+    <Low value ="7" content = "解压失败"/>
+    <Low value ="8" content = "加载packageInfo.xml失败"/>
+    <Low value ="9" content = "任务处理失败"/>
+    <Low value ="10" content = "加载指令xml失败"/>
+    <Low value ="11" content = "加载处理引擎失败"/>
+    <Low value ="12" content = "任务超时"/>
+    <Low value ="13" content = "程序发生异常"/>
+  </High>
+</ErrorCode>
+
+
