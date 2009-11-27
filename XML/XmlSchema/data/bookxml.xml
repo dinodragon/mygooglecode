@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note xmlns="http://www.cpp521.cn"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.cpp521.cn bookschema.xsd">
+  <to>George</to>
+  <from>John</from>
+  <heading>Reminder</heading>
+  <body>Don't forget the meeting!</body>
+</note>
