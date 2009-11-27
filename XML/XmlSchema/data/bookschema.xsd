@@ -2,7 +2,7 @@
 <xs:schema id="bookschema"
     targetNamespace="http://www.cpp521.cn"
     elementFormDefault="qualified"
-    xmlns="www.cpp521.cn"
+    xmlns="http://www.cpp521.cn"
     xmlns:mstns="http://tempuri.org/bookschema.xsd"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >

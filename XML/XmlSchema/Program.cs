@@ -10,12 +10,12 @@ namespace XmlSchema
     {
         public static void Main()
         {
-            Console.WriteLine("正在用架构文件schema.xsd验证XML文件booksSchema.xml...");
+            Console.WriteLine("正在用架构文件bookschema.xsd验证XML文件booksSchema.xml...");
             XmlTextReader myXmlTextReader = new XmlTextReader(@"data\bookxml.xml");
-            XmlValidatingReader myXmlValidatingReader = new XmlValidatingReader(myXmlTextReader);
 
             XmlSchemaCollection myXmlSchemaCollection = new XmlSchemaCollection();
             myXmlSchemaCollection.Add("http://www.cpp521.cn", new XmlTextReader(@"data\bookschema.xsd"));
+            XmlValidatingReader myXmlValidatingReader = new XmlValidatingReader(myXmlTextReader);
             myXmlValidatingReader.Schemas.Add(myXmlSchemaCollection);
             myXmlValidatingReader.ValidationType = ValidationType.Schema;
             try
