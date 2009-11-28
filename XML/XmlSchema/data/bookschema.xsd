@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="bookschema"
+<xs:schema
     targetNamespace="http://www.cpp521.cn"
     elementFormDefault="qualified"
-    xmlns="http://www.cpp521.cn"
-    xmlns:mstns="http://tempuri.org/bookschema.xsd"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
->
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="note">
     <xs:complexType>
       <xs:sequence>
@@ -13,6 +10,7 @@
         <xs:element name="from" type="xs:string"/>
         <xs:element name="heading" type="xs:string"/>
         <xs:element name="body" type="xs:string"/>
+        <xs:element name="time" type="xs:string"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
