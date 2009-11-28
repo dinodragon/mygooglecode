@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<note xmlns="http://www.cpp521.cn"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.cpp521.cn bookschema.xsd">
+<note xmlns="http://www.cpp521.cn">
   <to>George</to>
   <from>John</from>
   <heading>Reminder</heading>
   <body>Don't forget the meeting!</body>
+  <time>2009年11月28日18:05:42</time>
 </note>
