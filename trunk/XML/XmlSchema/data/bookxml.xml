@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<note xmlns="http://www.cpp521.cn">
-  <to>George</to>
-  <from>John</from>
-  <heading>Reminder</heading>
-  <body>Don't forget the meeting!</body>
-  <time>2009年11月28日18:05:42</time>
-</note>
+<book xmlns="http://www.cpp521.cn">
+  <!--书名-->
+  <name>大百科全书</name>
+  <!--书类型，枚举-->
+  <type>百科</type>
+  <!--价格，浮点型-->
+  <price unit="RMB">123.4</price>
+</book>
