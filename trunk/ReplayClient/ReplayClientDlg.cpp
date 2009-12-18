@@ -17,6 +17,7 @@
 
 CReplayClientDlg::CReplayClientDlg(CWnd* pParent /*=NULL*/)
 	: CDialog(CReplayClientDlg::IDD, pParent)
+	, m_port(9600)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
@@ -24,6 +25,8 @@ CReplayClientDlg::CReplayClientDlg(CWnd* pParent /*=NULL*/)
 void CReplayClientDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
+	DDX_Text(pDX, IDC_EDIT2, m_port);
+	DDV_MinMaxInt(pDX, m_port, 1, 65535);
 }
 
 BEGIN_MESSAGE_MAP(CReplayClientDlg, CDialog)
@@ -100,6 +103,7 @@ void CReplayClientDlg::OnBnClickedSend()
 void CReplayClientDlg::OnBnClickedListening()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	m_mySocket.Create(9592);
+	UpdateData();
+	m_mySocket.Create(m_port);
 	m_mySocket.Listen();
 }

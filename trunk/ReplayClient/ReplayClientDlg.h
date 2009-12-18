@@ -33,4 +33,5 @@ public:
 	afx_msg void OnBnClickedSend();
 public:
 	afx_msg void OnBnClickedListening();
+	int m_port;
 };
