@@ -15,7 +15,7 @@ namespace XmlModify
             XmlNodeList nodes = doc.SelectNodes("/Root/Document");
             foreach(XmlNode item in nodes)
             {
-                XmlElement ele = (XmlElement)item;
+                XmlElement ele = item as XmlElement;
                 ele.SetAttribute("ContentGuid","aaaa");
             }
         }
