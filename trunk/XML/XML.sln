@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlXpath", "XmlXpath\XmlXpa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlSchema", "XmlSchema\XmlSchema.csproj", "{7D645209-E27D-4D8B-AD7C-5B8B27AAB78B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlModify", "XmlModify\XmlModify.csproj", "{E226E295-5645-40FE-95A5-D54880945CA3}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -29,6 +31,10 @@ Global
 		{7D645209-E27D-4D8B-AD7C-5B8B27AAB78B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D645209-E27D-4D8B-AD7C-5B8B27AAB78B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D645209-E27D-4D8B-AD7C-5B8B27AAB78B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E226E295-5645-40FE-95A5-D54880945CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E226E295-5645-40FE-95A5-D54880945CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E226E295-5645-40FE-95A5-D54880945CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E226E295-5645-40FE-95A5-D54880945CA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
