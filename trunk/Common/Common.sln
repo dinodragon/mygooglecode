@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShowCompileTime", "ShowComp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GetProcessInfo", "GetProcessInfo\GetProcessInfo.vcproj", "{1D5F9749-7CE2-42A5-91C6-3AC2225BFE5E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Logger", "Logger\Logger.vcproj", "{B0D40D53-B672-4F17-B444-F1F03DD8BA2A}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -47,6 +49,10 @@ Global
 		{1D5F9749-7CE2-42A5-91C6-3AC2225BFE5E}.Debug|Win32.Build.0 = Debug|Win32
 		{1D5F9749-7CE2-42A5-91C6-3AC2225BFE5E}.Release|Win32.ActiveCfg = Release|Win32
 		{1D5F9749-7CE2-42A5-91C6-3AC2225BFE5E}.Release|Win32.Build.0 = Release|Win32
+		{B0D40D53-B672-4F17-B444-F1F03DD8BA2A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B0D40D53-B672-4F17-B444-F1F03DD8BA2A}.Debug|Win32.Build.0 = Debug|Win32
+		{B0D40D53-B672-4F17-B444-F1F03DD8BA2A}.Release|Win32.ActiveCfg = Release|Win32
+		{B0D40D53-B672-4F17-B444-F1F03DD8BA2A}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
