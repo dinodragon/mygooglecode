@@ -1,16 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetWebService", "DotNetWebService\DotNetWebService.csproj", "{B42A96CD-F325-4AAB-B0CE-B17661222E78}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
-	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DotNetWebServiceClient", "DotNetWebServiceClient\DotNetWebServiceClient.vcproj", "{6B697B17-8D1F-448C-9A9B-FBB9667CB2EE}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsynCallWebService", "AsynCallWebService\AsynCallWebService.csproj", "{D62F4D9C-3EC2-4D28-96FD-DE54687F8C78}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B42A96CD-F325-4AAB-B0CE-B17661222E78} = {B42A96CD-F325-4AAB-B0CE-B17661222E78}
 	EndProjectSection
 EndProject
 Global
@@ -47,6 +44,16 @@ Global
 		{6B697B17-8D1F-448C-9A9B-FBB9667CB2EE}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{6B697B17-8D1F-448C-9A9B-FBB9667CB2EE}.Release|Win32.ActiveCfg = Release|Win32
 		{6B697B17-8D1F-448C-9A9B-FBB9667CB2EE}.Release|Win32.Build.0 = Release|Win32
+		{D62F4D9C-3EC2-4D28-96FD-DE54687F8C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62F4D9C-3EC2-4D28-96FD-DE54687F8C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62F4D9C-3EC2-4D28-96FD-DE54687F8C78}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D62F4D9C-3EC2-4D28-96FD-DE54687F8C78}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D62F4D9C-3EC2-4D28-96FD-DE54687F8C78}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{D62F4D9C-3EC2-4D28-96FD-DE54687F8C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62F4D9C-3EC2-4D28-96FD-DE54687F8C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62F4D9C-3EC2-4D28-96FD-DE54687F8C78}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D62F4D9C-3EC2-4D28-96FD-DE54687F8C78}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D62F4D9C-3EC2-4D28-96FD-DE54687F8C78}.Release|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
