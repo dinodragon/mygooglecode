@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlModify", "XmlModify\XmlM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchemaToXml", "SchemaToXml\SchemaToXml.csproj", "{660CC999-2660-40A8-A6F1-F12B230E13D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToXmlXpath", "LinqToXmlXpath\LinqToXmlXpath.csproj", "{7A675F39-8C23-42FE-9835-842D31F2F57B}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -41,6 +43,10 @@ Global
 		{660CC999-2660-40A8-A6F1-F12B230E13D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{660CC999-2660-40A8-A6F1-F12B230E13D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{660CC999-2660-40A8-A6F1-F12B230E13D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A675F39-8C23-42FE-9835-842D31F2F57B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A675F39-8C23-42FE-9835-842D31F2F57B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A675F39-8C23-42FE-9835-842D31F2F57B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A675F39-8C23-42FE-9835-842D31F2F57B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
