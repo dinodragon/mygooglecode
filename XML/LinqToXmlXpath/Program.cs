@@ -13,7 +13,8 @@ namespace LinqToXmlXpath
         static void Main(string[] args)
         {
             XDocument doc = XDocument.Load(@"XMLFile.xml");
-            XElement xe = doc.XPathSelectElement("/ErrorCode");
+            XElement xe = doc.XPathSelectElement("/ErrorCode/High");
+            Console.WriteLine(xe.ToString());
         }
     }
 }
