@@ -221,7 +221,7 @@ void CBase64Dlg::OnEnChangeBase64()
 
 void CBase64Dlg::OnBnClickedHelp()
 {
-	ShellExecute(NULL,TEXT("open"),TEXT("http://www.cpp521.cn/post/base64.html?from=base64v1.5"),NULL,NULL,SW_SHOWNORMAL);
+	ShellExecute(NULL,TEXT("open"),TEXT("http://www.yangfei.org/post/base64.html?from=base64v1.5"),NULL,NULL,SW_SHOWNORMAL);
 }
 
 void CBase64Dlg::OnBnClickedAutoconvert()
