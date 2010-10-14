@@ -13,7 +13,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// 中文(中华人民共和国) resources
+// Chinese (P.R.C.) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
 #ifdef _WIN32
@@ -93,7 +93,7 @@ BEGIN
     EDITTEXT        IDC_BASE64,17,160,292,85,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
     GROUPBOX        "原始(解码)信息:",IDC_STATIC,7,7,314,105
     GROUPBOX        "Base64编码信息:",IDC_STATIC,7,150,314,106
-    LTEXT           "http://www.cpp521.cn",IDC_STATIC,167,266,81,8
+    LTEXT           "http://www.yangfei.org",IDC_STATIC,161,266,89,8
     PUSHBUTTON      "使用说明",IDC_Help,263,260,50,14
     CONTROL         "自动转换",IDC_AUTOCONVERT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,127,44,10
     PUSHBUTTON      "↓编码",IDC_ENCODE,58,125,32,14,WS_DISABLED
@@ -182,7 +182,7 @@ BEGIN
     IDS_ABOUTBOX            "关于 Base64(&A)..."
 END
 
-#endif    // 中文(中华人民共和国) resources
+#endif    // Chinese (P.R.C.) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
