@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root xmlns="http://www.founder.com/ces">
+	<国家馆 markSystem="国家馆" MarkId="5100">
+		<参展主体 markSystem="国家馆">
+			<segment xmlns="http://www.founder.com/PDMLSchema/2009/main" xmlns:m="http://www.founder.com/PDMLSchema/2009/math">
+				<article>
+					<r>
+						<t xml:space="preserve">图书流程入库测试</t>
+						<cr></cr>
+					</r>
+				</article>
+			</segment>
+		</参展主体>
+		<segment xmlns="http://www.founder.com/PDMLSchema/2009/main" xmlns:m="http://www.founder.com/PDMLSchema/2009/math">
+			<article>
+				<r>
+					<cr></cr>
+				</r>
+			</article>
+		</segment>
+		<展馆属性 markSystem="国家馆">
+			<segment xmlns="http://www.founder.com/PDMLSchema/2009/main" xmlns:m="http://www.founder.com/PDMLSchema/2009/math">
+				<article>
+					<r>
+						<cr></cr>
+					</r>
+				</article>
+			</segment>
+		</展馆属性>
+		<展馆名称 markSystem="国家馆">
+			<segment xmlns="http://www.founder.com/PDMLSchema/2009/main" xmlns:m="http://www.founder.com/PDMLSchema/2009/math">
+				<article>
+					<r>
+						<cr></cr>
+					</r>
+				</article>
+			</segment>
+		</展馆名称>
+		<所在区域 markSystem="国家馆">
+			<segment xmlns="http://www.founder.com/PDMLSchema/2009/main" xmlns:m="http://www.founder.com/PDMLSchema/2009/math">
+				<article>
+					<r>
+						<cr></cr>
+					</r>
+				</article>
+			</segment>
+		</所在区域>
+		<参展主题 markSystem="国家馆">
+			<segment xmlns="http://www.founder.com/PDMLSchema/2009/main" xmlns:m="http://www.founder.com/PDMLSchema/2009/math">
+				<article>
+					<r>
+						<t xml:space="preserve">     </t>
+						<cr></cr>
+					</r>
+				</article>
+			</segment>
+		</参展主题>
+		<吉祥物名称 markSystem="国家馆">
+			<segment xmlns="http://www.founder.com/PDMLSchema/2009/main" xmlns:m="http://www.founder.com/PDMLSchema/2009/math">
+				<article>
+					<r>
+						<cr></cr>
+					</r>
+				</article>
+			</segment>
+		</吉祥物名称>
+		<国家馆日 markSystem="国家馆">
+			<segment xmlns="http://www.founder.com/PDMLSchema/2009/main" xmlns:m="http://www.founder.com/PDMLSchema/2009/math">
+				<article>
+					<r>
+						<cr></cr>
+					</r>
+				</article>
+			</segment>
+		</国家馆日>
+		<展馆面积 markSystem="国家馆">
+			<segment xmlns="http://www.founder.com/PDMLSchema/2009/main" xmlns:m="http://www.founder.com/PDMLSchema/2009/math">
+				<article>
+					<r>
+						<cr></cr>
+					</r>
+				</article>
+			</segment>
+		</展馆面积>
+		<展示内容 markSystem="国家馆">
+			<segment xmlns="http://www.founder.com/PDMLSchema/2009/main" xmlns:m="http://www.founder.com/PDMLSchema/2009/math">
+				<article>
+					<r>
+						<cr></cr>
+					</r>
+				</article>
+			</segment>
+		</展示内容>
+		<展馆亮点 markSystem="国家馆">
+			<segment xmlns="http://www.founder.com/PDMLSchema/2009/main" xmlns:m="http://www.founder.com/PDMLSchema/2009/math">
+				<article>
+					<r>
+						<t xml:space="preserve">     </t>
+						<cr></cr>
+					</r>
+				</article>
+			</segment>
+		</展馆亮点>
+		<展馆编号 markSystem="国家馆">
+			<segment xmlns="http://www.founder.com/PDMLSchema/2009/main" xmlns:m="http://www.founder.com/PDMLSchema/2009/math">
+				<article>
+					<r>
+						<cr></cr>
+					</r>
+				</article>
+			</segment>
+		</展馆编号>
+		<吉祥物图片 markSystem="国家馆" imageId="CMS:25_40262" simple="http://172.19.41.114//pictures/201010/AB9563D9-7E44-5B25-137E-6AB159AC0943/23405_s.jpg" real="">
+			<imageItem ipRef="ar_IDAVV4UC_IDA2U4UC_n" uid="si_IDA2U4UC" idRef="CMS:25_40262" xmlns="http://www.founder.com/PDMLSchema/2009/main">
+				<image displayType="default" type="jpg" fileName="http://172.19.41.114//pictures/201010/AB9563D9-7E44-5B25-137E-6AB159AC0943/23405_s.jpg" imageRect="(-26.458333333333332,-15.698611111111111,26.458333333333332,15.698611111111111)"></image>
+				<oPr>
+					<transMatrix></transMatrix>
+					<textWrapSetting outGap=""></textWrapSetting>
+				</oPr>
+				<rectShape leftTop="(-26.458333333333332,-15.698611111111111)" rightBottom="(26.458333333333332,15.698611111111111)"></rectShape>
+			</imageItem>
+		</吉祥物图片>
+		<segment xmlns="http://www.founder.com/PDMLSchema/2009/main" xmlns:m="http://www.founder.com/PDMLSchema/2009/math">
+			<article>
+				<r>
+					<cr></cr>
+				</r>
+			</article>
+		</segment>
+		<实景图 markSystem="国家馆" imageId="CMS:25_40248" simple="http://172.19.41.114//pictures/201010/AB9563D9-7E44-5B25-137E-6AB159AC0943/23391_s.jpg" real="">
+			<imageItem ipRef="ar_IDAAV4UC_IDAXS4UC_n" uid="si_IDAXS4UC" idRef="CMS:25_40248" xmlns="http://www.founder.com/PDMLSchema/2009/main">
+				<image displayType="default" type="jpg" fileName="http://172.19.41.114//pictures/201010/AB9563D9-7E44-5B25-137E-6AB159AC0943/23391_s.jpg" imageRect="(-26.458333333333332,-11.1125,26.458333333333332,11.1125)"></image>
+				<oPr>
+					<transMatrix></transMatrix>
+					<textWrapSetting outGap=""></textWrapSetting>
+				</oPr>
+				<rectShape leftTop="(-26.458333333333332,-11.1125)" rightBottom="(26.458333333333332,11.1125)"></rectShape>
+			</imageItem>
+		</实景图>
+		<segment xmlns="http://www.founder.com/PDMLSchema/2009/main" xmlns:m="http://www.founder.com/PDMLSchema/2009/math">
+			<article>
+				<r>
+					<cr></cr>
+				</r>
+			</article>
+		</segment>
+	</国家馆>
+</Root>
