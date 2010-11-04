@@ -28,5 +28,32 @@ namespace DotNetWebService
         {
             return x+y;
         }
+
+        [WebMethod]
+        public UserInfo GetUserInfo()
+        {
+            UserInfo u = new UserInfo();
+            u.Name = "test";
+            u.Age = 1;
+            return u;
+        }
+    }
+
+
+    [Serializable]
+    public class UserInfo
+    {
+        private string _name;
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+        public int Age
+        {
+            get;
+            set;
+        }
+        //Add   other   properties   or   methods   here 
     }
 }
