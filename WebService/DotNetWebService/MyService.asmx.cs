@@ -30,7 +30,7 @@ namespace DotNetWebService
         }
 
         [WebMethod]
-        public UserInfo GetUserInfo()
+        public UserInfo GetUserInfo(UserInfo u1)
         {
             UserInfo u = new UserInfo();
             u.Name = "test";
