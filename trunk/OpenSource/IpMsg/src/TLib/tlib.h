@@ -1,12 +1,12 @@
 /* @(#)Copyright (C) 1996-2010 H.Shirouzu		tlib.h	Ver0.99 */
 /* ========================================================================
-	Project  Name			: Win32 Lightweight  Class Library Test
-	Module Name				: Main Header
-	Create					: 1996-06-01(Sat)
-	Update					: 2010-05-09(Mon)
-	Copyright				: H.Shirouzu
-	Reference				: 
-	======================================================================== */
+Project  Name			: Win32 Lightweight  Class Library Test
+Module Name				: Main Header
+Create					: 1996-06-01(Sat)
+Update					: 2010-05-09(Mon)
+Copyright				: H.Shirouzu
+Reference				: 
+======================================================================== */
 
 #ifndef TLIB_H
 #define TLIB_H
@@ -54,17 +54,17 @@ extern DWORD TWinVersion;	// define in tmisc.cpp
 #define IsWin95()		(LOBYTE(LOWORD(TWinVersion)) >= 4 && TWinVersion >= 0x80000000)
 
 #define IsWinNT350()	(LOBYTE(LOWORD(TWinVersion)) == 3 && TWinVersion < 0x80000000 \
-							&& HIBYTE(LOWORD(TWinVersion)) == 50)
+	&& HIBYTE(LOWORD(TWinVersion)) == 50)
 #define IsWinNT()		(LOBYTE(LOWORD(TWinVersion)) >= 4 && TWinVersion < 0x80000000)
 #define IsWin2K()		(LOBYTE(LOWORD(TWinVersion)) >= 5 && TWinVersion < 0x80000000)
 #define IsWinXP()		((LOBYTE(LOWORD(TWinVersion)) >= 6 || LOBYTE(LOWORD(TWinVersion)) == 5 \
-							&& HIBYTE(LOWORD(TWinVersion)) >= 10) && TWinVersion < 0x80000000)
+	&& HIBYTE(LOWORD(TWinVersion)) >= 10) && TWinVersion < 0x80000000)
 #define IsWinVista()	(LOBYTE(LOWORD(TWinVersion)) >= 6 && TWinVersion < 0x80000000)
 
 #define IsLang(lang)	(PRIMARYLANGID(LANGIDFROMLCID(GetThreadLocale())) == lang)
 
 #define ALIGN_SIZE(all_size, block_size) (((all_size) + (block_size) -1) \
-										 / (block_size) * (block_size))
+	/ (block_size) * (block_size))
 
 #define ALIGN_BLOCK(size, align_size) (((size) + (align_size) -1) / (align_size))
 
@@ -206,7 +206,7 @@ public:
 	virtual void	UnRegister(THashObj *obj);
 	virtual THashObj *Search(const void *data, u_int hash_id);
 	virtual int		GetRegisterNum() { return registerNum; }
-//	virtual u_int	MakeHashId(const void *data) = 0;
+	//	virtual u_int	MakeHashId(const void *data) = 0;
 };
 
 /* for internal use start */
@@ -214,7 +214,7 @@ struct TResHashObj : THashObj {
 	void	*val;
 	TResHashObj(UINT _resId, void *_val) { hashId = _resId; val = _val; }
 	~TResHashObj() { free(val); }
-	
+
 };
 
 class TResHash : public THashTbl {
@@ -229,7 +229,7 @@ public:
 	void		Register(TResHashObj *obj) { THashTbl::Register(obj, obj->hashId); }
 };
 /* for internal use end */
-
+//这是个很大的类
 class TWin : public THashObj {
 protected:
 	RECT			rect;
@@ -246,14 +246,14 @@ public:
 
 	virtual void	Show(int mode = SW_SHOWDEFAULT);
 	virtual BOOL	Create(LPCSTR className=NULL, LPCSTR title="",
-						DWORD style=(WS_OVERLAPPEDWINDOW | WS_CLIPCHILDREN),
-						DWORD exStyle=0, HMENU hMenu=NULL);
+		DWORD style=(WS_OVERLAPPEDWINDOW | WS_CLIPCHILDREN),
+		DWORD exStyle=0, HMENU hMenu=NULL);
 	virtual BOOL	CreateU8(LPCSTR className=NULL, LPCSTR title="",
-						DWORD style=(WS_OVERLAPPEDWINDOW | WS_CLIPCHILDREN),
-						DWORD exStyle=0, HMENU hMenu=NULL);
+		DWORD style=(WS_OVERLAPPEDWINDOW | WS_CLIPCHILDREN),
+		DWORD exStyle=0, HMENU hMenu=NULL);
 	virtual BOOL	CreateV(const void *className=NULL, const void *title=L"",
-						DWORD style=(WS_OVERLAPPEDWINDOW | WS_CLIPCHILDREN),
-						DWORD exStyle=0, HMENU hMenu=NULL);
+		DWORD style=(WS_OVERLAPPEDWINDOW | WS_CLIPCHILDREN),
+		DWORD exStyle=0, HMENU hMenu=NULL);
 	virtual	void	Destroy(void);
 
 	virtual BOOL	EvCommand(WORD wNotifyCode, WORD wID, LPARAM hwndCtl);
@@ -401,12 +401,12 @@ public:
 };
 
 BOOL TRegisterClass(LPCSTR class_name, UINT style=CS_DBLCLKS, HICON hIcon=0, HCURSOR hCursor=0,
-		HBRUSH hbrBackground=0, int classExtra=0, int wndExtra=0, LPCSTR menu_str=0);
+					HBRUSH hbrBackground=0, int classExtra=0, int wndExtra=0, LPCSTR menu_str=0);
 BOOL TRegisterClassU8(LPCSTR class_name, UINT style=CS_DBLCLKS, HICON hIcon=0, HCURSOR hCursor=0,
-		HBRUSH hbrBackground=0, int classExtra=0, int wndExtra=0, LPCSTR menu_str=0);
+					  HBRUSH hbrBackground=0, int classExtra=0, int wndExtra=0, LPCSTR menu_str=0);
 BOOL TRegisterClassV(const void *class_name, UINT style=CS_DBLCLKS, HICON hIcon=0,
-		HCURSOR hCursor=0, HBRUSH hbrBackground=0, int classExtra=0, int wndExtra=0,
-		const void *menu_str=0);
+					 HCURSOR hCursor=0, HBRUSH hbrBackground=0, int classExtra=0, int wndExtra=0,
+					 const void *menu_str=0);
 
 class TWinHashTbl : public THashTbl {
 protected:
@@ -421,6 +421,7 @@ public:
 	u_int	MakeHashId(HWND hWnd) { return (u_int)hWnd * 0xf3f77d13; }
 };
 
+//主程序类的基类
 class TApp {
 protected:
 	static TApp	*tapp;
@@ -448,7 +449,7 @@ public:
 	LPCVOID	GetDefaultClassV() { return (void *)defaultClassV; }
 	void	AddWin(TWin *win) { preWnd = win; }
 	void	AddWinByWnd(TWin *win, HWND hWnd) {
-			win->hWnd = hWnd; hash->Register(win, hash->MakeHashId(hWnd));
+		win->hWnd = hWnd; hash->Register(win, hash->MakeHashId(hWnd));
 	}
 	void	DelWin(TWin *win) { hash->UnRegister(win); }
 

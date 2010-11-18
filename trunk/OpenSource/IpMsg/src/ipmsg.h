@@ -494,7 +494,7 @@ inline void SetItem(UINT *columnItems, int sw, BOOL on) { if (on) *columnItems |
 
 #define FT_STRICTDATE	0x00000001
 #define RS_REALTIME		0x00000001
-
+//这个类也比较大
 struct Cfg {
 protected:
 	BOOL	ReadFontRegistry(TRegistry *reg, char *key, LOGFONT *font);
@@ -1373,7 +1373,7 @@ struct SendFileObj : public TListObj {
 	char		header[MAX_BUF];	// for dirinfo
 	WIN32_FIND_DATA_U8	fdata;
 };
-
+//大类
 class TMainWin : public TWin {
 protected:
 	static HICON	hMainIcon;
@@ -1522,6 +1522,7 @@ public:
 	static	HICON	GetIPMsgIcon(void);
 };
 
+//主程序类
 class TMsgApp : public TApp {
 public:
 	TMsgApp(HINSTANCE _hI, LPSTR _cmdLine, int _nCmdShow);

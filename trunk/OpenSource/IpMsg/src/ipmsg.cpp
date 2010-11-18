@@ -97,6 +97,7 @@ void TMsgApp::InitWindow(void)
 
 int WINAPI WinMain(HINSTANCE hI, HINSTANCE, LPSTR cmdLine, int nCmdShow)
 {
+	//程序的入口点
 	if (IsWin95()) {
 		MessageBox(0, "Please use old version (v2.06 or earlier)", "Win95/98/Me is not support", MB_OK);
 		::ExitProcess(0xffffffff);
