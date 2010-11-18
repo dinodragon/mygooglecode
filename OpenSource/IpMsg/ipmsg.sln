@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ipmsg", "ipmsg.vcproj", "{BD5145B1-AC20-48A9-9054-A5053540B3E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FA072FE6-DFD8-4AC6-8D06-5ADFBE72BA82}"
+	ProjectSection(SolutionItems) = preProject
+		ipmsg211src.zip = ipmsg211src.zip
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Installer|Win32 = Installer|Win32
+		InstallerDbg|Win32 = InstallerDbg|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD5145B1-AC20-48A9-9054-A5053540B3E6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BD5145B1-AC20-48A9-9054-A5053540B3E6}.Debug|Win32.Build.0 = Debug|Win32
+		{BD5145B1-AC20-48A9-9054-A5053540B3E6}.Installer|Win32.ActiveCfg = Installer|Win32
+		{BD5145B1-AC20-48A9-9054-A5053540B3E6}.Installer|Win32.Build.0 = Installer|Win32
+		{BD5145B1-AC20-48A9-9054-A5053540B3E6}.InstallerDbg|Win32.ActiveCfg = InstallerDbg|Win32
+		{BD5145B1-AC20-48A9-9054-A5053540B3E6}.InstallerDbg|Win32.Build.0 = InstallerDbg|Win32
+		{BD5145B1-AC20-48A9-9054-A5053540B3E6}.Release|Win32.ActiveCfg = Release|Win32
+		{BD5145B1-AC20-48A9-9054-A5053540B3E6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
