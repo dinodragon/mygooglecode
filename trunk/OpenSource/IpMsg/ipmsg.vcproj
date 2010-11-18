@@ -1445,6 +1445,10 @@
 				</FileConfiguration>
 			</File>
 			<File
+				RelativePath=".\src\ipmsg.exe.manifest"
+				>
+			</File>
+			<File
 				RelativePath=".\src\ipmsg.ico"
 				>
 			</File>
