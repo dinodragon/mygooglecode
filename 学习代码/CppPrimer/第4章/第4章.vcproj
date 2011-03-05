@@ -171,11 +171,7 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\1_1.c"
-				>
-			</File>
-			<File
-				RelativePath=".\1_1.cpp"
+				RelativePath=".\4_1.c"
 				>
 				<FileConfiguration
 					Name="Debug|Win32"
@@ -185,6 +181,22 @@
 						Name="VCCLCompilerTool"
 					/>
 				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\4_1.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\4_2.cpp"
+				>
 			</File>
 		</Filter>
 		<Filter
