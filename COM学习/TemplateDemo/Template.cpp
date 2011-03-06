@@ -55,9 +55,9 @@ int main( int argc, char *argv[] )
 
 	cout<<"---------------------------------------------"<<endl;
 
-	//CMath math;
-	//math.BaseMethod();
-	//((CBase)math).BaseMethod();
+	CMath math;
+	math.BaseMethod();
+	((CBase)math).BaseMethod();
 
 	//用户自定义CMath类，new CComObject<CMath>()调用相应的方法就会调用到CMath的方法
 	//

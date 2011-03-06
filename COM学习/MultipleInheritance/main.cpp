@@ -29,5 +29,5 @@ class D:C,AA
 
 void main()
 {
-
+	
 }
