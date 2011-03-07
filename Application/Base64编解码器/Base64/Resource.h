@@ -9,6 +9,7 @@
 #define IDR_MAINFRAME                   128
 #define IDC_SOURCE                      1002
 #define IDC_BASE64                      1003
+#define IDC_SOURCE2                     1003
 #define IDC_BUTTON1                     1006
 #define IDC_Help                        1006
 #define IDC_AUTOCONVERT                 1007
@@ -26,7 +27,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        130
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1014
+#define _APS_NEXT_CONTROL_VALUE         1015
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

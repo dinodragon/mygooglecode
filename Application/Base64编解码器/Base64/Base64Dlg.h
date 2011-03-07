@@ -32,7 +32,7 @@ public:
 	MUtils::Base64Helper base64;
 	CString m_source;
 	CString m_base64;
-	afx_msg void OnEnChangeSource();
+//	afx_msg void OnEnChangeSource();
 	afx_msg void OnEnChangeBase64();
 	afx_msg void OnBnClickedHelp();
 public:
@@ -58,4 +58,9 @@ public:
 	BOOL m_lastOperEncode; //最后一次转换是否为加密，这是为了在切换编码时也可自动进行编码或者解码。
 public:
 	afx_msg void OnBnClickedDecodetofile();
+	afx_msg void OnEnUpdateSource();
+	afx_msg void OnEnChangeSource();
+private:
+	CRichEditCtrl * m_rSource;
+	CRichEditCtrl * m_rBase64;
 };

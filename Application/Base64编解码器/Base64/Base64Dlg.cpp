@@ -78,15 +78,16 @@ CBase64Dlg::CBase64Dlg(CWnd* pParent /*=NULL*/)
 			m_codepage = 0;
 		}
 	}
+
 }
 
 void CBase64Dlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
-	DDX_Text(pDX, IDC_SOURCE, m_source);
-	DDV_MaxChars(pDX, m_source, 20000);
-	DDX_Text(pDX, IDC_BASE64, m_base64);
-	DDV_MaxChars(pDX, m_base64, 25000);
+	//DDX_Text(pDX, IDC_SOURCE, m_source);
+	//DDV_MaxChars(pDX, m_source, 20000);
+	//DDX_Text(pDX, IDC_BASE64, m_base64);
+	//DDV_MaxChars(pDX, m_base64, 25000);
 	DDX_Check(pDX, IDC_AUTOCONVERT, m_autoconvert);
 	DDX_Radio(pDX, IDC_ANSI, m_codepage);
 	DDV_MinMaxInt(pDX, m_codepage, 0, 10);
@@ -97,7 +98,6 @@ BEGIN_MESSAGE_MAP(CBase64Dlg, CDialog)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	//}}AFX_MSG_MAP
-	ON_EN_CHANGE(IDC_SOURCE, &CBase64Dlg::OnEnChangeSource)
 	ON_EN_CHANGE(IDC_BASE64, &CBase64Dlg::OnEnChangeBase64)
 	ON_BN_CLICKED(IDC_Help, &CBase64Dlg::OnBnClickedHelp)
 	ON_BN_CLICKED(IDC_AUTOCONVERT, &CBase64Dlg::OnBnClickedAutoconvert)
@@ -108,6 +108,7 @@ BEGIN_MESSAGE_MAP(CBase64Dlg, CDialog)
 	ON_BN_CLICKED(IDC_Unicode, &CBase64Dlg::OnBnClickedUnicode)
 	ON_WM_CLOSE()
 	ON_BN_CLICKED(IDC_DECODETOFILE, &CBase64Dlg::OnBnClickedDecodetofile)
+	ON_EN_CHANGE(IDC_SOURCE, &CBase64Dlg::OnEnChangeSource)
 END_MESSAGE_MAP()
 
 
@@ -141,6 +142,15 @@ BOOL CBase64Dlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
 
 	// TODO: 在此添加额外的初始化代码
+	
+	m_rSource = (CRichEditCtrl *)GetDlgItem(IDC_SOURCE);
+	ASSERT(m_rSource!=NULL);
+	m_rBase64 = (CRichEditCtrl *)GetDlgItem(IDC_BASE64);
+	ASSERT(m_rBase64!=NULL);
+
+	m_rSource->SetEventMask(m_rSource->GetEventMask() | ENM_CHANGE);
+	m_rBase64->SetEventMask(m_rBase64->GetEventMask() | ENM_CHANGE);
+
 	CButton * decode = (CButton *)GetDlgItem(IDC_DECODE);
 	ASSERT(decode!=NULL);
 	decode->EnableWindow(!m_autoconvert);
@@ -201,15 +211,6 @@ HCURSOR CBase64Dlg::OnQueryDragIcon()
 }
 
 
-void CBase64Dlg::OnEnChangeSource()
-{
-	// TODO:  在此添加控件通知处理程序代码
-	if (m_autoconvert)
-	{
-		Encode();
-	}
-}
-
 void CBase64Dlg::OnEnChangeBase64()
 {
 	// TODO:  在此添加控件通知处理程序代码
@@ -218,6 +219,22 @@ void CBase64Dlg::OnEnChangeBase64()
 		Decode();
 	}
 }
+
+
+void CBase64Dlg::OnEnChangeSource()
+{
+	// TODO:  如果该控件是 RICHEDIT 控件，它将不
+	// 发送此通知，除非重写 CDialog::OnInitDialog()
+	// 函数并调用 CRichEditCtrl().SetEventMask()，
+	// 同时将 ENM_CHANGE 标志“或”运算到掩码中。
+
+	// TODO:  在此添加控件通知处理程序代码
+	if (m_autoconvert)
+	{
+		Encode();
+	}
+}
+
 
 void CBase64Dlg::OnBnClickedHelp()
 {
@@ -239,7 +256,8 @@ void CBase64Dlg::OnBnClickedAutoconvert()
 //将原码进行加密
 void CBase64Dlg::Encode(void)
 {
-	UpdateData();
+	//UpdateData();
+	GetDlgItemTextA(IDC_SOURCE,m_source);
 	m_lastOperEncode = TRUE;
  	const char * sourceAnsi = m_source.GetBuffer();
 	if (m_codepage == 0) //ANSI
@@ -275,14 +293,18 @@ void CBase64Dlg::Encode(void)
 		delete[] sourceUnich;
 		delete[] sourceWchToChar;
 	}
-	UpdateData(FALSE);
 	m_source.ReleaseBuffer();
+	//UpdateData(FALSE);
+	m_rBase64->SetEventMask(m_rBase64->GetEventMask() ^ ENM_CHANGE);
+	SetDlgItemText(IDC_BASE64,m_base64.GetBuffer());
+	m_rBase64->SetEventMask(m_rBase64->GetEventMask() | ENM_CHANGE);
+	m_base64.ReleaseBuffer();
 }
 
 //解密
 void CBase64Dlg::Decode(void)
 {
-	UpdateData();
+	GetDlgItemTextA(IDC_BASE64,m_base64);
 	m_lastOperEncode = FALSE;
 	std::vector<char> sourceChars = base64.decode(std::string(m_base64));
 
@@ -329,7 +351,10 @@ void CBase64Dlg::Decode(void)
 		delete[] souceANSIChar;
 	}
 	delete[] sourceByte;
-	UpdateData(FALSE);
+	m_rSource->SetEventMask(m_rSource->GetEventMask() ^ ENM_CHANGE);
+	SetDlgItemText(IDC_SOURCE,m_source.GetBuffer());
+	m_source.ReleaseBuffer();
+	m_rSource->SetEventMask(m_rSource->GetEventMask() | ENM_CHANGE);
 }
 
 void CBase64Dlg::OnBnClickedEncode()
@@ -389,7 +414,7 @@ void CBase64Dlg::OnClose()
 void CBase64Dlg::OnBnClickedDecodetofile()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	UpdateData();
+	GetDlgItemTextA(IDC_BASE64,m_base64);
 	char szFilters[]=
 		"All Files (*.*)|*.*|";
 	CFileDialog fileDlg(FALSE,"txt",NULL,OFN_HIDEREADONLY,szFilters);
@@ -410,3 +435,4 @@ void CBase64Dlg::OnBnClickedDecodetofile()
 	}
 
 }
+
