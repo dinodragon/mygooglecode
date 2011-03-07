@@ -238,7 +238,7 @@ void CBase64Dlg::OnEnChangeSource()
 
 void CBase64Dlg::OnBnClickedHelp()
 {
-	ShellExecute(NULL,TEXT("open"),TEXT("http://www.yangfei.org/post/base64.html?from=base64v1.5"),NULL,NULL,SW_SHOWNORMAL);
+	ShellExecute(NULL,TEXT("open"),TEXT("http://www.yangfei.org/post/base64.html?from=base64v1.6"),NULL,NULL,SW_SHOWNORMAL);
 }
 
 void CBase64Dlg::OnBnClickedAutoconvert()

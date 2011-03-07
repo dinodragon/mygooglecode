@@ -113,8 +113,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,0,5
- PRODUCTVERSION 1,0,0,5
+ FILEVERSION 1,0,0,6
+ PRODUCTVERSION 1,0,0,6
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -129,13 +129,13 @@ BEGIN
     BEGIN
         BLOCK "080403a8"
         BEGIN
-            VALUE "CompanyName", "E彩工作室http://www.cpp521.cn"
+            VALUE "CompanyName", "E彩工作室http://www.yangfei.org"
             VALUE "FileDescription", "Base64编码解码工具，支持UTF8，Unicode，支持解码到文件。"
-            VALUE "FileVersion", "1.5.0.1"
+            VALUE "FileVersion", "1.6.0.1"
             VALUE "InternalName", "Base64.exe"
             VALUE "OriginalFilename", "Base64.exe"
             VALUE "ProductName", "一个很好的Base64编码解码工具"
-            VALUE "ProductVersion", "1.5.0.1"
+            VALUE "ProductVersion", "1.6.0.1"
         END
     END
     BLOCK "VarFileInfo"
