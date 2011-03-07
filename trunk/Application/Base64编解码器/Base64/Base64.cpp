@@ -48,6 +48,7 @@ BOOL CBase64App::InitInstance()
 	CWinApp::InitInstance();
 
 	AfxEnableControlContainer();
+	AfxInitRichEdit();
 
 	// 标准初始化
 	// 如果未使用这些功能并希望减小
