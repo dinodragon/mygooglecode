@@ -4,6 +4,7 @@
 	Version="9.00"
 	Name="ATLQuickStart"
 	ProjectGUID="{DA6EB5B0-7F07-47EE-A352-FA6727935734}"
+	RootNamespace="ATLQuickStart"
 	Keyword="AtlProj"
 	TargetFrameworkVersion="196613"
 	>
@@ -260,6 +261,14 @@
 			>
 			<File
 				RelativePath=".\dlldatax.h"
+				>
+			</File>
+			<File
+				RelativePath=".\MyWindow.h"
+				>
+			</File>
+			<File
+				RelativePath=".\PaintBkgnd.h"
 				>
 			</File>
 			<File
