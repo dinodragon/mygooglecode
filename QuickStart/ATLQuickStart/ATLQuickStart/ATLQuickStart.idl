@@ -1,0 +1,18 @@
+// ATLQuickStart.idl : ATLQuickStart 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(ATLQuickStart.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(851AC119-66A6-472D-8D51-A2BC6D90E376),
+	version(1.0),
+	helpstring("ATLQuickStart 1.0 类型库")
+]
+library ATLQuickStartLib
+{
+	importlib("stdole2.tlb");
+};
