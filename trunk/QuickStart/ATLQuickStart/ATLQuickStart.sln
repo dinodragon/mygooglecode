@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATLQuickStart", "ATLQuickStart\ATLQuickStart.vcproj", "{DA6EB5B0-7F07-47EE-A352-FA6727935734}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5075D461-5F9A-48F4-8B1F-8F358E94C3F7}"
+	ProjectSection(SolutionItems) = preProject
+		WTL教程.pdf = WTL教程.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
