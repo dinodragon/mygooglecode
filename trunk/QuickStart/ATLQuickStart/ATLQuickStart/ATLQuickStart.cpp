@@ -7,7 +7,6 @@
 #include "dlldatax.h"
 #include "MyWindow.h"
 
-
 class CATLQuickStartModule : public CAtlExeModuleT< CATLQuickStartModule >
 {
 public :
@@ -15,7 +14,9 @@ public :
 	DECLARE_REGISTRY_APPID_RESOURCEID(IDR_ATLQUICKSTART, "{1D0C7C17-AA41-4206-98BF-095AE7624C7B}")
 };
 
+
 CATLQuickStartModule _AtlModule;
+CComModule _Module;
 
 
 
@@ -23,6 +24,7 @@ CATLQuickStartModule _AtlModule;
 extern "C" int WINAPI _tWinMain(HINSTANCE /*hInstance*/, HINSTANCE /*hPrevInstance*/, 
                                 LPTSTR /*lpCmdLine*/, int nShowCmd)
 {
+	_Module.Init(NULL, NULL);
 	CMyWindow myWindow;
 	MSG msg;
 
@@ -43,6 +45,7 @@ extern "C" int WINAPI _tWinMain(HINSTANCE /*hInstance*/, HINSTANCE /*hPrevInstan
 		DispatchMessage(&msg);
 	}
 
+	_Module.Term();
 	return _AtlModule.WinMain(nShowCmd);
 }
 
