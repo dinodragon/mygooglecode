@@ -1,0 +1,37 @@
+// ATLDemo.idl : ATLDemo 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(ATLDemo.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(89F75A1B-E8EC-4D11-A9BA-F9C088461FD4),
+	dual,
+	nonextensible,
+	helpstring("IMyCalc 接口"),
+	pointer_default(unique)
+]
+interface IMyCalc : IDispatch{
+	[id(1), helpstring("方法Add")] HRESULT Add(LONG a, LONG b, [out] LONG* rusult);
+};
+[
+	uuid(C440DCEF-9D2D-4970-9410-B597EB6D3AA4),
+	version(1.0),
+	helpstring("ATLDemo 1.0 类型库")
+]
+library ATLDemoLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(50D786CE-1525-4E74-9BCB-E16D7DF2E859),
+		helpstring("MyCalc Class")
+	]
+	coclass MyCalc
+	{
+		[default] interface IMyCalc;
+	};
+};

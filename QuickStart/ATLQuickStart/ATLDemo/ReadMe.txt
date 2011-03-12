@@ -1,0 +1,53 @@
+﻿用向导生成一个COM组件项目。
+生成方法可见http://www.cnblogs.com/fangyukuan/archive/2010/04/09/1708651.html
+包含一个MyCalc的接口，其中有一个Add方法。
+
+
+
+========================================================================
+    活动模板库 : ATLDemo 项目概述
+========================================================================
+
+应用程序向导已为您创建了此 ATLDemo 项目，作为编写动态链接库 (DLL) 的起点。
+
+本文件概要介绍组成项目的每个文件的内容。
+
+ATLDemo.vcproj
+    这是使用应用程序向导生成的 VC++ 项目的主项目文件，
+    其中包含生成该文件的 Visual C++ 的版本信息，以及有关使用应用程序向导选择的平台、配置和项目功能的信息。
+
+ATLDemo.idl
+    此文件包含项目中定义的类型库、接口和 co-class 的 IDL 定义。
+    此文件将由 MIDL 编译器进行处理以生成：
+        C++ 接口定义和 GUID 声明 (ATLDemo.h)
+        GUID 定义                                (ATLDemo_i.c)
+        类型库                                  (ATLDemo.tlb)
+        封送处理代码                                 （ATLDemo_p.c 和 dlldata.c）
+
+ATLDemo.h
+    此文件包含 ATLDemo.idl 中定义的项目的 C++ 接口定义和 GUID 声明。它将在编译过程中由 MIDL 重新生成。
+
+ATLDemo.cpp
+    此文件包含对象映射和 DLL 导出的实现。
+
+ATLDemo.rc
+    这是程序使用的所有 Microsoft Windows 资源的列表。
+
+ATLDemo.def
+    此模块定义文件为链接器提供有关 DLL 所要求的导出的信息，其中包含用于以下内容的导出：
+DllGetClassObject
+DllCanUnloadNow
+DllRegisterServer
+DllUnregisterServer
+
+/////////////////////////////////////////////////////////////////////////////
+其他标准文件：
+
+StdAfx.h, StdAfx.cpp
+    这些文件用于生成名为 ATLDemo.pch 的预编译头 (PCH) 文件和名为 StdAfx.obj 的预编译类型文件。
+
+Resource.h
+    这是用于定义资源 ID 的标准头文件。
+
+
+/////////////////////////////////////////////////////////////////////////////

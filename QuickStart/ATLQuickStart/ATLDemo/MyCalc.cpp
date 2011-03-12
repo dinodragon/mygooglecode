@@ -1,0 +1,16 @@
+// MyCalc.cpp : CMyCalc 的实现
+
+#include "stdafx.h"
+#include "MyCalc.h"
+
+
+// CMyCalc
+
+
+STDMETHODIMP CMyCalc::Add(LONG a, LONG b, LONG* result)
+{
+	// TODO: 在此添加实现代码
+	*result = a + b;
+
+	return S_OK;
+}
