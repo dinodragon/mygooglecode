@@ -8,6 +8,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		WTL教程.pdf = WTL教程.pdf
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATLDemo", "ATLDemo\ATLDemo.vcproj", "{2EE0D12B-187B-474F-90E7-6D09058DEDCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo1", "Demo1", "{5B4F9234-FF43-4414-A233-E3FAE3F63A1E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATLDemoTest", "ATLDemoTest\ATLDemoTest.vcproj", "{4F9074CC-6860-42F5-BADE-93565A88E6F5}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -22,8 +28,20 @@ Global
 		{DA6EB5B0-7F07-47EE-A352-FA6727935734}.Debug|Win32.Build.0 = Debug|Win32
 		{DA6EB5B0-7F07-47EE-A352-FA6727935734}.Release|Win32.ActiveCfg = Release|Win32
 		{DA6EB5B0-7F07-47EE-A352-FA6727935734}.Release|Win32.Build.0 = Release|Win32
+		{2EE0D12B-187B-474F-90E7-6D09058DEDCA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2EE0D12B-187B-474F-90E7-6D09058DEDCA}.Debug|Win32.Build.0 = Debug|Win32
+		{2EE0D12B-187B-474F-90E7-6D09058DEDCA}.Release|Win32.ActiveCfg = Release|Win32
+		{2EE0D12B-187B-474F-90E7-6D09058DEDCA}.Release|Win32.Build.0 = Release|Win32
+		{4F9074CC-6860-42F5-BADE-93565A88E6F5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4F9074CC-6860-42F5-BADE-93565A88E6F5}.Debug|Win32.Build.0 = Debug|Win32
+		{4F9074CC-6860-42F5-BADE-93565A88E6F5}.Release|Win32.ActiveCfg = Release|Win32
+		{4F9074CC-6860-42F5-BADE-93565A88E6F5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2EE0D12B-187B-474F-90E7-6D09058DEDCA} = {5B4F9234-FF43-4414-A233-E3FAE3F63A1E}
+		{4F9074CC-6860-42F5-BADE-93565A88E6F5} = {5B4F9234-FF43-4414-A233-E3FAE3F63A1E}
 	EndGlobalSection
 EndGlobal

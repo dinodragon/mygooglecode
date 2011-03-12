@@ -1,0 +1,26 @@
+HKCR
+{
+	ATLDemo.MyCalc.1 = s 'MyCalc Class'
+	{
+		CLSID = s '{50D786CE-1525-4E74-9BCB-E16D7DF2E859}'
+	}
+	ATLDemo.MyCalc = s 'MyCalc Class'
+	{
+		CLSID = s '{50D786CE-1525-4E74-9BCB-E16D7DF2E859}'
+		CurVer = s 'ATLDemo.MyCalc.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {50D786CE-1525-4E74-9BCB-E16D7DF2E859} = s 'MyCalc Class'
+		{
+			ProgID = s 'ATLDemo.MyCalc.1'
+			VersionIndependentProgID = s 'ATLDemo.MyCalc'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{C440DCEF-9D2D-4970-9410-B597EB6D3AA4}'
+		}
+	}
+}

@@ -25,6 +25,7 @@ public:
 		RECT rcClient;
 
 		pT->GetClientRect(&rcClient );
+
 		FillRect (dc,&rcClient,m_hbrBkgnd );
 		return 1; // we painted the background
 	}
