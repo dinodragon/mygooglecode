@@ -2,6 +2,7 @@
 #include "../ATLDemo/ATLDemo_i.h"
 #include "../ATLDemo/ATLDemo_i.c"
 
+#import "ATLDemo.dll"
 using namespace std;
 
 int main()
@@ -18,6 +19,7 @@ int main()
 		{
 			long ReturnValue; 
 			pMyCalc->Add(8,9,&ReturnValue);  
+			pMyCalc->Msg();
 			cout << "The answer for 8+9 is:" << ReturnValue << endl;
 			pMyCalc->Release();
 		} 

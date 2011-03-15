@@ -48,6 +48,8 @@ END_COM_MAP()
 public:
 
 	STDMETHOD(Add)(LONG a, LONG b, LONG* rusult);
+	STDMETHOD(Msg)();
+	STDMETHOD(Msg2)(void);
 };
 
 OBJECT_ENTRY_AUTO(__uuidof(MyCalc), CMyCalc)
