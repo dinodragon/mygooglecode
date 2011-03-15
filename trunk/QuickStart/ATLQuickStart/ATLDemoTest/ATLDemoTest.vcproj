@@ -188,6 +188,14 @@
 			>
 		</Filter>
 		<File
+			RelativePath=".\CallAtlDemo.html"
+			>
+		</File>
+		<File
+			RelativePath=".\CallAtlDemo.vbs"
+			>
+		</File>
+		<File
 			RelativePath=".\Readme.txt"
 			>
 		</File>
