@@ -291,7 +291,7 @@
 		</Configuration>
 		<Configuration
 			Name="using libcurl DLL Debug|Win32"
-			OutputDirectory=".\DLL-Debug"
+			OutputDirectory="..\DLL-Debug"
 			IntermediateDirectory=".\DLL-Debug"
 			ConfigurationType="1"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -347,7 +347,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="libcurld_imp.lib ws2_32.lib wldap32.lib"
-				OutputFile="DLL-Debug/curl.exe"
+				OutputFile="../DLL-Debug/curl.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories="..\lib\DLL-Debug"
