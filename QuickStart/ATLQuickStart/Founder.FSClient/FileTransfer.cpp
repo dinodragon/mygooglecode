@@ -57,7 +57,9 @@ STDMETHODIMP CFileTransfer::Download(BSTR RemotePath, BSTR LocalPath, BSTR* Resu
 		curl_easy_setopt(curl, CURLOPT_URL,pRemotePath);
 		curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, my_fwrite);
 		curl_easy_setopt(curl, CURLOPT_WRITEDATA, &ftpfile);
+#ifdef _DEBUG
 		curl_easy_setopt(curl, CURLOPT_VERBOSE, 1);
+#endif
 		res = curl_easy_perform(curl);
 		curl_easy_cleanup(curl);
 		if(CURLE_OK != res) {
