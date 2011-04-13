@@ -5,6 +5,10 @@
 	Name="ATLQuickStart"
 	ProjectGUID="{DA6EB5B0-7F07-47EE-A352-FA6727935734}"
 	RootNamespace="ATLQuickStart"
+	SccProjectName="Svn"
+	SccAuxPath="Svn"
+	SccLocalPath="Svn"
+	SccProvider="SubversionScc"
 	Keyword="AtlProj"
 	TargetFrameworkVersion="196613"
 	>

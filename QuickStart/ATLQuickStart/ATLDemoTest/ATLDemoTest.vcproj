@@ -5,6 +5,10 @@
 	Name="ATLDemoTest"
 	ProjectGUID="{4F9074CC-6860-42F5-BADE-93565A88E6F5}"
 	RootNamespace="ATLDemoTest"
+	SccProjectName="Svn"
+	SccAuxPath="Svn"
+	SccLocalPath="Svn"
+	SccProvider="SubversionScc"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"
 	>

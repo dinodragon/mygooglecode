@@ -5,6 +5,10 @@
 	Name="Founder.FSClient"
 	ProjectGUID="{5E21E323-5F3E-4D9F-9661-9643A9D8497E}"
 	RootNamespace="Founder.FSClient"
+	SccProjectName="Svn"
+	SccAuxPath="Svn"
+	SccLocalPath="Svn"
+	SccProvider="SubversionScc"
 	Keyword="AtlProj"
 	TargetFrameworkVersion="196613"
 	>
