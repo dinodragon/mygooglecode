@@ -2,7 +2,7 @@
 #include "../ATLDemo/ATLDemo_i.h"
 #include "../ATLDemo/ATLDemo_i.c"
 
-#import "ATLDemo.dll"
+//#import "ATLDemo.dll"
 using namespace std;
 
 int main()
