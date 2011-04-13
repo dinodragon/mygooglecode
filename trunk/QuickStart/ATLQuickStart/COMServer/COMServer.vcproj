@@ -5,6 +5,10 @@
 	Name="COMServer"
 	ProjectGUID="{DC4E5CD2-4CE9-4112-A8B2-A5F5F478DA4F}"
 	RootNamespace="COMServer"
+	SccProjectName="Svn"
+	SccAuxPath="Svn"
+	SccLocalPath="Svn"
+	SccProvider="SubversionScc"
 	Keyword="AtlProj"
 	TargetFrameworkVersion="196613"
 	>
