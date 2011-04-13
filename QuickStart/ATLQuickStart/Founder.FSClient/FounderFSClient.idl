@@ -1,0 +1,38 @@
+// FounderFSClient.idl : IDL source for Founder.FSClient
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (FounderFSClient.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(A1198E3E-3B32-463C-9084-7D94ADEED786),
+	dual,
+	nonextensible,
+	helpstring("IFileTransfer Interface"),
+	pointer_default(unique)
+]
+interface IFileTransfer : IDispatch{
+	[id(1), helpstring("UploadFile")] HRESULT Upload([in] BSTR RemotePath, [in] BSTR LocalPath, [out,retval] BSTR* Result);
+	[id(2), helpstring("DownloadFile")] HRESULT Download([in] BSTR RemotePath, [in] BSTR LocalPath, [out,retval] BSTR* Result);
+};
+[
+	uuid(AE243D2D-C1A7-4490-A16A-37943F4CF2D8),
+	version(1.0),
+	helpstring("Founder.FSClient 1.0 Type Library")
+]
+library FounderFSClientLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(9D924013-B80B-4222-9060-5AE1BAEC757B),
+		helpstring("FileTransfer Class")
+	]
+	coclass FileTransfer
+	{
+		[default] interface IFileTransfer;
+	};
+};

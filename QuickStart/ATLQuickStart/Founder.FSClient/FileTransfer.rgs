@@ -1,0 +1,26 @@
+HKCR
+{
+	FounderFSClient.FileTransfer.1 = s 'FileTransfer Class'
+	{
+		CLSID = s '{9D924013-B80B-4222-9060-5AE1BAEC757B}'
+	}
+	FounderFSClient.FileTransfer = s 'FileTransfer Class'
+	{
+		CLSID = s '{9D924013-B80B-4222-9060-5AE1BAEC757B}'
+		CurVer = s 'FounderFSClient.FileTransfer.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {9D924013-B80B-4222-9060-5AE1BAEC757B} = s 'FileTransfer Class'
+		{
+			ProgID = s 'FounderFSClient.FileTransfer.1'
+			VersionIndependentProgID = s 'FounderFSClient.FileTransfer'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{AE243D2D-C1A7-4490-A16A-37943F4CF2D8}'
+		}
+	}
+}
