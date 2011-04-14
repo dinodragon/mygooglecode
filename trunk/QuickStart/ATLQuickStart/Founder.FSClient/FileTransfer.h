@@ -47,10 +47,11 @@ END_COM_MAP()
 
 public:
 
-	STDMETHOD(FtpUpload)(BSTR UserName, BSTR Password, BSTR RemotePath, BSTR LocalPath, BSTR* Result);
-	STDMETHOD(Upload)(BSTR RemotePath, BSTR LocalPath, BSTR* Result);
-	STDMETHOD(FtpDownload)(BSTR UserName, BSTR Password, BSTR RemotePath, BSTR LocalPath, BSTR* Result);
-	STDMETHOD(Download)(BSTR RemotePath, BSTR LocalPath, BSTR* Result);
+	STDMETHOD(FtpUpload)(BSTR UserName, BSTR Password, BSTR RemotePath, BSTR LocalPath, VARIANT_BOOL* Result);
+	STDMETHOD(Upload)(BSTR RemotePath, BSTR LocalPath, VARIANT_BOOL* Result);
+	STDMETHOD(FtpDownload)(BSTR UserName, BSTR Password, BSTR RemotePath, BSTR LocalPath, VARIANT_BOOL* Result);
+	STDMETHOD(Download)(BSTR RemotePath, BSTR LocalPath, VARIANT_BOOL* Result);
+	STDMETHOD(GetLastError)(BSTR* Result);
 };
 
 OBJECT_ENTRY_AUTO(__uuidof(FileTransfer), CFileTransfer)
