@@ -13,6 +13,7 @@ import "ocidl.idl";
 	dual,
 	nonextensible,
 	helpstring("IFileTransfer Interface"),
+	custom(0F21F359-AB84-41E8-9A78-36D110E6D2F9,"Founder.FSClient.IFileTransfer"),
 	pointer_default(unique)
 ]
 interface IFileTransfer : IDispatch{
@@ -25,7 +26,8 @@ interface IFileTransfer : IDispatch{
 [
 	uuid(AE243D2D-C1A7-4490-A16A-37943F4CF2D8),
 	version(1.0),
-	helpstring("Founder.FSClient 1.0 Library")
+	helpstring("Founder.FSClient 1.0 Type Library"),
+	custom(0F21F359-AB84-41E8-9A78-36D110E6D2F9,"Founder.FSClient")
 ]
 library FounderFSClientLib
 {
