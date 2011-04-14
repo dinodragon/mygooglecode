@@ -47,10 +47,10 @@ END_COM_MAP()
 
 public:
 
-	STDMETHOD(FtpUpload)(BSTR UserName, BSTR Password, BSTR RemotePath, BSTR LocalPath, VARIANT_BOOL* Result);
-	STDMETHOD(Upload)(BSTR RemotePath, BSTR LocalPath, VARIANT_BOOL* Result);
-	STDMETHOD(FtpDownload)(BSTR UserName, BSTR Password, BSTR RemotePath, BSTR LocalPath, VARIANT_BOOL* Result);
-	STDMETHOD(Download)(BSTR RemotePath, BSTR LocalPath, VARIANT_BOOL* Result);
+	STDMETHOD(FtpUpload)(BSTR UserName, BSTR Password, BSTR RemotePath, BSTR LocalPath, LONG* Result);
+	//STDMETHOD(Upload)(BSTR RemotePath, BSTR LocalPath, VARIANT_BOOL* Result);
+	STDMETHOD(FtpDownload)(BSTR UserName, BSTR Password, BSTR RemotePath, BSTR LocalPath, LONG* Result);
+	//STDMETHOD(Download)(BSTR RemotePath, BSTR LocalPath, VARIANT_BOOL* Result);
 	STDMETHOD(GetLastError)(BSTR* Result);
 };
 

@@ -16,10 +16,10 @@ import "ocidl.idl";
 	pointer_default(unique)
 ]
 interface IFileTransfer : IDispatch{
-	[id(1), helpstring("UploadFile")] HRESULT Upload([in] BSTR RemotePath, [in] BSTR LocalPath,[out,retval] VARIANT_BOOL* Result);
-	[id(2), helpstring("DownloadFile")] HRESULT Download([in] BSTR RemotePath, [in] BSTR LocalPath,[out,retval] VARIANT_BOOL* Result);
-	[id(3), helpstring("UploadFile Use Password")] HRESULT FtpUpload([in] BSTR UserName, [in] BSTR Password,[in] BSTR RemotePath, [in] BSTR LocalPath,[out,retval] VARIANT_BOOL* Result);
-	[id(4), helpstring("DownloadFile Use Password")] HRESULT FtpDownload([in] BSTR UserName, [in] BSTR Password,[in] BSTR RemotePath, [in] BSTR LocalPath,[out,retval] VARIANT_BOOL* Result);
+	//[id(1), helpstring("UploadFile")] HRESULT Upload([in] BSTR RemotePath, [in] BSTR LocalPath,[out,retval] LONG* Result);
+	//[id(2), helpstring("DownloadFile")] HRESULT Download([in] BSTR RemotePath, [in] BSTR LocalPath,[out,retval] LONG* Result);
+	[id(3), helpstring("UploadFile Use Password")] HRESULT FtpUpload([in] BSTR UserName, [in] BSTR Password,[in] BSTR RemotePath, [in] BSTR LocalPath,[out,retval] LONG* Result);
+	[id(4), helpstring("DownloadFile Use Password")] HRESULT FtpDownload([in] BSTR UserName, [in] BSTR Password,[in] BSTR RemotePath, [in] BSTR LocalPath,[out,retval] LONG* Result);
 	[id(5), helpstring("GetLastError")] HRESULT GetLastError([out,retval] BSTR* Result);
 };
 [
