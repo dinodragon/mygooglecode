@@ -63,7 +63,7 @@ STDMETHODIMP CFileTransfer::FtpUpload(BSTR UserName, BSTR Password,BSTR RemotePa
 
 	struct curl_slist *headerlist=NULL;
 	if(stat(pLocalPath, &file_info)) {
-		printf("Couldnt open '%s': %s\n", pLocalPath, strerror(errno));
+		//printf("Couldnt open '%s': %s\n", pLocalPath, strerror(errno));
 		lResult = CURLE_FILE_COULDNT_READ_FILE;
 		return 1;
 	}
@@ -86,7 +86,7 @@ STDMETHODIMP CFileTransfer::FtpUpload(BSTR UserName, BSTR Password,BSTR RemotePa
 		curl_easy_cleanup(curl);
 		if(CURLE_OK != res) {
 			lResult = res;
-			fprintf(stderr, "curl told us %d\n", res);
+			//fprintf(stderr, "curl told us %d\n", res);
 		}
 	}
 	fclose(hd_src);
@@ -170,7 +170,7 @@ STDMETHODIMP CFileTransfer::FtpDownload(BSTR UserName, BSTR Password,BSTR Remote
 		curl_easy_cleanup(curl);
 		if(CURLE_OK != res) {
 			lResult = res;
-			fprintf(stderr, "curl told us %d\n", res);
+			//fprintf(stderr, "curl told us %d\n", res);
 		}
 	}
 	if(ftpfile.stream)
