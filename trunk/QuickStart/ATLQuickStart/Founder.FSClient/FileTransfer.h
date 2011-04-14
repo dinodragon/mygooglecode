@@ -47,7 +47,9 @@ END_COM_MAP()
 
 public:
 
+	STDMETHOD(FtpUpload)(BSTR UserName, BSTR Password, BSTR RemotePath, BSTR LocalPath, BSTR* Result);
 	STDMETHOD(Upload)(BSTR RemotePath, BSTR LocalPath, BSTR* Result);
+	STDMETHOD(FtpDownload)(BSTR UserName, BSTR Password, BSTR RemotePath, BSTR LocalPath, BSTR* Result);
 	STDMETHOD(Download)(BSTR RemotePath, BSTR LocalPath, BSTR* Result);
 };
 
