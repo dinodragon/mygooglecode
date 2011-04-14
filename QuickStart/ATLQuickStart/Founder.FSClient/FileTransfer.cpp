@@ -46,8 +46,9 @@ static int my_fwrite(void *buffer, size_t size, size_t nmemb, void *stream)
 	return fwrite(buffer, size, nmemb, out->stream);
 }
 
-STDMETHODIMP CFileTransfer::FtpUpload(BSTR UserName, BSTR Password,BSTR RemotePath, BSTR LocalPath, BSTR* Result)
+STDMETHODIMP CFileTransfer::FtpUpload(BSTR UserName, BSTR Password,BSTR RemotePath, BSTR LocalPath, VARIANT_BOOL* Result)
 {
+	VARIANT_BOOL bResult = TRUE;
 	HRESULT hr = S_OK;
 	const char * pUserName = _com_util::ConvertBSTRToString(UserName);
 	const char * pPassword = _com_util::ConvertBSTRToString(Password);
@@ -63,6 +64,7 @@ STDMETHODIMP CFileTransfer::FtpUpload(BSTR UserName, BSTR Password,BSTR RemotePa
 	struct curl_slist *headerlist=NULL;
 	if(stat(pLocalPath, &file_info)) {
 		printf("Couldnt open '%s': %s\n", pLocalPath, strerror(errno));
+		bResult = FALSE;
 		return 1;
 	}
 	fsize = (curl_off_t)file_info.st_size;
@@ -84,16 +86,18 @@ STDMETHODIMP CFileTransfer::FtpUpload(BSTR UserName, BSTR Password,BSTR RemotePa
 		curl_easy_cleanup(curl);
 		if(CURLE_OK != res) {
 			fprintf(stderr, "curl told us %d\n", res);
-			hr = S_FALSE;
+			bResult = FALSE;
 		}
 	}
 	fclose(hd_src);
 	curl_global_cleanup();
+	*Result = bResult;
 	return hr;
 }
 
-STDMETHODIMP CFileTransfer::Upload(BSTR RemotePath, BSTR LocalPath, BSTR* Result)
+STDMETHODIMP CFileTransfer::Upload(BSTR RemotePath, BSTR LocalPath, VARIANT_BOOL* Result)
 {
+	VARIANT_BOOL bResult = TRUE;
 	HRESULT hr = S_OK;
 	const char * pRemotePath = _com_util::ConvertBSTRToString(RemotePath);
 	const char * pLocalPath = _com_util::ConvertBSTRToString(LocalPath);
@@ -107,6 +111,7 @@ STDMETHODIMP CFileTransfer::Upload(BSTR RemotePath, BSTR LocalPath, BSTR* Result
 	struct curl_slist *headerlist=NULL;
 	if(stat(pLocalPath, &file_info)) {
 		printf("Couldnt open '%s': %s\n", pLocalPath, strerror(errno));
+		bResult = FALSE;
 		return 1;
 	}
 	fsize = (curl_off_t)file_info.st_size;
@@ -126,16 +131,18 @@ STDMETHODIMP CFileTransfer::Upload(BSTR RemotePath, BSTR LocalPath, BSTR* Result
 		curl_easy_cleanup(curl);
 		if(CURLE_OK != res) {
 			fprintf(stderr, "curl told us %d\n", res);
-			hr = S_FALSE;
+			bResult = FALSE;
 		}
 	}
 	fclose(hd_src);
 	curl_global_cleanup();
+	*Result = bResult;
 	return hr;
 }
 
-STDMETHODIMP CFileTransfer::FtpDownload(BSTR UserName, BSTR Password,BSTR RemotePath, BSTR LocalPath, BSTR* Result)
+STDMETHODIMP CFileTransfer::FtpDownload(BSTR UserName, BSTR Password,BSTR RemotePath, BSTR LocalPath, VARIANT_BOOL* Result)
 {
+	VARIANT_BOOL bResult = TRUE;
 	HRESULT hr = S_OK;
 	const char * pUserName = _com_util::ConvertBSTRToString(UserName);
 	const char * pPassword = _com_util::ConvertBSTRToString(Password);
@@ -164,20 +171,21 @@ STDMETHODIMP CFileTransfer::FtpDownload(BSTR UserName, BSTR Password,BSTR Remote
 		curl_easy_cleanup(curl);
 		if(CURLE_OK != res) {
 			fprintf(stderr, "curl told us %d\n", res);
-			hr = S_FALSE;
+			bResult = FALSE;
 		}
 	}
 	if(ftpfile.stream)
 		fclose(ftpfile.stream);
 	delete[] pRemotePath;
 	curl_global_cleanup();
+	*Result = bResult;
 	return hr;
-
 }
 
 
-STDMETHODIMP CFileTransfer::Download(BSTR RemotePath, BSTR LocalPath, BSTR* Result)
+STDMETHODIMP CFileTransfer::Download(BSTR RemotePath, BSTR LocalPath, VARIANT_BOOL* Result)
 {
+	VARIANT_BOOL bResult = TRUE;
 	HRESULT hr = S_OK;
 	const char * pRemotePath = _com_util::ConvertBSTRToString(RemotePath);
 	const char * pLocalPath = _com_util::ConvertBSTRToString(LocalPath);
@@ -202,12 +210,20 @@ STDMETHODIMP CFileTransfer::Download(BSTR RemotePath, BSTR LocalPath, BSTR* Resu
 		curl_easy_cleanup(curl);
 		if(CURLE_OK != res) {
 			fprintf(stderr, "curl told us %d\n", res);
-			hr = S_FALSE;
+			bResult = FALSE;
 		}
 	}
 	if(ftpfile.stream)
 		fclose(ftpfile.stream);
 	delete[] pRemotePath;
 	curl_global_cleanup();
+	*Result = bResult;
 	return hr;
+}
+
+STDMETHODIMP CFileTransfer::GetLastError(BSTR* Result)
+{
+	// TODO: Add your implementation code here
+
+	return S_OK;
 }
