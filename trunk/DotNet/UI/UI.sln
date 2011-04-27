@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicUI", "DynamicUI\DynamicUI.csproj", "{66B355CB-3726-44C8-9905-EA5C51AEC953}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComboBoxTree", "ComboBoxTree\ComboBoxTree.csproj", "{1584E999-76E5-4F93-BE3D-C2ED622C92FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBind", "DataBind\DataBind.csproj", "{C32E0E3F-CFB6-410A-BC8F-DAD40C641B0B}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66B355CB-3726-44C8-9905-EA5C51AEC953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66B355CB-3726-44C8-9905-EA5C51AEC953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66B355CB-3726-44C8-9905-EA5C51AEC953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66B355CB-3726-44C8-9905-EA5C51AEC953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1584E999-76E5-4F93-BE3D-C2ED622C92FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1584E999-76E5-4F93-BE3D-C2ED622C92FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1584E999-76E5-4F93-BE3D-C2ED622C92FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1584E999-76E5-4F93-BE3D-C2ED622C92FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C32E0E3F-CFB6-410A-BC8F-DAD40C641B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C32E0E3F-CFB6-410A-BC8F-DAD40C641B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C32E0E3F-CFB6-410A-BC8F-DAD40C641B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C32E0E3F-CFB6-410A-BC8F-DAD40C641B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
