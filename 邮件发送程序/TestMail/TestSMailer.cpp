@@ -23,8 +23,8 @@ void main()
 	
     SMailer::MailInfo info;
     info.setSenderName("杨飞");
-    info.setSenderAddress("yangfei9592@163.com");
-    info.addReceiver("方正", "yangfei@founder.com");
+    info.setSenderAddress("yfsuoyou@163.com");
+    info.addReceiver("方正", "yang.fei@founder.com");
     info.setPriority(SMailer::Priority::normal);
     info.setSubject("a test mail");
     info.addMimeContent(&content1);
