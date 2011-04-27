@@ -1,0 +1,41 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluggableApp", "PluggableApp\PluggableApp.csproj", "{3B70CFA1-DAF6-4A27-BB5D-6BB56B6143E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginSDK", "PluginSDK\PluginSDK.csproj", "{A9702F29-163E-46B8-82D1-2FFEC948A57A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomPlugin", "CustomPlugin\CustomPlugin.csproj", "{C63FE788-9113-47AF-ACB5-680C945CD372}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FBA4832C-8BFC-47A1-BE77-C359DB3D87AD}"
+	ProjectSection(SolutionItems) = preProject
+		CreatePluginFramework.msi = CreatePluginFramework.msi
+		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B70CFA1-DAF6-4A27-BB5D-6BB56B6143E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B70CFA1-DAF6-4A27-BB5D-6BB56B6143E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B70CFA1-DAF6-4A27-BB5D-6BB56B6143E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B70CFA1-DAF6-4A27-BB5D-6BB56B6143E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9702F29-163E-46B8-82D1-2FFEC948A57A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9702F29-163E-46B8-82D1-2FFEC948A57A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9702F29-163E-46B8-82D1-2FFEC948A57A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9702F29-163E-46B8-82D1-2FFEC948A57A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C63FE788-9113-47AF-ACB5-680C945CD372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C63FE788-9113-47AF-ACB5-680C945CD372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C63FE788-9113-47AF-ACB5-680C945CD372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C63FE788-9113-47AF-ACB5-680C945CD372}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
