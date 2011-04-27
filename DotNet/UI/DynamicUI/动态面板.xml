@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root State="true" Message="">
+	<!--State表示成功或失败，Message表示失败信息-->
+	<Type Name="图片" ID="a2">
+		<!--Name为资源类型名称，如图片，条目；ID为资源类型的标识-->
+		<Condition Name="类型" Type="Select" FieldName="class" CatTypeId="a54">
+			<!--Name为显示名，Type为前端控件类型（可选值为：Select，Input，Tree），FieldName为属性名，CatTypeId为分类Id -->
+			<Item Key="1" Value="人物"/>
+			<!--Key为选项值编号，Value为选项值-->
+			<Item Key="2" Value="自然风光"/>
+		</Condition>
+		<Condition Name="大小" Type="Select" FieldName="class" CatTypeId="a54">
+			<Item Key="4" Value="小于1M"/>
+			<Item Key="5" Value="大于1M"/>
+		</Condition>
+		<Condition Name="色彩" Type="Select" FieldName="class" CatTypeId="a54">
+			<Item Key="6" Value="黑白"/>
+			<Item Key="7" Value="彩色"/>
+		</Condition>
+		<Condition Name="拍摄地区" Type="Tree" FieldName="area" CatTypeId="b52">
+			<!--树状结构-->
+			<Item Key="1" Value="北京">
+				<Item Key="2" Value="海淀"/>
+				<Item Key="3" Value="朝阳"/>
+			</Item>
+			<Item Key="4" Value="天津"/>
+		</Condition>
+	</Type>
+	<Type Name="文档" ID="a2">
+		<Condition Name="体裁" Type="Select" FieldName="type" CatTypeId="d12">
+			<Item Key="1" Value="小说"/>
+			<Item Key="2" Value="诗歌"/>
+		</Condition>
+		<Condition Name="作者" Type="Input" FieldName="author" CatTypeId="c54"/>
+	</Type>
+</Root>
