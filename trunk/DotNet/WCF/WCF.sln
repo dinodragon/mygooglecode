@@ -56,6 +56,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_ServerCertificate", "WC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_ClientCertificate", "WCF_ClientCertificate\WCF_ClientCertificate.csproj", "{0E05F8D3-411D-4E93-88D6-DC278E718125}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StdWebService", "StdWebService\StdWebService.csproj", "{C57B9A13-0A75-4243-997A-C009090F8038}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsynClient", "AsynClient\AsynClient.csproj", "{645CE4F5-767E-4EFB-951A-C17E572A5BC2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C57B9A13-0A75-4243-997A-C009090F8038} = {C57B9A13-0A75-4243-997A-C009090F8038}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -130,6 +137,14 @@ Global
 		{0E05F8D3-411D-4E93-88D6-DC278E718125}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E05F8D3-411D-4E93-88D6-DC278E718125}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E05F8D3-411D-4E93-88D6-DC278E718125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C57B9A13-0A75-4243-997A-C009090F8038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C57B9A13-0A75-4243-997A-C009090F8038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C57B9A13-0A75-4243-997A-C009090F8038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C57B9A13-0A75-4243-997A-C009090F8038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{645CE4F5-767E-4EFB-951A-C17E572A5BC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{645CE4F5-767E-4EFB-951A-C17E572A5BC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{645CE4F5-767E-4EFB-951A-C17E572A5BC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{645CE4F5-767E-4EFB-951A-C17E572A5BC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
