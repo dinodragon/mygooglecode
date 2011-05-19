@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
+using System.Threading;
 
 namespace StdWebService
 {
@@ -26,6 +27,7 @@ namespace StdWebService
         [WebMethod]
         public int Add(int x, int y)
         {
+            Thread.Sleep(5000);
             return x + y;
         }
     }
