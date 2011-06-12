@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no" ?>
+<!-- Our to do list data -->
+<ToDo>
+    <!--bbbb-->
+    <Item priority="2" distance="close">Go to the
+        <bold>Toy store!</bold>
+    </Item>
+    <Item priority="1" distance="far">Talk to:
+        <Meeting where="School">
+            <Attendee name="Marple" position="teacher" />
+            <Attendee name="Voel" position="counselor" />
+        </Meeting>
+        <Meeting where="Lunch" />
+    </Item>
+    <Item priority="2" distance="here">Do bills</Item>
+</ToDo>
