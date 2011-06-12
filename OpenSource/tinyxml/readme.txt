@@ -1,4 +1,6 @@
 /** @mainpage
+<h1>介绍</h1>
+这是一个处理Xml的小类库，基本版本tinyxml_2_6_2
 
 <h1> TinyXML </h1>
 
