@@ -31,11 +31,18 @@ int main()
 	doc.LoadFile();
 	//doc.Parse(demoEnd);
 	TiXmlElement * root = doc.RootElement();
-	cout<<root->FirstChild()->Value()<<endl;
-	root->FirstChild()->SetValue("bbbb");
-	cout<<root->FirstChild()->Value()<<endl;
-	bool flag = doc.SaveFile();
-	cout<<doc.Value()<<endl;
+	TiXmlNode *fNode = root->FirstChild();
+	
+	TiXmlNode *lNode = root->LastChild();
+	cout<<fNode->Value()<<endl;
+	cout<<lNode->Value()<<endl;
 
+	TiXmlNode *p = fNode;
+	while(p != NULL)
+	{
+		cout<<p->Value()<<endl;
+		p = p->FirstChild();
+	}
+	cout<<doc.Value()<<endl;
 }
 
