@@ -5,10 +5,6 @@
 	Name="ATLDemo"
 	ProjectGUID="{2EE0D12B-187B-474F-90E7-6D09058DEDCA}"
 	RootNamespace="ATLDemo"
-	SccProjectName="Svn"
-	SccAuxPath="Svn"
-	SccLocalPath="Svn"
-	SccProvider="SubversionScc"
 	Keyword="AtlProj"
 	TargetFrameworkVersion="196613"
 	>

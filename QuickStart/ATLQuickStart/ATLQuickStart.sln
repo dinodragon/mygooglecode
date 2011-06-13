@@ -33,10 +33,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo3", "Demo3", "{2DAE9A49-708E-40C1-A3D9-F3E389AC3D4A}"
 EndProject
 Global
-	GlobalSection(SubversionScc) = preSolution
-		Svn-Managed = True
-		Manager = AnkhSVN - Subversion Support for Visual Studio
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
 		Release|Win32 = Release|Win32
@@ -75,7 +71,11 @@ Global
 		{4F9074CC-6860-42F5-BADE-93565A88E6F5} = {5B4F9234-FF43-4414-A233-E3FAE3F63A1E}
 		{D4A26B75-B950-45E9-8B0A-9A4F41EFDF2C} = {AB6EA812-B38E-452D-A513-33AA2DC7C5B4}
 		{DC4E5CD2-4CE9-4112-A8B2-A5F5F478DA4F} = {AB6EA812-B38E-452D-A513-33AA2DC7C5B4}
-		{5E21E323-5F3E-4D9F-9661-9643A9D8497E} = {2DAE9A49-708E-40C1-A3D9-F3E389AC3D4A}
 		{93B66D35-E867-48EC-B4D8-514751A6F98F} = {2DAE9A49-708E-40C1-A3D9-F3E389AC3D4A}
+		{5E21E323-5F3E-4D9F-9661-9643A9D8497E} = {2DAE9A49-708E-40C1-A3D9-F3E389AC3D4A}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
 	EndGlobalSection
 EndGlobal
