@@ -1,18 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcurl", "lib\vc6libcurl.vcproj", "{109C479B-80C7-435A-AC7D-6B40EBE87153}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcurl", "lib\vc6libcurl.vcxproj", "{109C479B-80C7-435A-AC7D-6B40EBE87153}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "curlsrc", "src\vc6curlsrc.vcproj", "{EF9FE319-F7FD-428C-825A-C1494C963FE1}"
-	ProjectSection(ProjectDependencies) = postProject
-		{109C479B-80C7-435A-AC7D-6B40EBE87153} = {109C479B-80C7-435A-AC7D-6B40EBE87153}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "curlsrc", "src\vc6curlsrc.vcxproj", "{EF9FE319-F7FD-428C-825A-C1494C963FE1}"
 EndProject
 Global
-	GlobalSection(SubversionScc) = preSolution
-		Svn-Managed = True
-		Manager = AnkhSVN - Subversion Support for Visual Studio
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		DLL Debug|Win32 = DLL Debug|Win32
 		DLL Release|Win32 = DLL Release|Win32
@@ -59,5 +52,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
 	EndGlobalSection
 EndGlobal
