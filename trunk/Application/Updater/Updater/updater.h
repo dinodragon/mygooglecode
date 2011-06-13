@@ -5,7 +5,7 @@
 
 enum UPDATEFLAG
 {
-	U_YES,U_NO,U_RECOMMEND
+	U_NO,U_YES,U_RECOMMEND
 };
 
 typedef struct

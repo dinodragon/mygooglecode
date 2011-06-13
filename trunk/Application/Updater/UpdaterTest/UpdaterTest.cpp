@@ -7,7 +7,9 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	bool a = Init("1.6","Base64.xml");
+	bool a = Init("1.5","Base64.xml");
+	UPDATEINFO ui;
+	bool b = GetUpdateInfo(&ui);
 	return 0;
 }
 
