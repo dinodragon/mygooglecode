@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Updater", "Updater\Updater.vcxproj", "{FACCE752-A0E6-482E-BDA0-F49D78BB7BEB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UpdaterTest", "UpdaterTest\UpdaterTest.vcxproj", "{73E9AF0D-A016-4D7B-8E46-C56D045632B6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FACCE752-A0E6-482E-BDA0-F49D78BB7BEB} = {FACCE752-A0E6-482E-BDA0-F49D78BB7BEB}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FACCE752-A0E6-482E-BDA0-F49D78BB7BEB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FACCE752-A0E6-482E-BDA0-F49D78BB7BEB}.Debug|Win32.Build.0 = Debug|Win32
+		{FACCE752-A0E6-482E-BDA0-F49D78BB7BEB}.Release|Win32.ActiveCfg = Release|Win32
+		{FACCE752-A0E6-482E-BDA0-F49D78BB7BEB}.Release|Win32.Build.0 = Release|Win32
+		{73E9AF0D-A016-4D7B-8E46-C56D045632B6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{73E9AF0D-A016-4D7B-8E46-C56D045632B6}.Debug|Win32.Build.0 = Debug|Win32
+		{73E9AF0D-A016-4D7B-8E46-C56D045632B6}.Release|Win32.ActiveCfg = Release|Win32
+		{73E9AF0D-A016-4D7B-8E46-C56D045632B6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
