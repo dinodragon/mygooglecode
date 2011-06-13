@@ -118,7 +118,6 @@
   <ItemGroup>
     <None Include="changes.txt" />
     <None Include="readme.txt" />
-    <None Include="tutorial_gettingStarted.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
