@@ -65,6 +65,7 @@ namespace LinQTest
             string[] result = differ.ToArray();
         }
 
+        //枚举类型值转成类型
         static void Test3()
         {
             DataType[] dt = { DataType.BigInt, DataType.Binary, DataType.Bit };
