@@ -1,0 +1,47 @@
+﻿@model IEnumerable<MvcMovie.Models.Movie>
+
+@{
+    ViewBag.Title = "My Movie List";
+}
+
+<h2>My Movie List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>Title</th>
+        <th>Release Date</th>
+        <th>Genre</th>
+        <th>Price</th>
+        <th>Rating</th>
+    </tr>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+        <td>
+            @item.Title
+        </td>
+        <td>
+            @String.Format("{0:d}", item.ReleaseDate)
+        </td>
+        <td>
+            @item.Genre
+        </td>
+        <td>
+            @String.Format("{0:c}", item.Price)
+        </td>
+        <td>
+            @item.Rating
+        </td>
+    </tr>
+}
+
+</table>
+
