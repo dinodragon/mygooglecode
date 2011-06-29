@@ -1,0 +1,68 @@
+/////////////////////////////////////////////////////////////////////////////
+// Portugiesisch (Brasilien) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Indique para o arquivo que você deseja criar o Link Ed2k"
+    IDS_BROWSE              "Procurar..."
+    IDS_ADDHTTP             "Adicionar"
+    IDS_HTTPREMOVE          "Remover"
+    IDS_HTTPADDRESS         "Endereço HTTP opcional será adicionado ao link (para links com Fontes Web)"
+    IDS_ADDEDHTTPSOURCES    "Fontes HTTP adicionadas"
+    IDS_HTTPCLEAR           "Limpar"
+    IDS_ED2KLINK            "Links Ed2k finalizados para este arquivo"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Iniciar"
+    IDS_CANCEL              "Cancelar"
+    IDS_EXIT                "Sair"
+    IDS_WITHHASHSET         "Criar o link com o hashset (ajuda à dividir os arquivos novos e raros rapidamente)"
+    IDS_EX1                 "Exemplo: ""http://www.meuespaconaweb.com/arquivos/"" (o nome do arquivo local será adicionado)"
+    IDS_EX2                 "          ou: ""http://www.meuespaconaweb.com/arquivos/meuarquivo.zip"""
+    IDS_COPYTOCLIPBOARD     "Copiar para a área de transferência"
+    IDS_WITHAICH            "Criar link com o Hash AICH"
+    IDS_COPYRIGHTS          "Copyright © %s por eMule-Project.net"
+    IDS_TRANSLATION         "Traduzido para o Português Brasileiro por Darth Maul"
+    IDS_ABOUT               "Sobre..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Hashing..."
+    IDS_INVALIDFILEPATH     "O local inserido para o arquivo é invalido. Falha ao efetuar o hash do arquivo."
+    IDS_INVALIDURL          "A URL é invalida"
+    IDS_CANTOPENFILE        "Incapaz de abrir o arquivo: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Falha ao calcular o AICH Hashset do arquivo "
+    IDS_SOURCESMANAGEMENT   "Gerenciador de Fontes"
+    IDS_CLIENTSCOURCE       "Usuario opcional para ser adicionado com as fontes (IP/Nome do Host e a Porta do(s) usuario(s) do eMule)"
+    IDS_CLIENTSOURCESLIST   "Fontes de usuarios adicionadas"
+    IDS_ERRCLIENTSOURCE     "Sintax de fonte de usuario invalida.\nPor favor insira no formato: ""IP:Porta""  ou  ""NomedoHost:Porta"" !"
+    IDS_CHECKSOURCE         "Verificar fonte"
+    IDS_ERR_WEBSOURCECHECK  "Erro: Incapaz de acessar o recurso especificado."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Erro: O tamanho do recurso remoto não corresponde ao tamanho do recurso local."
+    IDS_FILETOOLARGE        "O arquivo selecionado é maior do que a rede eD2k suporta!"
+END
+
+
+#endif    // Portugiesisch (Brasilien) resources
+/////////////////////////////////////////////////////////////////////////////

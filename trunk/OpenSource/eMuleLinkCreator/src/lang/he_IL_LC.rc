@@ -1,0 +1,67 @@
+/////////////////////////////////////////////////////////////////////////////
+// Hebrהisch resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HEB)
+#ifdef _WIN32
+LANGUAGE LANG_HEBREW, SUBLANG_DEFAULT
+#pragma code_page(1255)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "יוצר קישורי אימיול"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "מיקום של הקובץ שלו תרצה ליצור קישור ed2k"
+    IDS_BROWSE              "עיין..."
+    IDS_ADDHTTP             "הוסף"
+    IDS_HTTPREMOVE          "הסר"
+    IDS_HTTPADDRESS         "כתובת HTTP אפשרית עבור קובץ זה אשר יתווסף לקישור (עבור קישורים עם מקורות HTTP)"
+    IDS_ADDEDHTTPSOURCES    "מקורות HTTP שנוספו"
+    IDS_HTTPCLEAR           "מחק הכל"
+    IDS_ED2KLINK            "קישור ed2k עבור קובץ זה"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "התחל"
+    IDS_CANCEL              "בטל"
+    IDS_EXIT                "יציאה"
+    IDS_WITHHASHSET         "צור קישור עם סט האש (עוזר להפיץ קבצים חדשים ונדירים מהר יותר, הקישור ארוך יותר)"
+    IDS_EX1                 "דוגמה: ""http://www.mywebspace.com/files/"" (שם קובץ מקומי יתווסף לכתובת)"
+    IDS_EX2                 "       או: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "העתק לקליפבורד"
+    IDS_WITHAICH            "צור קישור עם האש AICH"
+    IDS_COPYRIGHTS          "כל הזכויות שמורות © %s ל-eMule-Project.net"
+    IDS_TRANSLATION         "תורגם לעברית ע""י Avi3k מ-hebMule.sf.net"
+    IDS_ABOUT               "על יוצר קישורי אימיול..."
+    IDS_OK                  "אישור"
+    IDS_HASHING             "מבצע האשינג..."
+    IDS_INVALIDFILEPATH     "מיקום הקובץ שהוכנס לא תקין, נכשל בביצוע האש לקובץ"
+    IDS_INVALIDURL          "כתובת ה-URL לא תקינה"
+    IDS_CANTOPENFILE        "לא יכול לפתוח קובץ: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "נכשל בחישוב סט האש AICH לקובץ "
+    IDS_SOURCESMANAGEMENT   "מנהל מקורות"
+    IDS_CLIENTSCOURCE       "קליינט אפשרי כמקור (איי פי ופורט של משתמשי אימיול):"
+    IDS_CLIENTSOURCESLIST   "הוסף מקורות קליינטים"
+    IDS_ERRCLIENTSOURCE     "מקור קליינט לא תקין.\nאנא הכנס את הפורמט: ""איי פי:פורט""  או  ""כתובת:פורט"" !"
+    IDS_CHECKSOURCE         "בדוק מקור"
+    IDS_ERR_WEBSOURCECHECK  "שגיאה: לא יכול לגשת למקור שצויין."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "שגיאה: גודל הקובץ המרוחק לא תואם לגודל הקובץ המקומי."
+    IDS_FILETOOLARGE        "The selected file is larger than the eD2k-Network supports!"
+END
+
+#endif    // Hebrהisch resources
+/////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,68 @@
+/////////////////////////////////////////////////////////////////////////////
+// Tschechisch resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CSY)
+#ifdef _WIN32
+LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Cesta k souboru, pro který máte zájem vytvoøit Ed2k odkaz"
+    IDS_BROWSE              "Procházet..."
+    IDS_ADDHTTP             "Pøidat"
+    IDS_HTTPREMOVE          "Odebrat"
+    IDS_HTTPADDRESS         "Volitelná HTTP-Adresa pro tento soubor, která bude pøidána k odkazu (pro odkzy s Webovými zdroji)"
+    IDS_ADDEDHTTPSOURCES    "Pøidané HTTP-Zdroje"
+    IDS_HTTPCLEAR           "Vyèistit"
+    IDS_ED2KLINK            "Dokonèený Ed2k odkaz pro tento soubor"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Generovat"
+    IDS_CANCEL              "Storno"
+    IDS_EXIT                "Ukonèit"
+    IDS_WITHHASHSET         "Vytvoøit odkaz s hashsetem (pomáhá rychleji rozšíøit nové a vzácné soubory na úkor velikosti odkazu)"
+    IDS_EX1                 "Pøíklad: ""http://www.mywebspace.com/files/"" (název lokálního souboru bude pøipojen)"
+    IDS_EX2                 "        nebo: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Zkopírovat do schránky"
+    IDS_WITHAICH            "Vytvoøit odkaz s AICH Hashem"
+    IDS_COPYRIGHTS          "Copyright © %s by eMule-Project.net"
+    IDS_TRANSLATION         "Do èeštiny pøeložil Patejl"
+    IDS_ABOUT               "O programu..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Hashování..."
+    IDS_INVALIDFILEPATH     "Vložená cesta k souboru je neplatná. Nepodaøilo se hashování souboru."
+    IDS_INVALIDURL          "URL je neplatná"
+    IDS_CANTOPENFILE        "Nepodaøilo se otevøít soubor: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Nepodaøilo se vypoèíst AICH Hashset ze souboru "
+    IDS_SOURCESMANAGEMENT   "Management Zdrojù"
+    IDS_CLIENTSCOURCE       "Volitelné pøidání klienta jako zdroje (IP/Hostname a Port eMule clientù)"
+    IDS_CLIENTSOURCESLIST   "Pøidané Zdroje klientù"
+    IDS_ERRCLIENTSOURCE     "Neplatná syntaxe Zdroje klientù.\nProsím použijte formát: ""IP:Port""  nebo  ""Hostname:Port"" !"
+    IDS_CHECKSOURCE         "Zkontrolovat zdroje"
+    IDS_ERR_WEBSOURCECHECK  "Chyba: Stanovený zdroj není dostupný."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Chyba: Velikost vzáleného zdroje neodpovídá velikosti lokálního zdroje."
+    IDS_FILETOOLARGE        "The selected file is larger than the eD2k-Network supports!"
+END
+
+
+#endif    // Tschechisch resources
+/////////////////////////////////////////////////////////////////////////////

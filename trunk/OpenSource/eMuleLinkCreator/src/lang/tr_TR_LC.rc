@@ -1,0 +1,68 @@
+/////////////////////////////////////////////////////////////////////////////
+// Türkisch resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_TRK)
+#ifdef _WIN32
+LANGUAGE LANG_TURKISH, SUBLANG_DEFAULT
+#pragma code_page(1254)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule Baðlantý Oluþturucu"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Oluþturmak istediðiniz Ed2k-Baðlantýsý için dosya yolu"
+    IDS_BROWSE              "Gözat..."
+    IDS_ADDHTTP             "Ekle"
+    IDS_HTTPREMOVE          "Kaldýr"
+    IDS_HTTPADDRESS         "Ýsteðe baðlý (WebKaynaklý baðlantýlar için) baðlantýya eklenecek olan bu dosya için HTTP-Adresi"
+    IDS_ADDEDHTTPSOURCES    "HTTP-Kaynaklarý Eklendi"
+    IDS_HTTPCLEAR           "Temizle"
+    IDS_ED2KLINK            "Bu dosya için Ed2k baðlantýsý bitti"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Oluþtur"
+    IDS_CANCEL              "Ýptal"
+    IDS_EXIT                "Çýkýþ"
+    IDS_WITHHASHSET         "Adresleme grubuyla baðlantý oluþtur (yeni ve nadir dosyalarý hýzlý yaymaya yardýmcý olur)"
+    IDS_EX1                 "Örnek: ""http://www.mywebspace.com/files/"" (yerel dosyaadý ilave edilecek)"
+    IDS_EX2                 "  veya: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Panoya kopyala"
+    IDS_WITHAICH            "AICH Adreslemesi ile baðlantý oluþtur"
+    IDS_COPYRIGHTS          "Telif Hakký © %s eMule-Project.net'e aittir"
+    IDS_TRANSLATION         "Türkçeye çeviren Burak Yavuz"
+    IDS_ABOUT               "Hakkýnda..."
+    IDS_OK                  "TAMAM"
+    IDS_HASHING             "Adresleniyor..."
+    IDS_INVALIDFILEPATH     "Girilmiþ dosya yolu geçersiz. Dosya adreslemesi baþarýsýz."
+    IDS_INVALIDURL          "URL geçersiz"
+    IDS_CANTOPENFILE        "Açýlamayan dosya: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "AICH Adresleme Grubunu hesaplamada baþarýsýz olduðu dosya "
+    IDS_SOURCESMANAGEMENT   "Kaynak Yönetimi"
+    IDS_CLIENTSCOURCE       "Ýsteðe baðlý istemci kaynak olarak eklendi (eMule istemcisinin IP/Anamakineadý ve B.Noktasý)"
+    IDS_CLIENTSOURCESLIST   "Ýstemci-Kaynaklarý Eklendi"
+    IDS_ERRCLIENTSOURCE     "Geçersiz istemci kaynak sözdizimi.\nLütfen bu biçimde girin: ""IP:B.Noktasý""  yada  ""Anamakineadý:B.Noktasý"" !"
+    IDS_CHECKSOURCE         "Kaynak kontrolü"
+    IDS_ERR_WEBSOURCECHECK  "Hata: Belirlenmiþ kaynaða eriþilemez."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Hata: Uzaktaki kaynak dosya boyutu yerel kaynak dosya boyutuyla uyuþmuyor."
+    IDS_FILETOOLARGE        "Seçilmiþ dosya eD2k-Aðýnýn desteklediðinden büyük!"
+END
+
+
+#endif    // Türkisch resources
+/////////////////////////////////////////////////////////////////////////////

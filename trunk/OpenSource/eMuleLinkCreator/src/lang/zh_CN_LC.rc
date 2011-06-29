@@ -1,0 +1,67 @@
+/////////////////////////////////////////////////////////////////////////////
+// Chinesisch (VR.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "你想要建立ed2k链接的文件的路径"
+    IDS_BROWSE              "浏览..."
+    IDS_ADDHTTP             "添加"
+    IDS_HTTPREMOVE          "移除"
+    IDS_HTTPADDRESS         "选择HTTP地址加入这个文件生成的链接(带HTTP源的链接)"
+    IDS_ADDEDHTTPSOURCES    "已添加的HTTP源"
+    IDS_HTTPCLEAR           "清除"
+    IDS_ED2KLINK            "这个文件已完成的ed2k链接"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "开始"
+    IDS_CANCEL              "取消"
+    IDS_EXIT                "退出"
+    IDS_WITHHASHSET         "生成带hashset的链接 (以此来帮助新的且稀有的档案更快的传播，这将会增加链接的大小)"
+    IDS_EX1                 "例如: ""http://www.mywebspace.com/files/"" (本地文件名将会被自动附加上)"
+    IDS_EX2                 "          或: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "复制到剪贴版"
+    IDS_WITHAICH            "生成带AICH Hash的链接"
+    IDS_COPYRIGHTS          "Copyright ?%s by eMule-Project.net"
+    IDS_TRANSLATION         "简体中文翻译:zhouwei_e"
+    IDS_ABOUT               "关于..."
+    IDS_OK                  "确定"
+    IDS_HASHING             "Hashing..."
+    IDS_INVALIDFILEPATH     "输入的文件路径无效. 文件hash失败."
+    IDS_INVALIDURL          "此网址无效"
+    IDS_CANTOPENFILE        "无法打开文件: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "计算该文件的AICH Hashset失败"
+    IDS_SOURCESMANAGEMENT   "来源管理"
+    IDS_CLIENTSCOURCE       "将会加入选择的客户端为来源 (eMule 客户端的IP/主机名 及 端口)"
+    IDS_CLIENTSOURCESLIST   "已加入的客户端来源"
+    IDS_ERRCLIENTSOURCE     "无效的客户端来源语法.\n请按下面的格式输入: ""IP:端口""  或  ""主机名:端口"" !"
+    IDS_CHECKSOURCE         "检查来源"
+    IDS_ERR_WEBSOURCECHECK  "错误: 无法存取指定的资源."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "错误: 远程文件与本地文件大小不符."
+    IDS_FILETOOLARGE        "此文件太大,已超出ed2k网络的支持!"
+END
+
+#endif    // Chinesisch (VR.C.) resources
+/////////////////////////////////////////////////////////////////////////////

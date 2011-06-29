@@ -1,0 +1,51 @@
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Path to the file for which you want to create the Ed2k-Link"
+    IDS_BROWSE              "Browse..."
+    IDS_ADDHTTP             "Add"
+    IDS_HTTPREMOVE          "Remove"
+    IDS_HTTPADDRESS         "Optional HTTP-Address for this file which will be added to the link (for links with Websources)"
+    IDS_ADDEDHTTPSOURCES    "Added HTTP-Sources"
+    IDS_HTTPCLEAR           "Clear"
+    IDS_ED2KLINK            "Finished Ed2k link for this file"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Generate"
+    IDS_CANCEL              "Cancel"
+    IDS_EXIT                "Exit"
+    IDS_WITHHASHSET         "Create link with hashset (helps to spread new and rare files faster, at the cost of an increased linksize)"
+    IDS_EX1                 "Example: ""http://www.mywebspace.com/files/"" (local filename will be appended)"
+    IDS_EX2                 "          or: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Copy to clipboard"
+    IDS_WITHAICH            "Create link with AICH Hash"
+    IDS_COPYRIGHTS          "Copyright © %s by eMule-Project.net"
+    IDS_TRANSLATION         " "
+    IDS_ABOUT               "About..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Hashing..."
+    IDS_INVALIDFILEPATH     "The entered filepath is invalid. Failed to hash file."
+    IDS_INVALIDURL          "The URL is invalid"
+    IDS_CANTOPENFILE        "Unable to open file: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Failed to calculate AICH Hashset from file "
+    IDS_SOURCESMANAGEMENT   "Sources Management"
+    IDS_CLIENTSCOURCE       "Optional client to be added as source (IP/Hostname and Port of eMule clients)"
+    IDS_CLIENTSOURCESLIST   "Added Client-Sources"
+    IDS_ERRCLIENTSOURCE     "Invalid client source syntax.\nPlease enter in the format: ""IP:Port""  or  ""Hostname:Port"" !"
+    IDS_CHECKSOURCE         "Check source"
+    IDS_ERR_WEBSOURCECHECK  "Error: Unable to access the specified ressource."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Error: Remote ressource filesize does not match local ressource filesize."
+    IDS_FILETOOLARGE        "The selected file is larger than the eD2k-Network supports!"
+END

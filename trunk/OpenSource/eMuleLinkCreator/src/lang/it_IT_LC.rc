@@ -1,0 +1,68 @@
+/////////////////////////////////////////////////////////////////////////////
+// Italienisch (Italien) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Percorso del file di cui vuoi creare un eD2k Link"
+    IDS_BROWSE              "Sfoglia..."
+    IDS_ADDHTTP             "Aggiungi"
+    IDS_HTTPREMOVE          "Rimuovi"
+    IDS_HTTPADDRESS         "Indirizzo HTTP opzionale per questo file da aggiungere al link (per un eD2k link con Websources)"
+    IDS_ADDEDHTTPSOURCES    "Fonti HTTP disponibili"
+    IDS_HTTPCLEAR           "Svuota"
+    IDS_ED2KLINK            "Link eD2k generato"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Genera"
+    IDS_CANCEL              "Annulla"
+    IDS_EXIT                "Esci"
+    IDS_WITHHASHSET         "Crea il link con hashset completo (aiuta a diffondere i files nuovi o rari ma comporta un link più lungo)"
+    IDS_EX1                 "Esempio: ""http://www.mywebspace.com/files/"" (Il nome del file locale verrà aggiunto automaticamente)"
+    IDS_EX2                 "          o: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Copia negli appunti"
+    IDS_WITHAICH            "Crea il link con l'hash AICH"
+    IDS_COPYRIGHTS          "Copyright © %s by eMule-Project.net"
+    IDS_TRANSLATION         "Traduzione italiana a cura di Treviño"
+    IDS_ABOUT               "Informazioni..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Hashing in corso..."
+    IDS_INVALIDFILEPATH     "Il percorso del file inserito non è valido. Impossibile calcolare l'hash!"
+    IDS_INVALIDURL          "L'URL non è valido"
+    IDS_CANTOPENFILE        "Impossibile aprire il file: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Impossibile calcolare l'hashset AICH dal file "
+    IDS_SOURCESMANAGEMENT   "Gestione delle Fonti"
+    IDS_CLIENTSCOURCE       "Client opzionale da aggiungere come fonte (IP/Hostname e Porte dei client eMule)"
+    IDS_CLIENTSOURCESLIST   "Fonti aggiunte"
+    IDS_ERRCLIENTSOURCE     "Sintassi della fonte non valida.\nUsare il seguente formato: ""IP:Porta""  o  ""Hostname:Porta"" !"
+    IDS_CHECKSOURCE         "Controlla la fonte"
+    IDS_ERR_WEBSOURCECHECK  "Errore: Impossibile accedere alla risorsa specificata."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Errore: la dimensione del file remoto non corrisponde a quella del file locale."
+    IDS_FILETOOLARGE        "The selected file is larger than the eD2k-Network supports!"
+END
+
+
+#endif    // Italienisch (Italien) resources
+/////////////////////////////////////////////////////////////////////////////

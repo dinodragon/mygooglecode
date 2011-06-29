@@ -1,0 +1,62 @@
+Changelog for eMule LinkCreator
+********************************
+
+v0.7
+----
+- Added support for large files
+- Imported optimized (faster) hashing from eMule (which was once added from Shareaza)
+
+v0.6
+----
+- added option to prevent URL length >2038 (web sources are removed when neccessary)
+  (Webbrowsers dont pass longer URLs to eMule when clicked. eMule could handle them fine when pasted into transferlist or when added by an emulecollection!)
+- fixed http source-check when filesize is not yet known
+
+v0.5
+----
+- fixed bug in created hashset syntax
+- double clicking the list of generated ed2k lists will toggle the list size
+- added support for hashing multiple files in a folder (HTTP sources are not used in this case!)
+	- either specify a folder to get ed2k links for all files in that folder
+	- or specify a folder and a file pattern using ? *   
+	
+	for instance: "c:\toshare" , "c:\toshare\*.zip" , "c:\toshare\Public-??.2005.*"
+
+
+v0.4
+----
+- fixed bug in checking files >2GB
+- fixed bug in retriving file information via HTTP
+- fixed some bad language display
+
+v0.3
+----
+Adapted updates from Avi3k (http://hebMule.sf.net):
+	Avi3k: added Spanish translations (thanx to RaJiL)
+	Avi3k: improved the code of file rehash prevention (fixed a little issue with AICH selection)
+	Avi3k: added commandline options to LinkCreator:
+		hashfile "filepath" - opens LinkCreator and starts hashing 'filepath', e.g: hashfile "c:\1.txt"
+		lang lid - opens LinkCreator in the 'lid' if supported (from v0.21), e.g: lang 1037 -> Hebrew
+	Avi3k: improved & changed other code parts
+	Avi3k: added multilingual support, currently LinkCreator supports English & Hebrew
+	Avi3k: changed various code parts to prevent rehashing of file while changing link options (to save CPU and Memory)
+	Avi3k: fixed file size to 4290048000 from eMule 0.45+
+	Avi3k: updated Hebrew translations
+	Avi3k: fixed some gui stuff and other issues in LinkCreator.rc file
+	Avi3k: added Hebrew translations
+	Avi3k: fixed info shown in LinkCreator.exe version properties
+
+Ornis: Added many more translations & separated language storage
+Ornis: Option for an online check for websources. It checks availability and matching filesize.
+
+
+v0.2
+----------------------
+- Sep 4th, 2004      -
+----------------------
+.: Added support for eMule AICH Hash Links
+
+----------------------
+- Jun 1th, 2004      -
+----------------------
+.: Initial release

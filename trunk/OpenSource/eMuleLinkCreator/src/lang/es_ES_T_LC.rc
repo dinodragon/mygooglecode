@@ -1,0 +1,67 @@
+/////////////////////////////////////////////////////////////////////////////
+// Spanisch (Kastilisch) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Dirección del archivo con el cual se creara el enlace Ed2k"
+    IDS_BROWSE              "Buscar.."
+    IDS_ADDHTTP             "Añadir"
+    IDS_HTTPREMOVE          "Quitar"
+    IDS_HTTPADDRESS         "Dirección-HTTP opcional para el archivo la cual será añadida al enlace (para enlaces con Websources)"
+    IDS_ADDEDHTTPSOURCES    "Fuentes-HTTP añadidas"
+    IDS_HTTPCLEAR           "Borrar"
+    IDS_ED2KLINK            "Enlace Ed2k final para el archivo"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Generar"
+    IDS_CANCEL              "Cancelar"
+    IDS_EXIT                "Salir"
+    IDS_WITHHASHSET         "Crear enlace con hashset (ayuda a repartir archivos nuevos y raros más rápidamente)"
+    IDS_EX1                 "Ejemplo: ""http://www.misitioweb.com/archivos/"" (archivo que sera abierto)"
+    IDS_EX2                 "         o : ""http://www.misitioweb.com/archivos/miarchivo.zip"""
+    IDS_COPYTOCLIPBOARD     "Copiar al portapapeles"
+    IDS_WITHAICH            "Crear enlace con AICH Hash"
+    IDS_COPYRIGHTS          "Copyright © 2004-2005 por eMule-Project.net"
+    IDS_TRANSLATION         "Traducido al español por RaJiL - Javier L."
+    IDS_ABOUT               "Acerca de..."
+    IDS_OK                  "Aceptar"
+    IDS_HASHING             "Codificando Hash..."
+    IDS_INVALIDFILEPATH     "La dirección de archivo introducida no es válida, error al calcular el hash del archivo"
+    IDS_INVALIDURL          "La URL no es válida"
+    IDS_CANTOPENFILE        "No se puede abrir el archivo: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Error al calcular el AICH Hashset del archivo"
+    IDS_SOURCESMANAGEMENT   "Administrar fuentes"
+    IDS_CLIENTSCOURCE       "Opcional Añadir fuente del Cliente (IP/Hostname y Puerto del cliente eMule):"
+    IDS_CLIENTSOURCESLIST   "Fuente del cliente añadida"
+    IDS_ERRCLIENTSOURCE     "Sintaxis de la fuente del cliente no válida.\nUtilizar el siguiente formato: ""IP:Puerto""  o  ""Hostname:Puerto"" !"
+    IDS_CHECKSOURCE         "Comprobar fuente"
+    IDS_ERR_WEBSOURCECHECK  "Error: No se puede acceder al recurso especificado."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Error: El tamaño de archivo del recurso remoto no se corresponde con el del recurso local."
+    IDS_FILETOOLARGE        "El archivo seleccionado es mayor que el que soporta la red eD2k!"
+END
+
+#endif    // Spanisch (Kastilisch) resources
+/////////////////////////////////////////////////////////////////////////////

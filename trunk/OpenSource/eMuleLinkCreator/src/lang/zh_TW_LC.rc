@@ -1,0 +1,67 @@
+/////////////////////////////////////////////////////////////////////////////
+// Chinesisch (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule 連結產生器"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "您想要建立 Ed2k-連結 檔案的路徑"
+    IDS_BROWSE              "瀏覽..."
+    IDS_ADDHTTP             "加入"
+    IDS_HTTPREMOVE          "移除"
+    IDS_HTTPADDRESS         "這個檔案連結將會被加入選用的 HTTP-位址 (以 Web-來源 做連結)"
+    IDS_ADDEDHTTPSOURCES    "已加入的 HTTP-來源"
+    IDS_HTTPCLEAR           "清除"
+    IDS_ED2KLINK            "這個檔案已完成的 Ed2k 連結"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "開始"
+    IDS_CANCEL              "取消"
+    IDS_EXIT                "離開"
+    IDS_WITHHASHSET         "以片段切細值建立連結 (幫助散佈新的且罕見的檔案更為快速, 這將會增加連結的大小)"
+    IDS_EX1                 "例如: ""http://www.mywebspace.com/files/"" (本地檔案名稱將會被自動附加上)"
+    IDS_EX2                 "          或: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "複製到剪貼簿"
+    IDS_WITHAICH            "以 AICH 切細值建立連結"
+    IDS_COPYRIGHTS          "版權所有 %s 經由 eMule-Project.net"
+    IDS_TRANSLATION         "繁體中文翻譯: CML"
+    IDS_ABOUT               "關於"
+    IDS_OK                  "確定"
+    IDS_HASHING             "切細中..."
+    IDS_INVALIDFILEPATH     "輸入檔案的路徑無效. 檔案切細失敗."
+    IDS_INVALIDURL          "這網址是無效的"
+    IDS_CANTOPENFILE        "無法開啟檔案: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "計算檔案的 AICH 片段切細值失敗 "
+    IDS_SOURCESMANAGEMENT   "來源管理"
+    IDS_CLIENTSCOURCE       "將會加入選用的客戶端成為來源 (eMule 客戶端的 IP/主機名稱 及 連接埠)"
+    IDS_CLIENTSOURCESLIST   "已加入的客戶端來源"
+    IDS_ERRCLIENTSOURCE     "無效的客戶端來源語法.\n請以下面格式輸入: ""IP:連接埠""  或  ""主機名稱:連接埠"" !"
+    IDS_CHECKSOURCE         "檢查來源"
+    IDS_ERR_WEBSOURCECHECK  "錯誤: 無法存取指定的資源."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "錯誤: 遠端資源檔案大小和本機資源檔案大小不相同."
+    IDS_FILETOOLARGE        "選擇的檔案大於 eD2k-網路 所支援的大小!"
+END
+
+#endif    // Chinesisch (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
