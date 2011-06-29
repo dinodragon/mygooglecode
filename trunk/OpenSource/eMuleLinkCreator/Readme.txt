@@ -1,4 +1,4 @@
-一个对任意文件生成ed2k链接的工具
+一个对任意文件生成ed2k链接的工具 及其源码。应该是VS2005的。
 
 官网http://www.emule-project.net/home/perl/general.cgi?l=42&ga=1&rm=download
 
