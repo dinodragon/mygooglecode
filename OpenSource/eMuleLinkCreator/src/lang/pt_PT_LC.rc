@@ -1,0 +1,68 @@
+/////////////////////////////////////////////////////////////////////////////
+// Portugiesisch (Portugal) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTG)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Caminho para o ficheiro a partir do qual deseja criar a ligação Ed2k"
+    IDS_BROWSE              "Procurar..."
+    IDS_ADDHTTP             "Adicionar"
+    IDS_HTTPREMOVE          "Remover"
+    IDS_HTTPADDRESS         "Endereço opcional HTTP para este ficheiro, que será adicionado à ligação (para ligações com fontes na web (Websources))"
+    IDS_ADDEDHTTPSOURCES    "Fontes HTTP Adicionadas"
+    IDS_HTTPCLEAR           "Limpar"
+    IDS_ED2KLINK            "Foi finalizada a ligação Ed2k para este ficheiro"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Gerar"
+    IDS_CANCEL              "Cancelar"
+    IDS_EXIT                "Sair"
+    IDS_WITHHASHSET         "Criar ligação com hashset (ajuda a disseminar mais rapidamente ficheiros novos e raros)"
+    IDS_EX1                 "Exemplo: ""http://www.meusite.com/ficheiros/"" (nome do ficheiro local será acrescido)"
+    IDS_EX2                 "          ou: ""http://www.meusite.com/ficheiros/meuficheiro.zip"""
+    IDS_COPYTOCLIPBOARD     "Copiar para o clipboard"
+    IDS_WITHAICH            "Criar ligação com hash AICH"
+    IDS_COPYRIGHTS          "Copyright © %s por eMule-Project.net"
+    IDS_TRANSLATION         "Português (Portugal), traduzido por PhiloHippus"
+    IDS_ABOUT               "Acerca de..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "A calcular hash..."
+    IDS_INVALIDFILEPATH     "O caminho de ficheiro inserido é inválido. Não foi possível calcular a hash."
+    IDS_INVALIDURL          "O URL é inválido"
+    IDS_CANTOPENFILE        "Não foi possível abrir o ficheiro: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Não foi possível calcular a Hash AICH a partir do ficheiro "
+    IDS_SOURCESMANAGEMENT   "Gestão de Fontes"
+    IDS_CLIENTSCOURCE       "Cliente opcional a ser adicionado como fonte (IP/Domínio e Porta de clientes eMule)"
+    IDS_CLIENTSOURCESLIST   "Foram adicionados os Clientes-Fonte"
+    IDS_ERRCLIENTSOURCE     "Sintaxe de cliente-fonte inválida.\nPor favor insira no formato: ""IP:Porta""  ou  ""Domínio:Porta"" !"
+    IDS_CHECKSOURCE         "Verificar fonte"
+    IDS_ERR_WEBSOURCECHECK  "Erro: Impossível aceder ao recurso especificado."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Erro: Tamanho do recurso remoto não corresponde ao tamanho do recurso local."
+    IDS_FILETOOLARGE        "O tamanho do ficheiro seleccionado é maior que o limite suportado pela rede eD2k!"
+END
+
+
+#endif    // Portugiesisch (Portugal) resources
+/////////////////////////////////////////////////////////////////////////////

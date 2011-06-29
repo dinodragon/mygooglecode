@@ -1,0 +1,64 @@
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Emplacement du fichier pour lequel vous souhaitez créer un lien Ed2k"
+    IDS_BROWSE              "Parcourir..."
+    IDS_ADDHTTP             "Ajouter"
+    IDS_HTTPREMOVE          "Supprimer"
+    IDS_HTTPADDRESS         "Adresse http optionelle - Sera ajoutée au lien (uniquement pour les liens avec une source Web)"
+    IDS_ADDEDHTTPSOURCES    "Sources HTTP ajoutées"
+    IDS_HTTPCLEAR           "Effacer"
+    IDS_ED2KLINK            "Lien ED2k calculé pour ce fichier"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Générer"
+    IDS_CANCEL              "Annuler"
+    IDS_EXIT                "Quitter"
+    IDS_WITHHASHSET         "Inclure la table de hachage (aide à diffuser les fichiers nouveaux et rares, augmente la taille du lien)"
+    IDS_EX1                 "Exemple: ""http://www.mywebspace.com/files/"" (le nom du fichier local sera ajouté)"
+    IDS_EX2                 "          ou: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Copier vers le presse-papier"
+    IDS_WITHAICH            "Créer un lien comportant un hachage AICH"
+    IDS_COPYRIGHTS          "Copyright © %s by eMule-Project.net"
+    IDS_TRANSLATION         " "
+    IDS_ABOUT               "A propos..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Hachage en cours"
+    IDS_INVALIDFILEPATH     "Chemin d'accès au fichier incorrect. Echec du hachage."
+    IDS_INVALIDURL          "L'URL est incorrecte"
+    IDS_CANTOPENFILE        "Impossible d'ouvrir le fichier: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Impossible de calculer la table AICH du fichier "
+    IDS_SOURCESMANAGEMENT   "Gestion des sources"
+    IDS_CLIENTSCOURCE       "Client optionnel à ajouter en tant que source (IP/Hôte et port du client eMule)"
+    IDS_CLIENTSOURCESLIST   "Sources Client ajoutées"
+    IDS_ERRCLIENTSOURCE     "Format invalide pour la source client.\nVeuillez utiliser la syntaxe: ""IP:Port"" ou ""Hôte:Port"" !"
+    IDS_CHECKSOURCE         "Vérif source"
+    IDS_ERR_WEBSOURCECHECK  "Erreur: impossible d'accéder à la ressource spécifiée."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Erreur : la taille de la ressource distante ne correspond pas à celle de la ressource locale."
+    IDS_FILETOOLARGE        "Taille du fichier indiqué supérieure à celle supportée par eD2k !"
+END
+
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////

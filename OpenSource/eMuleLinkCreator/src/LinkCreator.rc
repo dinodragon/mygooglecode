@@ -1,0 +1,1411 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinesisch (VR.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "ÄãÏëÒª½¨Á¢ed2kÁ´½ÓµÄÎÄ¼þµÄÂ·¾¶"
+    IDS_BROWSE              "ä¯ÀÀ..."
+    IDS_ADDHTTP             "Ìí¼Ó"
+    IDS_HTTPREMOVE          "ÒÆ³ý"
+    IDS_HTTPADDRESS         "Ñ¡ÔñHTTPµØÖ·¼ÓÈëÕâ¸öÎÄ¼þÉú³ÉµÄÁ´½Ó(´øHTTPÔ´µÄÁ´½Ó)"
+    IDS_ADDEDHTTPSOURCES    "ÒÑÌí¼ÓµÄHTTPÔ´"
+    IDS_HTTPCLEAR           "Çå³ý"
+    IDS_ED2KLINK            "Õâ¸öÎÄ¼þÒÑÍê³ÉµÄed2kÁ´½Ó"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "¿ªÊ¼"
+    IDS_CANCEL              "È¡Ïû"
+    IDS_EXIT                "ÍË³ö"
+    IDS_WITHHASHSET         "Éú³É´øhashsetµÄÁ´½Ó (ÒÔ´ËÀ´°ïÖúÐÂµÄÇÒÏ¡ÓÐµÄµµ°¸¸ü¿ìµÄ´«²¥£¬Õâ½«»áÔö¼ÓÁ´½ÓµÄ´óÐ¡)"
+    IDS_EX1                 "ÀýÈç: ""http://www.mywebspace.com/files/"" (±¾µØÎÄ¼þÃû½«»á±»×Ô¶¯¸½¼ÓÉÏ)"
+    IDS_EX2                 "          »ò: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "¸´ÖÆµ½¼ôÌù°æ"
+    IDS_WITHAICH            "Éú³É´øAICH HashµÄÁ´½Ó"
+    IDS_COPYRIGHTS          "Copyright ?%s by eMule-Project.net"
+    IDS_TRANSLATION         "¼òÌåÖÐÎÄ·­Òë:zhouwei_e"
+    IDS_ABOUT               "¹ØÓÚ..."
+    IDS_OK                  "È·¶¨"
+    IDS_HASHING             "Hashing..."
+    IDS_INVALIDFILEPATH     "ÊäÈëµÄÎÄ¼þÂ·¾¶ÎÞÐ§. ÎÄ¼þhashÊ§°Ü."
+    IDS_INVALIDURL          "´ËÍøÖ·ÎÞÐ§"
+    IDS_CANTOPENFILE        "ÎÞ·¨´ò¿ªÎÄ¼þ: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "¼ÆËã¸ÃÎÄ¼þµÄAICH HashsetÊ§°Ü"
+    IDS_SOURCESMANAGEMENT   "À´Ô´¹ÜÀí"
+    IDS_CLIENTSCOURCE       "½«»á¼ÓÈëÑ¡ÔñµÄ¿Í»§¶ËÎªÀ´Ô´ (eMule ¿Í»§¶ËµÄIP/Ö÷»úÃû ¼° ¶Ë¿Ú)"
+    IDS_CLIENTSOURCESLIST   "ÒÑ¼ÓÈëµÄ¿Í»§¶ËÀ´Ô´"
+    IDS_ERRCLIENTSOURCE     "ÎÞÐ§µÄ¿Í»§¶ËÀ´Ô´Óï·¨.\nÇë°´ÏÂÃæµÄ¸ñÊ½ÊäÈë: ""IP:¶Ë¿Ú""  »ò  ""Ö÷»úÃû:¶Ë¿Ú"" !"
+    IDS_CHECKSOURCE         "¼ì²éÀ´Ô´"
+    IDS_ERR_WEBSOURCECHECK  "´íÎó: ÎÞ·¨´æÈ¡Ö¸¶¨µÄ×ÊÔ´."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH "´íÎó: Ô¶³ÌÎÄ¼þÓë±¾µØÎÄ¼þ´óÐ¡²»·û."
+    IDS_FILETOOLARGE        "´ËÎÄ¼þÌ«´ó,ÒÑ³¬³öed2kÍøÂçµÄÖ§³Ö!"
+END
+
+#endif    // Chinesisch (VR.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinesisch (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule ³sµ²²£¥Í¾¹"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "±z·Q­n«Ø¥ß Ed2k-³sµ² ÀÉ®×ªº¸ô®|"
+    IDS_BROWSE              "ÂsÄý..."
+    IDS_ADDHTTP             "¥[¤J"
+    IDS_HTTPREMOVE          "²¾°£"
+    IDS_HTTPADDRESS         "³o­ÓÀÉ®×³sµ²±N·|³Q¥[¤J¿ï¥Îªº HTTP-¦ì§} (¥H Web-¨Ó·½ °µ³sµ²)"
+    IDS_ADDEDHTTPSOURCES    "¤w¥[¤Jªº HTTP-¨Ó·½"
+    IDS_HTTPCLEAR           "²M°£"
+    IDS_ED2KLINK            "³o­ÓÀÉ®×¤w§¹¦¨ªº Ed2k ³sµ²"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "¶}©l"
+    IDS_CANCEL              "¨ú®ø"
+    IDS_EXIT                "Â÷¶}"
+    IDS_WITHHASHSET         "¥H¤ù¬q¤Á²Ó­È«Ø¥ß³sµ² (À°§U´²§G·sªº¥B¨u¨£ªºÀÉ®×§ó¬°§Ö³t, ³o±N·|¼W¥[³sµ²ªº¤j¤p)"
+    IDS_EX1                 "¨Ò¦p: ""http://www.mywebspace.com/files/"" (¥»¦aÀÉ®×¦WºÙ±N·|³Q¦Û°Êªþ¥[¤W)"
+    IDS_EX2                 "          ©Î: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "½Æ»s¨ì°Å¶KÃ¯"
+    IDS_WITHAICH            "¥H AICH ¤Á²Ó­È«Ø¥ß³sµ²"
+    IDS_COPYRIGHTS          "ª©Åv©Ò¦³ %s ¸g¥Ñ eMule-Project.net"
+    IDS_TRANSLATION         "ÁcÅé¤¤¤åÂ½Ä¶: CML"
+    IDS_ABOUT               "Ãö©ó"
+    IDS_OK                  "½T©w"
+    IDS_HASHING             "¤Á²Ó¤¤..."
+    IDS_INVALIDFILEPATH     "¿é¤JÀÉ®×ªº¸ô®|µL®Ä. ÀÉ®×¤Á²Ó¥¢±Ñ."
+    IDS_INVALIDURL          "³oºô§}¬OµL®Äªº"
+    IDS_CANTOPENFILE        "µLªk¶}±ÒÀÉ®×: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "­pºâÀÉ®×ªº AICH ¤ù¬q¤Á²Ó­È¥¢±Ñ "
+    IDS_SOURCESMANAGEMENT   "¨Ó·½ºÞ²z"
+    IDS_CLIENTSCOURCE       "±N·|¥[¤J¿ï¥Îªº«È¤áºÝ¦¨¬°¨Ó·½ (eMule «È¤áºÝªº IP/¥D¾÷¦WºÙ ¤Î ³s±µ°ð)"
+    IDS_CLIENTSOURCESLIST   "¤w¥[¤Jªº«È¤áºÝ¨Ó·½"
+    IDS_ERRCLIENTSOURCE     "µL®Äªº«È¤áºÝ¨Ó·½»yªk.\n½Ð¥H¤U­±®æ¦¡¿é¤J: ""IP:³s±µ°ð""  ©Î  ""¥D¾÷¦WºÙ:³s±µ°ð"" !"
+    IDS_CHECKSOURCE         "ÀË¬d¨Ó·½"
+    IDS_ERR_WEBSOURCECHECK  "¿ù»~: µLªk¦s¨ú«ü©wªº¸ê·½."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "¿ù»~: »·ºÝ¸ê·½ÀÉ®×¤j¤p©M¥»¾÷¸ê·½ÀÉ®×¤j¤p¤£¬Û¦P."
+    IDS_FILETOOLARGE        "¿ï¾ÜªºÀÉ®×¤j©ó eD2k-ºô¸ô ©Ò¤ä´©ªº¤j¤p!"
+END
+
+#endif    // Chinesisch (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Tschechisch resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CSY)
+#ifdef _WIN32
+LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Cesta k souboru, pro který máte zájem vytvoøit Ed2k odkaz"
+    IDS_BROWSE              "Procházet..."
+    IDS_ADDHTTP             "Pøidat"
+    IDS_HTTPREMOVE          "Odebrat"
+    IDS_HTTPADDRESS         "Volitelná HTTP-Adresa pro tento soubor, která bude pøidána k odkazu (pro odkzy s Webovými zdroji)"
+    IDS_ADDEDHTTPSOURCES    "Pøidané HTTP-Zdroje"
+    IDS_HTTPCLEAR           "Vyèistit"
+    IDS_ED2KLINK            "Dokonèený Ed2k odkaz pro tento soubor"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Generovat"
+    IDS_CANCEL              "Storno"
+    IDS_EXIT                "Ukonèit"
+    IDS_WITHHASHSET         "Vytvoøit odkaz s hashsetem (pomáhá rychleji rozšíøit nové a vzácné soubory na úkor velikosti odkazu)"
+    IDS_EX1                 "Pøíklad: ""http://www.mywebspace.com/files/"" (název lokálního souboru bude pøipojen)"
+    IDS_EX2                 "        nebo: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Zkopírovat do schránky"
+    IDS_WITHAICH            "Vytvoøit odkaz s AICH Hashem"
+    IDS_COPYRIGHTS          "Copyright © %s by eMule-Project.net"
+    IDS_TRANSLATION         "Do èeštiny pøeložil Patejl"
+    IDS_ABOUT               "O programu..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Hashování..."
+    IDS_INVALIDFILEPATH     "Vložená cesta k souboru je neplatná. Nepodaøilo se hashování souboru."
+    IDS_INVALIDURL          "URL je neplatná"
+    IDS_CANTOPENFILE        "Nepodaøilo se otevøít soubor: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Nepodaøilo se vypoèíst AICH Hashset ze souboru "
+    IDS_SOURCESMANAGEMENT   "Management Zdrojù"
+    IDS_CLIENTSCOURCE       "Volitelné pøidání klienta jako zdroje (IP/Hostname a Port eMule clientù)"
+    IDS_CLIENTSOURCESLIST   "Pøidané Zdroje klientù"
+    IDS_ERRCLIENTSOURCE     "Neplatná syntaxe Zdroje klientù.\nProsím použijte formát: ""IP:Port""  nebo  ""Hostname:Port"" !"
+    IDS_CHECKSOURCE         "Zkontrolovat zdroje"
+    IDS_ERR_WEBSOURCECHECK  "Chyba: Stanovený zdroj není dostupný."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Chyba: Velikost vzáleného zdroje neodpovídá velikosti lokálního zdroje."
+    IDS_FILETOOLARGE        "The selected file is larger than the eD2k-Network supports!"
+END
+
+#endif    // Tschechisch resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Rumänisch resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ROM)
+#ifdef _WIN32
+LANGUAGE LANG_ROMANIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "Creator Link eMule"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Genereazã"
+    IDS_CANCEL              "Anuleazã"
+    IDS_EXIT                "Ieºire"
+    IDS_WITHHASHSET         "Creeazã link cu hashset (ajutã la rãspîndirea mai rapidã a fiºierelor noi ºi rare,în defavoarea unui link mai lung)"
+    IDS_EX1                 "Exemplu: ""http://www.mywebspace.com/files/"" (numele local fiºier va fi adãugat)"
+    IDS_EX2                 "          sau: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Copiazã în Agendã"
+    IDS_WITHAICH            "Creeazã link cu AICH Hash"
+    IDS_COPYRIGHTS          "Drept de autor © %s al eMule-Project.net"
+    IDS_TRANSLATION         "ROMANIAN translation by Drugwash AKA Fabiana"
+    IDS_ABOUT               "Despre"
+    IDS_OK                  "OK"
+    IDS_HASHING             "Fac hash..."
+    IDS_INVALIDFILEPATH     "Calea introdusã nu e validã. Nu pot face hash fiºierului."
+    IDS_INVALIDURL          "Adresa URL e invalidã"
+    IDS_CANTOPENFILE        "Nu pot deschide fiºierul: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Calea cãtre fiºierul pentru care creezi Ed2k-Link"
+    IDS_BROWSE              "Rãsfoieºte..."
+    IDS_ADDHTTP             "Adaugã"
+    IDS_HTTPREMOVE          "ªterge"
+    IDS_HTTPADDRESS         "Adresa HTTP opþionalã a acestui fiºier ce va fi adãugatã la link (ptr. link-uri cu surse Web)"
+    IDS_ADDEDHTTPSOURCES    "Surse HTTP adãugate"
+    IDS_HTTPCLEAR           "Curãþã"
+    IDS_ED2KLINK            "Link Ed2k terminat pentru acest fiºier"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Nu pot calcula AICH Hashset din fiºier "
+    IDS_SOURCESMANAGEMENT   "Manipulare surse"
+    IDS_CLIENTSCOURCE       "Client opþional de adãugat ca sursã (IP/Hostname ºi Port ptr. clienþi eMule)"
+    IDS_CLIENTSOURCESLIST   "Surse-client adãugate"
+    IDS_ERRCLIENTSOURCE     "Sintaxã invalidã sursã client.\nFoloseºte te rog formatul: ""IP:Port""  sau  ""Hostname:Port"" !"
+    IDS_CHECKSOURCE         "Verificã sursa"
+    IDS_ERR_WEBSOURCECHECK  "Eroare: Nu pot accesa resursa specificatã."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Eroare: Lungime fiºier diferitã local faþã de cel la distanþã."
+    IDS_FILETOOLARGE        "The selected file is larger than the eD2k-Network supports!"
+END
+
+#endif    // Rumänisch resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Russisch resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "Ñîçäàòåëü ññûëêè eMule"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Ïóòü ê ôàéëó, äëÿ êîòîðîãî Âû õîòèòå ñîçäàòü ññûëêó eD2K"
+    IDS_BROWSE              "Ïðîñìîòð"
+    IDS_ADDHTTP             "Äîáàâèòü"
+    IDS_HTTPREMOVE          "Óäàëèòü"
+    IDS_HTTPADDRESS         "Äîïîëíèòåëüíûé HTTP àäðåñ äëÿ ýòîãî ôàéëà, êîòîðûé áóäåò äîáàâëåí â ññûëêó (äëÿ ññûëîê ñ Web èñòî÷íèêîì)"
+    IDS_ADDEDHTTPSOURCES    "Äîáàâëåí HTTP èñòî÷íèê"
+    IDS_HTTPCLEAR           "Î÷èñòèòü"
+    IDS_ED2KLINK            "Ãîòîâàÿ ññûëêà eD2K äëÿ ýòîãî ôàéëà"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Ñãåíåðèðîâàòü"
+    IDS_CANCEL              "Îòìåíèòü"
+    IDS_EXIT                "Âûõîä"
+    IDS_WITHHASHSET         "Ñîçäàòü ññûëêó ñ õåøåì äàííûõ (ïîìîãàåò áûñòðåå ðàñïðåäåëÿòü ðåäêèå ôàéëû)"
+    IDS_EX1                 "Ïðèìåð: ""http://www.mywebspace.com/files/"" (ìåñòíîå èìÿ ôàéëà áóäåò ïðèëîæåíî)"
+    IDS_EX2                 "          èëè: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Ñêîïèðîâàòü â áóôåð îáìåíà"
+    IDS_WITHAICH            "Ñîçäàòü ññûëêó ñ AICH õåøåì"
+    IDS_COPYRIGHTS          "Copyright © 2004-2006 by eMule-Project.net"
+    IDS_TRANSLATION         "Íà ðóññêèé ÿçûê ïåðåâ¸ë Ò-Ìàñ"
+    IDS_ABOUT               "Ïðî"
+    IDS_OK                  "OK"
+    IDS_HASHING             "Õåøèðîâàíèå"
+    IDS_INVALIDFILEPATH     "Ïóòü ê ôàéëó íåâåðíûé. Õåøèðîâàíèå íåâîçìîæíî."
+    IDS_INVALIDURL          "URL íåâåðíûé"
+    IDS_CANTOPENFILE        "Íåâîçìîæíî îòêðûòü ôàéë: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Îøèáêà ïðè ïåðåñ÷¸òå AICH õåøà "
+    IDS_SOURCESMANAGEMENT   "Óïðàâëåíèå èñòî÷íèêîâ"
+    IDS_CLIENTSCOURCE       "Äîïîëíèòåëüíûé êëèåíò, êîòîðûé áóäåò äîáàâëåí êàê èñòî÷íèê (IP/Õîñò è ïîðò eMule êëèåíòîâ)"
+    IDS_CLIENTSOURCESLIST   "Äîáàâëåí èñòî÷íèê êëèåíòà"
+    IDS_ERRCLIENTSOURCE     "Íåâåðíûé ñèíòàêñèñ èñòî÷íèêà êëèåíòà\nÏîæàëóéñòà ââåäèòå â ôîðìàòå: ""IP:Ïîðò"" èëè ""Èìÿ õîñòà:Ïîðò"" !"
+    IDS_CHECKSOURCE         "Ïðîâåðèòü èñòî÷íèê"
+    IDS_ERR_WEBSOURCECHECK  "Îøèáêà: Íåò äîñòóïà ê óêàçàííûì ðåñóðñàì."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Îøèáêà: Óäàë¸ííûé ðàçìåð ðåñóðñà íå ñîâïàäàåò ñ ìåñòíûì ðàçìåðîì ðåñóðñà."
+    IDS_FILETOOLARGE        "Âûáðàííûé ôàéë áîëüøå ÷åì ïîääåðæèâàåòñÿ ñåòüþ eD2K!"
+END
+
+#endif    // Russisch resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#include ""res\\LinkCreator.rc2""  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen\r\n"
+    "#include ""afxres.rc""         // Standardkomponenten\r\n"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\LinkCreator.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "eMule LinkCreator",IDC_STATIC1,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright © 2004-2006 by eMule-Project.net",IDC_STATIC2,
+                    40,25,188,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,BS_FLAT | WS_GROUP
+    LTEXT           "",IDC_STATIC3,40,39,188,8
+END
+
+IDD_LINKCREATOR_DIALOG DIALOGEX 0, 0, 364, 353
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "eMule LinkCreator v0.x"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_FILEPATH,7,12,289,14,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Browse...",IDC_BROWSE,297,13,58,14,BS_FLAT
+    EDITTEXT        IDC_HTTPPATH,14,70,282,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_ADDHTTP,299,70,58,14,BS_FLAT
+    LISTBOX         IDC_HTTPLIST,14,96,282,43,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Remove",IDC_HTTPREMOVE,299,96,58,14,BS_FLAT
+    PUSHBUTTON      "Clear",IDC_HTTPCLEAR,299,125,58,14,BS_FLAT
+    EDITTEXT        IDC_CLIENTSOURCE,15,162,281,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_ADDCLIENT,299,162,58,14,BS_FLAT
+    LISTBOX         IDC_CLIENTSOURCESLIST,15,186,281,38,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Remove",IDC_CLIENTREMOVE,299,186,58,14,BS_FLAT
+    PUSHBUTTON      "Clear",IDC_CLIENTSOURCECLEAR,299,210,58,14,BS_FLAT
+    CONTROL         "Create link with AICH Hash",IDC_WITHAICH,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,7,233,354,10
+    CONTROL         "Create link with hashset (helps to spread new and rare files faster, at the cost of an increased linksize)",
+                    IDC_WITHHASHSET,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,7,244,354,10
+    PUSHBUTTON      "Start",IDC_START,7,324,65,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDC_CANCEL,74,324,65,14,BS_FLAT | WS_DISABLED
+    PUSHBUTTON      "Copy to clipboard",IDC_COPY2CB,7,339,132,14,BS_FLAT
+    PUSHBUTTON      "Exit",IDC_EXIT,311,325,50,14,BS_FLAT
+    COMBOBOX        IDC_LANGCOMBO,225,339,138,49,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Path to File for which you want to create the Ed2k-Link",
+                    IDC_STATIC1,7,4,354,8
+    LTEXT           "Optional HTTP-Address for this file which will be added to the link (for links with Websources)",
+                    IDC_STATIC2,13,42,342,8
+    LTEXT           "Added HTTP-Sources",IDC_STATIC3,16,88,281,8
+    LTEXT           "Finished Ed2k Link for this file",IDC_STATIC4,7,259,289,
+                    8
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_DISABLED,7,306,
+                    354,8
+    LTEXT           "Example: ""http://www.mywebspace.com/files/"" (local filename will be appended)",
+                    IDC_STATIC5,14,51,339,8
+    LTEXT           "          or: ""http://www.mywebspace.com/files/myfile.zip""",
+                    IDC_STATIC6,14,60,272,8
+    GROUPBOX        "Sources",IDC_SOURCESFRAME,7,31,354,197,BS_FLAT
+    LTEXT           "Optional client as source (IP and Port of eMule clients):",
+                    IDC_STATICCLIENTSOURCES,15,154,339,8
+    LTEXT           "Added Client-Sources",IDC_STATIC8,15,177,281,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,9,150,349,1
+    CONTROL         "Check",IDC_CHECKSOURCE,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,296,61,62,8
+    LTEXT           "",IDC_STATUS,7,314,354,8
+    EDITTEXT        IDC_RESULT,7,268,354,37,ES_MULTILINE | ES_READONLY | 
+                    ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "Prevent URL length>2038",IDC_LENGTHCHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,14,139,347,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,7,0,0
+ PRODUCTVERSION 0,7,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "CompanyName", "eMule-Project.net"
+            VALUE "Copyright", "2004-2006, eMule-Project.net"
+            VALUE "FileDescription", "eMule LinkCreator with HTTP Sources"
+            VALUE "FileVersion", "0.7.0.0"
+            VALUE "InternalName", "LinkCreator.exe"
+            VALUE "OriginalFilename", "LinkCreator.exe"
+            VALUE "ProductName", "eMule LinkCreator"
+            VALUE "ProductVersion", "0.7.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_LINKCREATOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 361
+        VERTGUIDE, 296
+        VERTGUIDE, 361
+        TOPMARGIN, 2
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\LinkCreator.manifest"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Dänisch resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DAN)
+#ifdef _WIN32
+LANGUAGE LANG_DANISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Vælg en fil eller en sti til filen/filerne du ønsker at lave et ed2k link til"
+    IDS_BROWSE              "Søg..."
+    IDS_ADDHTTP             "Tilføj"
+    IDS_HTTPREMOVE          "Fjern"
+    IDS_HTTPADDRESS         "Valgfri HTTP-Adresse til denne fil vil blive tilføjet til linket (for links med web-kilder)"
+    IDS_ADDEDHTTPSOURCES    "Tilføjede HTTP-Kilder"
+    IDS_HTTPCLEAR           "Ryd"
+    IDS_ED2KLINK            "Færdige ed2k links til denne fil"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Generér"
+    IDS_CANCEL              "Annullér"
+    IDS_EXIT                "Afslut"
+    IDS_WITHHASHSET         "Skab links med hashset (Hjælper med hurtigere at sprede nye og sjældne filer. Større linkstørrelse)"
+    IDS_EX1                 "Eksempel: ""http://www.mywebspace.com/filer/"" (lokalt filnavn vil blive tilføjet)"
+    IDS_EX2                 "          eller: ""http://www.mywebspace.com/filer/minfil.zip"""
+    IDS_COPYTOCLIPBOARD     "Kopier til udklipsholderen"
+    IDS_WITHAICH            "Skab links med AICH Hash"
+    IDS_COPYRIGHTS          "Copyright © %s af eMule-Project.net"
+    IDS_TRANSLATION         "Dansk oversættelse af birk"
+    IDS_ABOUT               "Om..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Hashing..."
+    IDS_INVALIDFILEPATH     "Den indtastede sti til filen er ukorrekt. Mislykkedes at hashe filen."
+    IDS_INVALIDURL          "URL'en er ukorrekt"
+    IDS_CANTOPENFILE        "Ikke i stand til at åbne filen: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Mislykkedes at udregne AICH Hashset fra filen "
+    IDS_SOURCESMANAGEMENT   "Kildeadministration"
+    IDS_CLIENTSCOURCE       "Valgfri klient, der skal tilføjes som kilde (IP/Hostnavn og Port for eMule klienter)"
+    IDS_CLIENTSOURCESLIST   "Tilføjede Klient-Kilder"
+    IDS_ERRCLIENTSOURCE     "Invalid klient-kilde syntax.\nIndtast venligst i formatet: ""IP:Port""  or  ""Hostnavn:Port"" !"
+    IDS_CHECKSOURCE         "Check kilde"
+    IDS_ERR_WEBSOURCECHECK  "Fejl: Ikke i stand til at få adgang til den specificerede ressource."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Fejl: Fjern-ressourcens filstørrelse stemmer ikke overens med lokal-ressourcens filstørrelse."
+    IDS_FILETOOLARGE        "The selected file is larger than the eD2k-Network supports!"
+END
+
+#endif    // Dänisch resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Datei, oder Pfad (Maske optional) zu Dateien, für welche Ed2k-Link(s) erstellt werden soll(en):"
+    IDS_BROWSE              "&Durchsuchen..."
+    IDS_ADDHTTP             "Hinzufügen"
+    IDS_HTTPREMOVE          "Entfernen"
+    IDS_HTTPADDRESS         "Optionale HTTP-Addresse für diese Datei, welche dem Link hinzugefügt wird (für Links mit Web-Quellen)"
+    IDS_ADDEDHTTPSOURCES    "Hinzugefügte HTTP-Quellen"
+    IDS_HTTPCLEAR           "Löschen"
+    IDS_ED2KLINK            "Fertige Ed2k-Links"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "&Generieren"
+    IDS_CANCEL              "&Abbruch"
+    IDS_EXIT                "&Beenden"
+    IDS_WITHHASHSET         "Erstelle Links mit Hashset (hilft, neue und seltene Dateien schneller zu verteilen, aber längerer Link)"
+    IDS_EX1                 "Beispiel: ""http://www.mywebspace.com/files/"" (lokaler Dateiname wird angehängt)"
+    IDS_EX2                 "          oder: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Kopiere in Zwischenablage"
+    IDS_WITHAICH            "Erstelle Links mit AICH Hash"
+    IDS_COPYRIGHTS          "Copyright © %s by eMule-Project.net"
+    IDS_TRANSLATION         "Deutsche Übersetzung: Ornis"
+    IDS_ABOUT               "Über..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Hashing..."
+    IDS_INVALIDFILEPATH     "Der angegebene Dateipfad ist ungültig. Hashing der Datei fehlgeschlagen."
+    IDS_INVALIDURL          "Die URL ist ungültig."
+    IDS_CANTOPENFILE        "Datei konnte nicht geöffnet werden: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "AICH Hashset konnte nicht von der der Datei berechnet werden "
+    IDS_SOURCESMANAGEMENT   "Quellenverwaltung"
+    IDS_CLIENTSCOURCE       "Optionale Clients als Quelle hinzufügen (IP/Hostname und Port des Clients):"
+    IDS_CLIENTSOURCESLIST   "Hinzugefügte Client-Quellen"
+    IDS_ERRCLIENTSOURCE     "Unültige Client-Quellen Syntax.\nBitte gib die Quelle im folgenden Format an: ""IP:Port""  oderr ""Hostname:Port"" !"
+    IDS_CHECKSOURCE         "Quelle prüfen"
+    IDS_ERR_WEBSOURCECHECK  "Fehler: Auf die angegebene Ressource kann nicht zugegriffen werden."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Fehler: Die Dateigröße der Datei im Netz stimmt nicht mit der Dateigröße der lokalen Datei überein."
+    IDS_FILETOOLARGE        "Die angegebene Datei ist größer als vom eD2k-Netzwerk unterstützt!"
+    IDS_LENGTHCHECK         "Vermeide URL-Länge über 2038 Zeichen (für Nutzung über Webbrowser)"
+END
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Englisch (USA) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Specify a file or a path (mask optional) to files for which you want to create the Ed2k-Link(s)"
+    IDS_BROWSE              "&Browse..."
+    IDS_ADDHTTP             "Add"
+    IDS_HTTPREMOVE          "Remove"
+    IDS_HTTPADDRESS         "Optional HTTP-Address for this file which will be added to the link (for links with Websources)"
+    IDS_ADDEDHTTPSOURCES    "Added HTTP-Sources"
+    IDS_HTTPCLEAR           "Clear"
+    IDS_ED2KLINK            "Finished Ed2k link(s)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "&Generate"
+    IDS_CANCEL              "&Cancel"
+    IDS_EXIT                "E&xit"
+    IDS_WITHHASHSET         "Create links with hashset (helps to spread new and rare files faster, at the cost of an increased linksize)"
+    IDS_EX1                 "Example: ""http://www.mywebspace.com/files/"" (local filename will be appended)"
+    IDS_EX2                 "          or: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Copy to clipboard"
+    IDS_WITHAICH            "Create links with AICH Hash"
+    IDS_COPYRIGHTS          "Copyright © %s by eMule-Project.net"
+    IDS_TRANSLATION         " "
+    IDS_ABOUT               "About"
+    IDS_OK                  "OK"
+    IDS_HASHING             "Hashing..."
+    IDS_INVALIDFILEPATH     "The entered filepath is invalid. Failed to hash file."
+    IDS_INVALIDURL          "The URL is invalid"
+    IDS_CANTOPENFILE        "Unable to open file: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Failed to calculate AICH Hashset from file "
+    IDS_SOURCESMANAGEMENT   "Sources Management"
+    IDS_CLIENTSCOURCE       "Optional client to be added as source (IP/Hostname and Port of eMule clients)"
+    IDS_CLIENTSOURCESLIST   "Added Client-Sources"
+    IDS_ERRCLIENTSOURCE     "Invalid client source syntax.\nPlease enter in the format: ""IP:Port""  or  ""Hostname:Port"" !"
+    IDS_CHECKSOURCE         "Check source"
+    IDS_ERR_WEBSOURCECHECK  "Error: Unable to access the specified ressource."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Error: Remote ressource filesize does not match local ressource filesize."
+    IDS_FILETOOLARGE        "The selected file is larger than the eD2k-Network supports!"
+    IDS_LENGTHCHECK         "Prevent URL length>2038 (for use by webbrowsers)"
+END
+
+#endif    // Englisch (USA) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanisch (Kastilisch) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Especificar un archivo o ruta (máscara opcional) para archivos para los cuales quieres crear los enlaces Ed2k"
+    IDS_BROWSE              "Examinar.."
+    IDS_ADDHTTP             "Añadir"
+    IDS_HTTPREMOVE          "Quitar"
+    IDS_HTTPADDRESS         "Dirección-HTTP opcional. Se añadirá al enlace Ed2k (para enlaces con Websources)"
+    IDS_ADDEDHTTPSOURCES    "Fuentes-HTTP añadidas"
+    IDS_HTTPCLEAR           "Borrar"
+    IDS_ED2KLINK            "Enlace(s) Ed2k terminados"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Generar"
+    IDS_CANCEL              "Cancelar"
+    IDS_EXIT                "Salir"
+    IDS_WITHHASHSET         "Crear enlaces con hashset (ayuda a distribuir archivos nuevos y con pocas fuentes mas rápidamente, a costa de incrementar el tamaño del enlace)"
+    IDS_EX1                 "Ejemplo: ""http://www.misitioweb.com/archivos/"" (archivo que sera abierto)"
+    IDS_EX2                 "         o : ""http://www.misitioweb.com/archivos/miarchivo.zip"""
+    IDS_COPYTOCLIPBOARD     "Copiar al portapapeles"
+    IDS_WITHAICH            "Crear enlaces con AICH Hash"
+    IDS_COPYRIGHTS          "Copyright © 2004-2006 por eMule-Project.net"
+    IDS_TRANSLATION         "Traducido al español por RaJiL - Javier L."
+    IDS_ABOUT               "Acerca de..."
+    IDS_OK                  "Aceptar"
+    IDS_HASHING             "Codificando Hash..."
+    IDS_INVALIDFILEPATH     "La dirección de archivo introducida no es válida, error al calcular el hash del archivo"
+    IDS_INVALIDURL          "La URL no es válida"
+    IDS_CANTOPENFILE        "No se puede abrir el archivo: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Error al calcular el AICH Hashset del archivo"
+    IDS_SOURCESMANAGEMENT   "Administrar fuentes"
+    IDS_CLIENTSCOURCE       "Opcional. Añadir fuente del Cliente (IP/Hostname y Puerto):"
+    IDS_CLIENTSOURCESLIST   "Fuente del cliente añadida"
+    IDS_ERRCLIENTSOURCE     "Sintaxis de la fuente del cliente no válida.\nUtilizar el siguiente formato: ""IP:Puerto""  o  ""Hostname:Puerto"" !"
+    IDS_CHECKSOURCE         "Comprob. fuente"
+    IDS_ERR_WEBSOURCECHECK  "Error: No se puede acceder al recurso especificado."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Error: El tamaño de archivo del recurso remoto no se corresponde con el del recurso local."
+    IDS_FILETOOLARGE        "El archivo seleccionado es mayor que el que soporta la red eD2k!"
+END
+
+#endif    // Spanisch (Kastilisch) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Französisch (Frankreich) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Nom de fichier ou dossier (masques * et ? possibles) pour lesquels vous voulez créer un lien Ed2k"
+    IDS_BROWSE              "Parcourir..."
+    IDS_ADDHTTP             "Ajouter"
+    IDS_HTTPREMOVE          "Supprimer"
+    IDS_HTTPADDRESS         "Adresse http optionelle - Sera ajoutée aux liens (uniquement pour les liens avec source Web)"
+    IDS_ADDEDHTTPSOURCES    "Sources HTTP ajoutées"
+    IDS_HTTPCLEAR           "Effacer"
+    IDS_ED2KLINK            "Lien(s) ED2k calculé(s)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Générer"
+    IDS_CANCEL              "Annuler"
+    IDS_EXIT                "Quitter"
+    IDS_WITHHASHSET         "Inclure la table de hachage (aide à diffuser les fichiers nouveaux et rares, augmente la taille des liens)"
+    IDS_EX1                 "Exemple: ""http://www.mywebspace.com/files/"" (le nom du fichier local sera ajouté)"
+    IDS_EX2                 "          ou: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Copier vers le presse-papier"
+    IDS_WITHAICH            "Créer des liens avec hachage AICH"
+    IDS_COPYRIGHTS          "Copyright © %s by eMule-Project.net"
+    IDS_TRANSLATION         " "
+    IDS_ABOUT               "A propos..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Hachage en cours"
+    IDS_INVALIDFILEPATH     "Chemin d'accès au fichier incorrect. Echec du hachage."
+    IDS_INVALIDURL          "L'URL est incorrecte"
+    IDS_CANTOPENFILE        "Impossible d'ouvrir le fichier: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Impossible de calculer la table AICH du fichier "
+    IDS_SOURCESMANAGEMENT   "Gestion des sources"
+    IDS_CLIENTSCOURCE       "Client optionnel à ajouter en tant que source (IP/Hôte et port du client eMule)"
+    IDS_CLIENTSOURCESLIST   "Sources Client ajoutées"
+    IDS_ERRCLIENTSOURCE     "Format invalide pour la source client.\nVeuillez utiliser la syntaxe: ""IP:Port"" ou ""Hôte:Port"" !"
+    IDS_CHECKSOURCE         "Vérif source"
+    IDS_ERR_WEBSOURCECHECK  "Erreur: impossible d'accéder à la ressource spécifiée."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Erreur : la taille de la ressource distante ne correspond pas à celle de la ressource locale."
+    IDS_FILETOOLARGE        "Taille du fichier indiqué supérieure à celle supportée par eD2k !"
+END
+
+#endif    // Französisch (Frankreich) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Italienisch (Italien) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Seleziona un file o un percorso ai files di cui vuoi creare link eD2k"
+    IDS_BROWSE              "Sfoglia..."
+    IDS_ADDHTTP             "Aggiungi"
+    IDS_HTTPREMOVE          "Rimuovi"
+    IDS_HTTPADDRESS         "Indirizzo HTTP opzionale per questo file da aggiungere al link (per un eD2k link con Websources)"
+    IDS_ADDEDHTTPSOURCES    "Fonti HTTP disponibili"
+    IDS_HTTPCLEAR           "Svuota"
+    IDS_ED2KLINK            "Link eD2k generati"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Genera"
+    IDS_CANCEL              "Annulla"
+    IDS_EXIT                "Esci"
+    IDS_WITHHASHSET         "Crea link con hashset completo (aiuta a diffondere i files nuovi o rari ma comporta un link più lungo)"
+    IDS_EX1                 "Esempio: ""http://www.mywebspace.com/files/"" (Il nome del file locale verrà aggiunto automaticamente)"
+    IDS_EX2                 "          o: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Copia negli appunti"
+    IDS_WITHAICH            "Crea link con l'hash AICH"
+    IDS_COPYRIGHTS          "Copyright © %s by eMule-Project.net"
+    IDS_TRANSLATION         "Traduzione italiana a cura di Treviño"
+    IDS_ABOUT               "Informazioni..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Hashing in corso..."
+    IDS_INVALIDFILEPATH     "Il percorso del file inserito non è valido. Impossibile calcolare l'hash!"
+    IDS_INVALIDURL          "L'URL non è valido"
+    IDS_CANTOPENFILE        "Impossibile aprire il file: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Impossibile calcolare l'hashset AICH dal file "
+    IDS_SOURCESMANAGEMENT   "Gestione delle Fonti"
+    IDS_CLIENTSCOURCE       "Client opzionale da aggiungere come fonte (IP/Hostname e Porte dei client eMule)"
+    IDS_CLIENTSOURCESLIST   "Fonti aggiunte"
+    IDS_ERRCLIENTSOURCE     "Sintassi della fonte non valida.\nUsare il seguente formato: ""IP:Porta""  o  ""Hostname:Porta"" !"
+    IDS_CHECKSOURCE         "Controlla la fonte"
+    IDS_ERR_WEBSOURCECHECK  "Errore: Impossibile accedere alla risorsa specificata."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Errore: la dimensione del file remoto non corrisponde a quella del file locale."
+    IDS_FILETOOLARGE        "La rete ed2k non supporta files così grandi!"
+END
+
+#endif    // Italienisch (Italien) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portugiesisch (Brasilien) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Indique para o arquivo que você deseja criar o Link Ed2k"
+    IDS_BROWSE              "Procurar..."
+    IDS_ADDHTTP             "Adicionar"
+    IDS_HTTPREMOVE          "Remover"
+    IDS_HTTPADDRESS         "Endereço HTTP opcional será adicionado ao link (para links com Fontes Web)"
+    IDS_ADDEDHTTPSOURCES    "Fontes HTTP adicionadas"
+    IDS_HTTPCLEAR           "Limpar"
+    IDS_ED2KLINK            "Links Ed2k finalizados para este arquivo"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Iniciar"
+    IDS_CANCEL              "Cancelar"
+    IDS_EXIT                "Sair"
+    IDS_WITHHASHSET         "Criar o link com o hashset (ajuda à dividir os arquivos novos e raros rapidamente)"
+    IDS_EX1                 "Exemplo: ""http://www.meuespaconaweb.com/arquivos/"" (o nome do arquivo local será adicionado)"
+    IDS_EX2                 "          ou: ""http://www.meuespaconaweb.com/arquivos/meuarquivo.zip"""
+    IDS_COPYTOCLIPBOARD     "Copiar para a área de transferência"
+    IDS_WITHAICH            "Criar link com o Hash AICH"
+    IDS_COPYRIGHTS          "Copyright © %s por eMule-Project.net"
+    IDS_TRANSLATION         "Traduzido para o Português Brasileiro por Darth Maul"
+    IDS_ABOUT               "Sobre..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Hashing..."
+    IDS_INVALIDFILEPATH     "O local inserido para o arquivo é invalido. Falha ao efetuar o hash do arquivo."
+    IDS_INVALIDURL          "A URL é invalida"
+    IDS_CANTOPENFILE        "Incapaz de abrir o arquivo: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Falha ao calcular o AICH Hashset do arquivo "
+    IDS_SOURCESMANAGEMENT   "Gerenciador de Fontes"
+    IDS_CLIENTSCOURCE       "Usuario opcional para ser adicionado com as fontes (IP/Nome do Host e a Porta do(s) usuario(s) do eMule)"
+    IDS_CLIENTSOURCESLIST   "Fontes de usuarios adicionadas"
+    IDS_ERRCLIENTSOURCE     "Sintax de fonte de usuario invalida.\nPor favor insira no formato: ""IP:Porta""  ou  ""NomedoHost:Porta"" !"
+    IDS_CHECKSOURCE         "Verificar fonte"
+    IDS_ERR_WEBSOURCECHECK  "Erro: Incapaz de acessar o recurso especificado."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Erro: O tamanho do recurso remoto não corresponde ao tamanho do recurso local."
+    IDS_FILETOOLARGE        "O arquivo selecionado é maior do que a rede eD2k suporta!"
+END
+
+#endif    // Portugiesisch (Brasilien) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Schwedisch resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Ange en fil eller katalog där filerna ligger"
+    IDS_BROWSE              "Bläddra..."
+    IDS_ADDHTTP             "Lägg till"
+    IDS_HTTPREMOVE          "Radera"
+    IDS_HTTPADDRESS         "Extra valfri HTTP-adress till filen som kan läggas till i länken (för länkar med webkällor)"
+    IDS_ADDEDHTTPSOURCES    "Tillagda HTTP-källor"
+    IDS_HTTPCLEAR           "Rensa"
+    IDS_ED2KLINK            "Slutgiltlig(a) Ed2k-länk(ar)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Skapa"
+    IDS_CANCEL              "Avbryt"
+    IDS_EXIT                "Avsluta"
+    IDS_WITHHASHSET         "Skapa länk(ar) med hashset (hjälper till att sprida nya och ovanliga filer fortare, på bekostnad av större länkstorlek)"
+    IDS_EX1                 "Exempel: ""http://www.minhemsida.com/filer/"" (lokalt filnamn kommer att läggas till)"
+    IDS_EX2                 "          eller: ""http://www.minhemsida.com/filer/minfil.zip"""
+    IDS_COPYTOCLIPBOARD     "Kopiera till urklipp"
+    IDS_WITHAICH            "Skapa länk(ar) med AICH-hash"
+    IDS_COPYRIGHTS          "Copyright © %s by eMule-Project.net"
+    IDS_TRANSLATION         "Svensk översättning av ZeB"
+    IDS_ABOUT               "Om..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Hashar..."
+    IDS_INVALIDFILEPATH     "Sökvägen till filen är ogiltlig. Misslyckades att hasha filen."
+    IDS_INVALIDURL          "Adressen är ogiltlig"
+    IDS_CANTOPENFILE        "Misslyckades att öppna filen: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Misslyckades att skapa AICH-hash till filen "
+    IDS_SOURCESMANAGEMENT   "Källhantering"
+    IDS_CLIENTSCOURCE       "Extra valfri klient som kan läggas till som källa (IP/hostname och eMule-klientens port)"
+    IDS_CLIENTSOURCESLIST   "Tillagda klientkällor"
+    IDS_ERRCLIENTSOURCE     "Ogiltlig sträng för att lägga till en klient som källa.\nAnvänd formatet: ""IP:port""  eller  ""hostname:port"" !"
+    IDS_CHECKSOURCE         "Testa källor"
+    IDS_ERR_WEBSOURCECHECK  "Fel: Misslyckades att hitta specificerad källa."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Fel: Källan från internet har inte samma filstorlek som den lokala källan."
+    IDS_FILETOOLARGE        "Filen är större än vad eD2k-nätverket stödjer!"
+END
+
+#endif    // Schwedisch resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Unbekannte Sprache: 0x56, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_GLC)
+#ifdef _WIN32
+LANGUAGE 0x56, 0x1
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Arquivo ou directorio dos arquivos (con filtro opcional) para os que queres crea-los enlaces ed2k."
+    IDS_BROWSE              "Buscar..."
+    IDS_ADDHTTP             "Engadir"
+    IDS_HTTPREMOVE          "Quitar"
+    IDS_HTTPADDRESS         "Enderezo-HTTP opcional para este arquivo, que será engadido ó enlace (para enlaces con fontes Web)"
+    IDS_ADDEDHTTPSOURCES    "Fontes-HTTP engadidas"
+    IDS_HTTPCLEAR           "Borrar"
+    IDS_ED2KLINK            "Enlace(s) Ed2k rematado(s)."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Iniciar"
+    IDS_CANCEL              "Cancelar"
+    IDS_EXIT                "Sair"
+    IDS_WITHHASHSET         "Crear enlace(s) con hashset (axuda a extender arquivos novos e raros máis rapidamente, a expensas dun tamaño de enlace máis grande)"
+    IDS_EX1                 "Exemplo: ""http://www.mywebspace.com/files/"" (o nome do arquivo local será engadido)"
+    IDS_EX2                 "          ou: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Copiar ó portapapéis"
+    IDS_WITHAICH            "Crear enlace(s) con Hash AICH"
+    IDS_COPYRIGHTS          "Copyright © %s por eMule-Project.net"
+    IDS_TRANSLATION         "Traducido ó Galego por Juan"
+    IDS_ABOUT               "Acerca de..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Calculando o Hash..."
+    IDS_INVALIDFILEPATH     "O enderezo do arquivo non é válido. Erro ó calcula-lo hash."
+    IDS_INVALIDURL          "O URL non é válido"
+    IDS_CANTOPENFILE        "Incapaz de abri-lo arquivo: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Erro ó calcula-lo Hashset AICH do arquivo"
+    IDS_SOURCESMANAGEMENT   "Xestión de Fontes"
+    IDS_CLIENTSCOURCE       "Cliente opcional para ser engadido como fonte (IP/Host e Porto de clientes eMule)"
+    IDS_CLIENTSOURCESLIST   "Fontes-Cliente Engadidas"
+    IDS_ERRCLIENTSOURCE     "Entrada de fonte-cliente inválida.\nPor favor usa o formato: ""IP:Porto""  ou  ""Host:Porto"" !"
+    IDS_CHECKSOURCE         "Comprobar fonte"
+    IDS_ERR_WEBSOURCECHECK  "Erro: Incapaz de acceder ó recurso especificado."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Erro: O tamaño do arquivo remoto non coincide co tamaño do arquivo local."
+    IDS_FILETOOLARGE        "O arquivo seleccionado é máis grande do que a rede eD2k soporta!"
+END
+
+#endif    // Unbekannte Sprache: 0x56, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portugiesisch (Portugal) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTG)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Caminho para o ficheiro a partir do qual deseja criar a ligação Ed2k"
+    IDS_BROWSE              "Procurar..."
+    IDS_ADDHTTP             "Adicionar"
+    IDS_HTTPREMOVE          "Remover"
+    IDS_HTTPADDRESS         "Endereço opcional HTTP para este ficheiro, que será adicionado à ligação (para ligações com fontes na web (Websources))"
+    IDS_ADDEDHTTPSOURCES    "Fontes HTTP Adicionadas"
+    IDS_HTTPCLEAR           "Limpar"
+    IDS_ED2KLINK            "Foi finalizada a ligação Ed2k para este ficheiro"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Gerar"
+    IDS_CANCEL              "Cancelar"
+    IDS_EXIT                "Sair"
+    IDS_WITHHASHSET         "Criar ligação com hashset (ajuda a disseminar mais rapidamente ficheiros novos e raros)"
+    IDS_EX1                 "Exemplo: ""http://www.meusite.com/ficheiros/"" (nome do ficheiro local será acrescido)"
+    IDS_EX2                 "          ou: ""http://www.meusite.com/ficheiros/meuficheiro.zip"""
+    IDS_COPYTOCLIPBOARD     "Copiar para o clipboard"
+    IDS_WITHAICH            "Criar ligação com hash AICH"
+    IDS_COPYRIGHTS          "Copyright © %s por eMule-Project.net"
+    IDS_TRANSLATION         "Português (Portugal), traduzido por PhiloHippus"
+    IDS_ABOUT               "Acerca de..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "A calcular hash..."
+    IDS_INVALIDFILEPATH     "O caminho de ficheiro inserido é inválido. Não foi possível calcular a hash."
+    IDS_INVALIDURL          "O URL é inválido"
+    IDS_CANTOPENFILE        "Não foi possível abrir o ficheiro: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Não foi possível calcular a Hash AICH a partir do ficheiro "
+    IDS_SOURCESMANAGEMENT   "Gestão de Fontes"
+    IDS_CLIENTSCOURCE       "Cliente opcional a ser adicionado como fonte (IP/Domínio e Porta de clientes eMule)"
+    IDS_CLIENTSOURCESLIST   "Foram adicionados os Clientes-Fonte"
+    IDS_ERRCLIENTSOURCE     "Sintaxe de cliente-fonte inválida.\nPor favor insira no formato: ""IP:Porta""  ou  ""Domínio:Porta"" !"
+    IDS_CHECKSOURCE         "Verificar fonte"
+    IDS_ERR_WEBSOURCECHECK  "Erro: Impossível aceder ao recurso especificado."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Erro: Tamanho do recurso remoto não corresponde ao tamanho do recurso local."
+    IDS_FILETOOLARGE        "O tamanho do ficheiro seleccionado é maior que o limite suportado pela rede eD2k!"
+END
+
+#endif    // Portugiesisch (Portugal) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Türkisch resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_TRK)
+#ifdef _WIN32
+LANGUAGE LANG_TURKISH, SUBLANG_DEFAULT
+#pragma code_page(1254)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule Baðlantý Oluþturucu"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Ed2k-Baðlantý(larý)sý oluþturmak istediðiniz dosyalar için yolu (* ve ? kullanýlabilir) veya dosyayý belirtin"
+    IDS_BROWSE              "Gözat..."
+    IDS_ADDHTTP             "Ekle"
+    IDS_HTTPREMOVE          "Kaldýr"
+    IDS_HTTPADDRESS         "Baðlantýya eklenecek olan (Web Kaynaklý baðlantýlar için) bu dosya için isteðe baðlý HTTP-Adresi"
+    IDS_ADDEDHTTPSOURCES    "Eklenmiþ HTTP-Kaynaklar"
+    IDS_HTTPCLEAR           "Temizle"
+    IDS_ED2KLINK            "Bitmiþ Ed2k baðlantý(larý)sý"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Oluþtur"
+    IDS_CANCEL              "Ýptal"
+    IDS_EXIT                "Çýkýþ"
+    IDS_WITHHASHSET         "Adresleme grubuyla baðlantý(larý) oluþtur (yeni ve nadir dosyalarý hýzlý yaymaya yardýmcý olur)"
+    IDS_EX1                 "Örnek: ""http://www.webalaným.com/dosyalar/"" (yerel dosyaadý ilave edilecek)"
+    IDS_EX2                 "  veya: ""http://www.webalaným.com/dosyalar/dosyaadý.zip"""
+    IDS_COPYTOCLIPBOARD     "Panoya kopyala"
+    IDS_WITHAICH            "AICH Adreslemesi ile baðlantý(larý) oluþtur"
+    IDS_COPYRIGHTS          "Telif Hakký © %s eMule-Project.net'e aittir"
+    IDS_TRANSLATION         "Türkçeye çeviren Burak Yavuz"
+    IDS_ABOUT               "Hakkýnda..."
+    IDS_OK                  "TAMAM"
+    IDS_HASHING             "Adresleniyor..."
+    IDS_INVALIDFILEPATH     "Girilmiþ dosya yolu geçersiz. Dosya adreslemesi baþarýsýz."
+    IDS_INVALIDURL          "URL geçersiz"
+    IDS_CANTOPENFILE        "Açýlamayan dosya: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "AICH Adresleme Grubunu hesaplamada baþarýsýz olduðu dosya "
+    IDS_SOURCESMANAGEMENT   "Kaynak Yönetimi"
+    IDS_CLIENTSCOURCE       "Kaynak olarak eklenen isteðe baðlý istemci (eMule istemcisinin IP/Anamakineadý ve Baðlantý Noktasý)"
+    IDS_CLIENTSOURCESLIST   "Eklenmiþ Ýstemci-Kaynaklar"
+    IDS_ERRCLIENTSOURCE     "Geçersiz istemci kaynak sözdizimi.\nLütfen bu biçimde girin: ""IP:Baðlantý Noktasý""  yada  ""Anamakineadý:Baðlantý Noktasý"" !"
+    IDS_CHECKSOURCE         "Kaynak kontrolü"
+    IDS_ERR_WEBSOURCECHECK  "Hata: Belirtilmiþ kaynaða eriþilemez."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Hata: Uzaktaki kaynak dosya boyutu yerel kaynak dosya boyutuyla uyuþmuyor."
+    IDS_FILETOOLARGE        "Seçilmiþ dosya eD2k-Aðýnýn desteklediðinden büyük!"
+END
+
+#endif    // Türkisch resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Hebräisch resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HEB)
+#ifdef _WIN32
+LANGUAGE LANG_HEBREW, SUBLANG_DEFAULT
+#pragma code_page(1255)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "éåöø ÷éùåøé àéîéåì"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "öééï ÷åáõ àå îé÷åí (îñëä àôùøéú: * å-?) ì÷áöéí ùìäí úøöä ìéöåø ÷éùåø Ed2k"
+    IDS_BROWSE              "òééï..."
+    IDS_ADDHTTP             "äåñó"
+    IDS_HTTPREMOVE          "äñø"
+    IDS_HTTPADDRESS         "ëúåáú HTTP àôùøéú òáåø ÷åáõ æä àùø éúååñó ì÷éùåø (òáåø ÷éùåøéí òí î÷åøåú HTTP)"
+    IDS_ADDEDHTTPSOURCES    "î÷åøåú HTTP ùðåñôå"
+    IDS_HTTPCLEAR           "îç÷ äëì"
+    IDS_ED2KLINK            "÷éùåø Ed2k òáåø ä÷åáõ/ä÷áöéí"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "äúçì"
+    IDS_CANCEL              "áèì"
+    IDS_EXIT                "éöéàä"
+    IDS_WITHHASHSET         "öåø ÷éùåø/éí òí ñè äàù (òåæø ìäôéõ ÷áöéí çãùéí åðãéøéí îäø éåúø, ä÷éùåø àøåê éåúø)"
+    IDS_EX1                 "ãåâîä: ""http://www.mywebspace.com/files/"" (ùí ÷åáõ î÷åîé éúååñó ìëúåáú)"
+    IDS_EX2                 "       àå: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "äòú÷ ì÷ìéôáåøã"
+    IDS_WITHAICH            "öåø ÷éùåø/éí òí äàù AICH"
+    IDS_COPYRIGHTS          "ëì äæëåéåú ùîåøåú © %s ì-eMule-Project.net"
+    IDS_TRANSLATION         "úåøâí ìòáøéú ò""é Avi3k î-hebMule.sf.net"
+    IDS_ABOUT               "òì éåöø ÷éùåøé àéîéåì..."
+    IDS_OK                  "àéùåø"
+    IDS_HASHING             "îáöò äàùéðâ..."
+    IDS_INVALIDFILEPATH     "îé÷åí ä÷åáõ ùäåëðñ ìà ú÷éï, ðëùì ááéöåò äàù ì÷åáõ"
+    IDS_INVALIDURL          "ëúåáú ä-URL ìà ú÷éðä"
+    IDS_CANTOPENFILE        "ìà éëåì ìôúåç ÷åáõ: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "ðëùì áçéùåá ñè äàù AICH ì÷åáõ "
+    IDS_SOURCESMANAGEMENT   "îðäì î÷åøåú"
+    IDS_CLIENTSCOURCE       "÷ìééðè àôùøé ëî÷åø (àéé ôé åôåøè ùì îùúîùé àéîéåì):"
+    IDS_CLIENTSOURCESLIST   "äåñó î÷åøåú ÷ìééðèéí"
+    IDS_ERRCLIENTSOURCE     "î÷åø ÷ìééðè ìà ú÷éï.\nàðà äëðñ àú äôåøîè: ""àéé ôé:ôåøè""  àå  ""ëúåáú:ôåøè"" !"
+    IDS_CHECKSOURCE         "áãå÷ î÷åø"
+    IDS_ERR_WEBSOURCECHECK  "ùâéàä: ìà éëåì ìâùú ìî÷åø ùöåééï."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "ùâéàä: âåãì ä÷åáõ äîøåç÷ ìà úåàí ìâåãì ä÷åáõ äî÷åîé."
+    IDS_FILETOOLARGE        "âåãì ä÷åáõ ùðáçø âãåì éåúø îäðúîê áøùú ä-ED2k!"
+END
+
+#endif    // Hebräisch resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#include "res\LinkCreator.rc2"  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
+#include "afxres.rc"         // Standardkomponenten
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

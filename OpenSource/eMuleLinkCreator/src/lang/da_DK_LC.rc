@@ -1,0 +1,68 @@
+/////////////////////////////////////////////////////////////////////////////
+// Dänisch resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DAN)
+#ifdef _WIN32
+LANGUAGE LANG_DANISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Sti til filen du ønsker at lave et ed2k link til"
+    IDS_BROWSE              "Søg..."
+    IDS_ADDHTTP             "Tilføj"
+    IDS_HTTPREMOVE          "Fjern"
+    IDS_HTTPADDRESS         "Valgfri HTTP-Adresse til denne fil vil blive tilføjet til linket (for links med web-kilder)"
+    IDS_ADDEDHTTPSOURCES    "Tilføjede HTTP-Kilder"
+    IDS_HTTPCLEAR           "Ryd"
+    IDS_ED2KLINK            "Færdige ed2k links til denne fil"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Generér"
+    IDS_CANCEL              "Annullér"
+    IDS_EXIT                "Afslut"
+    IDS_WITHHASHSET         "Skab links med hashset (Hjælper med hurtigere at sprede nye og sjældne filer. Større linkstørrelse)"
+    IDS_EX1                 "Eksempel: ""http://www.mywebspace.com/filer/"" (lokalt filnavn vil blive tilføjet)"
+    IDS_EX2                 "          eller: ""http://www.mywebspace.com/filer/minfil.zip"""
+    IDS_COPYTOCLIPBOARD     "Kopier til udklipsholderen"
+    IDS_WITHAICH            "Skab link med AICH Hash"
+    IDS_COPYRIGHTS          "Copyright © %s af eMule-Project.net"
+    IDS_TRANSLATION         "Dansk oversættelse af birk"
+    IDS_ABOUT               "Om..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Hashing..."
+    IDS_INVALIDFILEPATH     "Den indtastede sti til filen er ukorrekt. Mislykkedes at hashe filen."
+    IDS_INVALIDURL          "URL'en er ukorrekt"
+    IDS_CANTOPENFILE        "Ikke i stand til at åbne filen: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Mislykkedes at udregne AICH Hashset fra filen "
+    IDS_SOURCESMANAGEMENT   "Kildeadministration"
+    IDS_CLIENTSCOURCE       "Valgfri klient, der skal tilføjes som kilde (IP/Hostnavn og Port for eMule klienter)"
+    IDS_CLIENTSOURCESLIST   "Tilføjede Klient-Kilder"
+    IDS_ERRCLIENTSOURCE     "Invalid klient-kilde syntax.\nIndtast venligst i formatet: ""IP:Port""  or  ""Hostnavn:Port"" !"
+    IDS_CHECKSOURCE         "Check kilde"
+    IDS_ERR_WEBSOURCECHECK  "Fejl: Ikke i stand til at få adgang til den specificerede ressource."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Fejl: Fjern-ressourcens filstørrelse stemmer ikke overens med lokal-ressourcens filstørrelse."
+    IDS_FILETOOLARGE        "The selected file is larger than the eD2k-Network supports!"
+END
+
+
+#endif    // Dänisch resources
+/////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,68 @@
+/////////////////////////////////////////////////////////////////////////////
+// Schwedisch resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Sökvägen till filen som du vill skapa en Ed2k-länk till"
+    IDS_BROWSE              "Bläddra..."
+    IDS_ADDHTTP             "Lägg till"
+    IDS_HTTPREMOVE          "Radera"
+    IDS_HTTPADDRESS         "Extra valfri HTTP-adress till filen som kan läggas till i länken (för länkar med webkällor)"
+    IDS_ADDEDHTTPSOURCES    "Tillagda HTTP-källor"
+    IDS_HTTPCLEAR           "Rensa"
+    IDS_ED2KLINK            "Slutgiltlig Ed2k-länk för den här filen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Skapa"
+    IDS_CANCEL              "Avbryt"
+    IDS_EXIT                "Avsluta"
+    IDS_WITHHASHSET         "Skapa länk med hashset (hjälper till att sprida nya och ovanliga filer fortare, på bekostnad av större länkstorlek)"
+    IDS_EX1                 "Exempel: ""http://www.mywebspace.com/files/"" (lokalt filnamn kommer att läggas till)"
+    IDS_EX2                 "          eller: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Kopiera till urklipp"
+    IDS_WITHAICH            "Skapa länk med AICH-hash"
+    IDS_COPYRIGHTS          "Copyright © %s by eMule-Project.net"
+    IDS_TRANSLATION         "Svensk översättning av ZeB"
+    IDS_ABOUT               "Om..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Hashar..."
+    IDS_INVALIDFILEPATH     "Sökvägen till filen är ogiltlig. Misslyckades att hasha filen."
+    IDS_INVALIDURL          "Adressen är ogiltlig"
+    IDS_CANTOPENFILE        "Misslyckades att öppna filen: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Misslyckades att skapa AICH-hash till filen "
+    IDS_SOURCESMANAGEMENT   "Källhantering"
+    IDS_CLIENTSCOURCE       "Extra valfri klient som kan läggas till som källa (IP/hostname och eMule-klientens port)"
+    IDS_CLIENTSOURCESLIST   "Tillagda klientkällor"
+    IDS_ERRCLIENTSOURCE     "Ogiltlig sträng för att lägga till en klient som källa.\nAnvänd formatet: ""IP:port""  eller  ""hostname:port"" !"
+    IDS_CHECKSOURCE         "Testa källor"
+    IDS_ERR_WEBSOURCECHECK  "Fel: Misslyckades att hitta specificerad källa."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Fel: Källan från internet har inte samma filstorlek som den lokala källan."
+    IDS_FILETOOLARGE        "The selected file is larger than the eD2k-Network supports!"
+END
+
+
+#endif    // Schwedisch resources
+/////////////////////////////////////////////////////////////////////////////

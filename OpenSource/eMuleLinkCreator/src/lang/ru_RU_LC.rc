@@ -1,0 +1,68 @@
+/////////////////////////////////////////////////////////////////////////////
+// Russisch resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "Создатель ссылки eMule"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Путь к файлу, для которого Вы хотите создать ссылку eD2K"
+    IDS_BROWSE              "Просмотр"
+    IDS_ADDHTTP             "Добавить"
+    IDS_HTTPREMOVE          "Удалить"
+    IDS_HTTPADDRESS         "Дополнительный HTTP адрес для этого файла, который будет добавлен в ссылку (для ссылок с Web источником)"
+    IDS_ADDEDHTTPSOURCES    "Добавлен HTTP источник"
+    IDS_HTTPCLEAR           "Очистить"
+    IDS_ED2KLINK            "Готовая ссылка eD2K для этого файла"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Сгенерировать"
+    IDS_CANCEL              "Отменить"
+    IDS_EXIT                "Выход"
+    IDS_WITHHASHSET         "Создать ссылку с хешем данных (помогает быстрее распределять редкие файлы)"
+    IDS_EX1                 "Пример: ""http://www.mywebspace.com/files/"" (местное имя файла будет приложено)"
+    IDS_EX2                 "          или: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Скопировать в буфер обмена"
+    IDS_WITHAICH            "Создать ссылку с AICH хешем"
+    IDS_COPYRIGHTS          "Copyright © 2004-2005 by eMule-Project.net"
+    IDS_TRANSLATION         "На русский язык перевёл Т-Мас"
+    IDS_ABOUT               "Про"
+    IDS_OK                  "OK"
+    IDS_HASHING             "Хеширование"
+    IDS_INVALIDFILEPATH     "Путь к файлу неверный. Хеширование невозможно."
+    IDS_INVALIDURL          "URL неверный"
+    IDS_CANTOPENFILE        "Невозможно открыть файл: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Ошибка при пересчёте AICH хеша "
+    IDS_SOURCESMANAGEMENT   "Управление источников"
+    IDS_CLIENTSCOURCE       "Дополнительный клиент, который будет добавлен как источник (IP/Хост и порт eMule клиентов)"
+    IDS_CLIENTSOURCESLIST   "Добавлен источник клиента"
+    IDS_ERRCLIENTSOURCE     "Неверный синтаксис источника клиента\nПожалуйста введите в формате: ""IP:Порт"" или ""Имя хоста:Порт"" !"  
+    IDS_CHECKSOURCE         "Проверить источник"
+    IDS_ERR_WEBSOURCECHECK  "Ошибка: Нет доступа к указанным ресурсам."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Ошибка: Удалённый размер ресурса не совпадает с местным размером ресурса."
+    IDS_FILETOOLARGE        "Выбранный файл больше чем поддерживается сетью eD2K!"
+END
+
+
+#endif    // Russisch resources
+/////////////////////////////////////////////////////////////////////////////

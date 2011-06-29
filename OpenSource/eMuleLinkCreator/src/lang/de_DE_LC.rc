@@ -1,0 +1,67 @@
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Pfad zur Datei, für welche der Ed2k-Link erstellt werden soll"
+    IDS_BROWSE              "Durchsuchen..."
+    IDS_ADDHTTP             "Hinzufügen"
+    IDS_HTTPREMOVE          "Entfernen"
+    IDS_HTTPADDRESS         "Optionale HTTP-Addresse für diese Datei, welche dem Link hinzugefügt wird (für Links mit Web-Quellen)"
+    IDS_ADDEDHTTPSOURCES    "Hinzugefügte HTTP-Quellen"
+    IDS_HTTPCLEAR           "Löschen"
+    IDS_ED2KLINK            "Fertiger Ed2k-Link für diese Datei"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Generieren"
+    IDS_CANCEL              "Abbruch"
+    IDS_EXIT                "Beenden"
+    IDS_WITHHASHSET         "Erstelle Link mit Hashset (hilft, neue und seltene Dateien schneller zu verteilen, aber längerer Link)"
+    IDS_EX1                 "Beispiel: ""http://www.mywebspace.com/files/"" (lokaler Dateiname wird angehängt)"
+    IDS_EX2                 "          oder: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Kopiere in Zwischenablage"
+    IDS_WITHAICH            "Erstelle Link mit AICH Hash"
+    IDS_COPYRIGHTS          "Copyright © %s by eMule-Project.net"
+    IDS_TRANSLATION         "Deutsche Übersetzung: Ornis"
+    IDS_ABOUT               "Über..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Hashing..."
+    IDS_INVALIDFILEPATH     "Der angegebene Dateipfad ist ungültig. Hashing der Datei fehlgeschlagen."
+    IDS_INVALIDURL          "Die URL ist ungültig."
+    IDS_CANTOPENFILE        "Datei konnte nicht geöffnet werden: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "AICH Hashset konnte nicht von der der Datei berechnet werden "
+    IDS_SOURCESMANAGEMENT   "Quellenverwaltung"
+    IDS_CLIENTSCOURCE       "Optionale Clients als Quelle hinzufügen (IP/Hostname und Port des Clients):"
+    IDS_CLIENTSOURCESLIST   "Hinzugefügte Client-Quellen"
+    IDS_ERRCLIENTSOURCE     "Unültige Client-Quellen Syntax.\nBitte gib die Quelle im folgenden Format an: ""IP:Port""  oderr ""Hostname:Port"" !"
+    IDS_CHECKSOURCE         "Quelle prüfen"
+    IDS_ERR_WEBSOURCECHECK  "Fehler: Auf die angegebene Ressource kann nicht zugegriffen werden."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Fehler: Die Dateigröße der Datei im Netz stimmt nicht mit der Dateigröße der lokalen Datei überein."
+    IDS_FILETOOLARGE        "Die angegebene Datei ist größer als vom eD2k-Netzwerk unterstützt!"
+END
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////

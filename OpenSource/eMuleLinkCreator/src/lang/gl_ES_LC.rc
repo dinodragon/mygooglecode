@@ -1,0 +1,67 @@
+/////////////////////////////////////////////////////////////////////////////
+// Galician resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_GLC)
+#ifdef _WIN32
+LANGUAGE 0x56, 0x1
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "eMule LinkCreator"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Dirección do arquivo para o que queres crea-lo enlace ed2k."
+    IDS_BROWSE              "Buscar..."
+    IDS_ADDHTTP             "Engadir"
+    IDS_HTTPREMOVE          "Quitar"
+    IDS_HTTPADDRESS         "Enderezo-HTTP opcional para este arquivo, que será engadido ó enlace (para enlaces con fontes Web)"
+    IDS_ADDEDHTTPSOURCES    "Fontes-HTTP engadidas"
+    IDS_HTTPCLEAR           "Borrar"
+    IDS_ED2KLINK            "Enlace Ed2k final para este arquivo"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Iniciar"
+    IDS_CANCEL              "Cancelar"
+    IDS_EXIT                "Sair"
+    IDS_WITHHASHSET         "Crear enlace con hashset (axuda a extender arquivos novos e raros máis rapidamente, a expensas dun tamaño de enlace máis grande)"
+    IDS_EX1                 "Exemplo: ""http://www.mywebspace.com/files/"" (o nome do arquivo local será engadido)"
+    IDS_EX2                 "          ou: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Copiar ó portapapéis"
+    IDS_WITHAICH            "Crear enlace con Hash AICH"
+    IDS_COPYRIGHTS          "Copyright © %s por eMule-Project.net"
+    IDS_TRANSLATION         "Traducido ó Galego por Juan"
+    IDS_ABOUT               "Acerca de..."
+    IDS_OK                  "OK"
+    IDS_HASHING             "Calculando o Hash..."
+    IDS_INVALIDFILEPATH     "O enderezo do arquivo non é válido. Erro ó calcula-lo hash."
+    IDS_INVALIDURL          "O URL non é válido"
+    IDS_CANTOPENFILE        "Incapaz de abri-lo arquivo: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Erro ó calcula-lo Hashset AICH do arquivo"
+    IDS_SOURCESMANAGEMENT   "Xestión de Fontes"
+    IDS_CLIENTSCOURCE       "Cliente opcional para ser engadido como fonte (IP/Host e Porto de clientes eMule)"
+    IDS_CLIENTSOURCESLIST   "Fontes-Cliente Engadidas"
+    IDS_ERRCLIENTSOURCE     "Entrada de fonte-cliente inválida.\nPor favor usa o formato: ""IP:Porto""  ou  ""Host:Porto"" !"
+    IDS_CHECKSOURCE         "Comprobar fonte"
+    IDS_ERR_WEBSOURCECHECK  "Erro: Incapaz de acceder ó recurso especificado."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Erro: O tamaño do arquivo remoto non coincide co tamaño do arquivo local."
+    IDS_FILETOOLARGE        "O arquivo seleccionado é máis grande do que a rede eD2k soporta!"
+END
+
+#endif    // Galician resources
+/////////////////////////////////////////////////////////////////////////////

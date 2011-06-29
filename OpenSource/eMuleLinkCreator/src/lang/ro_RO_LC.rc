@@ -1,0 +1,67 @@
+/////////////////////////////////////////////////////////////////////////////
+// Rumänisch resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ROM)
+#ifdef _WIN32
+LANGUAGE LANG_ROMANIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LINKCREATOR         "Creator Link eMule"
+    IDS_TRANSLATION         "ROMANIAN translation by Drugwash AKA Fabiana"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILELOCATION        "Calea cãtre fiºierul pentru care creezi Ed2k-Link"
+    IDS_BROWSE              "Rãsfoieºte..."
+    IDS_ADDHTTP             "Adaugã"
+    IDS_HTTPREMOVE          "ªterge"
+    IDS_HTTPADDRESS         "Adresa HTTP opþionalã a acestui fiºier ce va fi adãugatã la link (ptr. link-uri cu surse Web)"
+    IDS_ADDEDHTTPSOURCES    "Surse HTTP adãugate"
+    IDS_HTTPCLEAR           "Curãþã"
+    IDS_ED2KLINK            "Link Ed2k terminat pentru acest fiºier"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Genereazã"
+    IDS_CANCEL              "Anuleazã"
+    IDS_EXIT                "Ieºire"
+    IDS_WITHHASHSET         "Creeazã link cu hashset (ajutã la rãspîndirea mai rapidã a fiºierelor noi ºi rare,în defavoarea unui link mai lung)"
+    IDS_EX1                 "Exemplu: ""http://www.mywebspace.com/files/"" (numele local fiºier va fi adãugat)"
+    IDS_EX2                 "          sau: ""http://www.mywebspace.com/files/myfile.zip"""
+    IDS_COPYTOCLIPBOARD     "Copiazã în Agendã"
+    IDS_WITHAICH            "Creeazã link cu AICH Hash"
+    IDS_COPYRIGHTS          "Drept de autor © %s al eMule-Project.net"
+    IDS_ABOUT               "Despre"
+    IDS_OK                  "OK"
+    IDS_HASHING             "Fac hash..."
+    IDS_INVALIDFILEPATH     "Calea introdusã nu e validã. Nu pot face hash fiºierului."
+    IDS_INVALIDURL          "Adresa URL e invalidã"
+    IDS_CANTOPENFILE        "Nu pot deschide fiºierul: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANTCREATEAICH      "Nu pot calcula AICH Hashset din fiºier "
+    IDS_SOURCESMANAGEMENT   "Manipulare surse"
+    IDS_CLIENTSCOURCE       "Client opþional de adãugat ca sursã (IP/Hostname ºi Port ptr. clienþi eMule)"
+    IDS_CLIENTSOURCESLIST   "Surse-client adãugate"
+    IDS_ERRCLIENTSOURCE     "Sintaxã invalidã sursã client.\nFoloseºte te rog formatul: ""IP:Port""  sau  ""Hostname:Port"" !"
+    IDS_CHECKSOURCE         "Verificã sursa"
+    IDS_ERR_WEBSOURCECHECK  "Eroare: Nu pot accesa resursa specificatã."
+    IDS_ERR_WEBSOURCECHECK_NOMATCH 
+                            "Eroare: Lungime fiºier diferitã local faþã de cel la distanþã."
+    IDS_FILETOOLARGE        "The selected file is larger than the eD2k-Network supports!"
+END
+
+#endif    // Rumänisch resources
+/////////////////////////////////////////////////////////////////////////////
