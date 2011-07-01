@@ -13,6 +13,6 @@
         读取的MyConfig值<%: ViewData["Config"]%>
     </p>
     <p>
-        <a href="WebApp/WebForm1.aspx" >指向的一个WebForm页面</a>
+        <a href="WebApp/WebForm1.aspx" >指向的一个WebForm页面</a>,加载会失败。除非把WebApp工程生成的WebApp.dll拷贝到本工程的bin目录内。
     </p>
 </asp:Content>
