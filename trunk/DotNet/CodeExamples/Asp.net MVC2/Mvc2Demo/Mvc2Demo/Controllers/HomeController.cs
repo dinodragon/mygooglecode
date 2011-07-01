@@ -12,8 +12,8 @@ namespace Mvc2Demo.Controllers
     {
         public ActionResult Index()
         {
-            string aa = ConfigurationManager.AppSettings.Get("myconfig");
-            ViewData["Message"] = "欢迎使用 ASP.NET MVC!" + aa;
+            ViewData["Config"] = ConfigurationManager.AppSettings.Get("myconfig");
+            ViewData["Message"] = "欢迎使用 ASP.NET MVC!";
             return View();
         }
 
