@@ -20,7 +20,7 @@ namespace Mvc2Demo
         [WebMethod]
         public string HelloWorld()
         {
-            return "Hello World";
+            return "Hello World,现在是：" + DateTime.Now.ToString();
         }
     }
 }

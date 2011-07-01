@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Reflection;
 
 namespace Mvc2Demo
 {
@@ -27,7 +28,14 @@ namespace Mvc2Demo
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-
+            string aa = AppDomain.CurrentDomain.BaseDirectory;
+            AppDomain.CurrentDomain.ClearPrivatePath();
+            AppDomain.CurrentDomain.AppendPrivatePath(Server.MapPath("WebApp\\bin"));
+            AppDomainSetup au = new AppDomainSetup();
+            aa = AppDomain.CurrentDomain.RelativeSearchPath;
+            
+            Assembly a = Assembly.LoadFrom(Server.MapPath("WebApp/Bin/WebApp.dll"));
+            AppDomain.CurrentDomain.Load(a.FullName);
             RegisterRoutes(RouteTable.Routes);
         }
     }
