@@ -21,8 +21,8 @@ namespace Mvc3QuickStart.Controllers
         public ActionResult Index()
         {
             ViewBag.Message = "Welcome to ASP.NET MVC!";
-
-            return View();
+            ActionResult ar = View();
+            return ar;
         }
 
         public JsonResult JsonAction()
