@@ -20,9 +20,10 @@ namespace MvcMovie.Controllers
 
 
 
- public string Welcome1(string name, int numTimes = 1) {
-     return HttpUtility.HtmlEncode("Hello " + name + ", NumTimes is: " + numTimes);
- }
+        public string Welcome1(string name, int numTimes = 1)
+        {
+            return HttpUtility.HtmlEncode("Hello " + name + ", NumTimes is: " + numTimes);
+        }
 
 
     }
