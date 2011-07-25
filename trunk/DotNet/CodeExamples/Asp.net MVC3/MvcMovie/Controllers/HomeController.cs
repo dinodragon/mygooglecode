@@ -15,5 +15,11 @@ namespace MvcMovie.Controllers {
         public ActionResult About() {
             return View();
         }
+
+        public ActionResult WebForm1()
+        {
+            return View();
+        }
+        
     }
 }
