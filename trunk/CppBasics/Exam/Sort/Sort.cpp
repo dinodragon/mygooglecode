@@ -18,7 +18,7 @@ void Sort1(int *a,int arrSize)
 		}
 	}
 }
-
+//Ñ¡Ôñ·¨
 void Sort2(int *a ,int arrSize)
 {
 	int pMin = 0;
