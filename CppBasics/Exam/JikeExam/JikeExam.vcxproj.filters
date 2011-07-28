@@ -32,5 +32,8 @@
     <ClInclude Include="myatoi.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="MyVector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
