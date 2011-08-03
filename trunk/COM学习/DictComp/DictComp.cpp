@@ -17,39 +17,41 @@ HANDLE	 g_hModule;
 
 // {54BF6567-1007-11D1-B0AA-444553540000}
 extern "C" const GUID CLSID_Dictionary = 
-		{ 0x54bf6567, 0x1007, 0x11d1,
-		{ 0xb0, 0xaa, 0x44, 0x45, 0x53, 0x54, 0x00, 0x00} } ;
+{ 0x54bf6567, 0x1007, 0x11d1,
+{ 0xb0, 0xaa, 0x44, 0x45, 0x53, 0x54, 0x00, 0x00} } ;
 
 extern "C" const GUID IID_Dictionary = 
-		{ 0x54bf6568, 0x1007, 0x11d1,
-		{ 0xb0, 0xaa, 0x44, 0x45, 0x53, 0x54, 0x00, 0x00} } ;
+{ 0x54bf6568, 0x1007, 0x11d1,
+{ 0xb0, 0xaa, 0x44, 0x45, 0x53, 0x54, 0x00, 0x00} } ;
 
 extern "C" const GUID IID_SpellCheck = 
-		{ 0x54bf6569, 0x1007, 0x11d1,
-		{ 0xb0, 0xaa, 0x44, 0x45, 0x53, 0x54, 0x00, 0x00} } ;
+{ 0x54bf6569, 0x1007, 0x11d1,
+{ 0xb0, 0xaa, 0x44, 0x45, 0x53, 0x54, 0x00, 0x00} } ;
 
 
 
 BOOL APIENTRY DllMain( HANDLE hModule, 
-                       DWORD  ul_reason_for_call, 
-                       LPVOID lpReserved
-					 )
+					  DWORD  ul_reason_for_call, 
+					  LPVOID lpReserved
+					  )
 {
-    g_hModule = hModule;
+	g_hModule = hModule;
 	return TRUE;
 }
 
 
+//返回的是Factory对象指针。COM规定每一个COM对象应该有一个对应的类厂对象。
+//Factory对象有CreateInstance方法用于创建接口对象指针
 extern "C" HRESULT __stdcall DllGetClassObject(const CLSID& clsid, const IID& iid, void **ppv)
 {
 	if (clsid == CLSID_Dictionary ) {
-		
+
 		CDictionaryFactory *pFactory = new CDictionaryFactory;
-		
+
 		if (pFactory == NULL) {
 			return E_OUTOFMEMORY ;
 		}
-		
+
 		HRESULT result = pFactory->QueryInterface(iid, ppv);
 
 		return result;
@@ -76,10 +78,10 @@ extern "C" HRESULT __stdcall DllRegisterServer()
 	if (dwResult == 0)
 		return SELFREG_E_CLASS;
 	return RegisterServer(CLSID_Dictionary,
-	                      szModule, 
-						  "Dictionary.Object",
-						  "Dictionary Component",
-						  NULL);
+		szModule, 
+		"Dictionary.Object",
+		"Dictionary Component",
+		NULL);
 }
 
 
@@ -89,7 +91,7 @@ extern "C" HRESULT __stdcall DllRegisterServer()
 extern "C" HRESULT __stdcall DllUnregisterServer()
 {
 	return UnregisterServer(CLSID_Dictionary,
-	                        "Dictionary.Object",NULL);
+		"Dictionary.Object",NULL);
 }
 
 // class CDictionary implementation
@@ -116,15 +118,15 @@ HRESULT  CDictionary::QueryInterface(const IID& iid, void **ppv)
 	if ( iid == IID_IUnknown )
 	{
 		*ppv = (IDictionary *) this ;
-				((IDictionary *)(*ppv))->AddRef() ;
+		((IDictionary *)(*ppv))->AddRef() ;
 	} else if ( iid == IID_Dictionary ) 
 	{
 		*ppv = (IDictionary *) this ;
-				((IDictionary *)(*ppv))->AddRef() ;
+		((IDictionary *)(*ppv))->AddRef() ;
 	} else if ( iid == IID_SpellCheck ) 
 	{
 		*ppv = (ISpellCheck *) this ;
-				((ISpellCheck *)(*ppv))->AddRef() ;
+		((ISpellCheck *)(*ppv))->AddRef() ;
 	}
 	else
 	{
@@ -185,7 +187,7 @@ BOOL CDictionary::LoadLibrary(String filename)
 		delete pFileName;
 		return FALSE; 
 	}
-	
+
 	int nTotalNumber = 0;
 	sscanf(LineBuffer, "%d", &nTotalNumber);
 	if ( (nTotalNumber < 1) && (nTotalNumber > 5000) ) {
@@ -199,7 +201,7 @@ BOOL CDictionary::LoadLibrary(String filename)
 	m_nStructNumber = nTotalNumber+100;
 	m_pData = new DictWord[m_nStructNumber];
 	m_nWordNumber = 0;
-	
+
 	while(!feof(fp)) {
 		if (fgets(LineBuffer, MaxWordLength, fp) == NULL) {
 			printf("Read the first string failed!\n");
@@ -217,7 +219,7 @@ BOOL CDictionary::LoadLibrary(String filename)
 		if (m_nWordNumber > m_nStructNumber)
 			break;
 	}	
-	
+
 	fclose(fp);
 	delete pFileName;
 	return TRUE;
@@ -298,7 +300,7 @@ BOOL CDictionary::RestoreLibrary(String filename)
 		delete pFileName;
 		return FALSE; 
 	}
-	
+
 	for(int i = 0; i < m_nWordNumber; i ++ ) {
 		if (fputs(m_pData[i].wordForLang1, fp) == EOF) {
 			printf("Write the first string failed!\n");
@@ -315,7 +317,7 @@ BOOL CDictionary::RestoreLibrary(String filename)
 		}
 		fputs("\n", fp);
 	}
-	
+
 	fclose(fp);
 	delete pFileName;
 	return TRUE;
@@ -326,7 +328,7 @@ void CDictionary::FreeLibrary()
 	Initialize();
 }
 
-	
+
 BOOL CDictionary::CheckWord (String word, String *resultWord)
 {
 	char *pWord = _com_util::ConvertBSTRToString(word);
@@ -354,7 +356,7 @@ BOOL CDictionary::CheckWord (String word, String *resultWord)
 			}
 		}
 	}
-	
+
 	*resultWord = NULL;
 	if (nMinIndex != -1)
 		*resultWord = _com_util::ConvertStringToBSTR(m_pData[nMinIndex].wordForLang1);
