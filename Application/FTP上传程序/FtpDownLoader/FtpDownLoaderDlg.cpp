@@ -92,12 +92,23 @@ void CFtpDownLoaderDlg::OnBnClickedOk()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	std::auto_ptr<CInternetSession> m_pInetSession(new CInternetSession);   
-	std::auto_ptr<CFtpConnection> m_pFtpConnection(m_pInetSession->GetFtpConnection(TEXT("bookserver"),TEXT("aa"),TEXT("aa"),21,FALSE));
+	std::auto_ptr<CFtpConnection> m_pFtpConnection(m_pInetSession->GetFtpConnection(TEXT("localhost"),TEXT("anonymous"),TEXT("a@a.a"),21,FALSE));
 
-	if(m_pFtpConnection->GetFile(TEXT("a\\trace.log"),TEXT("c:\\1.log"),FALSE,FILE_ATTRIBUTE_NORMAL,FTP_TRANSFER_TYPE_BINARY,1))
+	if(m_pFtpConnection->GetFile(TEXT("/1/1.t"),TEXT("f:\\1.t"),FALSE,FILE_ATTRIBUTE_NORMAL,FTP_TRANSFER_TYPE_BINARY,1))
 	{   
 		AfxMessageBox(TEXT("下载成功！"));
 	}
+	if(m_pFtpConnection->GetFile(TEXT("/1/1.t"),TEXT("f:\\2.t"),FALSE,FILE_ATTRIBUTE_NORMAL,FTP_TRANSFER_TYPE_BINARY,1))
+	{   
+		AfxMessageBox(TEXT("下载成功！"));
+	}
+	//用command方式获取文件大小	TCHAR databuf[256];  	DWORD size=256;   	BOOL bRes;	DWORD dwError;
+	m_pFtpConnection->Command(_T("SIZE /1/1.t \r\n"),CFtpConnection::CmdRespNone); 	bRes =InternetGetLastResponseInfo(&dwError,databuf,&size);  
+
+
+	//CInternetFile * a = m_pFtpConnection->OpenFile(TEXT("/1.t")); 
+	//ULONGLONG fileSize = a->GetLength();
+	//a->Close();
 	CString str;
 	m_pFtpConnection->GetCurrentDirectory(str);
 	m_pInetSession->Close();
