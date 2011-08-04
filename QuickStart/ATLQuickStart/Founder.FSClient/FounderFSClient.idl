@@ -9,6 +9,7 @@ import "ocidl.idl";
 
 [
 	object,
+	//IID_IFileTransfer
 	uuid(A1198E3E-3B32-463C-9084-7D94ADEED786),
 	dual,
 	nonextensible,
@@ -17,13 +18,14 @@ import "ocidl.idl";
 	pointer_default(unique)
 ]
 interface IFileTransfer : IDispatch{
-	//[id(1), helpstring("UploadFile")] HRESULT Upload([in] BSTR RemotePath, [in] BSTR LocalPath,[out,retval] LONG* Result);
-	//[id(2), helpstring("DownloadFile")] HRESULT Download([in] BSTR RemotePath, [in] BSTR LocalPath,[out,retval] LONG* Result);
 	[id(3), helpstring("UploadFile Use Password")] HRESULT FtpUpload([in] BSTR UserName, [in] BSTR Password,[in] BSTR RemotePath, [in] BSTR LocalPath,[out,retval] LONG* Result);
 	[id(4), helpstring("DownloadFile Use Password")] HRESULT FtpDownload([in] BSTR UserName, [in] BSTR Password,[in] BSTR RemotePath, [in] BSTR LocalPath,[out,retval] LONG* Result);
 	[id(5), helpstring("GetLastError")] HRESULT GetLastError([out,retval] BSTR* Result);
 };
+
+
 [
+	//LIBID_FounderFSClientLib
 	uuid(AE243D2D-C1A7-4490-A16A-37943F4CF2D8),
 	version(1.0),
 	helpstring("Founder.FSClient 1.0 Type Library"),
@@ -33,6 +35,7 @@ library FounderFSClientLib
 {
 	importlib("stdole2.tlb");
 	[
+		//’‚ «CLSID_FileTransfer
 		uuid(9D924013-B80B-4222-9060-5AE1BAEC757B),
 		helpstring("FileTransfer Class")
 	]

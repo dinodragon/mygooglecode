@@ -46,6 +46,7 @@ static int my_fwrite(void *buffer, size_t size, size_t nmemb, void *stream)
 	return fwrite(buffer, size, nmemb, out->stream);
 }
 
+//实际上就是HRESULT __stdcall
 STDMETHODIMP CFileTransfer::FtpUpload(BSTR UserName, BSTR Password,BSTR RemotePath, BSTR LocalPath, LONG* Result)
 {
 	LONG lResult = 0L;
