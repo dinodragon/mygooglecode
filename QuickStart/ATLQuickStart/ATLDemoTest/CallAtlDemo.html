@@ -3,12 +3,30 @@
     <!DOCTYPE   HTML   PUBLIC   "-//W3C//DTD   HTML   4.0   Transitional//EN "   >
     <meta http-equiv="content-type " content="text/html;   charset=gb2312 ">
     <title>ATL Com 测试</title>
+
+    <script language="javascript" type="text/javascript">
+        function fun() {
+            DOMCtr.Msg2();
+        }
+
+        function fun2() {
+            DOMCtr.Echo("这是在javacript里写的字符串");
+        }
+
+        function add() {
+            DOMCtr.Add(1,2);
+        }
+    </script>
+
 </head>
 <body>
     <object classid="CLSID:50D786CE-1525-4E74-9BCB-E16D7DF2E859" id="DOMCtr" style="height: 50px;
         width: 100px;" border="1">
     </object> <br />
-    <input type="button" value="test " id="test " onclick="DOMCtr.Msg();" />
+    <input type="button" value="调用Msg方法 " id="test " onclick="DOMCtr.Msg();" /><br />
+    <input type="button" value="调用Msg2方法 " id="Button1" onclick="fun();" /><br />
+    <input type="button" value="调用Echo方法 " id="Button2" onclick="fun2();" /><br />
+    <input type="button" value="调用Add方法 " id="Button3" onclick="add();" /><br />
     <p>
         <b>调用Com组件里的方法，但还没有解决返回值的问题;</b>
         <br />
