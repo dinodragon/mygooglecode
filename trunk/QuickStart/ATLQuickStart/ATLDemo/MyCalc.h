@@ -50,6 +50,7 @@ public:
 	STDMETHOD(Add)(LONG a, LONG b, LONG* rusult);
 	STDMETHOD(Msg)();
 	STDMETHOD(Msg2)(void);
+	STDMETHOD(Echo)(BSTR msg);
 };
 
 OBJECT_ENTRY_AUTO(__uuidof(MyCalc), CMyCalc)

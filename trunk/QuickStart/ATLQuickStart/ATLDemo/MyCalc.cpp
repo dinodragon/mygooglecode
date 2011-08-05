@@ -26,3 +26,11 @@ STDMETHODIMP CMyCalc::Msg2(void)
 	MessageBox(NULL,TEXT("这是来自Com组件Msg2的消息"),TEXT("标题"),MB_OK);
 	return S_OK;
 }
+
+STDMETHODIMP CMyCalc::Echo(BSTR msg)
+{
+	// TODO: Add your implementation code here
+	CComBSTR ccombstr(msg);
+	MessageBox(NULL,ccombstr,TEXT("标题"),MB_OK);
+	return S_OK;
+}

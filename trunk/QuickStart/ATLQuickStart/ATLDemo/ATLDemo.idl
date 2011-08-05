@@ -19,6 +19,7 @@ interface IMyCalc : IDispatch{
 	[id(1), helpstring("方法Add")] HRESULT Add(LONG a, LONG b, [out] LONG* rusult);
 	[id(2), helpstring("一个消息方法Msg2")] HRESULT Msg(void);
 	[id(3), helpstring("method Msg2")] HRESULT Msg2(void);
+	[id(4), helpstring("method Echo")] HRESULT Echo([in] BSTR msg);
 };
 [
 	uuid(C440DCEF-9D2D-4970-9410-B597EB6D3AA4),
