@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloWorld", "HelloWorld\HelloWorld.vcproj", "{97A405E6-11BC-498D-872C-C2F8CECA3F21}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CWindowImplDemo", "CWindowImplDemo\CWindowImplDemo.vcproj", "{6BC86504-0D18-4A48-9C06-88556F1D65F5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CWindowDemo", "CWindowDemo\CWindowDemo.vcproj", "{B786077E-5085-4AF7-8D55-00DA42E358D6}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97A405E6-11BC-498D-872C-C2F8CECA3F21}.Debug|Win32.ActiveCfg = Debug|Win32
+		{97A405E6-11BC-498D-872C-C2F8CECA3F21}.Debug|Win32.Build.0 = Debug|Win32
+		{97A405E6-11BC-498D-872C-C2F8CECA3F21}.Release|Win32.ActiveCfg = Release|Win32
+		{97A405E6-11BC-498D-872C-C2F8CECA3F21}.Release|Win32.Build.0 = Release|Win32
+		{6BC86504-0D18-4A48-9C06-88556F1D65F5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6BC86504-0D18-4A48-9C06-88556F1D65F5}.Debug|Win32.Build.0 = Debug|Win32
+		{6BC86504-0D18-4A48-9C06-88556F1D65F5}.Release|Win32.ActiveCfg = Release|Win32
+		{6BC86504-0D18-4A48-9C06-88556F1D65F5}.Release|Win32.Build.0 = Release|Win32
+		{B786077E-5085-4AF7-8D55-00DA42E358D6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B786077E-5085-4AF7-8D55-00DA42E358D6}.Debug|Win32.Build.0 = Debug|Win32
+		{B786077E-5085-4AF7-8D55-00DA42E358D6}.Release|Win32.ActiveCfg = Release|Win32
+		{B786077E-5085-4AF7-8D55-00DA42E358D6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
