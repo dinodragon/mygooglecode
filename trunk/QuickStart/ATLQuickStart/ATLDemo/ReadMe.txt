@@ -4,7 +4,7 @@
 
 
 
-
+ProgId = ATLDemo.MyCalc.1
 
 
 
