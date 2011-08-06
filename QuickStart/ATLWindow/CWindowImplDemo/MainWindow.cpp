@@ -2,11 +2,28 @@
 #include <atlwin.h>
 
 //一个基本的ATLCWindowImpl写的Windows程序。
+//并关联了一个编辑子窗口。
+
+/////////////////////////////////////////////////////////////////////////////
+// CEditQuote
+class CEditQuote : public CWindowImpl<CEditQuote>
+{
+public:
+	DECLARE_WND_SUPERCLASS(TEXT("EDITQUOTE"), TEXT("EDIT"))
+	BEGIN_MSG_MAP(CEditQuote)
+		//COMMAND_CODE_HANDLER(EN_SETFOCUS, OnSetFocus)
+	END_MSG_MAP()
+	CEditQuote(){};
+	virtual ~CEditQuote(){};
+};
+
 
 
 class CMainWindow : public CWindowImpl<CMainWindow> 
 {
 	BEGIN_MSG_MAP(CMainWindow)
+		CHAIN_MSG_MAP_MEMBER(m_EditWnd)
+		MESSAGE_HANDLER(WM_CREATE, OnCreate)
 		MESSAGE_HANDLER( WM_PAINT, OnPaint )
 		MESSAGE_HANDLER( WM_DESTROY, OnDestroy )
 	END_MSG_MAP()
@@ -27,6 +44,16 @@ class CMainWindow : public CWindowImpl<CMainWindow>
 		PostQuitMessage( 0 );
 		return 0;
 	}
+
+	LRESULT OnCreate(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
+	{
+		// create our EditQuote window and set the font.
+		RECT rect = {0,0,200,30};
+		m_EditWnd.Create(m_hWnd, rect, NULL, WS_CHILD|WS_VISIBLE, WS_EX_CLIENTEDGE);
+		m_EditWnd.SetFont(static_cast<HFONT>(GetStockObject(DEFAULT_GUI_FONT)));
+		return 0;
+	}
+	CEditQuote m_EditWnd;
 };
 
 // Entry point
