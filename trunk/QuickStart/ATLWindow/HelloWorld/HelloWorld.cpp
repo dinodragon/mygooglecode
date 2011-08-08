@@ -1,5 +1,6 @@
 // HelloWorld.cpp : Defines the entry point for the application.
 //
+//这是直接创建的ATL Windows程序。
 
 #include "stdafx.h"
 #include "HelloWorld.h"
