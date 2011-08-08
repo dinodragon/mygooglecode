@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CWindowImplDemo", "CWindowI
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CWindowDemo", "CWindowDemo\CWindowDemo.vcproj", "{B786077E-5085-4AF7-8D55-00DA42E358D6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WTLDemo", "WTLDemo\WTLDemo.vcproj", "{C444D4E8-E48C-4292-8E66-645EE5D5B8F9}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -29,6 +31,10 @@ Global
 		{B786077E-5085-4AF7-8D55-00DA42E358D6}.Debug|Win32.Build.0 = Debug|Win32
 		{B786077E-5085-4AF7-8D55-00DA42E358D6}.Release|Win32.ActiveCfg = Release|Win32
 		{B786077E-5085-4AF7-8D55-00DA42E358D6}.Release|Win32.Build.0 = Release|Win32
+		{C444D4E8-E48C-4292-8E66-645EE5D5B8F9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C444D4E8-E48C-4292-8E66-645EE5D5B8F9}.Debug|Win32.Build.0 = Debug|Win32
+		{C444D4E8-E48C-4292-8E66-645EE5D5B8F9}.Release|Win32.ActiveCfg = Release|Win32
+		{C444D4E8-E48C-4292-8E66-645EE5D5B8F9}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
