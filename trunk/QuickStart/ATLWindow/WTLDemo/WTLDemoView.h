@@ -27,6 +27,12 @@ public:
 	LRESULT OnPaint(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/)
 	{
 		CPaintDC dc(m_hWnd);
+		RECT rect;
+		rect.left = 0;
+		rect.top = 0;
+		rect.right = 50;
+		rect.bottom = 20;
+		dc.DrawText(TEXT("aaaa"),-1,&rect,DT_CENTER);
 
 		//TODO: Add your drawing code here
 
