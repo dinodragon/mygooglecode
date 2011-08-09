@@ -53,6 +53,18 @@ void CDataCopyer::SetDestination( CString Server,CString User,CString PWD,CStrin
 
 BOOL CDataCopyer::Backup()
 {
+	HRESULT hr = CoInitialize(NULL);
+	assert(SUCCEEDED(hr));
+	ADODB::_ConnectionPtr pConn(__uuidof(ADODB::Connection));
+	ADODB::_RecordsetPtr pRst(__uuidof(ADODB::Recordset));
+	CString conn;
+	conn.Format(TEXT("Data Source=%s;Initial Catalog=%s;Persist Security Info=True"),m_sServer,m_sDb);
+	hr = pConn->Open(conn.AllocSysString(),m_sUser.AllocSysString(),m_sPwd.AllocSysString(),ADODB::adConnectUnspecified);
+	assert(SUCCEEDED(hr));
+
+	hr = pConn->Close();
+	assert(SUCCEEDED(hr));
+	CoUninitialize();
 	return FALSE;
 }
 
