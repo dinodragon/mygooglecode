@@ -122,6 +122,8 @@ private:
 		DCUPDATE(IDC_DLOCALPATH,m_dLocalpath)
 		DCUPDATE(IDC_DNETPATH,m_dNetpath)
 	}
+
+	BOOL SaveSetting();
 public:
 	LRESULT OnBnClickedOk(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/);
 };
