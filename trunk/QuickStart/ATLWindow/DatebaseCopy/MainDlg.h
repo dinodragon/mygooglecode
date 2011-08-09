@@ -3,6 +3,10 @@
 /////////////////////////////////////////////////////////////////////////////
 
 #pragma once
+#ifndef _MAINDLG
+#define _MAINDLG
+
+
 #include <atlframe.h>
 #include "resource.h"
 #include "Atlmisc.h"
@@ -121,3 +125,5 @@ private:
 public:
 	LRESULT OnBnClickedOk(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/);
 };
+
+#endif

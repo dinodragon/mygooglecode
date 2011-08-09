@@ -189,6 +189,10 @@
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm"
 			>
 			<File
+				RelativePath=".\DataCopyer.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\DatebaseCopy.cpp"
 				>
 			</File>
@@ -223,6 +227,10 @@
 			>
 			<File
 				RelativePath=".\AboutDlg.h"
+				>
+			</File>
+			<File
+				RelativePath=".\DataCopyer.h"
 				>
 			</File>
 			<File
