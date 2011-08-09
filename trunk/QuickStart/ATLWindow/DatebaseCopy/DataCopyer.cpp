@@ -50,3 +50,18 @@ void CDataCopyer::SetDestination( CString Server,CString User,CString PWD,CStrin
 	m_dLocalpath = LocalPath;
 	m_dNetpath = NetPath;
 }
+
+BOOL CDataCopyer::Backup()
+{
+	return FALSE;
+}
+
+BOOL CDataCopyer::CopyFile()
+{
+	return FALSE;
+}
+
+BOOL CDataCopyer::Restore()
+{
+	return FALSE;
+}

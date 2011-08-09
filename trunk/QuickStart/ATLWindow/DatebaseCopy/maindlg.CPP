@@ -7,9 +7,11 @@ LRESULT CMainDlg::OnBnClickedOk(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndC
 	// TODO: Add your control notification handler code here
 	UpdateData(TRUE);
 	//MessageBox(m_sServer);
-	CDataCopyer *pCdc = CDataCopyer::GetInstance();
-	pCdc->SetSource(m_sServer,m_sUser,m_sPwd,m_sDb,m_sLocalpath,m_sNetpath);
-	//CDataCopyer.GetInstance()->SetDestination(m_dServer,m_dUser,m_dPwd,m_dDb,m_dLocalpath,m_dNetpath);
+	CDataCopyer::GetInstance()->SetSource(m_sServer,m_sUser,m_sPwd,m_sDb,m_sLocalpath,m_sNetpath);
+	CDataCopyer::GetInstance()->SetDestination(m_dServer,m_dUser,m_dPwd,m_dDb,m_dLocalpath,m_dNetpath);
+	CDataCopyer::GetInstance()->Backup();
+	CDataCopyer::GetInstance()->CopyFile();
+	CDataCopyer::GetInstance()->Restore();
 	return 0;
 }
 
