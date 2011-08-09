@@ -1,4 +1,5 @@
 #include <iostream>
+#include <assert.h>
 #include "../ATLDemo/ATLDemo_i.h"
 #include "../ATLDemo/ATLDemo_i.c"
 
