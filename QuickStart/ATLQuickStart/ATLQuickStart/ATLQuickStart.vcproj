@@ -101,7 +101,6 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				Description=""
 				CommandLine=""
 			/>
 		</Configuration>
@@ -110,7 +109,8 @@
 			OutputDirectory="$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
-			UseOfATL="2"
+			UseOfMFC="0"
+			UseOfATL="1"
 			ATLMinimizesCRunTimeLibraryUsage="false"
 			CharacterSet="1"
 			>
@@ -143,7 +143,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG"
-				RuntimeLibrary="2"
+				RuntimeLibrary="0"
 				UsePrecompiledHeader="2"
 				WarningLevel="3"
 				DebugInformationFormat="3"
@@ -190,8 +190,8 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				Description="Ö´ÐÐ×¢²á"
-				CommandLine="&quot;$(TargetPath)&quot; /RegServer"
+				Description=""
+				CommandLine=""
 			/>
 		</Configuration>
 	</Configurations>
