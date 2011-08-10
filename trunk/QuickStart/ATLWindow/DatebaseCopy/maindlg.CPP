@@ -11,9 +11,9 @@ LRESULT CMainDlg::OnBnClickedOk(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndC
 	//MessageBox(m_sServer);
 	CDataCopyer::GetInstance()->SetSource(m_sServer,m_sUser,m_sPwd,m_sDb,m_sLocalpath,m_sNetpath);
 	CDataCopyer::GetInstance()->SetDestination(m_dServer,m_dUser,m_dPwd,m_dDb,m_dLocalpath,m_dNetpath);
-	//CDataCopyer::GetInstance()->Backup();
-	//CDataCopyer::GetInstance()->CopyFile();
-	//CDataCopyer::GetInstance()->Restore();
+	CDataCopyer::GetInstance()->Backup();
+	CDataCopyer::GetInstance()->CopyFile();
+	CDataCopyer::GetInstance()->Restore();
 	return 0;
 }
 
@@ -71,6 +71,14 @@ BOOL CMainDlg::LoadSetting()
 		m_sDb = pSource->Attribute("Database");
 		m_sLocalpath = pSource->Attribute("LocalPath");
 		m_sNetpath = pSource->Attribute("NetPath");
+
+		TiXmlElement * pDes = pRootElem->FirstChildElement("Destination");
+		m_dServer = pDes->Attribute("Server");
+		m_dUser = pDes->Attribute("User");
+		m_dPwd = pDes->Attribute("Password");
+		m_dDb = pDes->Attribute("Database");
+		m_dLocalpath = pDes->Attribute("LocalPath");
+		m_dNetpath = pDes->Attribute("NetPath");
 	}
 	catch (...)
 	{
