@@ -57,12 +57,10 @@ BOOL CDataCopyer::Backup()
 	HRESULT hr = CoInitialize(NULL);
 	assert(SUCCEEDED(hr));
 	ADODB::_ConnectionPtr pConn(__uuidof(ADODB::Connection));
-	ADODB::_RecordsetPtr pRst(__uuidof(ADODB::Recordset));
 	CString conn;
 	conn.Format(TEXT("Provider=SQLOLEDB.1;Data Source=%s;Initial Catalog=%s;Persist Security Info=True"),m_sServer,m_sDb);
 	hr = pConn->Open(conn.AllocSysString(),m_sUser.AllocSysString(),m_sPwd.AllocSysString(),ADODB::adConnectUnspecified);
 	assert(SUCCEEDED(hr));
-
 
 	TCHAR tmp[64] = _T("aaaa"); 
 	time_t t = time(0); 
@@ -94,7 +92,6 @@ BOOL CDataCopyer::Restore()
 	HRESULT hr = CoInitialize(NULL);
 	assert(SUCCEEDED(hr));
 	ADODB::_ConnectionPtr pConn(__uuidof(ADODB::Connection));
-	ADODB::_RecordsetPtr pRst(__uuidof(ADODB::Recordset));
 	CString conn;
 	conn.Format(TEXT("Provider=SQLOLEDB.1;Data Source=%s;Initial Catalog=%s;Persist Security Info=True"),m_dServer,m_dDb);
 	hr = pConn->Open(conn.AllocSysString(),m_dUser.AllocSysString(),m_dPwd.AllocSysString(),ADODB::adConnectUnspecified);
