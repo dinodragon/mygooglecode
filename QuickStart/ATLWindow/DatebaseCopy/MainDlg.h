@@ -11,8 +11,9 @@
 #include "resource.h"
 #include "Atlmisc.h"
 
-#define DCUPDATE(CONTROLID,MEMBER) GetDlgItemText(CONTROLID,MEMBER.GetBuffer(80),80);\
-MEMBER.ReleaseBuffer();
+#define DCUPDATE(UPDATE,CONTROLID,MEMBER) if(UPDATE){GetDlgItemText(CONTROLID,MEMBER.GetBuffer(80),80);\
+MEMBER.ReleaseBuffer(); }\
+else{SetDlgItemText(CONTROLID,MEMBER);}
 
 class CMainDlg : public CDialogImpl<CMainDlg>, public CUpdateUI<CMainDlg>,
 		public CMessageFilter, public CIdleHandler
@@ -63,9 +64,9 @@ public:
 		ATLASSERT(pLoop != NULL);
 		pLoop->AddMessageFilter(this);
 		pLoop->AddIdleHandler(this);
-
 		UIAddChildWindowContainer(m_hWnd);
-
+		LoadSetting();
+		UpdateData(FALSE);
 		return TRUE;
 	}
 
@@ -109,21 +110,23 @@ private:
 
 	void UpdateData(BOOL flag)
 	{
-		DCUPDATE(IDC_SSERVER,m_sServer)
-		DCUPDATE(IDC_SUSER,m_sUser)
-		DCUPDATE(IDC_SPWD,m_sPwd)
-		DCUPDATE(IDC_SDB,m_sDb)
-		DCUPDATE(IDC_SLOCALPATH,m_sLocalpath)
-		DCUPDATE(IDC_SNETPATH,m_sNetpath)
-		DCUPDATE(IDC_DSERVER,m_dServer)
-		DCUPDATE(IDC_DUSER,m_dUser)
-		DCUPDATE(IDC_DPWD,m_dPwd)
-		DCUPDATE(IDC_DDB,m_dDb)
-		DCUPDATE(IDC_DLOCALPATH,m_dLocalpath)
-		DCUPDATE(IDC_DNETPATH,m_dNetpath)
+		
+		DCUPDATE(flag,IDC_SSERVER,m_sServer)
+		DCUPDATE(flag,IDC_SUSER,m_sUser)
+		DCUPDATE(flag,IDC_SPWD,m_sPwd)
+		DCUPDATE(flag,IDC_SDB,m_sDb)
+		DCUPDATE(flag,IDC_SLOCALPATH,m_sLocalpath)
+		DCUPDATE(flag,IDC_SNETPATH,m_sNetpath)
+		DCUPDATE(flag,IDC_DSERVER,m_dServer)
+		DCUPDATE(flag,IDC_DUSER,m_dUser)
+		DCUPDATE(flag,IDC_DPWD,m_dPwd)
+		DCUPDATE(flag,IDC_DDB,m_dDb)
+		DCUPDATE(flag,IDC_DLOCALPATH,m_dLocalpath)
+		DCUPDATE(flag,IDC_DNETPATH,m_dNetpath)
 	}
 
 	BOOL SaveSetting();
+	BOOL LoadSetting();
 public:
 	LRESULT OnBnClickedOk(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/);
 };
