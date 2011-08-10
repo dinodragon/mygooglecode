@@ -6,8 +6,8 @@
 LRESULT CMainDlg::OnBnClickedOk(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/)
 {
 	// TODO: Add your control notification handler code here
-	SaveSetting();
 	UpdateData(TRUE);
+	SaveSetting();
 	//MessageBox(m_sServer);
 	CDataCopyer::GetInstance()->SetSource(m_sServer,m_sUser,m_sPwd,m_sDb,m_sLocalpath,m_sNetpath);
 	CDataCopyer::GetInstance()->SetDestination(m_dServer,m_dUser,m_dPwd,m_dDb,m_dLocalpath,m_dNetpath);
@@ -16,6 +16,8 @@ LRESULT CMainDlg::OnBnClickedOk(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndC
 	//CDataCopyer::GetInstance()->Restore();
 	return 0;
 }
+
+
 
 BOOL CMainDlg::SaveSetting()
 {
@@ -28,43 +30,52 @@ BOOL CMainDlg::SaveSetting()
 		TiXmlElement rootElem("Setting");
 		TiXmlElement source("Source");
 		TiXmlElement des("Destination");
-		//TiXmlAttribute a_sServer("Server","a");
-		//TiXmlAttribute a_sUser("User",m_sUser);
-		//TiXmlAttribute a_sPassword("Password",m_sPwd);
-		//TiXmlAttribute a_sDatabase("Database",m_sDb);
-		//TiXmlAttribute a_sLocalPath("LocalPath",m_sLocalpath);
-		//TiXmlAttribute a_sNetPath("NetPath",m_sNetpath);
+		source.SetAttribute("Server",CW2A(m_sServer));
+		source.SetAttribute("User",CW2A(m_sUser));
+		source.SetAttribute("Password",CW2A(m_sPwd));
+		source.SetAttribute("Database",CW2A(m_sDb));
+		source.SetAttribute("LocalPath",CW2A(m_sLocalpath));
+		source.SetAttribute("NetPath",CW2A(m_sNetpath));
 
-		//TiXmlAttribute a_dServer("Server",m_dServer);
-		//TiXmlAttribute a_dUser("User",m_dUser);
-		//TiXmlAttribute a_dPassword("Password",m_dPwd);
-		//TiXmlAttribute a_dDatabase("Database",m_dDb);
-		//TiXmlAttribute a_dLocalPath("LocalPath",m_dLocalpath);
-		//TiXmlAttribute a_dNetPath("NetPath",m_dNetpath);
-		source.SetAttribute("Server","a");
-		//source.InsertEndChild(a_sUser);
-		//source.InsertEndChild(a_sPassword);
-		//source.InsertEndChild(a_sDatabase);
-		//source.InsertEndChild(a_sLocalPath);
-		//source.InsertEndChild(a_sNetPath);
-
-		//des.InsertEndChild(a_dServer);
-		//des.InsertEndChild(a_dUser);
-		//des.InsertEndChild(a_dPassword);
-		//des.InsertEndChild(a_dDatabase);
-		//des.InsertEndChild(a_dLocalPath);
-		//des.InsertEndChild(a_dNetPath);
+		des.SetAttribute("Server",CW2A(m_dServer));
+		des.SetAttribute("User",CW2A(m_dUser));
+		des.SetAttribute("Password",CW2A(m_dPwd));
+		des.SetAttribute("Database",CW2A(m_dDb));
+		des.SetAttribute("LocalPath",CW2A(m_dLocalpath));
+		des.SetAttribute("NetPath",CW2A(m_dNetpath));
 
 		rootElem.InsertEndChild(source);
 		rootElem.InsertEndChild(des);
 		xmlDoc.InsertEndChild(rootElem);
 
-
 		xmlDoc.SaveFile();
 	}
 	catch (...)
 	{
+		return FALSE;
 	}
-	return FALSE;
+	return TRUE;
 }
 
+BOOL CMainDlg::LoadSetting()
+{
+	try
+	{
+		TiXmlDocument xmlDoc("config.xml");
+		xmlDoc.LoadFile();
+		TiXmlElement * pRootElem = xmlDoc.RootElement();
+		TiXmlElement * pSource = pRootElem->FirstChildElement("Source");
+		m_sServer = pSource->Attribute("Server");
+		m_sUser = pSource->Attribute("User");
+		m_sPwd = pSource->Attribute("Password");
+		m_sDb = pSource->Attribute("Database");
+		m_sLocalpath = pSource->Attribute("LocalPath");
+		m_sNetpath = pSource->Attribute("NetPath");
+	}
+	catch (...)
+	{
+		assert(false);
+		return FALSE;
+	}
+	return TRUE;
+}
