@@ -33,6 +33,8 @@ private:
 	CString m_dDb;
 	CString m_dLocalpath;
 	CString m_dNetpath;
+
+	CString m_backupFileName;
 };
 
 __declspec(selectany) CDataCopyer * CDataCopyer::m_Instance = NULL;
