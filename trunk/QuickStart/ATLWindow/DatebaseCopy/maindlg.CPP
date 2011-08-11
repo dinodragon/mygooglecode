@@ -64,6 +64,8 @@ BOOL CMainDlg::LoadSetting()
 		TiXmlDocument xmlDoc("config.xml");
 		xmlDoc.LoadFile();
 		TiXmlElement * pRootElem = xmlDoc.RootElement();
+		if(!pRootElem)
+			return FALSE;
 		TiXmlElement * pSource = pRootElem->FirstChildElement("Source");
 		m_sServer = pSource->Attribute("Server");
 		m_sUser = pSource->Attribute("User");
