@@ -11,9 +11,24 @@ LRESULT CMainDlg::OnBnClickedOk(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndC
 	//MessageBox(m_sServer);
 	CDataCopyer::GetInstance()->SetSource(m_sServer,m_sUser,m_sPwd,m_sDb,m_sLocalpath,m_sNetpath);
 	CDataCopyer::GetInstance()->SetDestination(m_dServer,m_dUser,m_dPwd,m_dDb,m_dLocalpath,m_dNetpath);
-	CDataCopyer::GetInstance()->Backup();
-	CDataCopyer::GetInstance()->CopyFile();
-	CDataCopyer::GetInstance()->Restore();
+	BOOL result = CDataCopyer::GetInstance()->Backup();
+	if (!result)
+	{
+		MessageBox(_T("备份数据库失败！"));
+		return 0;
+	}
+	result = CDataCopyer::GetInstance()->CopyFile();
+	if (!result)
+	{
+		MessageBox(_T("拷贝文件失败！"));
+		return 0;
+	}
+	result = CDataCopyer::GetInstance()->Restore();
+	if (!result)
+	{
+		MessageBox(_T("还原数据库失败！"));
+		return 0;
+	}
 	return 0;
 }
 
