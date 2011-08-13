@@ -9,6 +9,7 @@
 #include <atlctrlx.h>
 
 #include "resource.h"
+#include "Winuser.h"
 
 #include "CodeConverterView.h"
 #include "aboutdlg.h"
@@ -22,13 +23,14 @@ int Run(LPTSTR /*lpstrCmdLine*/ = NULL, int nCmdShow = SW_SHOWDEFAULT)
 	_Module.AddMessageLoop(&theLoop);
 
 	CMainFrame wndMain;
-
-	if(wndMain.CreateEx() == NULL)
+	
+	DWORD windowStyle = WS_OVERLAPPEDWINDOW & ~WS_SIZEBOX & ~WS_MAXIMIZEBOX;
+	//在CreateEx时指定好style和窗口生成后再修改，会有显示效果差异。
+	if(wndMain.CreateEx(NULL,NULL,windowStyle) == NULL)
 	{
 		ATLTRACE(_T("Main window creation failed!\n"));
 		return 0;
 	}
-
 	wndMain.ShowWindow(nCmdShow);
 
 	int nRet = theLoop.Run();
