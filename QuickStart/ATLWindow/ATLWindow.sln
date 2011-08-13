@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WTLDemo", "WTLDemo\WTLDemo.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DatebaseCopy", "DatebaseCopy\DatebaseCopy.vcproj", "{ED49F90A-C5EB-4942-A80B-C134E6BF2CE9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CodeConverter", "CodeConverter\CodeConverter.vcproj", "{75D30B49-F807-425E-89F1-60B112DB8016}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -41,6 +43,10 @@ Global
 		{ED49F90A-C5EB-4942-A80B-C134E6BF2CE9}.Debug|Win32.Build.0 = Debug|Win32
 		{ED49F90A-C5EB-4942-A80B-C134E6BF2CE9}.Release|Win32.ActiveCfg = Release|Win32
 		{ED49F90A-C5EB-4942-A80B-C134E6BF2CE9}.Release|Win32.Build.0 = Release|Win32
+		{75D30B49-F807-425E-89F1-60B112DB8016}.Debug|Win32.ActiveCfg = Debug|Win32
+		{75D30B49-F807-425E-89F1-60B112DB8016}.Debug|Win32.Build.0 = Debug|Win32
+		{75D30B49-F807-425E-89F1-60B112DB8016}.Release|Win32.ActiveCfg = Release|Win32
+		{75D30B49-F807-425E-89F1-60B112DB8016}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

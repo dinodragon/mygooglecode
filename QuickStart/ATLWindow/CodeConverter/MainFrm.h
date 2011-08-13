@@ -60,6 +60,9 @@ public:
 		CMenuHandle menuMain = GetMenu();
 		m_view.SetWindowMenu(menuMain.GetSubMenu(WINDOW_MENU_POSITION));
 
+		CCodeConverterView* pView = new CCodeConverterView;
+		pView->Create(m_view);
+		m_view.AddPage(pView->m_hWnd, _T("Base64"));
 		return 0;
 	}
 
