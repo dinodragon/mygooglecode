@@ -60,7 +60,7 @@ public:
 		CMenuHandle menuMain = GetMenu();
 		m_view.SetWindowMenu(menuMain.GetSubMenu(WINDOW_MENU_POSITION));
 
-		CCodeConverterView* pView = new CCodeConverterView;
+		CBase64ConverterView* pView = new CBase64ConverterView;
 		pView->Create(m_view);
 		m_view.AddPage(pView->m_hWnd, _T("Base64"));
 		return 0;
@@ -86,12 +86,7 @@ public:
 
 	LRESULT OnFileNew(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/)
 	{
-		CCodeConverterView* pView = new CCodeConverterView;
-		pView->Create(m_view);
-		m_view.AddPage(pView->m_hWnd, _T("Document"));
-
 		// TODO: add code to initialize document
-
 		return 0;
 	}
 

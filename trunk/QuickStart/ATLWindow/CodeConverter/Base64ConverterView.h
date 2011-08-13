@@ -1,20 +1,20 @@
-// CodeConverterView.h : interface of the CCodeConverterView class
+// Base64ConverterView.h : interface of the CCodeConverterView class
 //
 /////////////////////////////////////////////////////////////////////////////
 
 #pragma once
 
-class CCodeConverterView : public CDialogImpl<CCodeConverterView>
+class CBase64ConverterView : public CDialogImpl<CBase64ConverterView>
 {
 public:
-	enum { IDD = IDD_CODECONVERTER_FORM };
+	enum { IDD = IDD_BASE64CONVERTER_FORM };
 
 	BOOL PreTranslateMessage(MSG* pMsg)
 	{
 		return CWindow::IsDialogMessage(pMsg);
 	}
 
-	BEGIN_MSG_MAP(CCodeConverterView)
+	BEGIN_MSG_MAP(CBase64ConverterView)
 	END_MSG_MAP()
 
 // Handler prototypes (uncomment arguments if needed):
