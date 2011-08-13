@@ -222,7 +222,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\CodeConverterView.h"
+				RelativePath=".\Base64ConverterView.h"
 				>
 			</File>
 			<File
