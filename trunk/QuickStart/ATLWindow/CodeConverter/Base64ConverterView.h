@@ -26,6 +26,8 @@ public:
 	CBase64ConverterView()
 	{
 		m_codepage = 0;
+		m_autoconvert = TRUE;
+		m_lastOperEncode = TRUE;
 	}
 
 	BEGIN_MSG_MAP(CBase64ConverterView)
@@ -38,18 +40,20 @@ public:
 		COMMAND_HANDLER(IDC_AUTOCONVERT, BN_CLICKED, OnBnClickedAutoconvert)
 		COMMAND_HANDLER(IDC_SOURCE, EN_CHANGE, OnEnChangeSource)
 		COMMAND_HANDLER(IDC_BASE64, EN_CHANGE, OnEnChangeBase64)
-		MESSAGE_HANDLER(WM_INITDIALOG, OnInitDialog)
 		MESSAGE_HANDLER(WM_CREATE, OnCreate)
+		MESSAGE_HANDLER(WM_INITDIALOG, OnInitDialog)
+		MESSAGE_HANDLER(WM_CLOSE, OnClose)
 	END_MSG_MAP()
 
-	BEGIN_DDX_MAP(CMainDlg)
+	BEGIN_DDX_MAP(CBase64ConverterView)
 		DDX_RADIO(IDC_ANSI, m_codepage)
+		DDX_CHECK(IDC_AUTOCONVERT, m_autoconvert);
 	END_DDX_MAP()
 
 	// Handler prototypes (uncomment arguments if needed):
-	//	LRESULT MessageHandler(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/)
-	//	LRESULT CommandHandler(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/)
-	//	LRESULT NotifyHandler(int /*idCtrl*/, LPNMHDR /*pnmh*/, BOOL& /*bHandled*/)
+	//LRESULT MessageHandler(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/)
+	//LRESULT CommandHandler(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/)
+	//LRESULT NotifyHandler(int /*idCtrl*/, LPNMHDR /*pnmh*/, BOOL& /*bHandled*/)
 	LRESULT OnBnClickedDecodetofile(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/);
 	LRESULT OnBnClickedEncode(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/);
 	LRESULT OnBnClickedDecode(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/);
@@ -74,4 +78,5 @@ private:
 public:
 	LRESULT OnInitDialog(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled);
 	LRESULT OnCreate(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/);
+	LRESULT OnClose(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/);
 };
