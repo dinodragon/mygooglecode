@@ -189,6 +189,14 @@
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm"
 			>
 			<File
+				RelativePath=".\base64converterview.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Base64Helper.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\CodeConverter.cpp"
 				>
 			</File>
@@ -223,6 +231,10 @@
 			</File>
 			<File
 				RelativePath=".\Base64ConverterView.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Base64Helper.h"
 				>
 			</File>
 			<File
