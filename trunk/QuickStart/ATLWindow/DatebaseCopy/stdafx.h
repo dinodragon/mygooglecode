@@ -15,7 +15,7 @@
 #include <atlapp.h>
 
 extern CAppModule _Module;
-
+#define  _WTL_NO_CSTRING
 #include <atlwin.h>
 #include <assert.h>
 

@@ -2,7 +2,8 @@
 #ifndef _DATACOPYER
 #define _DATACOPYER
 
-#include "Atlmisc.h"
+
+#include <atlstr.h>
 
 class CDataCopyer
 {
