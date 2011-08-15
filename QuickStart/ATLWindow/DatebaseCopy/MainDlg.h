@@ -9,7 +9,7 @@
 
 #include <atlframe.h>
 #include "resource.h"
-#include "Atlmisc.h"
+#include <atlstr.h>
 
 #define DCUPDATE(UPDATE,CONTROLID,MEMBER) if(UPDATE){GetDlgItemText(CONTROLID,MEMBER.GetBuffer(80),80);\
 MEMBER.ReleaseBuffer(); }\
