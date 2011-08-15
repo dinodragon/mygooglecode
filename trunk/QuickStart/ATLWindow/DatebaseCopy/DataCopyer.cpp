@@ -67,12 +67,13 @@ BOOL CDataCopyer::Backup()
 		{
 			return FALSE;
 		}
-		TCHAR tmp[64] = _T("aaaa"); 
+		TCHAR tmp[64];
 		time_t t = time(0); 
 		tm stm;
 		localtime_s(&stm,&t);
-		_tcsftime(tmp, sizeof(tmp),_T("%Y%m%d%H%M%S"),&stm);
+		size_t r = _tcsftime(tmp, sizeof(tmp)/sizeof(TCHAR),_T("%Y%m%d%H%M%S"),&stm);
 		//很奇怪的现象，如果使用了上面的语句，则成员变量m_sLocalpath则无法访问。
+		//_tcsftime的第二次参数接收的是WORD数，不能直接用sizeof取值。
 		m_backupFileName.Format(_T("%s_%d%d%d%d%d%d.bak"),m_sDb,stm.tm_year,stm.tm_mon,stm.tm_mday,stm.tm_hour,stm.tm_min,stm.tm_sec);
 		CString buckupSql;
 		buckupSql.Format(_T("BACKUP DATABASE [%s] TO DISK = N'%s\\%s'\r\nWITH NOFORMAT,NOINIT,NAME = N'Full Database Backup',SKIP,NOREWIND,NOUNLOAD,STATS = 10"),m_sDb,m_sLocalpath,m_backupFileName);
