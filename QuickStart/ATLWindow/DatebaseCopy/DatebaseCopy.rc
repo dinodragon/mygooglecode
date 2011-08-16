@@ -87,7 +87,14 @@ END
 //
 
 IDR_HTML1               HTML                    "res\\html1.htm"
-IDR_HTML2               HTML                    "res\\html2.htm"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXT
+//
+
+IDR_TEXT3               TEXT                    "E:\\Workspace\\trunk\\QuickStart\\ATLWindow\\WTLDemo\\stdafx.cpp"
 
 /////////////////////////////////////////////////////////////////////////////
 //
