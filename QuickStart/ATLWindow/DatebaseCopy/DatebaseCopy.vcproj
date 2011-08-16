@@ -283,6 +283,16 @@
 				>
 			</File>
 		</Filter>
+		<File
+			RelativePath=".\res\html1.htm"
+			DeploymentContent="true"
+			>
+		</File>
+		<File
+			RelativePath=".\res\html2.htm"
+			DeploymentContent="true"
+			>
+		</File>
 	</Files>
 	<Globals>
 		<Global

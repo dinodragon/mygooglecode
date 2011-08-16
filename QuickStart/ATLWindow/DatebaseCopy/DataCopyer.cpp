@@ -72,7 +72,6 @@ BOOL CDataCopyer::Backup()
 		tm stm;
 		localtime_s(&stm,&t);
 		size_t r = _tcsftime(tmp, sizeof(tmp)/sizeof(TCHAR),_T("%Y%m%d%H%M%S"),&stm);
-		//很奇怪的现象，如果使用了上面的语句，则成员变量m_sLocalpath则无法访问。
 		//_tcsftime的第二次参数接收的是WORD数，不能直接用sizeof取值。
 		m_backupFileName.Format(_T("%s_%d%d%d%d%d%d.bak"),m_sDb,stm.tm_year,stm.tm_mon,stm.tm_mday,stm.tm_hour,stm.tm_min,stm.tm_sec);
 		CString buckupSql;
