@@ -3,32 +3,57 @@
 #include "DataCopyer.h"
 #include "tinyxml/tinyxml.h"
 
+extern CAppModule _Module; 
+
 LRESULT CMainDlg::OnBnClickedOk(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/)
 {
 	// TODO: Add your control notification handler code here
-	UpdateData(TRUE);
-	SaveSetting();
-	//MessageBox(m_sServer);
-	CDataCopyer::GetInstance()->SetSource(m_sServer,m_sUser,m_sPwd,m_sDb,m_sLocalpath,m_sNetpath);
-	CDataCopyer::GetInstance()->SetDestination(m_dServer,m_dUser,m_dPwd,m_dDb,m_dLocalpath,m_dNetpath);
-	BOOL result = CDataCopyer::GetInstance()->Backup();
-	if (!result)
+
+	CString s;
+	s.LoadString(IDR_HTML1);
+	HINSTANCE i = _Module.m_hInstResource;
+	//HRSRC hRes = ::FindResourceEx(NULL, RT_STRING, MAKEINTRESOURCE((ID_FILE_OPEN>>4) + 1), 0);
+	//HRSRC hRes = ::FindResource(NULL,MAKEINTRESOURCE((IDR_HTML1>>4) + 1),RT_RCDATA);
+	/*TCHAR buf[200];
+	LoadString(NULL,ID_FILE_OPEN,buf,200);*/
+	HRSRC hRes = FindResource(i,MAKEINTRESOURCE(IDR_HTML1),RT_HTML); 
+	if (hRes == NULL)
 	{
-		MessageBox(_T("备份数据库失败！"));
-		return 0;
+		DWORD err = ::GetLastError();
+		return TRUE;
 	}
-	result = CDataCopyer::GetInstance()->CopyFile();
-	if (!result)
-	{
-		MessageBox(_T("拷贝文件失败！"));
-		return 0;
-	}
-	result = CDataCopyer::GetInstance()->Restore();
-	if (!result)
-	{
-		MessageBox(_T("还原数据库失败！"));
-		return 0;
-	}
+	HRSRC hResLoad = (HRSRC)LoadResource(NULL, hRes);
+	if (hResLoad == NULL)
+		return TRUE;
+	LPVOID lpResLock = LockResource(hResLoad);
+	CString strRes;
+	strRes.Format(_T("%s"), lpResLock);
+	MessageBox(RT_RCDATA);
+
+
+	//UpdateData(TRUE);
+	//SaveSetting();
+	////MessageBox(m_sServer);
+	//CDataCopyer::GetInstance()->SetSource(m_sServer,m_sUser,m_sPwd,m_sDb,m_sLocalpath,m_sNetpath);
+	//CDataCopyer::GetInstance()->SetDestination(m_dServer,m_dUser,m_dPwd,m_dDb,m_dLocalpath,m_dNetpath);
+	//BOOL result = CDataCopyer::GetInstance()->Backup();
+	//if (!result)
+	//{
+	//	MessageBox(_T("备份数据库失败！"));
+	//	return 0;
+	//}
+	//result = CDataCopyer::GetInstance()->CopyFile();
+	//if (!result)
+	//{
+	//	MessageBox(_T("拷贝文件失败！"));
+	//	return 0;
+	//}
+	//result = CDataCopyer::GetInstance()->Restore();
+	//if (!result)
+	//{
+	//	MessageBox(_T("还原数据库失败！"));
+	//	return 0;
+	//}
 	return 0;
 }
 

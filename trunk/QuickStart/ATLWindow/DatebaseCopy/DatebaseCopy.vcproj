@@ -221,6 +221,10 @@
 				</FileConfiguration>
 			</File>
 			<File
+				RelativePath="..\WTLDemo\stdafx.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\tinyxml\tinystr.cpp"
 				>
 			</File>
@@ -280,6 +284,14 @@
 			</File>
 			<File
 				RelativePath=".\DatebaseCopy.rc"
+				>
+			</File>
+			<File
+				RelativePath=".\res\text1.bin"
+				>
+			</File>
+			<File
+				RelativePath=".\res\text2.bin"
 				>
 			</File>
 		</Filter>
