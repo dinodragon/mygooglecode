@@ -290,10 +290,6 @@
 				RelativePath=".\res\text1.bin"
 				>
 			</File>
-			<File
-				RelativePath=".\res\text2.bin"
-				>
-			</File>
 		</Filter>
 		<File
 			RelativePath=".\res\html1.htm"
