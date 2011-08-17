@@ -88,13 +88,24 @@ END
 
 IDR_HTML1               HTML                    "res\\html1.htm"
 
-
 /////////////////////////////////////////////////////////////////////////////
 //
 // TEXT
 //
-
+IDR_SQL					TEXT					"res\\AutoRestore.sql"
 IDR_TEXT3               TEXT                    "res\\text.txt"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Neutral) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -184,7 +195,7 @@ BEGIN
     ATL_IDS_MRU_FILE        "Open this document"
 END
 
-#endif    // Chinese (P.R.C.) resources
+#endif    // English (Neutral) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
