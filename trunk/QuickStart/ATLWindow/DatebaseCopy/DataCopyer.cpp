@@ -1,6 +1,7 @@
 #include "StdAfx.h"
 #include "DataCopyer.h"
 #include <time.h>
+#include "resource.h"
 //#import "C:\Program Files\Common Files\System\ado\msado15.dll"
 #import "libid:b691e011-1797-432e-907a-4d8c69339129" version("15.0")  rename("EOF","rsEOF")
 
@@ -111,8 +112,19 @@ BOOL CDataCopyer::Restore()
 		{
 			return FALSE;
 		}
+		HRSRC hRes = FindResource(NULL,MAKEINTRESOURCE(IDR_SQL),TEXT("TEXT")); 
+		if (hRes == NULL)
+		{
+			return FALSE;
+		}
+		HRSRC hResLoad = (HRSRC)LoadResource(NULL, hRes);
+		if (hResLoad == NULL)
+			return FALSE;
+		LPVOID lpResLock = LockResource(hResLoad);
 		CString restoreSql;
-		restoreSql.Format(_T("RESTORE DATABASE [%s] FROM  DISK = N'%s\\%s'"),m_dDb,m_dLocalpath,m_backupFileName);
+		restoreSql.Format(_T("%s"), lpResLock);
+		//CString restoreSql;
+		//restoreSql.Format(_T("RESTORE DATABASE [%s] FROM  DISK = N'%s\\%s'"),m_dDb,m_dLocalpath,m_backupFileName);
 		pConn->Execute(restoreSql.AllocSysString(),NULL,ADODB::adOptionUnspecified);
 		hr = pConn->Close();
 		assert(SUCCEEDED(hr));

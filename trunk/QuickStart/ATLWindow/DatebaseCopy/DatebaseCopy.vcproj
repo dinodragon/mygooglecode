@@ -296,11 +296,11 @@
 				DeploymentContent="true"
 				>
 			</File>
-			<File
-				RelativePath=".\res\text1.bin"
-				>
-			</File>
 		</Filter>
+		<File
+			RelativePath=".\res\AutoRestore.sql"
+			>
+		</File>
 	</Files>
 	<Globals>
 		<Global
