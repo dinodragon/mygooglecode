@@ -287,20 +287,20 @@
 				>
 			</File>
 			<File
+				RelativePath=".\res\html1.htm"
+				DeploymentContent="true"
+				>
+			</File>
+			<File
+				RelativePath=".\res\text.txt"
+				DeploymentContent="true"
+				>
+			</File>
+			<File
 				RelativePath=".\res\text1.bin"
 				>
 			</File>
 		</Filter>
-		<File
-			RelativePath=".\res\html1.htm"
-			DeploymentContent="true"
-			>
-		</File>
-		<File
-			RelativePath=".\res\html2.htm"
-			DeploymentContent="true"
-			>
-		</File>
 	</Files>
 	<Globals>
 		<Global
