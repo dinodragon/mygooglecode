@@ -279,6 +279,10 @@
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest"
 			>
 			<File
+				RelativePath=".\res\AutoRestore.sql"
+				>
+			</File>
+			<File
 				RelativePath=".\res\DatebaseCopy.ico"
 				>
 			</File>
@@ -297,10 +301,6 @@
 				>
 			</File>
 		</Filter>
-		<File
-			RelativePath=".\res\AutoRestore.sql"
-			>
-		</File>
 	</Files>
 	<Globals>
 		<Global
