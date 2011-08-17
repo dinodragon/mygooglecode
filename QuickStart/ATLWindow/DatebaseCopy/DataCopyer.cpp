@@ -129,7 +129,7 @@ BOOL CDataCopyer::Restore()
 		}
 		//CString restoreSql;
 		//restoreSql.Format(_T("RESTORE DATABASE [%s] FROM  DISK = N'%s\\%s'"),m_dDb,m_dLocalpath,m_backupFileName);
-		pConn->Execute(restoreSql.AllocSysString(),NULL,ADODB::adCmdFile);
+		pConn->Execute(restoreSql.AllocSysString(),NULL,ADODB::adOptionUnspecified);
 
 		//·½·¨¶þ
 		ADODB::_CommandPtr m_pCommand;
