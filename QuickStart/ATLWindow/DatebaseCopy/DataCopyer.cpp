@@ -101,6 +101,21 @@ BOOL CDataCopyer::Restore()
 {
 	try
 	{
+		HRSRC hRes = FindResource(NULL,MAKEINTRESOURCE(IDR_SQL),TEXT("TEXT")); 
+		if (hRes == NULL)
+		{
+			return FALSE;
+		}
+		HRSRC hResLoad = (HRSRC)LoadResource(NULL, hRes);
+		if (hResLoad == NULL)
+			return FALSE;
+		LPVOID lpResLock = LockResource(hResLoad);
+		CString restoreSql;
+		//得到SQL语句
+		restoreSql.Format(_T("%s"), lpResLock);
+		
+
+
 		HRESULT hr = CoInitialize(NULL);
 		assert(SUCCEEDED(hr));
 		ADODB::_ConnectionPtr pConn(__uuidof(ADODB::Connection));
@@ -112,20 +127,20 @@ BOOL CDataCopyer::Restore()
 		{
 			return FALSE;
 		}
-		HRSRC hRes = FindResource(NULL,MAKEINTRESOURCE(IDR_SQL),TEXT("TEXT")); 
-		if (hRes == NULL)
-		{
-			return FALSE;
-		}
-		HRSRC hResLoad = (HRSRC)LoadResource(NULL, hRes);
-		if (hResLoad == NULL)
-			return FALSE;
-		LPVOID lpResLock = LockResource(hResLoad);
-		CString restoreSql;
-		restoreSql.Format(_T("%s"), lpResLock);
 		//CString restoreSql;
 		//restoreSql.Format(_T("RESTORE DATABASE [%s] FROM  DISK = N'%s\\%s'"),m_dDb,m_dLocalpath,m_backupFileName);
-		pConn->Execute(restoreSql.AllocSysString(),NULL,ADODB::adOptionUnspecified);
+		pConn->Execute(restoreSql.AllocSysString(),NULL,ADODB::adCmdFile);
+
+		//方法二
+		ADODB::_CommandPtr m_pCommand;
+		m_pCommand.CreateInstance("ADODB.Command");
+		_variant_t vNULL;
+		vNULL.vt = VT_ERROR;
+		vNULL.scode = DISP_E_PARAMNOTFOUND;///定义为无参数
+		m_pCommand->ActiveConnection = pConn;///非常关键的一句，将建立的连接赋值给它
+		m_pCommand->CommandText = restoreSql.AllocSysString();///命令字串
+		m_pCommand->Execute(&vNULL,&vNULL,ADODB::adCmdFile);///执行命令，取得记录集
+
 		hr = pConn->Close();
 		assert(SUCCEEDED(hr));
 		CoUninitialize();

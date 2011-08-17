@@ -93,7 +93,7 @@ IDR_HTML1               HTML                    "res\\html1.htm"
 // TEXT
 //
 IDR_SQL					TEXT					"res\\AutoRestore.sql"
-IDR_TEXT3               TEXT                    "res\\text.txt"
+
 #endif    // Chinese (P.R.C.) resources
 /////////////////////////////////////////////////////////////////////////////
 
