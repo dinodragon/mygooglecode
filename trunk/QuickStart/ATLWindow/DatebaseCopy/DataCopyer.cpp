@@ -94,6 +94,10 @@ BOOL CDataCopyer::CopyFile()
 	CString sNetFile,dNetFile;
 	sNetFile.Format(_T("%s\\%s"),m_sNetpath,m_backupFileName);
 	dNetFile.Format(_T("%s\\%s"),m_dNetpath,m_backupFileName);
+	if (sNetFile.CompareNoCase(dNetFile) == 0)
+	{
+		return TRUE;
+	}
 	return ::CopyFile(sNetFile,dNetFile,FALSE);
 }
 
