@@ -120,26 +120,28 @@ BOOL CDataCopyer::Restore()
 		assert(SUCCEEDED(hr));
 		ADODB::_ConnectionPtr pConn(__uuidof(ADODB::Connection));
 		CString conn;
-		conn.Format(TEXT("Provider=SQLOLEDB.1;Data Source=%s;Initial Catalog=%s;Persist Security Info=True"),m_dServer,m_dDb);
+		conn.Format(TEXT("Provider=SQLOLEDB.1;Data Source=%s;Initial Catalog=%s;Persist Security Info=True"),m_dServer,TEXT("master"));
 		hr = pConn->Open(conn.AllocSysString(),m_dUser.AllocSysString(),m_dPwd.AllocSysString(),ADODB::adConnectUnspecified);
 		assert(SUCCEEDED(hr));
 		if (!SUCCEEDED(hr))
 		{
 			return FALSE;
 		}
-		//CString restoreSql;
-		//restoreSql.Format(_T("RESTORE DATABASE [%s] FROM  DISK = N'%s\\%s'"),m_dDb,m_dLocalpath,m_backupFileName);
+		CString backupFile;
+		backupFile.Format(TEXT("%s\\%s"),m_dLocalpath,m_backupFileName);
+		restoreSql.Replace(TEXT("BKFILE"),backupFile);
+		restoreSql.Replace(TEXT("TARGETDBNAME"),m_dDb);
 		pConn->Execute(restoreSql.AllocSysString(),NULL,ADODB::adOptionUnspecified);
 
 		//方法二
-		ADODB::_CommandPtr m_pCommand;
-		m_pCommand.CreateInstance("ADODB.Command");
-		_variant_t vNULL;
-		vNULL.vt = VT_ERROR;
-		vNULL.scode = DISP_E_PARAMNOTFOUND;///定义为无参数
-		m_pCommand->ActiveConnection = pConn;///非常关键的一句，将建立的连接赋值给它
-		m_pCommand->CommandText = restoreSql.AllocSysString();///命令字串
-		m_pCommand->Execute(&vNULL,&vNULL,ADODB::adCmdFile);///执行命令，取得记录集
+		//ADODB::_CommandPtr m_pCommand;
+		//m_pCommand.CreateInstance("ADODB.Command");
+		//_variant_t vNULL;
+		//vNULL.vt = VT_ERROR;
+		//vNULL.scode = DISP_E_PARAMNOTFOUND;///定义为无参数
+		//m_pCommand->ActiveConnection = pConn;///非常关键的一句，将建立的连接赋值给它
+		//m_pCommand->CommandText = restoreSql.AllocSysString();///命令字串
+		//m_pCommand->Execute(&vNULL,&vNULL,ADODB::adCmdFile);///执行命令，取得记录集
 
 		hr = pConn->Close();
 		assert(SUCCEEDED(hr));
@@ -148,6 +150,7 @@ BOOL CDataCopyer::Restore()
 	}
 	catch(...)
 	{
+		//MessageBox(e.Exception);
 		return FALSE;
 	}
 }
