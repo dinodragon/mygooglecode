@@ -34,6 +34,7 @@ LRESULT CMainDlg::OnBnClickedOk(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndC
 		MessageBox(_T("还原数据库失败！"));
 		return 0;
 	}
+	MessageBox(_T("拷贝数据库成功！"));
 	return 0;
 }
 
