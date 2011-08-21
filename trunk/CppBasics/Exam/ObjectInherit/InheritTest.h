@@ -47,3 +47,44 @@ public:
 		m_data = data;
 	}
 };
+
+class Child;
+class Base
+{
+public:
+	int m_data;
+	Base()
+	{
+		m_data = 0;
+	};
+	Base(const Child&)
+	{
+		std::cout<<"子类型对象转为基类型对象，实际是调用了基类型的构造函数！"<<std::endl;
+	}
+	void fun()
+	{
+		std::cout<<"Base Fun"<<std::endl;
+	}
+	virtual	void vfun()
+	{
+		std::cout<<"Base Vfun"<<std::endl;
+	}
+};
+
+class Child :public Base
+{
+public:
+	int m_data;
+	Child()
+	{
+		m_data = 1;
+	}
+	void fun()
+	{
+		std::cout<<"Child Fun"<<std::endl;
+	}
+	virtual	void vfun()
+	{
+		std::cout<<"Child Vfun"<<std::endl;
+	}
+};
