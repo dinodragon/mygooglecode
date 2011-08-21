@@ -1,10 +1,36 @@
 #include "StdAfx.h"
 #include "Base64ConverterView.h"
+#include "atldlgs.h"
 
 LRESULT CBase64ConverterView::OnBnClickedDecodetofile(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/)
 {
 	// TODO: Add your control notification handler code here
-
+	GetDlgItemText(IDC_BASE64,m_base64);
+	TCHAR szFilters[]= _T("All Files (*.*)|*.*|");
+	CAtlString pathName;
+	CFileDialog fileDlg(FALSE,_T("txt"),NULL,OFN_HIDEREADONLY,szFilters);
+	fileDlg.m_ofn.lpstrFile = pathName.GetBuffer(MAX_PATH);
+	if(fileDlg.DoModal()==IDOK )
+	{
+		const TCHAR * base64Wide = m_base64.GetBuffer(m_base64.GetLength());
+		DWORD dwMultiNum = WideCharToMultiByte (CP_ACP, 0, base64Wide, -1, NULL, 0,NULL,NULL);
+		char * base64Ansi = new char[dwMultiNum];
+		WideCharToMultiByte(CP_ACP,0,base64Wide,-1,base64Ansi,dwMultiNum,NULL,NULL);
+		std::vector<char> sourceChars = base64.decode(std::string(base64Ansi));
+		size_t sourceLen = sourceChars.size();
+		char * sourceByte = new char[sourceLen];
+		for (size_t i = 0;i<sourceLen ;i++ )
+		{
+			sourceByte[i] = sourceChars[i];
+		}
+		pathName.ReleaseBufferSetLength(MAX_PATH);
+		DWORD writeNumber = 0;
+		HANDLE hFile = CreateFile(pathName,GENERIC_WRITE,FILE_SHARE_WRITE,NULL,CREATE_ALWAYS,FILE_ATTRIBUTE_NORMAL,NULL);
+		WriteFile(hFile,sourceByte,sourceLen,&writeNumber,NULL);
+		CloseHandle(hFile);
+		delete[] sourceByte;
+	}
+	pathName.ReleaseBufferSetLength(MAX_PATH);
 	return 0;
 }
 
@@ -101,6 +127,7 @@ LRESULT CBase64ConverterView::OnEnChangeBase64(WORD /*wNotifyCode*/, WORD /*wID*
 LRESULT CBase64ConverterView::OnInitDialog(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
 {
 	// TODO: Add your message handler code here and/or call default
+	LoadRegConfig();
 	m_rSource = (CRichEditCtrl *)&GetDlgItem(IDC_SOURCE);
 	ATLASSERT(m_rSource!=NULL);
 	m_rBase64 = (CRichEditCtrl *)&GetDlgItem(IDC_BASE64);
@@ -261,11 +288,8 @@ void CBase64ConverterView::Decode( void )
 
 }
 
-//无法触发，暂不知道原因。
-LRESULT CBase64ConverterView::OnCreate(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/)
+BOOL CBase64ConverterView::LoadRegConfig()
 {
-	// TODO: Add your message handler code here and/or call default
-
 	HKEY hKey;
 	DWORD dw;
 	RegCreateKeyEx(HKEY_CURRENT_USER,TEXT("Software\\base64"),0,NULL,REG_OPTION_VOLATILE,KEY_ALL_ACCESS,NULL,&hKey,&dw);
@@ -287,10 +311,10 @@ LRESULT CBase64ConverterView::OnCreate(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM 
 			m_codepage = 0;
 		}
 	}
-	return 0;
+	return TRUE;
 }
 
-LRESULT CBase64ConverterView::OnClose(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/)
+BOOL CBase64ConverterView::WriteRegConfig()
 {
 	// TODO: Add your message handler code here and/or call default
 	HKEY hKey;
@@ -298,5 +322,18 @@ LRESULT CBase64ConverterView::OnClose(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /
 	RegCreateKeyEx(HKEY_CURRENT_USER,TEXT("Software\\base64"),0,NULL,REG_OPTION_VOLATILE,KEY_ALL_ACCESS,NULL,&hKey,&dw);
 	long lReturn=RegSetValueEx(hKey,TEXT("AutoConvert"),0L,REG_DWORD,(const BYTE *) &m_autoconvert,sizeof(DWORD));
 	RegSetValueEx(hKey,TEXT("CodePage"),0L,REG_DWORD,(const BYTE *) &m_codepage,sizeof(DWORD));
+	return TRUE;
+}
+LRESULT CBase64ConverterView::OnDestroy(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/)
+{
+	// TODO: Add your message handler code here and/or call default
+	WriteRegConfig();
+	return 0;
+}
+
+LRESULT CBase64ConverterView::OnBnClickedHelp(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/)
+{
+	// TODO: Add your control notification handler code here
+	ShellExecute(NULL,TEXT("open"),TEXT("http://www.yangfei.org/post/base64.html?from=base64v1.6"),NULL,NULL,SW_SHOWNORMAL);
 	return 0;
 }

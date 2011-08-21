@@ -40,9 +40,9 @@ public:
 		COMMAND_HANDLER(IDC_AUTOCONVERT, BN_CLICKED, OnBnClickedAutoconvert)
 		COMMAND_HANDLER(IDC_SOURCE, EN_CHANGE, OnEnChangeSource)
 		COMMAND_HANDLER(IDC_BASE64, EN_CHANGE, OnEnChangeBase64)
-		MESSAGE_HANDLER(WM_CREATE, OnCreate)
 		MESSAGE_HANDLER(WM_INITDIALOG, OnInitDialog)
-		MESSAGE_HANDLER(WM_CLOSE, OnClose)
+		MESSAGE_HANDLER(WM_DESTROY, OnDestroy)
+		COMMAND_HANDLER(IDC_Help, BN_CLICKED, OnBnClickedHelp)
 	END_MSG_MAP()
 
 	BEGIN_DDX_MAP(CBase64ConverterView)
@@ -75,8 +75,12 @@ private:
 	CAtlString m_source;
 	CAtlString m_base64;
 	int m_codepage;
+	BOOL LoadRegConfig();
+	BOOL WriteRegConfig();
 public:
 	LRESULT OnInitDialog(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled);
-	LRESULT OnCreate(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/);
-	LRESULT OnClose(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/);
+	//LRESULT OnCreate(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/);
+	//LRESULT OnClose(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/);
+	LRESULT OnDestroy(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/);
+	LRESULT OnBnClickedHelp(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/);
 };
