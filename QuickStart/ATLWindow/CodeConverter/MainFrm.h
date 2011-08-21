@@ -42,11 +42,6 @@ public:
 		COMMAND_RANGE_HANDLER(ID_WINDOW_TABFIRST, ID_WINDOW_TABLAST, OnWindowActivate)
 		CHAIN_MSG_MAP(CUpdateUI<CMainFrame>)
 		CHAIN_MSG_MAP(CFrameWindowImpl<CMainFrame>)
-		//CHAIN_MSG_MAP(CDialogImpl)
-		//CHAIN_MSG_MAP(CDialogImpl<CBase64ConverterView>)
-		//CFrameWindowImpl<CMainFrame>::ProcessWindowMessage();
-		//CDialogImpl::ProcessWindowMessage(hWnd, uMsg, wParam, lParam, lResult);
-		//主窗口的消息传递不到子窗口，需要处理。
 	END_MSG_MAP()
 
 // Handler prototypes (uncomment arguments if needed):
