@@ -6,6 +6,8 @@
 #include "InheritTest.h"
 
 using namespace std;
+void Fun(Base);
+void Fun2(Base *);
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -18,6 +20,26 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout<<c.A::doGetData()<<endl;
 	cout<<c.B::doGetData()<<endl;
 	cout<<c.C::doGetData()<<endl;
+
+	Base b;
+	Child child;
+	Fun(b);
+	Fun(child);
+	Base cc = child;//相当于用子类对象的值，构造了一个基类的对象，这是两个独的对象。
+	cout<<"------Fun2------"<<endl;
+	Fun2(&b);
+	Fun2(&child);
 	return 0;
 }
 
+void Fun(Base o)
+{
+	o.fun();
+	o.vfun();
+}
+
+void Fun2(Base * o)
+{
+	o->fun();
+	o->vfun();
+}
