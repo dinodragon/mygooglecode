@@ -25,6 +25,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	Child child;
 	Fun(b);
 	Fun(child);
+	child.m_data = 10;
 	Base cc = child;//相当于用子类对象的值，构造了一个基类的对象，这是两个独的对象。
 	cout<<"------Fun2------"<<endl;
 	Fun2(&b);

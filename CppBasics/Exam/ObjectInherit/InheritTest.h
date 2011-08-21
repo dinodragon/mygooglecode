@@ -57,10 +57,12 @@ public:
 	{
 		m_data = 0;
 	};
-	Base(const Child&)
-	{
-		std::cout<<"子类型对象转为基类型对象，实际是调用了基类型的构造函数！"<<std::endl;
-	}
+	//Base(const Child& c)
+	//{
+	//	
+	//	std::cout<<"子类型对象转为基类型对象，实际是调用了基类型的构造函数！"<<std::endl;
+	//	//正常情况下有默认的子类对象构造函数。
+	//}
 	void fun()
 	{
 		std::cout<<"Base Fun"<<std::endl;
