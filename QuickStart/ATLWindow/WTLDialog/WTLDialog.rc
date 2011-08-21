@@ -13,48 +13,72 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// Chinese (P.R.C.) resources
+// English (U.S.) resources
 
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
 #ifdef _WIN32
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
-#pragma code_page(936)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
 #endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\WTLDialog.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Dialog
 //
 
-IDD_BASE64CONVERTER_FORM DIALOGEX 0, 0, 559, 322
-STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
-EXSTYLE WS_EX_CLIENTEDGE
-FONT 8, "MS Shell Dlg", 0, 0, 0x1
+IDD_ABOUTBOX DIALOG  0, 0, 187, 102
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif"
 BEGIN
-    GROUPBOX        "原始(解码)信息:",IDC_STATIC,7,7,545,128
-    GROUPBOX        "Base64编码信息:",IDC_STATIC,7,166,545,128
-    LTEXT           "http://www.yangfei.org",IDC_STATIC,409,307,89,8
-    PUSHBUTTON      "使用说明",IDC_Help,502,301,50,14
-    CONTROL         "自动转换",IDC_AUTOCONVERT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,144,44,10
-    PUSHBUTTON      "↓编码",IDC_ENCODE,66,142,32,14
-    PUSHBUTTON      "↑解码",IDC_DECODE,103,142,32,14
-    GROUPBOX        "编码方式",IDC_STATIC,424,137,118,25
-    CONTROL         "ANSI",IDC_ANSI,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,427,147,32,10
-    CONTROL         "UTF-8",IDC_UTF8,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,459,147,36,10
-    CONTROL         "Unicode",IDC_Unicode,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,495,147,44,10
-    GROUPBOX        "操作",IDC_STATIC,15,134,183,25
-    PUSHBUTTON      "解码到文件",IDC_DECODETOFILE,142,142,50,14
-    CONTROL         "",IDC_SOURCE,"RichEdit20W",ES_MULTILINE | ES_NOHIDESEL | ES_WANTRETURN | WS_VSCROLL | WS_TABSTOP,15,18,527,109,WS_EX_CLIENTEDGE
-    CONTROL         "",IDC_BASE64,"RichEdit20W",ES_MULTILINE | ES_NOHIDESEL | ES_WANTRETURN | WS_VSCROLL | WS_TABSTOP,15,177,527,113,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "OK",IDOK,130,81,50,14
+    CTEXT           "WTLDialog Application v1.0\n\n(c) Copyright 2011",IDC_STATIC,25,57,78,32
+    ICON            IDR_MAINFRAME,IDC_STATIC,55,26,18,20
+    GROUPBOX        "",IDC_STATIC,7,7,115,88
 END
 
-IDD_ABOUTBOX DIALOGEX 0, 0, 316, 183
-STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Dialog"
-FONT 8, "MS Shell Dlg", 400, 0, 0x1
+IDD_MAINDLG DIALOG  0, 0, 187, 98
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "WTLDialog"
+FONT 8, "MS Sans Serif"
 BEGIN
-    DEFPUSHBUTTON   "OK",IDOK,205,162,50,14
-    PUSHBUTTON      "Cancel",IDCANCEL,259,162,50,14
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    PUSHBUTTON      "&About...",ID_APP_ABOUT,130,77,50,14
 END
 
 
@@ -66,73 +90,24 @@ END
 #ifdef APSTUDIO_INVOKED
 GUIDELINES DESIGNINFO 
 BEGIN
-    IDD_BASE64CONVERTER_FORM, DIALOG
-    BEGIN
-        LEFTMARGIN, 7
-        RIGHTMARGIN, 552
-        TOPMARGIN, 7
-        BOTTOMMARGIN, 315
-    END
-
     IDD_ABOUTBOX, DIALOG
     BEGIN
         LEFTMARGIN, 7
-        RIGHTMARGIN, 309
+        RIGHTMARGIN, 180
         TOPMARGIN, 7
-        BOTTOMMARGIN, 176
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_MAINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
     END
 END
 #endif    // APSTUDIO_INVOKED
 
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Menu
-//
-
-IDR_MAINFRAME MENU 
-BEGIN
-    POPUP "&File"
-    BEGIN
-        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
-        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
-        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
-        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
-        MENUITEM SEPARATOR
-        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
-        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
-        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
-        MENUITEM SEPARATOR
-        MENUITEM "E&xit",                       ID_APP_EXIT
-    END
-    POPUP "&Edit"
-    BEGIN
-        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
-        MENUITEM SEPARATOR
-        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
-        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
-        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
-    END
-    POPUP "&Window"
-    BEGIN
-        MENUITEM "&Close\tCtrl+F4",             ID_WINDOW_CLOSE
-        MENUITEM "Close &All",                  ID_WINDOW_CLOSE_ALL
-    END
-    POPUP "&Help"
-    BEGIN
-        MENUITEM "&About CodeConverter...",     ID_APP_ABOUT
-    END
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Icon
-//
-
-// Icon with lowest ID value placed first to ensure application icon
-// remains consistent on all systems.
-IDR_MAINFRAME           ICON                    "res\\CodeConverter.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -145,6 +120,14 @@ BEGIN
     "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
     "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
     "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
     VK_F6,          ID_NEXT_PANE,           VIRTKEY 
     VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
 END
@@ -172,12 +155,12 @@ BEGIN
     BEGIN
         BLOCK "040904B0"
         BEGIN
-            VALUE "FileDescription", "CodeConverter Module"
+            VALUE "FileDescription", "WTLDialog Module"
             VALUE "FileVersion", "1, 0, 0, 1"
-            VALUE "InternalName", "CodeConverter"
+            VALUE "InternalName", "WTLDialog"
             VALUE "LegalCopyright", "Copyright 2011"
-            VALUE "OriginalFilename", "CodeConverter.exe"
-            VALUE "ProductName", "CodeConverter Module"
+            VALUE "OriginalFilename", "WTLDialog.exe"
+            VALUE "ProductName", "WTLDialog Module"
             VALUE "ProductVersion", "1, 0, 0, 1"
         END
     END
@@ -195,7 +178,7 @@ END
 
 STRINGTABLE 
 BEGIN
-    IDR_MAINFRAME           "CodeConverter"
+    IDR_MAINFRAME           "WTLDialog"
 END
 
 STRINGTABLE 
@@ -275,43 +258,6 @@ STRINGTABLE
 BEGIN
     ATL_IDS_MRU_FILE        "Open this document"
 END
-
-#endif    // Chinese (P.R.C.) resources
-/////////////////////////////////////////////////////////////////////////////
-
-
-/////////////////////////////////////////////////////////////////////////////
-// English (U.S.) resources
-
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-#ifdef _WIN32
-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
-#pragma code_page(1252)
-#endif //_WIN32
-
-#ifdef APSTUDIO_INVOKED
-/////////////////////////////////////////////////////////////////////////////
-//
-// TEXTINCLUDE
-//
-
-1 TEXTINCLUDE 
-BEGIN
-    "resource.h\0"
-END
-
-2 TEXTINCLUDE 
-BEGIN
-    "#include ""atlres.h""\r\n"
-    "\0"
-END
-
-3 TEXTINCLUDE 
-BEGIN
-    "\0"
-END
-
-#endif    // APSTUDIO_INVOKED
 
 #endif    // English (U.S.) resources
 /////////////////////////////////////////////////////////////////////////////

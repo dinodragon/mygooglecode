@@ -3,7 +3,6 @@
 /////////////////////////////////////////////////////////////////////////////
 
 #pragma once
-#include "resource.h"
 
 class CAboutDlg : public CDialogImpl<CAboutDlg>
 {
@@ -11,7 +10,6 @@ public:
 	enum { IDD = IDD_ABOUTBOX };
 
 	BEGIN_MSG_MAP(CAboutDlg)
-		MESSAGE_HANDLER(WM_CREATE, OnCreate)
 		MESSAGE_HANDLER(WM_INITDIALOG, OnInitDialog)
 		COMMAND_ID_HANDLER(IDOK, OnCloseCmd)
 		COMMAND_ID_HANDLER(IDCANCEL, OnCloseCmd)
@@ -33,5 +31,4 @@ public:
 		EndDialog(wID);
 		return 0;
 	}
-	LRESULT OnCreate(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/);
 };

@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="WTLDemo"
-	ProjectGUID="{C444D4E8-E48C-4292-8E66-645EE5D5B8F9}"
-	RootNamespace="WTLDemo"
+	Name="WTLDialog"
+	ProjectGUID="{761C368B-B5BF-4147-8BE0-E0A5BEB57914}"
+	RootNamespace="WTLDialog"
 	TargetFrameworkVersion="196613"
 	>
 	<Platforms>
@@ -41,16 +41,15 @@
 				MkTypLibCompatible="false"
 				TargetEnvironment="1"
 				GenerateStublessProxies="true"
-				TypeLibraryName="$(IntDir)/WTLDemo.tlb"
-				HeaderFileName="WTLDemo.h"
+				TypeLibraryName="$(IntDir)/WTLDialog.tlb"
+				HeaderFileName="WTLDialog.h"
 				DLLDataFileName=""
-				InterfaceIdentifierFileName="WTLDemo_i.c"
-				ProxyFileName="WTLDemo_p.c"
+				InterfaceIdentifierFileName="WTLDialog_i.c"
+				ProxyFileName="WTLDialog_p.c"
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories=""
 				PreprocessorDefinitions="WIN32;_WINDOWS;STRICT;_DEBUG"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -126,11 +125,11 @@
 				MkTypLibCompatible="false"
 				TargetEnvironment="1"
 				GenerateStublessProxies="true"
-				TypeLibraryName="$(IntDir)/WTLDemo.tlb"
-				HeaderFileName="WTLDemo.h"
+				TypeLibraryName="$(IntDir)/WTLDialog.tlb"
+				HeaderFileName="WTLDialog.h"
 				DLLDataFileName=""
-				InterfaceIdentifierFileName="WTLDemo_i.c"
-				ProxyFileName="WTLDemo_p.c"
+				InterfaceIdentifierFileName="WTLDialog_i.c"
+				ProxyFileName="WTLDialog_p.c"
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
@@ -190,10 +189,6 @@
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm"
 			>
 			<File
-				RelativePath=".\aboutdlg.CPP"
-				>
-			</File>
-			<File
 				RelativePath=".\stdafx.cpp"
 				>
 				<FileConfiguration
@@ -214,7 +209,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath=".\WTLDemo.cpp"
+				RelativePath=".\WTLDialog.cpp"
 				>
 			</File>
 		</Filter>
@@ -227,7 +222,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\MainFrm.h"
+				RelativePath=".\MainDlg.h"
 				>
 			</File>
 			<File
@@ -238,25 +233,17 @@
 				RelativePath=".\stdafx.h"
 				>
 			</File>
-			<File
-				RelativePath=".\WTLDemoView.h"
-				>
-			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest"
 			>
 			<File
-				RelativePath=".\res\toolbar.bmp"
+				RelativePath=".\res\WTLDialog.ico"
 				>
 			</File>
 			<File
-				RelativePath=".\res\WTLDemo.ico"
-				>
-			</File>
-			<File
-				RelativePath=".\WTLDemo.rc"
+				RelativePath=".\WTLDialog.rc"
 				>
 			</File>
 		</Filter>
@@ -264,7 +251,7 @@
 	<Globals>
 		<Global
 			Name="RESOURCE_FILE"
-			Value="WTLDemo.rc"
+			Value="WTLDialog.rc"
 		/>
 	</Globals>
 </VisualStudioProject>
