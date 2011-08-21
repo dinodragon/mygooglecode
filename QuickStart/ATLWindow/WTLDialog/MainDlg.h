@@ -99,9 +99,12 @@ public:
 		DestroyWindow();
 		::PostQuitMessage(nVal);
 	}
+
+
 	LRESULT OnCreate(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/)
 	{
 		//对话框无法响应WM_CREATE消息
+		//好像WTL中对话框不会触发WM_CREATE,而是用WM_INITDIALOG代替
 		return 0;
 	};
 };
