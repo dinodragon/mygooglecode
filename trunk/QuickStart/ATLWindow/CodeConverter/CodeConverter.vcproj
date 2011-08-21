@@ -189,6 +189,10 @@
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm"
 			>
 			<File
+				RelativePath=".\aboutdlg.CPP"
+				>
+			</File>
+			<File
 				RelativePath=".\base64converterview.CPP"
 				>
 			</File>
