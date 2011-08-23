@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sort", "Sort\Sort.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ObjectInherit", "ObjectInherit\ObjectInherit.vcxproj", "{CC0EB697-974B-4092-866D-78A0BC8C40D3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{0F94DA7A-E742-443C-9622-9E58DD3CD5B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -25,6 +27,10 @@ Global
 		{CC0EB697-974B-4092-866D-78A0BC8C40D3}.Debug|Win32.Build.0 = Debug|Win32
 		{CC0EB697-974B-4092-866D-78A0BC8C40D3}.Release|Win32.ActiveCfg = Release|Win32
 		{CC0EB697-974B-4092-866D-78A0BC8C40D3}.Release|Win32.Build.0 = Release|Win32
+		{0F94DA7A-E742-443C-9622-9E58DD3CD5B9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0F94DA7A-E742-443C-9622-9E58DD3CD5B9}.Debug|Win32.Build.0 = Debug|Win32
+		{0F94DA7A-E742-443C-9622-9E58DD3CD5B9}.Release|Win32.ActiveCfg = Release|Win32
+		{0F94DA7A-E742-443C-9622-9E58DD3CD5B9}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
