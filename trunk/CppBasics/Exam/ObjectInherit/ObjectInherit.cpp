@@ -30,6 +30,14 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout<<"------Fun2------"<<endl;
 	Fun2(&b);
 	Fun2(&child);
+
+	CTest ta(1);
+	ta.fun();
+	CTest tb; //CTest tb();不需要传参时，不用带括号，否则下在一句会报错。
+	tb.fun();
+
+	CA ca;
+	ca.ShowSize();
 	return 0;
 }
 
