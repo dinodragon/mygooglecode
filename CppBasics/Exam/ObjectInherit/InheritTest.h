@@ -1,3 +1,4 @@
+using namespace std;
 
 class A
 {
@@ -88,5 +89,35 @@ public:
 	virtual	void vfun()
 	{
 		std::cout<<"Child Vfun"<<std::endl;
+	}
+};
+
+//构造函数测试，无参构造函数不能用CTest b();格式定义，应使用CTest b
+struct CTest
+{
+	CTest(int){};
+	CTest(){};
+	void fun(){};
+};
+
+//只有静态常量整型数据成员才可以在类中初始化,以下方式非法
+//class CA
+//{
+//	const int size = 0;
+//};
+//可使用以下方式，或者用静态常量整形；
+class CA
+{
+public:
+	static const int size2 = 2;
+	const int size;
+	CA():size(0)
+	{
+	}
+
+	void ShowSize()
+	{
+		cout<<"size:"<<size<<endl;
+		cout<<"size2:"<<size2<<endl;
 	}
 };
