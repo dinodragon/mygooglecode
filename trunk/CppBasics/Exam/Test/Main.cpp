@@ -1,12 +1,16 @@
 #include <iostream>
 #include <deque>
+#include <vector>
 //农夫过河问题
-int FarmerProblemEnter();
+void FarmerProblemEnter();
+void PointerTest();
+
+typedef int (*FunType)(void);
+std::vector<FunType> FunList;
 
 int main()
 {
-	//FarmerProblemEnter();
-	std::deque<int> aa;
-	aa.pop_front();
-	aa.empty();
+	FarmerProblemEnter();
+	PointerTest();
+
 }

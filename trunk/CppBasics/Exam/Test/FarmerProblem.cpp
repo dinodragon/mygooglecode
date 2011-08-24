@@ -138,9 +138,9 @@ void FarmerProblem( ) {
 	free(moveTo);
 }
 
-
-int FarmerProblemEnter()
+static int x = 10;
+void FarmerProblemEnter()
 {
+	printf("静态全局变量x=%d\r\n",x);
 	FarmerProblem( );
-	return 0;
-} 
+}

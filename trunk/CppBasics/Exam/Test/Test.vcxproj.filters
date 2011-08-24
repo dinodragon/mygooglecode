@@ -21,5 +21,8 @@
     <ClCompile Include="FarmerProblem.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="pointer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
