@@ -81,7 +81,7 @@ int safe(int location) {
 }
 
 
-void farmerProblem( ) {
+void FarmerProblem( ) {
 	int movers, i, location, newlocation;
 	int route[16]; 
 	/*记录已考虑的状态路径 route[0] > 0表示所有动物在左侧的状态已经历，route[15] >0 说明已经到达所有动物在右侧状态
@@ -135,11 +135,12 @@ void farmerProblem( ) {
 	}
 	else 
 		printf("No solution.\n");
+	free(moveTo);
 }
 
 
-int Enter()
+int FarmerProblemEnter()
 {
-	farmerProblem( );
+	FarmerProblem( );
 	return 0;
 } 
