@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="gb2312"?>
+<?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
-	Name="CallSelFolderDll"
-	ProjectGUID="{19ED5133-BAD5-4EE0-99F2-B5426E994340}"
-	RootNamespace="CallSelFolderDll"
+	Version="8.00"
+	Name="ListCtrlColor"
+	ProjectGUID="{DEA61E84-6E2A-4A9A-9EBA-3925E5DAC177}"
+	RootNamespace="ListCtrlColor"
 	Keyword="MFCProj"
-	TargetFrameworkVersion="131072"
 	>
 	<Platforms>
 		<Platform
@@ -21,7 +20,7 @@
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
-			UseOfMFC="2"
+			UseOfMFC="1"
 			CharacterSet="1"
 			>
 			<Tool
@@ -48,7 +47,7 @@
 				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
-				RuntimeLibrary="3"
+				RuntimeLibrary="1"
 				UsePrecompiledHeader="2"
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="true"
@@ -60,7 +59,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG"
-				Culture="2052"
+				Culture="1033"
 				AdditionalIncludeDirectories="$(IntDir)"
 			/>
 			<Tool
@@ -71,8 +70,6 @@
 				LinkIncremental="2"
 				GenerateDebugInformation="true"
 				SubSystem="2"
-				RandomizedBaseAddress="1"
-				DataExecutionPrevention="0"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -94,6 +91,9 @@
 				Name="VCAppVerifierTool"
 			/>
 			<Tool
+				Name="VCWebDeploymentTool"
+			/>
+			<Tool
 				Name="VCPostBuildEventTool"
 			/>
 		</Configuration>
@@ -102,7 +102,7 @@
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
-			UseOfMFC="2"
+			UseOfMFC="1"
 			CharacterSet="1"
 			WholeProgramOptimization="1"
 			>
@@ -128,7 +128,7 @@
 				Name="VCCLCompilerTool"
 				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG"
 				MinimalRebuild="false"
-				RuntimeLibrary="2"
+				RuntimeLibrary="0"
 				UsePrecompiledHeader="2"
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="true"
@@ -140,7 +140,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG"
-				Culture="2052"
+				Culture="1033"
 				AdditionalIncludeDirectories="$(IntDir)"
 			/>
 			<Tool
@@ -153,8 +153,6 @@
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
-				RandomizedBaseAddress="1"
-				DataExecutionPrevention="0"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -176,6 +174,9 @@
 				Name="VCAppVerifierTool"
 			/>
 			<Tool
+				Name="VCWebDeploymentTool"
+			/>
+			<Tool
 				Name="VCPostBuildEventTool"
 			/>
 		</Configuration>
@@ -184,16 +185,20 @@
 	</References>
 	<Files>
 		<Filter
-			Name="源文件"
+			Name="Source Files"
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\CallSelFolderDll.cpp"
+				RelativePath=".\ListCtrlColor.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\CallSelFolderDllDlg.cpp"
+				RelativePath=".\ListCtrlColorDlg.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\ListCtrlWithCustomDraw.cpp"
 				>
 			</File>
 			<File
@@ -218,16 +223,20 @@
 			</File>
 		</Filter>
 		<Filter
-			Name="头文件"
+			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath=".\CallSelFolderDll.h"
+				RelativePath=".\ListCtrlColor.h"
 				>
 			</File>
 			<File
-				RelativePath=".\CallSelFolderDllDlg.h"
+				RelativePath=".\ListCtrlColorDlg.h"
+				>
+			</File>
+			<File
+				RelativePath=".\ListCtrlWithCustomDraw.h"
 				>
 			</File>
 			<File
@@ -240,20 +249,20 @@
 			</File>
 		</Filter>
 		<Filter
-			Name="资源文件"
+			Name="Resource Files"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 			<File
-				RelativePath=".\res\CallSelFolderDll.ico"
+				RelativePath=".\res\ListCtrlColor.ico"
 				>
 			</File>
 			<File
-				RelativePath=".\CallSelFolderDll.rc"
+				RelativePath=".\ListCtrlColor.rc"
 				>
 			</File>
 			<File
-				RelativePath=".\res\CallSelFolderDll.rc2"
+				RelativePath=".\res\ListCtrlColor.rc2"
 				>
 			</File>
 		</Filter>
@@ -265,7 +274,7 @@
 	<Globals>
 		<Global
 			Name="RESOURCE_FILE"
-			Value="CallSelFolderDll.rc"
+			Value="ListCtrlColor.rc"
 		/>
 	</Globals>
 </VisualStudioProject>
