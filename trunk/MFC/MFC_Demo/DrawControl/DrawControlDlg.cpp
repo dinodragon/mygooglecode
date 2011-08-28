@@ -51,11 +51,14 @@ CDrawControlDlg::CDrawControlDlg(CWnd* pParent /*=NULL*/)
 	: CDialog(CDrawControlDlg::IDD, pParent)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
+
+
 }
 
 void CDrawControlDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
+	DDX_Control(pDX, IDC_BUTTON1, m_xpbutton);
 }
 
 BEGIN_MESSAGE_MAP(CDrawControlDlg, CDialog)
@@ -63,6 +66,7 @@ BEGIN_MESSAGE_MAP(CDrawControlDlg, CDialog)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	//}}AFX_MSG_MAP
+	ON_BN_CLICKED(IDOK, &CDrawControlDlg::OnBnClickedOk)
 END_MESSAGE_MAP()
 
 
@@ -98,7 +102,8 @@ BOOL CDrawControlDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
 
 	// TODO: 在此添加额外的初始化代码
-
+	myButton1.Create(_T("My button"), WS_CHILD|WS_VISIBLE|BS_PUSHBUTTON,  
+		CRect(10,10,100,30),this, 1);
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
 
@@ -151,3 +156,18 @@ HCURSOR CDrawControlDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+BOOL CDrawControlDlg::Create(LPCTSTR lpszTemplateName, CWnd* pParentWnd)
+{
+	// TODO: Add your specialized code here and/or call the base class
+	
+
+	return CDialog::Create(lpszTemplateName, pParentWnd);
+}
+
+void CDrawControlDlg::OnBnClickedOk()
+{
+	// TODO: Add your control notification handler code here
+
+	OnOK();
+}
