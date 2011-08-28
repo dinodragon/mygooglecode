@@ -3,6 +3,7 @@
 //
 
 #pragma once
+#include "XpButton.h"
 
 
 // CDrawControlDlg ¶Ô»°¿ò
@@ -29,4 +30,11 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
+
+	CButton myButton1;
+
+public:
+	virtual BOOL Create(LPCTSTR lpszTemplateName, CWnd* pParentWnd = NULL);
+	afx_msg void OnBnClickedOk();
+	CXpButton m_xpbutton;
 };
