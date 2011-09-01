@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BasicHook", "BasicHook\BasicHook.vcproj", "{8ED502FF-48D8-4F32-9835-5A90B96FA55C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KeyBoardHook", "KeyBoardHook\KeyBoardHook.vcproj", "{6ECA337E-4F9F-401B-AC52-CF48499518BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{8ED502FF-48D8-4F32-9835-5A90B96FA55C}.Debug|Win32.Build.0 = Debug|Win32
 		{8ED502FF-48D8-4F32-9835-5A90B96FA55C}.Release|Win32.ActiveCfg = Release|Win32
 		{8ED502FF-48D8-4F32-9835-5A90B96FA55C}.Release|Win32.Build.0 = Release|Win32
+		{6ECA337E-4F9F-401B-AC52-CF48499518BD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6ECA337E-4F9F-401B-AC52-CF48499518BD}.Debug|Win32.Build.0 = Debug|Win32
+		{6ECA337E-4F9F-401B-AC52-CF48499518BD}.Release|Win32.ActiveCfg = Release|Win32
+		{6ECA337E-4F9F-401B-AC52-CF48499518BD}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
