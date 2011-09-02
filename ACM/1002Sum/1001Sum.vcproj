@@ -2,7 +2,7 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="1002Sum"
+	Name="1001Sum"
 	ProjectGUID="{D5B79E78-AA65-4EE5-9D0A-0F3E11CC0338}"
 	RootNamespace="My1002Sum"
 	Keyword="Win32Proj"
