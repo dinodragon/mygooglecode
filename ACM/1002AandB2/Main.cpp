@@ -4,6 +4,8 @@
 
 using namespace std;
 
+//http://acm.hdu.edu.cn/showproblem.php?pid=1002
+
 string Sum(string x,string y);
 int main()
 {
