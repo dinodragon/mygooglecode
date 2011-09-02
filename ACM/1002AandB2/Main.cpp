@@ -16,6 +16,7 @@ int main()
 		string result = Sum(x,y);
 		cout<<"Case "<<i<<":"<<endl;
 		cout<<x<<" + "<<y <<" = "<<result<<endl;
+		//注意题目是要求在两个Case之间有空行
 		if (i<t)
 		{
 			cout<<endl;
