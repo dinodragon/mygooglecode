@@ -2,7 +2,7 @@
 #include <vector>
 
 using namespace std;
-
+//http://acm.hdu.edu.cn/showproblem.php?pid=1003
 int MaxSum(const vector<int> &data,int & start,int & end);
 
 int main()
