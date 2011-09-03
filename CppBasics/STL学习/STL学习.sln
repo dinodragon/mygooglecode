@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "各个容器插入性能比较", "各个容器插入性能比较\各个容器插入性能比较.vcproj", "{7A2EF390-DB6E-4E1C-9E4A-68EC921975AB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "指针迭代器", "指针迭代器\指针迭代器.vcproj", "{93834956-6536-474F-A0FA-BCC53A3A1D63}"
