@@ -36,31 +36,32 @@ int MaxSum(const vector<int> &data,int & start,int & end)
 {
 	unsigned int count = data.size();
 	int maxSum = -10000;
+	int tempSum = -10000,tempStart = 1,tempEnd = 1;
 	for(unsigned int i = 0;i<count;i++)
 	{
-		int s = -10000,p = i ,l = 0;
-		int tempSum = 0;
-		for (unsigned int j = i;j < count;j++)
+		if (tempSum >= 0)
 		{
-			tempSum += data[j];
-			if (tempSum > s)
-			{
-				s = tempSum;
-				p = i + 1;
-				l = j + 1;
-			}
+			tempSum += data[i];
+			tempEnd = i + 1;
 		}
-		if (s > maxSum)
+		else
 		{
-			maxSum = s;
-			start = p;
-			end = l;
+			tempSum = data[i];
+			tempStart = i + 1;
+			tempEnd = i + 1;
+		}
+
+		if (tempSum > maxSum)
+		{
+			maxSum = tempSum;
+			start = tempStart;
+			end = tempEnd;
 		}
 	}
 	return maxSum;
 }
 
-
+//别人的一个答案，15Ms内完成
 //#include<stdio.h>
 //#include<stdlib.h>
 //int *a;
