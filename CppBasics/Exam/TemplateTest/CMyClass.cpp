@@ -1,0 +1,2 @@
+#include "CMyClass.h"
+
