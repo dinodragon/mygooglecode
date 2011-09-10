@@ -21,8 +21,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout<<c.B::doGetData()<<endl;
 	cout<<c.C::doGetData()<<endl;
 
-	Base b;
-	Child child;
+	Base b(12);
+	Child child(1);
 	Fun(b);
 	Fun(child);
 	child.m_data = 10;

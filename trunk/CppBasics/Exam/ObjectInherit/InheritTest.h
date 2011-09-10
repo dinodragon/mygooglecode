@@ -54,9 +54,10 @@ class Base
 {
 public:
 	int m_data;
-	Base()
+	Base(int data)
 	{
 		m_data = 0;
+		std::cout<<"Base Construct"<<std::endl;
 	};
 	//Base(const Child& c)
 	//{
@@ -78,10 +79,19 @@ class Child :public Base
 {
 public:
 	int m_data;
-	Child()
+	//调用该构造函数时，需要先调用基类构造函数，如未显示调用 必须基类有默认构造函数。
+	Child():Base(1)
 	{
 		m_data = 1;
+		std::cout<<"Child Construct"<<std::endl;
 	}
+
+	Child(int data):Base(1)
+	{
+		m_data = data;
+		std::cout<<"Child Construct Child(int data)"<<std::endl;
+	}
+
 	void fun()
 	{
 		std::cout<<"Child Fun"<<std::endl;
