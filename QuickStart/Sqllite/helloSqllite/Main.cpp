@@ -62,7 +62,7 @@ int main()
 
   //往表中添加数据
 
-  char chn[]="电脑";
+  char chn[]="jisuanji";
   char eng[]="computer";
 
   char sql[500];
