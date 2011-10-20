@@ -5,6 +5,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloBoost", "HelloBoost\He
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ObserverPattern", "ObserverPattern\ObserverPattern.vcproj", "{CFFCF2B5-D122-4DFD-88CD-DC7BB4CD65B9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SmartPointer", "SmartPointer\SmartPointer.vcproj", "{F59BA001-613E-46D4-A9B6-48C386826218}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +21,10 @@ Global
 		{CFFCF2B5-D122-4DFD-88CD-DC7BB4CD65B9}.Debug|Win32.Build.0 = Debug|Win32
 		{CFFCF2B5-D122-4DFD-88CD-DC7BB4CD65B9}.Release|Win32.ActiveCfg = Release|Win32
 		{CFFCF2B5-D122-4DFD-88CD-DC7BB4CD65B9}.Release|Win32.Build.0 = Release|Win32
+		{F59BA001-613E-46D4-A9B6-48C386826218}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F59BA001-613E-46D4-A9B6-48C386826218}.Debug|Win32.Build.0 = Debug|Win32
+		{F59BA001-613E-46D4-A9B6-48C386826218}.Release|Win32.ActiveCfg = Release|Win32
+		{F59BA001-613E-46D4-A9B6-48C386826218}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
