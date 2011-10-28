@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sigslot", "Sigslot\Sigslot.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CallShellCmd", "CallShellCmd\CallShellCmd.vcproj", "{EFEFA2E1-F45F-4C7B-87C9-2A7ED0C6EEAC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinCallCmd", "WinCallCmd\WinCallCmd.vcproj", "{04238FE2-A293-4DB5-A05D-5A275E9CEF93}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -65,6 +67,10 @@ Global
 		{EFEFA2E1-F45F-4C7B-87C9-2A7ED0C6EEAC}.Debug|Win32.Build.0 = Debug|Win32
 		{EFEFA2E1-F45F-4C7B-87C9-2A7ED0C6EEAC}.Release|Win32.ActiveCfg = Release|Win32
 		{EFEFA2E1-F45F-4C7B-87C9-2A7ED0C6EEAC}.Release|Win32.Build.0 = Release|Win32
+		{04238FE2-A293-4DB5-A05D-5A275E9CEF93}.Debug|Win32.ActiveCfg = Debug|Win32
+		{04238FE2-A293-4DB5-A05D-5A275E9CEF93}.Debug|Win32.Build.0 = Debug|Win32
+		{04238FE2-A293-4DB5-A05D-5A275E9CEF93}.Release|Win32.ActiveCfg = Release|Win32
+		{04238FE2-A293-4DB5-A05D-5A275E9CEF93}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
