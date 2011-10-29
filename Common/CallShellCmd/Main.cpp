@@ -79,7 +79,7 @@ int GetCurrDirectory(char * pDirectory)
 int main(int argc, char* argv[])
 {
   char cmdline[128]={0};
-  strcpy(cmdline,"arp -a");
+  strcpy(cmdline,"ping www.renren.com");
 
   char filepath[256]={0};
   GetCurrDirectory(filepath);
@@ -87,7 +87,7 @@ int main(int argc, char* argv[])
   char wfsqlname[256]={0};
   strcpy(wfsqlname,filepath);
   strcat(wfsqlname,"temp.log");
-
+  strcpy(wfsqlname,"D:\\log.txt");
   OnputCreateProcess(cmdline,wfsqlname);
   printf("Hello World!/n");
   return 0;
