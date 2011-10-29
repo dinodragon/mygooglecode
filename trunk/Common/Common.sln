@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CallShellCmd", "CallShellCm
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinCallCmd", "WinCallCmd\WinCallCmd.vcproj", "{04238FE2-A293-4DB5-A05D-5A275E9CEF93}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GetSystemInfo", "GetSystemInfo\GetSystemInfo.vcproj", "{783920FB-C3D9-4A31-B65F-BD5043EE9401}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -71,6 +73,10 @@ Global
 		{04238FE2-A293-4DB5-A05D-5A275E9CEF93}.Debug|Win32.Build.0 = Debug|Win32
 		{04238FE2-A293-4DB5-A05D-5A275E9CEF93}.Release|Win32.ActiveCfg = Release|Win32
 		{04238FE2-A293-4DB5-A05D-5A275E9CEF93}.Release|Win32.Build.0 = Release|Win32
+		{783920FB-C3D9-4A31-B65F-BD5043EE9401}.Debug|Win32.ActiveCfg = Debug|Win32
+		{783920FB-C3D9-4A31-B65F-BD5043EE9401}.Debug|Win32.Build.0 = Debug|Win32
+		{783920FB-C3D9-4A31-B65F-BD5043EE9401}.Release|Win32.ActiveCfg = Release|Win32
+		{783920FB-C3D9-4A31-B65F-BD5043EE9401}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
