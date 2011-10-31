@@ -5,56 +5,52 @@ BOOL OnputCreateProcess(char cmdline[128],char outputfilename[256])
 {
   BOOL brunsucc = FALSE;
 
-  SECURITY_ATTRIBUTES SecAtrrs={0};
-  SecAtrrs.nLength=sizeof(SecAtrrs);
-  SecAtrrs.lpSecurityDescriptor=NULL;
-  SecAtrrs.bInheritHandle=TRUE;
-
-  HANDLE houtputFile = CreateFile(outputfilename,
-    GENERIC_READ|GENERIC_WRITE, 
+  HANDLE hStream = CreateFile( "testfile:stream",
+    GENERIC_READ|GENERIC_WRITE,
     FILE_SHARE_READ|FILE_SHARE_WRITE,
-    &SecAtrrs,
+    NULL,
     OPEN_ALWAYS,
     FILE_ATTRIBUTE_NORMAL| FILE_FLAG_WRITE_THROUGH,
     NULL);
-  if (houtputFile != INVALID_HANDLE_VALUE)
-  {
-    PROCESS_INFORMATION   process; 
-    STARTUPINFO   startupInfo={0};   
-    startupInfo.cb=sizeof(STARTUPINFO);
-    startupInfo.dwFlags=STARTF_USESHOWWINDOW | STARTF_USESTDHANDLES;
-    startupInfo.wShowWindow =SW_HIDE;
-    startupInfo.hStdOutput=houtputFile;
-    startupInfo.lpReserved=NULL;   
-    startupInfo.lpReserved2=NULL;   
-    startupInfo.lpDesktop=NULL;   
+  if( hStream == INVALID_HANDLE_VALUE )
+    printf( "Cannot open testfile:stream\n" );
 
-    BOOL bcrtps=CreateProcess(NULL,
-      cmdline,
-      NULL,
-      NULL,
-      TRUE,
-      NORMAL_PRIORITY_CLASS,
-      NULL,
-      NULL,
-      &startupInfo,&process);
-    if (bcrtps)
-    {     
-      if (WaitForSingleObject(process.hProcess, INFINITE) == WAIT_FAILED)
-      {
-        CloseHandle(process.hThread);   
-        CloseHandle(process.hProcess);      
-      }
-      else
-      {
-        CloseHandle(process.hThread);   
-        CloseHandle(process.hProcess);      
-        brunsucc = TRUE;
-      }
+  PROCESS_INFORMATION   process; 
+  STARTUPINFO   startupInfo={0};   
+  startupInfo.cb=sizeof(STARTUPINFO);
+  startupInfo.dwFlags=STARTF_USESHOWWINDOW | STARTF_USESTDHANDLES;
+  startupInfo.wShowWindow =SW_HIDE;
+  startupInfo.hStdOutput=hStream;
+  startupInfo.lpReserved=NULL;   
+  startupInfo.lpReserved2=NULL;   
+  startupInfo.lpDesktop=NULL;   
+
+  BOOL bcrtps=CreateProcess(NULL,
+    cmdline,
+    NULL,
+    NULL,
+    TRUE,
+    NORMAL_PRIORITY_CLASS,
+    NULL,
+    NULL,
+    &startupInfo,&process);
+
+  if (bcrtps)
+  {     
+    if (!WaitForSingleObject(process.hProcess, INFINITE) == WAIT_FAILED)
+    {
+      brunsucc = TRUE;
     }
-  } 
-  CloseHandle(houtputFile);
+    CloseHandle(process.hThread);   
+    CloseHandle(process.hProcess);      
+  }
 
+  TCHAR buf[2000];
+  DWORD bytes;
+  ReadFile(hStream,buf,sizeof(buf)/sizeof(TCHAR),&bytes,NULL);
+  buf[bytes] = '\0';
+  printf("%s:\r\n%s\r\n",cmdline,buf);
+  CloseHandle(hStream);
   return brunsucc;
 }
 
@@ -79,7 +75,7 @@ int GetCurrDirectory(char * pDirectory)
 int main(int argc, char* argv[])
 {
   char cmdline[128]={0};
-  strcpy(cmdline,"ping www.renren.com");
+  strcpy(cmdline,"dir www.renren.com");
 
   char filepath[256]={0};
   GetCurrDirectory(filepath);
