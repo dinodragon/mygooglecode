@@ -10,3 +10,4 @@ void systemInfo();
 void getVersion();
 void ParaInfo();
 VOID GetMemInfo();
+void ShowCPUInfo();
