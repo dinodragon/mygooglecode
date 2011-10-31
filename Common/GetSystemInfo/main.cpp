@@ -6,7 +6,9 @@ int main()
 {
   GetMemInfo();
 	systemInfo();
-	mouseInfo();
+	//mouseInfo();
 	ParaInfo();
+  ShowCPUInfo();
 	return 0;
 }
+
