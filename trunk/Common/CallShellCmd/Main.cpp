@@ -5,15 +5,21 @@ BOOL OnputCreateProcess(char cmdline[128],char outputfilename[256])
 {
   BOOL brunsucc = FALSE;
 
-  HANDLE hStream = CreateFile( "testfile:stream",
+  SECURITY_ATTRIBUTES SecAtrrs={0};
+  SecAtrrs.nLength=sizeof(SecAtrrs);
+  SecAtrrs.lpSecurityDescriptor=NULL;
+  SecAtrrs.bInheritHandle=TRUE;
+
+  HANDLE hStream = CreateFile("testfile:stream",
     GENERIC_READ|GENERIC_WRITE,
     FILE_SHARE_READ|FILE_SHARE_WRITE,
-    NULL,
+    &SecAtrrs,
     OPEN_ALWAYS,
     FILE_ATTRIBUTE_NORMAL| FILE_FLAG_WRITE_THROUGH,
     NULL);
   if( hStream == INVALID_HANDLE_VALUE )
     printf( "Cannot open testfile:stream\n" );
+  //SetFilePointer(hStream,0,NULL,NULL); 
 
   PROCESS_INFORMATION   process; 
   STARTUPINFO   startupInfo={0};   
@@ -35,22 +41,26 @@ BOOL OnputCreateProcess(char cmdline[128],char outputfilename[256])
     NULL,
     &startupInfo,&process);
 
-  if (bcrtps)
-  {     
-    if (!WaitForSingleObject(process.hProcess, INFINITE) == WAIT_FAILED)
-    {
-      brunsucc = TRUE;
-    }
-    CloseHandle(process.hThread);   
-    CloseHandle(process.hProcess);      
+  if (bcrtps && WaitForSingleObject(process.hProcess, INFINITE) != WAIT_FAILED)
+  {
+    brunsucc = TRUE;
+    TCHAR buf[2000];
+    DWORD bytes;
+    CloseHandle(hStream);
+    hStream = CreateFile("testfile:stream",
+      GENERIC_READ|GENERIC_WRITE,
+      FILE_SHARE_READ|FILE_SHARE_WRITE,
+      &SecAtrrs,
+      OPEN_ALWAYS,
+      FILE_ATTRIBUTE_NORMAL| FILE_FLAG_WRITE_THROUGH,
+      NULL);
+    ReadFile(hStream,buf,sizeof(buf)/sizeof(TCHAR),&bytes,NULL);
+    buf[bytes] = '\0';
+    printf("%s:\r\n%s\r\n",cmdline,buf);
   }
-
-  TCHAR buf[2000];
-  DWORD bytes;
-  ReadFile(hStream,buf,sizeof(buf)/sizeof(TCHAR),&bytes,NULL);
-  buf[bytes] = '\0';
-  printf("%s:\r\n%s\r\n",cmdline,buf);
   CloseHandle(hStream);
+  CloseHandle(process.hThread);   
+  CloseHandle(process.hProcess);      
   return brunsucc;
 }
 
@@ -75,7 +85,7 @@ int GetCurrDirectory(char * pDirectory)
 int main(int argc, char* argv[])
 {
   char cmdline[128]={0};
-  strcpy(cmdline,"dir www.renren.com");
+  strcpy(cmdline,"ping www.renren.com");
 
   char filepath[256]={0};
   GetCurrDirectory(filepath);
