@@ -9,6 +9,7 @@ int main()
 	//mouseInfo();
 	ParaInfo();
   ShowCPUInfo();
+  ieInfo();
 	return 0;
 }
 

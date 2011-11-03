@@ -11,3 +11,4 @@ void getVersion();
 void ParaInfo();
 VOID GetMemInfo();
 void ShowCPUInfo();
+int ieInfo(void);
