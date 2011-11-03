@@ -179,6 +179,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\ieInfo.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\main.cpp"
 				>
 			</File>
