@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "allocatorDemo", "allocatorDemo\allocatorDemo.vcproj", "{1C16437B-971F-4022-B5EB-BDDACB0EF896}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iteratorDemo", "iteratorDemo\iteratorDemo.vcproj", "{639BE4A8-0B30-408E-AD39-59AE89844D1F}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -17,6 +19,10 @@ Global
 		{1C16437B-971F-4022-B5EB-BDDACB0EF896}.Debug|Win32.Build.0 = Debug|Win32
 		{1C16437B-971F-4022-B5EB-BDDACB0EF896}.Release|Win32.ActiveCfg = Release|Win32
 		{1C16437B-971F-4022-B5EB-BDDACB0EF896}.Release|Win32.Build.0 = Release|Win32
+		{639BE4A8-0B30-408E-AD39-59AE89844D1F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{639BE4A8-0B30-408E-AD39-59AE89844D1F}.Debug|Win32.Build.0 = Debug|Win32
+		{639BE4A8-0B30-408E-AD39-59AE89844D1F}.Release|Win32.ActiveCfg = Release|Win32
+		{639BE4A8-0B30-408E-AD39-59AE89844D1F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
