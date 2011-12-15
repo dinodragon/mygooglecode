@@ -196,6 +196,10 @@
 				RelativePath=".\myalgorithm.h"
 				>
 			</File>
+			<File
+				RelativePath=".\mylist.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
