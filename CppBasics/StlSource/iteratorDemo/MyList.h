@@ -27,7 +27,7 @@ namespace yf {
     List():_front(NULL),_end(NULL),size(0){}
     ~List()
     {
-      //清理内存
+      //没有清理内存
     };
 
     ItemPointer front() const {return _front;}
