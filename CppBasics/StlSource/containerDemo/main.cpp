@@ -8,16 +8,17 @@
 #include <bitset>
 #include <typeinfo>
 
+
 template<typename T,int Size> void FillData(T& data)
 {
   clock_t start = clock();
   for (int i = 0;i < Size;++i)
   {
-    data.push(i);
+    data.push(rand());
   }
   for (int i = 0;i<Size;++i)
   {
-    data.pop();
+	data.pop();
   }
   clock_t end = clock();
   std::cout << typeid(data).name() << std::endl;
@@ -55,10 +56,27 @@ void QueueTest()
   //vector不用使用，vector没有pop_front方法
 }
 
+void PropertiQueue()
+{
+	//完全有序的值会使优先队列进行极不佳的状态。
+	typedef std::priority_queue<int,std::vector<int>> PRIORITY_QUEUE_TYPE1; //默认
+	PRIORITY_QUEUE_TYPE1 priorityqueue1;
+	FillData<PRIORITY_QUEUE_TYPE1,1000000>(priorityqueue1);
+
+	typedef std::priority_queue<int,std::deque<int>> PRIORITY_QUEUE_TYPE2;
+	PRIORITY_QUEUE_TYPE2 priorityqueue2;
+	FillData<PRIORITY_QUEUE_TYPE2,1000000>(priorityqueue2);
+
+	//不能使用list，list没有随机访问迭代器
+}
+
 int main()
 {
   std::cout<<"----Stack---------------"<<std::endl;
   StackTest();
   std::cout<<"----Queue---------------"<<std::endl;
   QueueTest();
+  std::cout<<"----PRIORITY_QUEUE---------------"<<std::endl;
+	//debug模式下效率很低
+  PropertiQueue();
 }

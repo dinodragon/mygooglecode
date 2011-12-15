@@ -86,7 +86,7 @@ namespace yf
 
     size_type max_size() const
     {
-      return size_type(UINT_MAX/sizeof(T))
+      return size_type(UINT_MAX/sizeof(T));
     }
   };
 } // yf
