@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iteratorDemo", "iteratorDem
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "containerDemo", "containerDemo\containerDemo.vcproj", "{0BB27525-862B-486C-BDD6-50EF340CE8A6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "algorithmsDemo", "algorithmsDemo\algorithmsDemo.vcproj", "{749BC1F1-7751-4D9E-B70B-EC59D8513416}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -29,6 +31,10 @@ Global
 		{0BB27525-862B-486C-BDD6-50EF340CE8A6}.Debug|Win32.Build.0 = Debug|Win32
 		{0BB27525-862B-486C-BDD6-50EF340CE8A6}.Release|Win32.ActiveCfg = Release|Win32
 		{0BB27525-862B-486C-BDD6-50EF340CE8A6}.Release|Win32.Build.0 = Release|Win32
+		{749BC1F1-7751-4D9E-B70B-EC59D8513416}.Debug|Win32.ActiveCfg = Debug|Win32
+		{749BC1F1-7751-4D9E-B70B-EC59D8513416}.Debug|Win32.Build.0 = Debug|Win32
+		{749BC1F1-7751-4D9E-B70B-EC59D8513416}.Release|Win32.ActiveCfg = Release|Win32
+		{749BC1F1-7751-4D9E-B70B-EC59D8513416}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
