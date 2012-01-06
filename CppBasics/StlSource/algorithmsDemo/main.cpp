@@ -1,9 +1,11 @@
 ﻿
 void SortTest();
 void SetDemo();
+void FindDemo();
 
 int main()
 {
   //SortTest();
-  SetDemo();
+  //SetDemo();
+  FindDemo();
 }
