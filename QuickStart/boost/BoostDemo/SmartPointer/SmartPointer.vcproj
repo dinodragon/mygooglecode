@@ -178,12 +178,24 @@
 				RelativePath=".\Main.cpp"
 				>
 			</File>
+			<File
+				RelativePath=".\MyClass.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\ptrtest.cpp"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\MyClass.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
