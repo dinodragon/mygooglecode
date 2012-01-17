@@ -1,3 +1,0 @@
-configTest 是一个简单的测试例子，来自epub.Enterprise
-CustomConfig是MSDN的一个例子，有多层配置。
-MyConfigTest 是我参考CustomConfig为epub.Foundation.Log重写的测试

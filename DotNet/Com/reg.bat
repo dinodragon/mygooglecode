@@ -1,1 +1,0 @@
-%systemroot%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe ComInterface.dll /codebase

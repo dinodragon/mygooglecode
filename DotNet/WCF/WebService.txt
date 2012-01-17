@@ -1,5 +1,0 @@
-采用默认方式建立起来的WebService服务端和客户端
-
-ServiceReference对代码执行起作用的就是Reference.cs文件一个，
-把他单独拿出来，加上app.config文件就可以用了。
-别的文件估计和更新接口等有关系。
