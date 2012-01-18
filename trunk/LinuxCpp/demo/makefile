@@ -1,8 +1,9 @@
+CC = g++
 mainexe:MyClass.o main.o
-	g++ -o mainexe MyClass.o main.o
+	${CC} -o mainexe MyClass.o main.o
 MyClass.o:MyClass.cpp MyClass.h
-	g++ -c MyClass.cpp
+	${CC} -c MyClass.cpp
 main.o:main.cpp
-	g++ -c main.cpp
+	${CC} -c main.cpp
 clean:
-	rm MyClass.o main.o
+	rm -f *.o
