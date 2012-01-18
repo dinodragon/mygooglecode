@@ -178,6 +178,14 @@
 				RelativePath=".\main.cpp"
 				>
 			</File>
+			<File
+				RelativePath=".\muliinherit.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\simpleinherit.cpp"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
