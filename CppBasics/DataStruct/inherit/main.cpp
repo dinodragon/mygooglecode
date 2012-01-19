@@ -1,8 +1,11 @@
 ﻿void muliinheritdemo();
 void simpleinherit();
+void vfptrtest();
+
 
 int main()
 {
-  simpleinherit();
+  //simpleinherit();
   //muliinheritdemo();
+  vfptrtest();
 }

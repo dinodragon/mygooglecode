@@ -186,6 +186,10 @@
 				RelativePath=".\simpleinherit.cpp"
 				>
 			</File>
+			<File
+				RelativePath=".\vfptr.cpp"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
