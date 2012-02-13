@@ -2,26 +2,91 @@
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MACROExport", "MACROExport\MACROExport.vcproj", "{B1EB26F4-9D96-483F-A61E-D7D7ED228AFB}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WarningTest", "WarningTest\WarningTest.vcproj", "{2768C69E-AC7B-485A-B252-755D97E035CB}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PackSizeofTest", "PackSizeofTest\PackSizeofTest.vcproj", "{BF3ACE92-261B-4EF4-A0C7-9B8F40EE15A6}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Precompiler", "Precompiler\Precompiler.vcproj", "{834D2A5B-57C5-4292-8222-6D65CBCDE2B1}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShowCompileTime", "ShowCompileTime\ShowCompileTime.vcproj", "{DB0E2F2B-60AC-421D-8D83-AEDF18268EDA}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GetProcessInfo", "GetProcessInfo\GetProcessInfo.vcproj", "{1D5F9749-7CE2-42A5-91C6-3AC2225BFE5E}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Logger", "Logger\Logger.vcproj", "{B0D40D53-B672-4F17-B444-F1F03DD8BA2A}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sigslot", "Sigslot\Sigslot.vcproj", "{67C3F070-9BA4-454A-B90B-8BBB76A65D49}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CallShellCmd", "CallShellCmd\CallShellCmd.vcproj", "{EFEFA2E1-F45F-4C7B-87C9-2A7ED0C6EEAC}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinCallCmd", "WinCallCmd\WinCallCmd.vcproj", "{04238FE2-A293-4DB5-A05D-5A275E9CEF93}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GetSystemInfo", "GetSystemInfo\GetSystemInfo.vcproj", "{783920FB-C3D9-4A31-B65F-BD5043EE9401}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DllDemo", "DllDemo", "{944E44C2-E64B-4442-994B-14D3C1FC5DE3}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyDll1", "MyDll1\MyDll1.vcproj", "{2C5A94A5-F65D-4074-9DD9-F5B038CBA3FB}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CallDll", "CallDll\CallDll.vcproj", "{508F875D-06AF-41C7-9F4E-C11BE9908AD9}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{2C5A94A5-F65D-4074-9DD9-F5B038CBA3FB} = {2C5A94A5-F65D-4074-9DD9-F5B038CBA3FB}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
@@ -77,8 +142,20 @@ Global
 		{783920FB-C3D9-4A31-B65F-BD5043EE9401}.Debug|Win32.Build.0 = Debug|Win32
 		{783920FB-C3D9-4A31-B65F-BD5043EE9401}.Release|Win32.ActiveCfg = Release|Win32
 		{783920FB-C3D9-4A31-B65F-BD5043EE9401}.Release|Win32.Build.0 = Release|Win32
+		{2C5A94A5-F65D-4074-9DD9-F5B038CBA3FB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2C5A94A5-F65D-4074-9DD9-F5B038CBA3FB}.Debug|Win32.Build.0 = Debug|Win32
+		{2C5A94A5-F65D-4074-9DD9-F5B038CBA3FB}.Release|Win32.ActiveCfg = Release|Win32
+		{2C5A94A5-F65D-4074-9DD9-F5B038CBA3FB}.Release|Win32.Build.0 = Release|Win32
+		{508F875D-06AF-41C7-9F4E-C11BE9908AD9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{508F875D-06AF-41C7-9F4E-C11BE9908AD9}.Debug|Win32.Build.0 = Debug|Win32
+		{508F875D-06AF-41C7-9F4E-C11BE9908AD9}.Release|Win32.ActiveCfg = Release|Win32
+		{508F875D-06AF-41C7-9F4E-C11BE9908AD9}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2C5A94A5-F65D-4074-9DD9-F5B038CBA3FB} = {944E44C2-E64B-4442-994B-14D3C1FC5DE3}
+		{508F875D-06AF-41C7-9F4E-C11BE9908AD9} = {944E44C2-E64B-4442-994B-14D3C1FC5DE3}
 	EndGlobalSection
 EndGlobal
