@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "threadsync", "threadsync\threadsync.vcproj", "{D17E9821-5C02-4B25-A3BF-2CA6EAC5C251}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "muthread", "muthread\muthread.vcproj", "{1BD39C0E-3A33-4DF6-9EC5-F1748534744A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{D17E9821-5C02-4B25-A3BF-2CA6EAC5C251}.Debug|Win32.Build.0 = Debug|Win32
 		{D17E9821-5C02-4B25-A3BF-2CA6EAC5C251}.Release|Win32.ActiveCfg = Release|Win32
 		{D17E9821-5C02-4B25-A3BF-2CA6EAC5C251}.Release|Win32.Build.0 = Release|Win32
+		{1BD39C0E-3A33-4DF6-9EC5-F1748534744A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1BD39C0E-3A33-4DF6-9EC5-F1748534744A}.Debug|Win32.Build.0 = Debug|Win32
+		{1BD39C0E-3A33-4DF6-9EC5-F1748534744A}.Release|Win32.ActiveCfg = Release|Win32
+		{1BD39C0E-3A33-4DF6-9EC5-F1748534744A}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
