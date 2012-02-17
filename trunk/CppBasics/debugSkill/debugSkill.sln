@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dump", "dump\dump.vcproj", "{A3AA0AEF-4788-4480-8D72-86BC4B1A7FF1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dumpexport", "dumpexport\dumpexport.vcproj", "{D8B98F2D-2D4D-4793-9110-9F9A8BD64569}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{A3AA0AEF-4788-4480-8D72-86BC4B1A7FF1}.Debug|Win32.Build.0 = Debug|Win32
 		{A3AA0AEF-4788-4480-8D72-86BC4B1A7FF1}.Release|Win32.ActiveCfg = Release|Win32
 		{A3AA0AEF-4788-4480-8D72-86BC4B1A7FF1}.Release|Win32.Build.0 = Release|Win32
+		{D8B98F2D-2D4D-4793-9110-9F9A8BD64569}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D8B98F2D-2D4D-4793-9110-9F9A8BD64569}.Debug|Win32.Build.0 = Debug|Win32
+		{D8B98F2D-2D4D-4793-9110-9F9A8BD64569}.Release|Win32.ActiveCfg = Release|Win32
+		{D8B98F2D-2D4D-4793-9110-9F9A8BD64569}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
