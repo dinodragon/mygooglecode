@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="gb2312"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
+	Version="8.00"
 	Name="COMServer"
 	ProjectGUID="{DC4E5CD2-4CE9-4112-A8B2-A5F5F478DA4F}"
 	RootNamespace="COMServer"

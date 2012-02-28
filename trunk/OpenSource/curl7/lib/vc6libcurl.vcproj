@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="gb2312"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
+	Version="8.00"
 	Name="libcurl"
 	ProjectGUID="{109C479B-80C7-435A-AC7D-6B40EBE87153}"
 	RootNamespace="libcurl"

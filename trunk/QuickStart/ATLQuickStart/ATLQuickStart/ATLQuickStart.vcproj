@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="gb2312"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
+	Version="8.00"
 	Name="ATLQuickStart"
 	ProjectGUID="{DA6EB5B0-7F07-47EE-A352-FA6727935734}"
 	RootNamespace="ATLQuickStart"
