@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="gb2312"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
+	Version="8.00"
 	Name="COMServerPS"
 	ProjectGUID="{D4A26B75-B950-45E9-8B0A-9A4F41EFDF2C}"
 	Keyword="AtlPSProj"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="gb2312"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
+	Version="8.00"
 	Name="ATLDemo"
 	ProjectGUID="{2EE0D12B-187B-474F-90E7-6D09058DEDCA}"
 	RootNamespace="ATLDemo"
