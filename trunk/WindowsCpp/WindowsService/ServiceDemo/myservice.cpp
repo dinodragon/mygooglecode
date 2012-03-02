@@ -68,12 +68,8 @@ void CMyService::Run()
 void CMyService::MyCmd()
 {
 	DebugMsg("in mycmd!");
-	DWORD pid = 0 ;
 	std::wstring wpfile = L"C:\\Users\\yangfei\\AppData\\Roaming\\renren.com\\RenRenUpdate.exe";
 	std::wstring param =  L"\"C:\\Users\\yangfei\\AppData\\Roaming\\renren.com\\update\\xntalk\" \"4.57.1.6_partial.mar\" 0 \"d:\\xntalk\\4.056\"  \"xntalk.exe\" off";
-
-	PROCESS_INFORMATION pi = {0};
-	STARTUPINFOW si = {sizeof(si)};
 	SHELLEXECUTEINFOW shExecInfo;
 	memset(&shExecInfo, 0, sizeof(shExecInfo));
 	shExecInfo.cbSize = sizeof(SHELLEXECUTEINFOW);
