@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServiceDemo", "ServiceDemo\ServiceDemo.vcproj", "{D8D58FB0-BC22-4DB8-BEE9-6DC13B7FEDB3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppWindowsService", "CppWindowsService\CppWindowsService.vcproj", "{DE70E2D1-6A4D-4984-BD82-CE750889F0D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{D8D58FB0-BC22-4DB8-BEE9-6DC13B7FEDB3}.Debug|Win32.Build.0 = Debug|Win32
 		{D8D58FB0-BC22-4DB8-BEE9-6DC13B7FEDB3}.Release|Win32.ActiveCfg = Release|Win32
 		{D8D58FB0-BC22-4DB8-BEE9-6DC13B7FEDB3}.Release|Win32.Build.0 = Release|Win32
+		{DE70E2D1-6A4D-4984-BD82-CE750889F0D3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE70E2D1-6A4D-4984-BD82-CE750889F0D3}.Debug|Win32.Build.0 = Debug|Win32
+		{DE70E2D1-6A4D-4984-BD82-CE750889F0D3}.Release|Win32.ActiveCfg = Release|Win32
+		{DE70E2D1-6A4D-4984-BD82-CE750889F0D3}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
