@@ -39,9 +39,9 @@
 \***************************************************************************/
 
 #pragma once
+
 #include <Windows.h>
 #include <memory>
-
 
 class CThreadPool
 {
@@ -54,7 +54,7 @@ public:
         typedef std::pair<void (T::*)(), T *> CallbackType;
         std::auto_ptr<CallbackType> p(new CallbackType(function, object));
 
-        //if (::QueueUserWorkItem(ThreadProc<T>, p.get(), flags))
+				if (::QueueUserWorkItem(ThreadProc<T>, p.get(), flags))
 				if(true)
         {
             // The ThreadProc now has the responsibility of deleting the pair.

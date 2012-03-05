@@ -1,8 +1,9 @@
 ﻿这是从微软官方http://code.msdn.microsoft.com/CppWindowsService-cacf4948
 下载的一个基本c++开发windows service的例子。
-VS2005下编译不通过。因为无QueueUserWorkItem API,所以注释了ThreadPool.h Line57
 
-原工程是VS2008的，需要再调研在2008下的编译运行情况。
+
+VS2005下编译不通过。因为无QueueUserWorkItem API,所以注释了ThreadPool.h Line57
+后来在ServiceBase.h中增加了一段关于操作系统的宏定义。
 
 
 =============================================================================
