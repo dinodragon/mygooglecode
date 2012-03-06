@@ -4,10 +4,8 @@
 #include <process.h>
 #include "myservice.h"
 #include <string>
-//#include <ShlObj.h>
-//#include <Psapi.h>
-//#include <Shlwapi.h>
 #include <Tlhelp32.h>
+#include "NamedPipeServer.h"
 
 CMyService::CMyService()
 :CNTService("NT Service Demonstration")
@@ -59,10 +57,15 @@ BOOL CMyService::OnInit()
 
 void CMyService::Run()
 {
+	const char* pPipeName = "\\\\.\\pipe\\ZacharyPipe";
+
 	while (m_bIsRunning) {
 		// Sleep for a while
 		Sleep(10000);
-		MyCmd();
+		CNamedPipeServer cnp;
+		cnp.Create(pPipeName);
+		cnp.Listen();
+		//MyCmd();
 		DebugMsg("My service is sleeping (%lu)...", m_iState);
 		//Sleep(1000);
 		// Update the current state
