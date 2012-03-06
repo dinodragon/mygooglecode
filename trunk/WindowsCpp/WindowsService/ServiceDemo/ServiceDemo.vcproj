@@ -179,6 +179,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\NamedPipeServer.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\NTServApp.cpp"
 				>
 			</File>
@@ -194,6 +198,10 @@
 			>
 			<File
 				RelativePath=".\myservice.h"
+				>
+			</File>
+			<File
+				RelativePath=".\NamedPipeServer.h"
 				>
 			</File>
 			<File
