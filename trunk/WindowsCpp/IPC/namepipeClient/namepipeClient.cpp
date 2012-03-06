@@ -7,12 +7,20 @@
 #include <Windows.h>
 #include <iostream>
 
+typedef struct _CmdInfo
+{
+	char cmd[10];
+	char path[20];
+} CmdInfo;
+
+
 int main(int argc, char * argv)
 {
+	CmdInfo info;
 	const char * pPipeName    = "\\\\.\\pipe\\ZacharyPipe";
-	CNamedPipeClient client;
-	client.Create(pPipeName);
-	std::string r = client.Send("aaaaa!");
+	char data[] = "sdfasfasdjkkjhkfaskfjjs!";
+	CNamedPipeClient client(pPipeName);
+	std::string r = client.Send(data);
 	std::cout<<r.c_str()<<std::endl;
 }
 

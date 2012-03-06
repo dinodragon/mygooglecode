@@ -90,7 +90,8 @@ bool CNamedPipeServer::Listen()
 
 std::string CNamedPipeServer::Process(const char * cmd)
 {
-	std::string result = "OK";
+	std::string result = std::string(cmd) + ":OK";
+	Sleep(10000);
 	std::cout<<"receive:"<<cmd<<std::endl;
 	std::cout<<"return:"<<result.c_str()<<std::endl;
 	return result;
