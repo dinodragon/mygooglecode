@@ -7,14 +7,16 @@
 const DWORD BUFSIZE = 1024;  
 const DWORD PIPE_TIMEOUT = 5000;  
 
-class CNamedPipe
+class CNamedPipeServer
 {
 private:  
 	HANDLE hPipe_;
+	HANDLE hEvent_;
+	std::string pipeName_;
 public:
-	CNamedPipe();
-	~CNamedPipe(void);
-	bool Create(char* szPipName);
+	CNamedPipeServer();
+	~CNamedPipeServer(void);
+	bool Create(const  char * szPipName);
 	bool Listen();
 	virtual std::string Process(const char * cmd);
 	bool Stop();
