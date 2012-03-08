@@ -3,6 +3,7 @@
 
 CNamedPipeClient::CNamedPipeClient(const char * szPipName):hPipe_(NULL),pipeName_(szPipName)
 {
+	hReadEvent_ = CreateEvent(NULL,FALSE,FALSE,NULL);
 }
 
 CNamedPipeClient::~CNamedPipeClient()
@@ -11,11 +12,15 @@ CNamedPipeClient::~CNamedPipeClient()
 	{
 		CloseHandle(hPipe_);
 	}
+	if (hReadEvent_)
+	{
+		CloseHandle(hReadEvent_);
+	}
 }
 
 bool CNamedPipeClient::Create()
 {
-	if(!WaitNamedPipe(pipeName_.c_str(), NMPWAIT_WAIT_FOREVER))
+	if(!WaitNamedPipe(pipeName_.c_str(), NMPWAIT_NOWAIT))
 	{
 		std::cout<<"WaitNamedPipe failed!"<<std::endl;
 		return false;
@@ -37,7 +42,4 @@ bool CNamedPipeClient::Create()
 	return true;
 }
 
-//std::string CNamedPipeClient::Send(std::string cmd)
-//{
-//
-//}
+

@@ -7,20 +7,30 @@
 #include <Windows.h>
 #include <iostream>
 
-typedef struct _CmdInfo
+typedef struct _CmdStruct 
 {
-	char cmd[10];
-	char path[20];
-} CmdInfo;
+	char szName[MAX_PATH];
+	char szParam[MAX_PATH];
+	char authoid[32];
+}CmdStruct,*PCmdStruct;
 
 
 int main(int argc, char * argv)
 {
-	CmdInfo info;
-	const char * pPipeName    = "\\\\.\\pipe\\ZacharyPipe";
-	char data[] = "sdfasfasdjkkjhkfaskfjjs!";
+	SECURITY_DESCRIPTOR sd;
+	InitializeSecurityDescriptor(&sd,SECURITY_DESCRIPTOR_REVISION);
+	SetSecurityDescriptorDacl(&sd,TRUE,NULL,FALSE);
+	SECURITY_ATTRIBUTES sa;
+	sa.nLength = sizeof(SECURITY_ATTRIBUTES);
+	sa.bInheritHandle = TRUE;
+	sa.lpSecurityDescriptor = &sd;
+
+	CmdStruct info;
+	const char * pPipeName = "\\\\.\\pipe\\RenRenServicePipe";
+	strcpy(info.szName,"C:\\Users\\yangfei\\AppData\\Roaming\\renren.com\\RenRenUpdate.exe");
+	strcpy(info.szParam,"\"C:\\Users\\yangfei\\AppData\\Roaming\\renren.com\\update\\xntalk\" \"4.57.1.6_full.mar\" 0 \"d:\\xntalk\\4.056\"  \"xntalk.exe\" off");
 	CNamedPipeClient client(pPipeName);
-	std::string r = client.Send(data);
+	std::string r = client.Send(info);
 	std::cout<<r.c_str()<<std::endl;
 }
 
