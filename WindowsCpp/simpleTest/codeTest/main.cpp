@@ -1,3 +1,4 @@
+ï»¿#define UNICODE
 #include <iostream>
 #include <tchar.h>
 #include <Windows.h>
@@ -5,9 +6,9 @@
 
 int main(int argc, _TCHAR* argv[])
 {
-	char str[] = "ÖÐÎÄ";
+	wchar_t str[] = TEXT("ä¸­æ–‡");
 	std::cout << sizeof(str) <<std::endl;
-	MessageBox(NULL,str,TEXT("±êÌâ"),MB_OK);
+	MessageBox(NULL,str,TEXT("æ ‡é¢˜"),MB_OK);
 //	std::cout<<"??"<<std::endl;
 	return 0;
 }
