@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "Base64.h"
 #include "Base64Dlg.h"
+#include "../UpdateLib/Updater.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -58,7 +59,8 @@ BOOL CBase64App::InitInstance()
 	// TODO: 应适当修改该字符串，
 	// 例如修改为公司或组织名
 	SetRegistryKey(_T("应用程序向导生成的本地应用程序"));
-
+	yfupdate::UpdateLib ul;
+	ul.CheckNewVersion("base64","1.6","Base64编码 解码器");
 	CBase64Dlg dlg;
 	m_pMainWnd = &dlg;
 	INT_PTR nResponse = dlg.DoModal();
