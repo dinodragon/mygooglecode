@@ -1,7 +1,12 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Base64", "Base64\Base64.vcproj", "{B3DFD9BE-A264-48F6-B12A-01358EF71659}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8EB95337-0E82-4015-9168-740AB6C60FBB} = {8EB95337-0E82-4015-9168-740AB6C60FBB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UpdateLib", "UpdateLib\UpdateLib.vcproj", "{8EB95337-0E82-4015-9168-740AB6C60FBB}"
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
@@ -17,6 +22,10 @@ Global
 		{B3DFD9BE-A264-48F6-B12A-01358EF71659}.Debug|Win32.Build.0 = Debug|Win32
 		{B3DFD9BE-A264-48F6-B12A-01358EF71659}.Release|Win32.ActiveCfg = Release|Win32
 		{B3DFD9BE-A264-48F6-B12A-01358EF71659}.Release|Win32.Build.0 = Release|Win32
+		{8EB95337-0E82-4015-9168-740AB6C60FBB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8EB95337-0E82-4015-9168-740AB6C60FBB}.Debug|Win32.Build.0 = Debug|Win32
+		{8EB95337-0E82-4015-9168-740AB6C60FBB}.Release|Win32.ActiveCfg = Release|Win32
+		{8EB95337-0E82-4015-9168-740AB6C60FBB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,14 +2,10 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="8.00"
-	Name="Base64"
-	ProjectGUID="{B3DFD9BE-A264-48F6-B12A-01358EF71659}"
-	RootNamespace="Base64"
-	SccProjectName="SAK"
-	SccAuxPath="SAK"
-	SccLocalPath="SAK"
-	SccProvider="SAK"
-	Keyword="MFCProj"
+	Name="UpdateLib"
+	ProjectGUID="{8EB95337-0E82-4015-9168-740AB6C60FBB}"
+	RootNamespace="UpdateLib"
+	Keyword="Win32Proj"
 	>
 	<Platforms>
 		<Platform
@@ -23,8 +19,7 @@
 			Name="Debug|Win32"
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
-			ConfigurationType="1"
-			UseOfMFC="2"
+			ConfigurationType="4"
 			CharacterSet="2"
 			>
 			<Tool
@@ -41,14 +36,11 @@
 			/>
 			<Tool
 				Name="VCMIDLTool"
-				PreprocessorDefinitions="_DEBUG"
-				MkTypLibCompatible="false"
-				ValidateParameters="false"
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG"
+				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;TIXML_USE_STL"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -62,25 +54,15 @@
 			/>
 			<Tool
 				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="_DEBUG"
-				Culture="2052"
-				AdditionalIncludeDirectories="$(IntDir)"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
-				Name="VCLinkerTool"
-				LinkIncremental="2"
-				GenerateDebugInformation="true"
-				SubSystem="2"
-				TargetMachine="1"
+				Name="VCLibrarianTool"
 			/>
 			<Tool
 				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -92,12 +74,6 @@
 				Name="VCFxCopTool"
 			/>
 			<Tool
-				Name="VCAppVerifierTool"
-			/>
-			<Tool
-				Name="VCWebDeploymentTool"
-			/>
-			<Tool
 				Name="VCPostBuildEventTool"
 			/>
 		</Configuration>
@@ -105,8 +81,7 @@
 			Name="Release|Win32"
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
-			ConfigurationType="1"
-			UseOfMFC="1"
+			ConfigurationType="4"
 			CharacterSet="2"
 			WholeProgramOptimization="1"
 			>
@@ -124,16 +99,12 @@
 			/>
 			<Tool
 				Name="VCMIDLTool"
-				PreprocessorDefinitions="NDEBUG"
-				MkTypLibCompatible="false"
-				ValidateParameters="false"
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG"
-				MinimalRebuild="false"
+				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;TIXML_USE_STL"
 				RuntimeLibrary="0"
-				UsePrecompiledHeader="2"
+				UsePrecompiledHeader="0"
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="true"
 				DebugInformationFormat="3"
@@ -143,27 +114,15 @@
 			/>
 			<Tool
 				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG"
-				Culture="2052"
-				AdditionalIncludeDirectories="$(IntDir)"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
-				Name="VCLinkerTool"
-				LinkIncremental="1"
-				GenerateDebugInformation="true"
-				SubSystem="2"
-				OptimizeReferences="2"
-				EnableCOMDATFolding="2"
-				TargetMachine="1"
+				Name="VCLibrarianTool"
 			/>
 			<Tool
 				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -173,12 +132,6 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCAppVerifierTool"
-			/>
-			<Tool
-				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -194,36 +147,16 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\Base64.cpp"
+				RelativePath=".\NetUtility.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\Base64Dlg.cpp"
+				RelativePath=".\UpdateInfo.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\Base64Helper.cpp"
+				RelativePath=".\Updater.cpp"
 				>
-			</File>
-			<File
-				RelativePath=".\stdafx.cpp"
-				>
-				<FileConfiguration
-					Name="Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"
-					/>
-				</FileConfiguration>
 			</File>
 		</Filter>
 		<Filter
@@ -232,23 +165,15 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath=".\Base64.h"
+				RelativePath=".\NetUtility.h"
 				>
 			</File>
 			<File
-				RelativePath=".\Base64Dlg.h"
+				RelativePath=".\UpdateInfo.h"
 				>
 			</File>
 			<File
-				RelativePath=".\Base64Helper.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Resource.h"
-				>
-			</File>
-			<File
-				RelativePath=".\stdafx.h"
+				RelativePath=".\Updater.h"
 				>
 			</File>
 		</Filter>
@@ -257,32 +182,52 @@
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
+		</Filter>
+		<Filter
+			Name="tinyxml"
+			>
 			<File
-				RelativePath=".\res\Base64.ico"
+				RelativePath=".\tinyxml\tinystr.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\Base64.rc"
+				RelativePath=".\tinyxml\tinystr.h"
 				>
 			</File>
 			<File
-				RelativePath=".\res\Base64.rc2"
+				RelativePath=".\tinyxml\tinyxml.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\res\ico.ico"
+				RelativePath=".\tinyxml\tinyxml.h"
+				>
+			</File>
+			<File
+				RelativePath=".\tinyxml\tinyxmlerror.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\tinyxml\tinyxmlparser.cpp"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="base"
+			>
+			<File
+				RelativePath="..\..\..\..\base\unicode\unicode.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\base\unicode\unicode.h"
 				>
 			</File>
 		</Filter>
 		<File
-			RelativePath=".\ศํผþหตร๗.txt"
+			RelativePath=".\ReadMe.txt"
 			>
 		</File>
 	</Files>
 	<Globals>
-		<Global
-			Name="RESOURCE_FILE"
-			Value="Base64.rc"
-		/>
 	</Globals>
 </VisualStudioProject>
