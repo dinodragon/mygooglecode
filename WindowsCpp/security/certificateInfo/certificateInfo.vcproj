@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="8.00"
-	Name="certificate"
-	ProjectGUID="{533C30EE-83A2-49A1-8CC6-3FB31E75B229}"
-	RootNamespace="certificate"
+	Name="certificateInfo"
+	ProjectGUID="{670AD108-18B9-413F-BC3D-9CF326F8164A}"
+	RootNamespace="certificateInfo"
 	Keyword="Win32Proj"
 	>
 	<Platforms>
@@ -175,11 +175,7 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\stdafx.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\VerifyCertificate.cpp"
+				RelativePath=".\certificateInfo.cpp"
 				>
 			</File>
 		</Filter>
@@ -188,10 +184,6 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
-			<File
-				RelativePath=".\stdafx.h"
-				>
-			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
