@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "certificate", "certificate\certificate.vcproj", "{533C30EE-83A2-49A1-8CC6-3FB31E75B229}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "certificateInfo", "certificateInfo\certificateInfo.vcproj", "{670AD108-18B9-413F-BC3D-9CF326F8164A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{533C30EE-83A2-49A1-8CC6-3FB31E75B229}.Debug|Win32.Build.0 = Debug|Win32
 		{533C30EE-83A2-49A1-8CC6-3FB31E75B229}.Release|Win32.ActiveCfg = Release|Win32
 		{533C30EE-83A2-49A1-8CC6-3FB31E75B229}.Release|Win32.Build.0 = Release|Win32
+		{670AD108-18B9-413F-BC3D-9CF326F8164A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{670AD108-18B9-413F-BC3D-9CF326F8164A}.Debug|Win32.Build.0 = Debug|Win32
+		{670AD108-18B9-413F-BC3D-9CF326F8164A}.Release|Win32.ActiveCfg = Release|Win32
+		{670AD108-18B9-413F-BC3D-9CF326F8164A}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
