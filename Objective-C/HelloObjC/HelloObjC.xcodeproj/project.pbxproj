@@ -1,0 +1,242 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CD88F4E1517200D00F80070 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD88F4D1517200D00F80070 /* Foundation.framework */; };
+		2CD88F511517200D00F80070 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD88F501517200D00F80070 /* main.m */; };
+		2CD88F551517200D00F80070 /* HelloObjC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CD88F541517200D00F80070 /* HelloObjC.1 */; };
+		2CD88F5D1517205E00F80070 /* YFPoint2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD88F5C1517205E00F80070 /* YFPoint2D.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CD88F471517200D00F80070 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				2CD88F551517200D00F80070 /* HelloObjC.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2CD88F491517200D00F80070 /* HelloObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloObjC; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD88F4D1517200D00F80070 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2CD88F501517200D00F80070 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CD88F531517200D00F80070 /* HelloObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloObjC-Prefix.pch"; sourceTree = "<group>"; };
+		2CD88F541517200D00F80070 /* HelloObjC.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HelloObjC.1; sourceTree = "<group>"; };
+		2CD88F5B1517205E00F80070 /* YFPoint2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFPoint2D.h; sourceTree = "<group>"; };
+		2CD88F5C1517205E00F80070 /* YFPoint2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFPoint2D.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CD88F461517200D00F80070 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD88F4E1517200D00F80070 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CD88F3E1517200D00F80070 = {
+			isa = PBXGroup;
+			children = (
+				2CD88F4F1517200D00F80070 /* HelloObjC */,
+				2CD88F4C1517200D00F80070 /* Frameworks */,
+				2CD88F4A1517200D00F80070 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CD88F4A1517200D00F80070 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CD88F491517200D00F80070 /* HelloObjC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CD88F4C1517200D00F80070 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CD88F4D1517200D00F80070 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CD88F4F1517200D00F80070 /* HelloObjC */ = {
+			isa = PBXGroup;
+			children = (
+				2CD88F5B1517205E00F80070 /* YFPoint2D.h */,
+				2CD88F5C1517205E00F80070 /* YFPoint2D.m */,
+				2CD88F501517200D00F80070 /* main.m */,
+				2CD88F541517200D00F80070 /* HelloObjC.1 */,
+				2CD88F521517200D00F80070 /* Supporting Files */,
+			);
+			path = HelloObjC;
+			sourceTree = "<group>";
+		};
+		2CD88F521517200D00F80070 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CD88F531517200D00F80070 /* HelloObjC-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CD88F481517200D00F80070 /* HelloObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CD88F581517200D00F80070 /* Build configuration list for PBXNativeTarget "HelloObjC" */;
+			buildPhases = (
+				2CD88F451517200D00F80070 /* Sources */,
+				2CD88F461517200D00F80070 /* Frameworks */,
+				2CD88F471517200D00F80070 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloObjC;
+			productName = HelloObjC;
+			productReference = 2CD88F491517200D00F80070 /* HelloObjC */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CD88F401517200D00F80070 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2CD88F431517200D00F80070 /* Build configuration list for PBXProject "HelloObjC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2CD88F3E1517200D00F80070;
+			productRefGroup = 2CD88F4A1517200D00F80070 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CD88F481517200D00F80070 /* HelloObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CD88F451517200D00F80070 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD88F511517200D00F80070 /* main.m in Sources */,
+				2CD88F5D1517205E00F80070 /* YFPoint2D.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2CD88F561517200D00F80070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2CD88F571517200D00F80070 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2CD88F591517200D00F80070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloObjC/HelloObjC-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2CD88F5A1517200D00F80070 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloObjC/HelloObjC-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CD88F431517200D00F80070 /* Build configuration list for PBXProject "HelloObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CD88F561517200D00F80070 /* Debug */,
+				2CD88F571517200D00F80070 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CD88F581517200D00F80070 /* Build configuration list for PBXNativeTarget "HelloObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CD88F591517200D00F80070 /* Debug */,
+				2CD88F5A1517200D00F80070 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CD88F401517200D00F80070 /* Project object */;
+}
