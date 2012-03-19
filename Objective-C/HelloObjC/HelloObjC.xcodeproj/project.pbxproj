@@ -11,6 +11,7 @@
 		2CD88F511517200D00F80070 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD88F501517200D00F80070 /* main.m */; };
 		2CD88F551517200D00F80070 /* HelloObjC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CD88F541517200D00F80070 /* HelloObjC.1 */; };
 		2CD88F5D1517205E00F80070 /* YFPoint2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD88F5C1517205E00F80070 /* YFPoint2D.m */; };
+		2CD88F601517372900F80070 /* YFPoint3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD88F5F1517372900F80070 /* YFPoint3D.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		2CD88F541517200D00F80070 /* HelloObjC.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HelloObjC.1; sourceTree = "<group>"; };
 		2CD88F5B1517205E00F80070 /* YFPoint2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFPoint2D.h; sourceTree = "<group>"; };
 		2CD88F5C1517205E00F80070 /* YFPoint2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFPoint2D.m; sourceTree = "<group>"; };
+		2CD88F5E1517372900F80070 /* YFPoint3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFPoint3D.h; sourceTree = "<group>"; };
+		2CD88F5F1517372900F80070 /* YFPoint3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFPoint3D.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 		2CD88F4F1517200D00F80070 /* HelloObjC */ = {
 			isa = PBXGroup;
 			children = (
+				2CD88F5E1517372900F80070 /* YFPoint3D.h */,
+				2CD88F5F1517372900F80070 /* YFPoint3D.m */,
 				2CD88F5B1517205E00F80070 /* YFPoint2D.h */,
 				2CD88F5C1517205E00F80070 /* YFPoint2D.m */,
 				2CD88F501517200D00F80070 /* main.m */,
@@ -145,6 +150,7 @@
 			files = (
 				2CD88F511517200D00F80070 /* main.m in Sources */,
 				2CD88F5D1517205E00F80070 /* YFPoint2D.m in Sources */,
+				2CD88F601517372900F80070 /* YFPoint3D.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
