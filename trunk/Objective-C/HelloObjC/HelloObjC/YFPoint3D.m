@@ -9,6 +9,16 @@
 #import "YFPoint3D.h"
 
 @implementation YFPoint3D
+
+-(id) init
+{
+    if (self = [super init]) {
+        //构造代码。
+        z = -1;
+    }
+    return self;
+}
+
 -(void)setZ:(int)z_
 {
     z = z_;

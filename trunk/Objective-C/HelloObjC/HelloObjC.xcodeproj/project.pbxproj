@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C28681E1518899100630470 /* YFRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C28681D1518899100630470 /* YFRectangle.m */; };
 		2CD88F4E1517200D00F80070 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD88F4D1517200D00F80070 /* Foundation.framework */; };
 		2CD88F511517200D00F80070 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD88F501517200D00F80070 /* main.m */; };
 		2CD88F551517200D00F80070 /* HelloObjC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CD88F541517200D00F80070 /* HelloObjC.1 */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C28681C1518899100630470 /* YFRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFRectangle.h; sourceTree = "<group>"; };
+		2C28681D1518899100630470 /* YFRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFRectangle.m; sourceTree = "<group>"; };
 		2CD88F491517200D00F80070 /* HelloObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloObjC; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD88F4D1517200D00F80070 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CD88F501517200D00F80070 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 				2CD88F501517200D00F80070 /* main.m */,
 				2CD88F541517200D00F80070 /* HelloObjC.1 */,
 				2CD88F521517200D00F80070 /* Supporting Files */,
+				2C28681C1518899100630470 /* YFRectangle.h */,
+				2C28681D1518899100630470 /* YFRectangle.m */,
 			);
 			path = HelloObjC;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 				2CD88F511517200D00F80070 /* main.m in Sources */,
 				2CD88F5D1517205E00F80070 /* YFPoint2D.m in Sources */,
 				2CD88F601517372900F80070 /* YFPoint3D.m in Sources */,
+				2C28681E1518899100630470 /* YFRectangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +247,7 @@
 				2CD88F5A1517200D00F80070 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

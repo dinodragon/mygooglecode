@@ -10,6 +10,16 @@
 
 @implementation YFPoint2D
 
+-(id) init
+{
+    if (self = [super init]) {
+        //构造代码。
+        x = -1;
+        y = -1;
+    }
+return self;
+}
+
 -(void) show
 {
     NSLog(@"Point2d:\rX:%d,Y:%d",self->x,self->y);
@@ -29,5 +39,10 @@
 {
     self->x = a_;
     self->y = y_;	
+}
+
+-(NSString *)description
+{
+    return @"I'm Point2d.";
 }
 @end
