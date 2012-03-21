@@ -15,6 +15,16 @@
 		2CD88F601517372900F80070 /* YFPoint3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD88F5F1517372900F80070 /* YFPoint3D.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2C2868681519827100630470 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C2868641519827000630470 /* HelloFoundationKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C2868521519827000630470;
+			remoteInfo = HelloFoundationKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		2CD88F471517200D00F80070 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -31,6 +41,7 @@
 /* Begin PBXFileReference section */
 		2C28681C1518899100630470 /* YFRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFRectangle.h; sourceTree = "<group>"; };
 		2C28681D1518899100630470 /* YFRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFRectangle.m; sourceTree = "<group>"; };
+		2C2868641519827000630470 /* HelloFoundationKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HelloFoundationKit.xcodeproj; path = HelloFoundationKit/HelloFoundationKit.xcodeproj; sourceTree = "<group>"; };
 		2CD88F491517200D00F80070 /* HelloObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloObjC; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD88F4D1517200D00F80070 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CD88F501517200D00F80070 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,12 +65,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2CD88F3E1517200D00F80070 = {
+		2C2868651519827000630470 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C2868691519827100630470 /* HelloFoundationKit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C28686C151982AF00630470 /* se8 */ = {
+			isa = PBXGroup;
+			children = (
+				2C2868641519827000630470 /* HelloFoundationKit.xcodeproj */,
+			);
+			name = se8;
+			sourceTree = "<group>";
+		};
+		2C28686D151982EE00630470 /* basic */ = {
 			isa = PBXGroup;
 			children = (
 				2CD88F4F1517200D00F80070 /* HelloObjC */,
 				2CD88F4C1517200D00F80070 /* Frameworks */,
 				2CD88F4A1517200D00F80070 /* Products */,
+			);
+			name = basic;
+			sourceTree = "<group>";
+		};
+		2CD88F3E1517200D00F80070 = {
+			isa = PBXGroup;
+			children = (
+				2C28686D151982EE00630470 /* basic */,
+				2C28686C151982AF00630470 /* se8 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,12 +177,28 @@
 			mainGroup = 2CD88F3E1517200D00F80070;
 			productRefGroup = 2CD88F4A1517200D00F80070 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2C2868651519827000630470 /* Products */;
+					ProjectRef = 2C2868641519827000630470 /* HelloFoundationKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2CD88F481517200D00F80070 /* HelloObjC */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2C2868691519827100630470 /* HelloFoundationKit */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = HelloFoundationKit;
+			remoteRef = 2C2868681519827100630470 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2CD88F451517200D00F80070 /* Sources */ = {

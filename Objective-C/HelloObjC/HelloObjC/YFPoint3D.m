@@ -34,4 +34,9 @@
     [super setX:a_ setY:b_];
     [self setZ:z_];
 }
++(int) getInitValue
+{
+    return -1;
+    //return z;
+}
 @end

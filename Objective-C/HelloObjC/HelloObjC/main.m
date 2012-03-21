@@ -19,7 +19,7 @@ void fun(YFPoint2D * point)
 
 int main(int argc, const char * argv[])
 {
-
+    
     @autoreleasepool {
         
         // insert code here...
@@ -34,6 +34,8 @@ int main(int argc, const char * argv[])
         [obj3 show];
         fun(obj3);
         NSLog(@"%@",obj3);
+        
+        NSLog(@"Init value:%d",[YFPoint3D getInitValue]);
     }
     return 0;
 }
