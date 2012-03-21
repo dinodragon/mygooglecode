@@ -15,5 +15,8 @@
 
 -(void) setZ:(int)z;
 -(void) show;
+//-开头的方法叫实例方法。
 -(void) setX:(int)a_ setY:(int)b_ setZ:(int)z_;
+//+开头的方法叫类方法(class method).相当于静态方法,不通过类实例调用，本质上是没有传入self指针。
++(int) getInitValue; 
 @end
