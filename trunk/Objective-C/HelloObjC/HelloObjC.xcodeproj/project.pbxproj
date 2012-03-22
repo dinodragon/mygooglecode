@@ -23,6 +23,20 @@
 			remoteGlobalIDString = 2C2868521519827000630470;
 			remoteInfo = HelloFoundationKit;
 		};
+		2CDF0CEA151AFBF50094D241 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CDF0CE6151AFBF30094D241 /* helloproperty.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2CDF0CD4151AFBF30094D241;
+			remoteInfo = helloproperty;
+		};
+		2CDF0D22151B1E4C0094D241 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CDF0D1E151B1E450094D241 /* HelloAppKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2CDF0CFD151B1E450094D241;
+			remoteInfo = HelloAppKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +65,8 @@
 		2CD88F5C1517205E00F80070 /* YFPoint2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFPoint2D.m; sourceTree = "<group>"; };
 		2CD88F5E1517372900F80070 /* YFPoint3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFPoint3D.h; sourceTree = "<group>"; };
 		2CD88F5F1517372900F80070 /* YFPoint3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFPoint3D.m; sourceTree = "<group>"; };
+		2CDF0CE6151AFBF30094D241 /* helloproperty.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = helloproperty.xcodeproj; path = helloproperty/helloproperty.xcodeproj; sourceTree = "<group>"; };
+		2CDF0D1E151B1E450094D241 /* HelloAppKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HelloAppKit.xcodeproj; path = HelloAppKit/HelloAppKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +112,8 @@
 			children = (
 				2C28686D151982EE00630470 /* basic */,
 				2C28686C151982AF00630470 /* se8 */,
+				2CDF0CC8151AFBA90094D241 /* se11 */,
+				2CDF0CF1151B1DC30094D241 /* AppKit */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +157,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2CDF0CC8151AFBA90094D241 /* se11 */ = {
+			isa = PBXGroup;
+			children = (
+				2CDF0CE6151AFBF30094D241 /* helloproperty.xcodeproj */,
+			);
+			name = se11;
+			sourceTree = "<group>";
+		};
+		2CDF0CE7151AFBF30094D241 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CDF0CEB151AFBF50094D241 /* helloproperty */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CDF0CF1151B1DC30094D241 /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				2CDF0D1E151B1E450094D241 /* HelloAppKit.xcodeproj */,
+			);
+			name = AppKit;
+			sourceTree = "<group>";
+		};
+		2CDF0D1F151B1E450094D241 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CDF0D23151B1E4C0094D241 /* HelloAppKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,8 +229,16 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 2CDF0D1F151B1E450094D241 /* Products */;
+					ProjectRef = 2CDF0D1E151B1E450094D241 /* HelloAppKit.xcodeproj */;
+				},
+				{
 					ProductGroup = 2C2868651519827000630470 /* Products */;
 					ProjectRef = 2C2868641519827000630470 /* HelloFoundationKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 2CDF0CE7151AFBF30094D241 /* Products */;
+					ProjectRef = 2CDF0CE6151AFBF30094D241 /* helloproperty.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -196,6 +254,20 @@
 			fileType = "compiled.mach-o.executable";
 			path = HelloFoundationKit;
 			remoteRef = 2C2868681519827100630470 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2CDF0CEB151AFBF50094D241 /* helloproperty */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = helloproperty;
+			remoteRef = 2CDF0CEA151AFBF50094D241 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2CDF0D23151B1E4C0094D241 /* HelloAppKit.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HelloAppKit.app;
+			remoteRef = 2CDF0D22151B1E4C0094D241 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
