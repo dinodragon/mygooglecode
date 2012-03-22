@@ -24,7 +24,7 @@
     z = z_;
 }
 
--(void)show;
+-(void)show
 {
     NSLog(@"Point3d:\rX:%d,Y:%d,Z:%d",self->x,self->y,z);
 }
@@ -34,9 +34,17 @@
     [super setX:a_ setY:b_];
     [self setZ:z_];
 }
+
 +(int) getInitValue
 {
     return -1;
     //return z;
+}
+
+//相当于析构函数。
+-(void) dealloc
+{
+    NSLog(@"Call dealloc");
+    //[super dealloc];
 }
 @end

@@ -29,12 +29,14 @@ int main(int argc, const char * argv[])
         [obj2 show]; 
         fun(obj2);
         
-        YFPoint3D *obj3 = [YFPoint3D new];
+        //YFPoint3D *obj3 = [YFPoint3D new];
+        YFPoint3D *obj3 = [[YFPoint3D alloc] init];
         [obj3 setX:5 setY:6 setZ:7];
         [obj3 show];
         fun(obj3);
         NSLog(@"%@",obj3);
-        
+        //编译不过，提示在自动引用记数模式下，不能直接调用。
+        //[obj3 retain];
         NSLog(@"Init value:%d",[YFPoint3D getInitValue]);
     }
     return 0;
