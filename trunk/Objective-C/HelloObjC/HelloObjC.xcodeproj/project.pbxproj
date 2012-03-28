@@ -23,6 +23,13 @@
 			remoteGlobalIDString = 2C2868521519827000630470;
 			remoteInfo = HelloFoundationKit;
 		};
+		2CD5C47F15203F8B00CF3214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CD5C47B15203F8100CF3214 /* HelloApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2CD5C45A15203F7A00CF3214;
+			remoteInfo = HelloApp;
+		};
 		2CDF0CEA151AFBF50094D241 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2CDF0CE6151AFBF30094D241 /* helloproperty.xcodeproj */;
@@ -56,6 +63,7 @@
 		2C28681C1518899100630470 /* YFRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFRectangle.h; sourceTree = "<group>"; };
 		2C28681D1518899100630470 /* YFRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFRectangle.m; sourceTree = "<group>"; };
 		2C2868641519827000630470 /* HelloFoundationKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HelloFoundationKit.xcodeproj; path = HelloFoundationKit/HelloFoundationKit.xcodeproj; sourceTree = "<group>"; };
+		2CD5C47B15203F8100CF3214 /* HelloApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HelloApp.xcodeproj; path = HelloApp/HelloApp.xcodeproj; sourceTree = "<group>"; };
 		2CD88F491517200D00F80070 /* HelloObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloObjC; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD88F4D1517200D00F80070 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CD88F501517200D00F80070 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,6 +113,14 @@
 				2CD88F4A1517200D00F80070 /* Products */,
 			);
 			name = basic;
+			sourceTree = "<group>";
+		};
+		2CD5C47C15203F8100CF3214 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CD5C48015203F8B00CF3214 /* HelloApp.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		2CD88F3E1517200D00F80070 = {
@@ -176,6 +192,7 @@
 		2CDF0CF1151B1DC30094D241 /* AppKit */ = {
 			isa = PBXGroup;
 			children = (
+				2CD5C47B15203F8100CF3214 /* HelloApp.xcodeproj */,
 				2CDF0D1E151B1E450094D241 /* HelloAppKit.xcodeproj */,
 			);
 			name = AppKit;
@@ -229,6 +246,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 2CD5C47C15203F8100CF3214 /* Products */;
+					ProjectRef = 2CD5C47B15203F8100CF3214 /* HelloApp.xcodeproj */;
+				},
+				{
 					ProductGroup = 2CDF0D1F151B1E450094D241 /* Products */;
 					ProjectRef = 2CDF0D1E151B1E450094D241 /* HelloAppKit.xcodeproj */;
 				},
@@ -254,6 +275,13 @@
 			fileType = "compiled.mach-o.executable";
 			path = HelloFoundationKit;
 			remoteRef = 2C2868681519827100630470 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2CD5C48015203F8B00CF3214 /* HelloApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HelloApp.app;
+			remoteRef = 2CD5C47F15203F8B00CF3214 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		2CDF0CEB151AFBF50094D241 /* helloproperty */ = {

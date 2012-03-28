@@ -45,6 +45,6 @@
 -(void) dealloc
 {
     NSLog(@"Call dealloc");
-    //[super dealloc];
+    //[super dealloc]; //自动回收打开时不能打开。
 }
 @end
