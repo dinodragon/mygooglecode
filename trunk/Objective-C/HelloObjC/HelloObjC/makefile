@@ -1,4 +1,4 @@
-CC = gcc -DCLANG_ENABLE_OBJC_ARC=YES
+CC = clang -fobjc-arc
 mainexe:YFPoint2D.o YFPoint3D.o YFRectangle.o main.o
 	${CC} -o mainexe -framework Cocoa main.o YFPoint2D.o YFPoint3D.o YFRectangle.o
 YFPoint2D.o:YFPoint2D.m YFPoint2D.h
