@@ -11,3 +11,4 @@ main.o:main.m
 	${CC} -c main.m
 clean:
 	rm -f *.o
+	rm -f mainexe
