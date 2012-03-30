@@ -14,7 +14,6 @@
 		2CDF0D15151B1E450094D241 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDF0D14151B1E450094D241 /* AppDelegate.m */; };
 		2CDF0D18151B1E450094D241 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDF0D16151B1E450094D241 /* MainMenu.xib */; };
 		2CDF0D26151B223D0094D241 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDF0D25151B223D0094D241 /* AppController.m */; };
-		2CF3F73115231611003C0825 /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF3F73015231610003C0825 /* Application.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		2CDF0D17151B1E450094D241 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2CDF0D24151B223D0094D241 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		2CDF0D25151B223D0094D241 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
-		2CF3F73015231610003C0825 /* Application.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Application.xib; path = ../Application.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +85,6 @@
 		2CDF0D07151B1E450094D241 /* HelloAppKit */ = {
 			isa = PBXGroup;
 			children = (
-				2CF3F73015231610003C0825 /* Application.xib */,
 				2CDF0D13151B1E450094D241 /* AppDelegate.h */,
 				2CDF0D14151B1E450094D241 /* AppDelegate.m */,
 				2CDF0D16151B1E450094D241 /* MainMenu.xib */,
@@ -163,7 +160,6 @@
 				2CDF0D0C151B1E450094D241 /* InfoPlist.strings in Resources */,
 				2CDF0D12151B1E450094D241 /* Credits.rtf in Resources */,
 				2CDF0D18151B1E450094D241 /* MainMenu.xib in Resources */,
-				2CF3F73115231611003C0825 /* Application.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

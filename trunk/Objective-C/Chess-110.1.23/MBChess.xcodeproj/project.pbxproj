@@ -32,9 +32,7 @@
 		950BD12B0A1E582B00395116 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		950BD12C0A1E582B00395116 /* bug.opn in Resources */ = {isa = PBXBuildFile; fileRef = F5775A1C02F917A901D8996C /* bug.opn */; };
 		950BD12D0A1E582B00395116 /* losers.opn in Resources */ = {isa = PBXBuildFile; fileRef = F5775A1D02F917A901D8996C /* losers.opn */; };
-		950BD12E0A1E582B00395116 /* nbook.db in Resources */ = {isa = PBXBuildFile; fileRef = F5775A1E02F917A901D8996C /* nbook.db */; };
 		950BD12F0A1E582B00395116 /* suicide.opn in Resources */ = {isa = PBXBuildFile; fileRef = F5775A1F02F917A901D8996C /* suicide.opn */; };
-		950BD1300A1E582B00395116 /* zbook.db in Resources */ = {isa = PBXBuildFile; fileRef = F5775A2002F917A901D8996C /* zbook.db */; };
 		950BD1420A1E582B00395116 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = F598AC41035A958501000102 /* Defaults.plist */; };
 		950BD1430A1E582B00395116 /* chess.icns in Resources */ = {isa = PBXBuildFile; fileRef = 95C10123043A066700CA17DD /* chess.icns */; };
 		950BD1450A1E582B00395116 /* sjeng.rc in Resources */ = {isa = PBXBuildFile; fileRef = 9595B6C00458E2CD00A8D2EE /* sjeng.rc */; };
@@ -158,9 +156,7 @@
 		95844CB00A670C280068CA82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		95844CB10A670C280068CA82 /* bug.opn in Resources */ = {isa = PBXBuildFile; fileRef = F5775A1C02F917A901D8996C /* bug.opn */; };
 		95844CB20A670C280068CA82 /* losers.opn in Resources */ = {isa = PBXBuildFile; fileRef = F5775A1D02F917A901D8996C /* losers.opn */; };
-		95844CB30A670C280068CA82 /* nbook.db in Resources */ = {isa = PBXBuildFile; fileRef = F5775A1E02F917A901D8996C /* nbook.db */; };
 		95844CB40A670C280068CA82 /* suicide.opn in Resources */ = {isa = PBXBuildFile; fileRef = F5775A1F02F917A901D8996C /* suicide.opn */; };
-		95844CB50A670C280068CA82 /* zbook.db in Resources */ = {isa = PBXBuildFile; fileRef = F5775A2002F917A901D8996C /* zbook.db */; };
 		95844CC70A670C280068CA82 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = F598AC41035A958501000102 /* Defaults.plist */; };
 		95844CC80A670C280068CA82 /* chess.icns in Resources */ = {isa = PBXBuildFile; fileRef = 95C10123043A066700CA17DD /* chess.icns */; };
 		95844CCA0A670C280068CA82 /* sjeng.rc in Resources */ = {isa = PBXBuildFile; fileRef = 9595B6C00458E2CD00A8D2EE /* sjeng.rc */; };
@@ -212,20 +208,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		950BD1120A1E582B00395116 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 95B4EDD204F3081E005E79F8;
-			remoteInfo = "Opening Books";
-		};
-		95844C940A670C280068CA82 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 95B4EDD204F3081E005E79F8;
-			remoteInfo = "Opening Books";
-		};
 		95844CF40A670C4E0068CA82 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -371,9 +353,7 @@
 		F5775A1A02F9176F01D8996C /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Sources/main.m; sourceTree = "<group>"; };
 		F5775A1C02F917A901D8996C /* bug.opn */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = bug.opn; path = sjeng/books/bug.opn; sourceTree = "<group>"; };
 		F5775A1D02F917A901D8996C /* losers.opn */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = losers.opn; path = sjeng/books/losers.opn; sourceTree = "<group>"; };
-		F5775A1E02F917A901D8996C /* nbook.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = nbook.db; path = sjeng/books/nbook.db; sourceTree = "<group>"; };
 		F5775A1F02F917A901D8996C /* suicide.opn */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = suicide.opn; path = sjeng/books/suicide.opn; sourceTree = "<group>"; };
-		F5775A2002F917A901D8996C /* zbook.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = zbook.db; path = sjeng/books/zbook.db; sourceTree = "<group>"; };
 		F598AC41035A958501000102 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = Defaults.plist; path = Resources/Defaults.plist; sourceTree = "<group>"; };
 		F5A165400310660F01D39A8B /* MBCBoardViewMouse.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MBCBoardViewMouse.h; path = Sources/MBCBoardViewMouse.h; sourceTree = "<group>"; };
 		F5A165410310661001D39A8B /* MBCBoardViewMouse.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MBCBoardViewMouse.mm; path = Sources/MBCBoardViewMouse.mm; sourceTree = "<group>"; };
@@ -563,9 +543,7 @@
 				95D4D5191327E29E0063FA06 /* Spoken.strings */,
 				F5775A1C02F917A901D8996C /* bug.opn */,
 				F5775A1D02F917A901D8996C /* losers.opn */,
-				F5775A1E02F917A901D8996C /* nbook.db */,
 				F5775A1F02F917A901D8996C /* suicide.opn */,
-				F5775A2002F917A901D8996C /* zbook.db */,
 				9595B6C00458E2CD00A8D2EE /* sjeng.rc */,
 				F598AC41035A958501000102 /* Defaults.plist */,
 				9586675C048AF5A5007B50FB /* handCursor.tiff */,
@@ -721,23 +699,6 @@
 		};
 /* End PBXHeadersBuildPhase section */
 
-/* Begin PBXLegacyTarget section */
-		95B4EDD204F3081E005E79F8 /* Opening Books */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = $ACTION;
-			buildConfigurationList = 950BD1760A1E582C00395116 /* Build configuration list for PBXLegacyTarget "Opening Books" */;
-			buildPhases = (
-			);
-			buildToolPath = /usr/bin/gnumake;
-			buildWorkingDirectory = "$(SRCROOT)/sjeng/books";
-			dependencies = (
-			);
-			name = "Opening Books";
-			passBuildSettingsInEnvironment = 1;
-			productName = "Opening Books";
-		};
-/* End PBXLegacyTarget section */
-
 /* Begin PBXNativeTarget section */
 		950BD10E0A1E582B00395116 /* MBChess */ = {
 			isa = PBXNativeTarget;
@@ -754,7 +715,6 @@
 			);
 			dependencies = (
 				95844CF70A670C530068CA82 /* PBXTargetDependency */,
-				950BD1110A1E582B00395116 /* PBXTargetDependency */,
 			);
 			name = MBChess;
 			productInstallPath = "$(SYSTEM_APPS_DIR)";
@@ -794,7 +754,6 @@
 			);
 			dependencies = (
 				95844CF50A670C4E0068CA82 /* PBXTargetDependency */,
-				95844C930A670C280068CA82 /* PBXTargetDependency */,
 			);
 			name = ChessTuner;
 			productInstallPath = "$(SYSTEM_APPS_DIR)";
@@ -824,7 +783,6 @@
 				950BD10E0A1E582B00395116 /* MBChess */,
 				95844C920A670C280068CA82 /* ChessTuner */,
 				95844C6B0A670C1E0068CA82 /* sjeng */,
-				95B4EDD204F3081E005E79F8 /* Opening Books */,
 			);
 		};
 /* End PBXProject section */
@@ -839,9 +797,7 @@
 				950BD12B0A1E582B00395116 /* InfoPlist.strings in Resources */,
 				950BD12C0A1E582B00395116 /* bug.opn in Resources */,
 				950BD12D0A1E582B00395116 /* losers.opn in Resources */,
-				950BD12E0A1E582B00395116 /* nbook.db in Resources */,
 				950BD12F0A1E582B00395116 /* suicide.opn in Resources */,
-				950BD1300A1E582B00395116 /* zbook.db in Resources */,
 				950BD1420A1E582B00395116 /* Defaults.plist in Resources */,
 				950BD1430A1E582B00395116 /* chess.icns in Resources */,
 				959212FB12B0676D0021B5BA /* COPYING in Resources */,
@@ -880,9 +836,7 @@
 				95844CB00A670C280068CA82 /* InfoPlist.strings in Resources */,
 				95844CB10A670C280068CA82 /* bug.opn in Resources */,
 				95844CB20A670C280068CA82 /* losers.opn in Resources */,
-				95844CB30A670C280068CA82 /* nbook.db in Resources */,
 				95844CB40A670C280068CA82 /* suicide.opn in Resources */,
-				95844CB50A670C280068CA82 /* zbook.db in Resources */,
 				95844CC70A670C280068CA82 /* Defaults.plist in Resources */,
 				95844CC80A670C280068CA82 /* chess.icns in Resources */,
 				959212FC12B0676D0021B5BA /* COPYING in Resources */,
@@ -1000,16 +954,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		950BD1110A1E582B00395116 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 95B4EDD204F3081E005E79F8 /* Opening Books */;
-			targetProxy = 950BD1120A1E582B00395116 /* PBXContainerItemProxy */;
-		};
-		95844C930A670C280068CA82 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 95B4EDD204F3081E005E79F8 /* Opening Books */;
-			targetProxy = 95844C940A670C280068CA82 /* PBXContainerItemProxy */;
-		};
 		95844CF50A670C4E0068CA82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 95844C6B0A670C1E0068CA82 /* sjeng */;
@@ -1173,63 +1117,6 @@
 				);
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
-			};
-			name = Default;
-		};
-		950BD1770A1E582C00395116 /* Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "Opening Books";
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				ZERO_LINK = YES;
-			};
-			name = Development;
-		};
-		950BD1780A1E582C00395116 /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "Opening Books";
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				ZERO_LINK = NO;
-			};
-			name = Deployment;
-		};
-		950BD1790A1E582C00395116 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "Opening Books";
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 			};
 			name = Default;
 		};
@@ -1418,16 +1305,6 @@
 				950BD16C0A1E582B00395116 /* Development */,
 				950BD16D0A1E582B00395116 /* Deployment */,
 				950BD16E0A1E582B00395116 /* Default */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
-		};
-		950BD1760A1E582C00395116 /* Build configuration list for PBXLegacyTarget "Opening Books" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				950BD1770A1E582C00395116 /* Development */,
-				950BD1780A1E582C00395116 /* Deployment */,
-				950BD1790A1E582C00395116 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;

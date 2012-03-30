@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
     [win setTitle:@"HelloWin Test"];
     [win makeKeyAndOrderFront:win];
     [win makeMainWindow];
+    NSMenu *menu 
     //Start the event loop by calling NSApp run
     [NSApp run];
     [pool drain];

@@ -26,7 +26,8 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-#import <CoreFoundation/CFLogUtilities.h>
+//#import <CoreFoundation/CFLogUtilities.h>
+#import <Foundation/Foundation.h>
 
 NSString * kMBCBoardAngle		= @"MBCBoardAngle";
 NSString * kMBCBoardSpin		= @"MBCBoardSpin";
@@ -513,9 +514,10 @@ static id	sInstance;
 		// excessively.
 		//
 		NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-		CFLogTest(0, 
-				  CFSTR("Iteration:%d Message: Running test 0 [Draw Board]"), 
-				  ++iteration);
+//		CFLogTest(0, 
+//				  CFSTR("Iteration:%d Message: Running test 0 [Draw Board]"), 
+//				  ++iteration);
+        ++iteration;
 		[fView profileDraw];
 		[pool release];
 	} while (-[startTest timeIntervalSinceNow] < duration);
