@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2CD5C45F15203F7B00CF3214 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD5C45E15203F7B00CF3214 /* Cocoa.framework */; };
 		2CD5C46B15203F7C00CF3214 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD5C46A15203F7C00CF3214 /* main.m */; };
+		2CFE0D181532F5C3005E7823 /* MyApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE0D171532F5C3005E7823 /* MyApp.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2CD5C46315203F7B00CF3214 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CD5C46A15203F7C00CF3214 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2CD5C46C15203F7C00CF3214 /* HelloApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloApp-Prefix.pch"; sourceTree = "<group>"; };
+		2CFE0D171532F5C3005E7823 /* MyApp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyApp.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				2CD5C46A15203F7C00CF3214 /* main.m */,
 				2CD5C46515203F7C00CF3214 /* Supporting Files */,
+				2CFE0D171532F5C3005E7823 /* MyApp.xib */,
 			);
 			path = HelloApp;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFE0D181532F5C3005E7823 /* MyApp.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
