@@ -14,6 +14,8 @@
 		2C8B7B47152EF0AE00AA9EB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B7B46152EF0AE00AA9EB8 /* AppDelegate.m */; };
 		2C8B7B4A152EF0AF00AA9EB8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B7B48152EF0AF00AA9EB8 /* MainMenu.xib */; };
 		2C8B7B58152EF13300AA9EB8 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B7B57152EF13300AA9EB8 /* AppController.m */; };
+		2C9377BC15359C53006EC7D3 /* qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9377BA15359C53006EC7D3 /* qq.png */; };
+		2C9377BD15359C53006EC7D3 /* qq2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9377BB15359C53006EC7D3 /* qq2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		2C8B7B49152EF0AF00AA9EB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2C8B7B56152EF13300AA9EB8 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		2C8B7B57152EF13300AA9EB8 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		2C9377BA15359C53006EC7D3 /* qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq.png; sourceTree = "<group>"; };
+		2C9377BB15359C53006EC7D3 /* qq2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 		2C8B7B39152EF0AE00AA9EB8 /* todoList */ = {
 			isa = PBXGroup;
 			children = (
+				2C9377BA15359C53006EC7D3 /* qq.png */,
+				2C9377BB15359C53006EC7D3 /* qq2.png */,
 				2C8B7B45152EF0AE00AA9EB8 /* AppDelegate.h */,
 				2C8B7B46152EF0AE00AA9EB8 /* AppDelegate.m */,
 				2C8B7B48152EF0AF00AA9EB8 /* MainMenu.xib */,
@@ -160,6 +166,8 @@
 				2C8B7B3E152EF0AE00AA9EB8 /* InfoPlist.strings in Resources */,
 				2C8B7B44152EF0AE00AA9EB8 /* Credits.rtf in Resources */,
 				2C8B7B4A152EF0AF00AA9EB8 /* MainMenu.xib in Resources */,
+				2C9377BC15359C53006EC7D3 /* qq.png in Resources */,
+				2C9377BD15359C53006EC7D3 /* qq2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +302,7 @@
 				2C8B7B4F152EF0AF00AA9EB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

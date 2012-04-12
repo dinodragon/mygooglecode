@@ -1,0 +1,234 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CA451741533E0B1003CB75A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA451731533E0B1003CB75A /* Foundation.framework */; };
+		2CA451771533E0B1003CB75A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA451761533E0B1003CB75A /* main.m */; };
+		2CA4517B1533E0B1003CB75A /* helloKVC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CA4517A1533E0B1003CB75A /* helloKVC.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CA4516D1533E0B1003CB75A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				2CA4517B1533E0B1003CB75A /* helloKVC.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2CA4516F1533E0B1003CB75A /* helloKVC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = helloKVC; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CA451731533E0B1003CB75A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2CA451761533E0B1003CB75A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CA451791533E0B1003CB75A /* helloKVC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "helloKVC-Prefix.pch"; sourceTree = "<group>"; };
+		2CA4517A1533E0B1003CB75A /* helloKVC.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = helloKVC.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CA4516C1533E0B1003CB75A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CA451741533E0B1003CB75A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CA451641533E0B1003CB75A = {
+			isa = PBXGroup;
+			children = (
+				2CA451751533E0B1003CB75A /* helloKVC */,
+				2CA451721533E0B1003CB75A /* Frameworks */,
+				2CA451701533E0B1003CB75A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CA451701533E0B1003CB75A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CA4516F1533E0B1003CB75A /* helloKVC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CA451721533E0B1003CB75A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CA451731533E0B1003CB75A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CA451751533E0B1003CB75A /* helloKVC */ = {
+			isa = PBXGroup;
+			children = (
+				2CA451761533E0B1003CB75A /* main.m */,
+				2CA4517A1533E0B1003CB75A /* helloKVC.1 */,
+				2CA451781533E0B1003CB75A /* Supporting Files */,
+			);
+			path = helloKVC;
+			sourceTree = "<group>";
+		};
+		2CA451781533E0B1003CB75A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CA451791533E0B1003CB75A /* helloKVC-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CA4516E1533E0B1003CB75A /* helloKVC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CA4517E1533E0B1003CB75A /* Build configuration list for PBXNativeTarget "helloKVC" */;
+			buildPhases = (
+				2CA4516B1533E0B1003CB75A /* Sources */,
+				2CA4516C1533E0B1003CB75A /* Frameworks */,
+				2CA4516D1533E0B1003CB75A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = helloKVC;
+			productName = helloKVC;
+			productReference = 2CA4516F1533E0B1003CB75A /* helloKVC */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CA451661533E0B1003CB75A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2CA451691533E0B1003CB75A /* Build configuration list for PBXProject "helloKVC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2CA451641533E0B1003CB75A;
+			productRefGroup = 2CA451701533E0B1003CB75A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CA4516E1533E0B1003CB75A /* helloKVC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CA4516B1533E0B1003CB75A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CA451771533E0B1003CB75A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2CA4517C1533E0B1003CB75A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2CA4517D1533E0B1003CB75A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2CA4517F1533E0B1003CB75A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "helloKVC/helloKVC-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2CA451801533E0B1003CB75A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "helloKVC/helloKVC-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CA451691533E0B1003CB75A /* Build configuration list for PBXProject "helloKVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA4517C1533E0B1003CB75A /* Debug */,
+				2CA4517D1533E0B1003CB75A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CA4517E1533E0B1003CB75A /* Build configuration list for PBXNativeTarget "helloKVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA4517F1533E0B1003CB75A /* Debug */,
+				2CA451801533E0B1003CB75A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CA451661533E0B1003CB75A /* Project object */;
+}

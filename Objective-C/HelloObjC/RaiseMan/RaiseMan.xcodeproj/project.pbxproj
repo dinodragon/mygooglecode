@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C633B4A1536B11900A7EDD9 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C633B481536B11900A7EDD9 /* Document.xib */; };
+		2C633B4E1536C79800A7EDD9 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C633B4D1536C79800A7EDD9 /* Person.m */; };
+		2C8FE39D15343C240068D654 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8FE39C15343C240068D654 /* Cocoa.framework */; };
+		2C8FE3A715343C240068D654 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C8FE3A515343C240068D654 /* InfoPlist.strings */; };
+		2C8FE3A915343C240068D654 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8FE3A815343C240068D654 /* main.m */; };
+		2C8FE3AD15343C240068D654 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2C8FE3AB15343C240068D654 /* Credits.rtf */; };
+		2C8FE3B015343C240068D654 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8FE3AF15343C240068D654 /* Document.m */; };
+		2C8FE3B615343C240068D654 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8FE3B415343C240068D654 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C633B491536B11900A7EDD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Document.xib; sourceTree = "<group>"; };
+		2C633B4C1536C79800A7EDD9 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		2C633B4D1536C79800A7EDD9 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		2C8FE39815343C240068D654 /* RaiseMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiseMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C8FE39C15343C240068D654 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2C8FE39F15343C240068D654 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2C8FE3A015343C240068D654 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2C8FE3A115343C240068D654 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2C8FE3A415343C240068D654 /* RaiseMan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RaiseMan-Info.plist"; sourceTree = "<group>"; };
+		2C8FE3A615343C240068D654 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C8FE3A815343C240068D654 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C8FE3AA15343C240068D654 /* RaiseMan-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RaiseMan-Prefix.pch"; sourceTree = "<group>"; };
+		2C8FE3AC15343C240068D654 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2C8FE3AE15343C240068D654 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		2C8FE3AF15343C240068D654 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		2C8FE3B515343C240068D654 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C8FE39515343C240068D654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C8FE39D15343C240068D654 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C8FE38D15343C240068D654 = {
+			isa = PBXGroup;
+			children = (
+				2C8FE3A215343C240068D654 /* RaiseMan */,
+				2C8FE39B15343C240068D654 /* Frameworks */,
+				2C8FE39915343C240068D654 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C8FE39915343C240068D654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C8FE39815343C240068D654 /* RaiseMan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C8FE39B15343C240068D654 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C8FE39C15343C240068D654 /* Cocoa.framework */,
+				2C8FE39E15343C240068D654 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C8FE39E15343C240068D654 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C8FE39F15343C240068D654 /* AppKit.framework */,
+				2C8FE3A015343C240068D654 /* CoreData.framework */,
+				2C8FE3A115343C240068D654 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		2C8FE3A215343C240068D654 /* RaiseMan */ = {
+			isa = PBXGroup;
+			children = (
+				2C8FE3AE15343C240068D654 /* Document.h */,
+				2C8FE3AF15343C240068D654 /* Document.m */,
+				2C633B481536B11900A7EDD9 /* Document.xib */,
+				2C8FE3B415343C240068D654 /* MainMenu.xib */,
+				2C8FE3A315343C240068D654 /* Supporting Files */,
+				2C633B4C1536C79800A7EDD9 /* Person.h */,
+				2C633B4D1536C79800A7EDD9 /* Person.m */,
+			);
+			path = RaiseMan;
+			sourceTree = "<group>";
+		};
+		2C8FE3A315343C240068D654 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C8FE3A415343C240068D654 /* RaiseMan-Info.plist */,
+				2C8FE3A515343C240068D654 /* InfoPlist.strings */,
+				2C8FE3A815343C240068D654 /* main.m */,
+				2C8FE3AA15343C240068D654 /* RaiseMan-Prefix.pch */,
+				2C8FE3AB15343C240068D654 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C8FE39715343C240068D654 /* RaiseMan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C8FE3B915343C240068D654 /* Build configuration list for PBXNativeTarget "RaiseMan" */;
+			buildPhases = (
+				2C8FE39415343C240068D654 /* Sources */,
+				2C8FE39515343C240068D654 /* Frameworks */,
+				2C8FE39615343C240068D654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaiseMan;
+			productName = RaiseMan;
+			productReference = 2C8FE39815343C240068D654 /* RaiseMan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C8FE38F15343C240068D654 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2C8FE39215343C240068D654 /* Build configuration list for PBXProject "RaiseMan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2C8FE38D15343C240068D654;
+			productRefGroup = 2C8FE39915343C240068D654 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C8FE39715343C240068D654 /* RaiseMan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C8FE39615343C240068D654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C8FE3A715343C240068D654 /* InfoPlist.strings in Resources */,
+				2C8FE3AD15343C240068D654 /* Credits.rtf in Resources */,
+				2C8FE3B615343C240068D654 /* MainMenu.xib in Resources */,
+				2C633B4A1536B11900A7EDD9 /* Document.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C8FE39415343C240068D654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C8FE3A915343C240068D654 /* main.m in Sources */,
+				2C8FE3B015343C240068D654 /* Document.m in Sources */,
+				2C633B4E1536C79800A7EDD9 /* Person.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C633B481536B11900A7EDD9 /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C633B491536B11900A7EDD9 /* en */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		2C8FE3A515343C240068D654 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C8FE3A615343C240068D654 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2C8FE3AB15343C240068D654 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C8FE3AC15343C240068D654 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		2C8FE3B415343C240068D654 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C8FE3B515343C240068D654 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C8FE3B715343C240068D654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2C8FE3B815343C240068D654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2C8FE3BA15343C240068D654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RaiseMan/RaiseMan-Prefix.pch";
+				INFOPLIST_FILE = "RaiseMan/RaiseMan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2C8FE3BB15343C240068D654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RaiseMan/RaiseMan-Prefix.pch";
+				INFOPLIST_FILE = "RaiseMan/RaiseMan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C8FE39215343C240068D654 /* Build configuration list for PBXProject "RaiseMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C8FE3B715343C240068D654 /* Debug */,
+				2C8FE3B815343C240068D654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C8FE3B915343C240068D654 /* Build configuration list for PBXNativeTarget "RaiseMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C8FE3BA15343C240068D654 /* Debug */,
+				2C8FE3BB15343C240068D654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C8FE38F15343C240068D654 /* Project object */;
+}
