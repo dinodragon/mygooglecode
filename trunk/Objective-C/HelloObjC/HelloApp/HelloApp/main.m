@@ -13,11 +13,24 @@
 #import <Cocoa/Cocoa.h>
 #import <Foundation/Foundation.h>
 
+void showWindow1();
+void showWindow2();
+
 int main(int argc, char *argv[])
 {
-    NSLog(@"Hello, World!");
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
     [NSApplication sharedApplication];
+    showWindow1();
+    showWindow2();
+    [NSApp run];
+    [pool drain];
+    return 0;
+}
+
+//方法一
+void showWindow1()
+{
+    //Start the event loop by calling NSApp run
     //Create the main window
     NSRect rc = NSMakeRect(0, 0, 800, 600);
     NSUInteger uiStyle = NSTitledWindowMask | NSResizableWindowMask | NSClosableWindowMask;
@@ -26,13 +39,10 @@ int main(int argc, char *argv[])
     [win setTitle:@"HelloWinTest"];
     [win makeKeyAndOrderFront:win];
     [win makeMainWindow];
-    //Start the event loop by calling NSApp run
-    
-    //演示了加载一个xib文件，这是可选的。
-    [NSBundle loadNibNamed:@"MyApp" owner:NSApp];
+}
 
-    
-    [NSApp run];
-    [pool drain];
-    return 0;
+//方法二 加载一个xib文件
+void showWindow2()
+{
+    [NSBundle loadNibNamed:@"MyApp" owner:NSApp];
 }

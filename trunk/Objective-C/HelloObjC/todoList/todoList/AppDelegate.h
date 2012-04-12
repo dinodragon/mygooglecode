@@ -9,6 +9,10 @@
 #import <Cocoa/Cocoa.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
+{
+    NSStatusItem * trayItem;
+    NSStatusItem * trayItem2;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'helloKVC' target in the 'helloKVC' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

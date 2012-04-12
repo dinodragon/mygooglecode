@@ -44,6 +44,27 @@
 			remoteGlobalIDString = 2C8B7B2F152EF0AE00AA9EB8;
 			remoteInfo = todoList;
 		};
+		2C8FE358153416C90068D654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C8FE354153416C80068D654 /* kvcWnd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C8FE333153416C70068D654;
+			remoteInfo = kvcWnd;
+		};
+		2C8FE3C015343C250068D654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C8FE3BC15343C240068D654 /* RaiseMan.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C8FE39815343C240068D654;
+			remoteInfo = RaiseMan;
+		};
+		2CA451851533E0B2003CB75A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CA451811533E0B1003CB75A /* helloKVC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2CA4516F1533E0B1003CB75A;
+			remoteInfo = helloKVC;
+		};
 		2CD5C47F15203F8B00CF3214 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2CD5C47B15203F8100CF3214 /* HelloApp.xcodeproj */;
@@ -87,6 +108,9 @@
 		2C51CDEE152D8D1B00893B57 /* ControlDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ControlDemo.xcodeproj; path = ControlDemo/ControlDemo.xcodeproj; sourceTree = "<group>"; };
 		2C51CE43152D98A600893B57 /* SayIt.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SayIt.xcodeproj; path = SayIt/SayIt.xcodeproj; sourceTree = "<group>"; };
 		2C8B7B50152EF0AF00AA9EB8 /* todoList.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = todoList.xcodeproj; path = todoList/todoList.xcodeproj; sourceTree = "<group>"; };
+		2C8FE354153416C80068D654 /* kvcWnd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = kvcWnd.xcodeproj; path = kvcWnd/kvcWnd.xcodeproj; sourceTree = "<group>"; };
+		2C8FE3BC15343C240068D654 /* RaiseMan.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RaiseMan.xcodeproj; path = RaiseMan/RaiseMan.xcodeproj; sourceTree = "<group>"; };
+		2CA451811533E0B1003CB75A /* helloKVC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = helloKVC.xcodeproj; path = helloKVC/helloKVC.xcodeproj; sourceTree = "<group>"; };
 		2CD5C47B15203F8100CF3214 /* HelloApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HelloApp.xcodeproj; path = HelloApp/HelloApp.xcodeproj; sourceTree = "<group>"; };
 		2CD88F491517200D00F80070 /* HelloObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloObjC; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD88F4D1517200D00F80070 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -172,6 +196,47 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2C8FE355153416C80068D654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C8FE359153416C90068D654 /* kvcWnd.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C8FE35A15343AD10068D654 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				2C8FE3BC15343C240068D654 /* RaiseMan.xcodeproj */,
+			);
+			name = MVC;
+			sourceTree = "<group>";
+		};
+		2C8FE3BD15343C240068D654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C8FE3C115343C250068D654 /* RaiseMan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CA451631533E04F003CB75A /* KVC */ = {
+			isa = PBXGroup;
+			children = (
+				2CA451811533E0B1003CB75A /* helloKVC.xcodeproj */,
+				2C8FE354153416C80068D654 /* kvcWnd.xcodeproj */,
+			);
+			name = KVC;
+			sourceTree = "<group>";
+		};
+		2CA451821533E0B1003CB75A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CA451861533E0B2003CB75A /* helloKVC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2CD5C47C15203F8100CF3214 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +253,8 @@
 				2CDF0CC8151AFBA90094D241 /* se11 */,
 				2CDF0CF1151B1DC30094D241 /* AppKit */,
 				2C8B7B23152EF02800AA9EB8 /* Demo */,
+				2CA451631533E04F003CB75A /* KVC */,
+				2C8FE35A15343AD10068D654 /* MVC */,
 			);
 			sourceTree = "<group>";
 		};
@@ -321,8 +388,20 @@
 					ProjectRef = 2C2868641519827000630470 /* HelloFoundationKit.xcodeproj */;
 				},
 				{
+					ProductGroup = 2CA451821533E0B1003CB75A /* Products */;
+					ProjectRef = 2CA451811533E0B1003CB75A /* helloKVC.xcodeproj */;
+				},
+				{
 					ProductGroup = 2CDF0CE7151AFBF30094D241 /* Products */;
 					ProjectRef = 2CDF0CE6151AFBF30094D241 /* helloproperty.xcodeproj */;
+				},
+				{
+					ProductGroup = 2C8FE355153416C80068D654 /* Products */;
+					ProjectRef = 2C8FE354153416C80068D654 /* kvcWnd.xcodeproj */;
+				},
+				{
+					ProductGroup = 2C8FE3BD15343C240068D654 /* Products */;
+					ProjectRef = 2C8FE3BC15343C240068D654 /* RaiseMan.xcodeproj */;
 				},
 				{
 					ProductGroup = 2C51CE44152D98A600893B57 /* Products */;
@@ -367,6 +446,27 @@
 			fileType = wrapper.application;
 			path = todoList.app;
 			remoteRef = 2C8B7B54152EF0AF00AA9EB8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2C8FE359153416C90068D654 /* kvcWnd.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = kvcWnd.app;
+			remoteRef = 2C8FE358153416C90068D654 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2C8FE3C115343C250068D654 /* RaiseMan.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RaiseMan.app;
+			remoteRef = 2C8FE3C015343C250068D654 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2CA451861533E0B2003CB75A /* helloKVC */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = helloKVC;
+			remoteRef = 2CA451851533E0B2003CB75A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		2CD5C48015203F8B00CF3214 /* HelloApp.app */ = {
