@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'RenRenMenu' target in the 'RenRenMenu' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
