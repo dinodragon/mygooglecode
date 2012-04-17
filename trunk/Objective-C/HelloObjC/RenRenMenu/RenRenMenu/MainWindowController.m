@@ -33,24 +33,6 @@
     [self AddStatuItem];
 }
 
-- (IBAction) AddUnRead:(id)sender
-{
-    unReadMsg++;
-    NSString * title = [[NSString alloc] initWithFormat:@"Custom Item %d",unReadMsg];
-    NSMenuItem * item = [menu addItemWithTitle:title action:@selector(testAction:) keyEquivalent:@""];
-    [item setEnabled:YES];
-    [item setTitle:title];
-    MessageView* myButtonView = [[MessageView alloc] initWithFrame:NSMakeRect(0,0,314,66)];
-    NSImage *myImage = [NSImage imageNamed:@"qq2.png"];
-    NSString * username = [[NSString alloc] initWithFormat:@"人人用户 %d",unReadMsg];
-    [myButtonView setImage:myImage setUserName:username setMsg:@"用户消息测试，用户消息测试。"];
-    [myButtonView InitView];
-    
-	[item setView: myButtonView];
-    [myButtonView retain];
-    [self UpdateMenuState];
-}
-
 -(IBAction) ReduceUnRead:(id)sender
 {
     if (unReadMsg > 0) {
@@ -78,7 +60,6 @@
     [item setTitle:title];
     MessageView* myButtonView = [[MessageView alloc] initWithFrame:NSMakeRect(0,0,314,66)];
     NSImage *myImage = [NSImage imageNamed:@"qq2.png"];
-    //NSString * username = [[NSString alloc] initWithFormat:@"人人用户 %d",unReadMsg];
     [myButtonView setImage:myImage setUserName:[userName stringValue] setMsg:[msg stringValue]];
     [myButtonView InitView];
     
