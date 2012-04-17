@@ -17,27 +17,46 @@
     // Insert code here to initialize your application
     
     
-    //NSZone *zone = [NSMenu menuZone];
-    //NSMenu *menu = [[[NSMenu allocWithZone:zone] init] autorelease];
-    NSMenu *menu = [NSMenu new];
+    NSZone *zone = [NSMenu menuZone];
+    NSMenu *menu = [[NSMenu allocWithZone:zone] init];
     NSMenuItem *item;
     item = [menu addItemWithTitle:@"Testing" action:@selector(testAction:) keyEquivalent:@""];
     [item setTarget:self];
     item = [menu addItemWithTitle:@"Quit" action:@selector(quitAction:) keyEquivalent:@""];
     [item setTarget:self];
     
-    NSImage *myImage = [NSImage imageNamed:@"qq2.png"] ;
+    NSImage *myImage = [NSImage imageNamed:@"qq.png"];
+    //[myImage draggedImage:<#(NSImage *)#> beganAt:<#(NSPoint)#>
     
-    trayItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
+    
+    
+    //trayItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
+    NSStatusBar * statusBar = [NSStatusBar systemStatusBar];
+    //NSStatusItem
+    trayItem = [statusBar statusItemWithLength:NSVariableStatusItemLength];
     [trayItem setMenu:menu];
     [trayItem setHighlightMode:YES];
-    [trayItem setImage:myImage];
+    //[trayItem setTitle:@"1"];
+    NSAttributedString * attstr = [[NSAttributedString alloc]initWithString:@"1234567890"];
+    //attstr 
     
-    NSImage *myImage2 = [NSImage imageNamed:@"qq.png"] ;
-    trayItem2 = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
-    [trayItem2 setMenu:menu];
-    [trayItem2 setHighlightMode:YES];
-    [trayItem2 setImage:myImage2];
+//NSFont *font = [NSFont fontWithName:@"Palatino-Roman" size:12.0];
+//NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:font
+//                            forKey:NSFontAttributeName];
+//NSAttributedString *attrString =
+//    [[NSAttributedString alloc] initWithString:@"1"
+//                                attributes:attrsDictionary];
+    
+    
+    [trayItem setAttributedTitle:attstr];
+    [trayItem setImage:myImage];
+
+    
+//    NSImage *myImage2 = [NSImage imageNamed:@"qq2.png"] ;
+//    trayItem2 = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
+//    [trayItem2 setMenu:menu];
+//    [trayItem2 setHighlightMode:YES];
+//    [trayItem2 setImage:myImage2];
 
 }
 

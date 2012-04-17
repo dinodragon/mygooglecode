@@ -39,6 +39,11 @@ void showWindow1()
     [win setTitle:@"HelloWinTest"];
     [win makeKeyAndOrderFront:win];
     [win makeMainWindow];
+    NSButton* button = [[NSButton alloc] initWithFrame:NSMakeRect(200, 200, 60, 40)];
+    [button setTitle:@"Quit Application"];
+    NSView * view = [[NSView alloc] init];
+    [view addSubview:button];
+    [win setContentView:view];
 }
 
 //方法二 加载一个xib文件
