@@ -42,6 +42,12 @@
     return v;
 }
 
+
+- (void)tableView:(NSTableView *)tableView sortDescriptorsDidChange:(NSArray *)oldDescriptors
+{
+    
+}
+
 -(IBAction)add:(id)sender
 {
     NSString * text = [textField stringValue];
