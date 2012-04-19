@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C982B8D153C1DF000E3C760 /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C982B8C153C1DF000E3C760 /* Window.xib */; };
 		5303979F0B3C43D500B8884F /* TrackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5303979E0B3C43D500B8884F /* TrackView.m */; };
 		534BD3D10AE801B3008AC902 /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 534BD3D00AE801B3008AC902 /* ReadMe.rtf */; };
 		536F8A790ADD4DF6006619FE /* PictView.m in Sources */ = {isa = PBXBuildFile; fileRef = 536F8A770ADD4DF6006619FE /* PictView.m */; };
@@ -29,6 +30,7 @@
 		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2C982B8C153C1DF000E3C760 /* Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Window.xib; sourceTree = "<group>"; };
 		5303979E0B3C43D500B8884F /* TrackView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TrackView.m; sourceTree = "<group>"; };
 		534BD3D00AE801B3008AC902 /* ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
 		536F8A390ADD4AE2006619FE /* MenuItemView_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MenuItemView_Prefix.pch; sourceTree = "<group>"; };
@@ -41,7 +43,7 @@
 		53DB3CCE0AD6F948003EECBD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53DB3CCF0AD6F948003EECBD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		53E3BA420AE00189008DA6D6 /* MyWindowController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyWindowController.h; sourceTree = "<group>"; };
-		53E3BA430AE00189008DA6D6 /* MyWindowController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyWindowController.m; sourceTree = "<group>"; };
+		53E3BA430AE00189008DA6D6 /* MyWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWindowController.m; sourceTree = "<group>"; };
 		53E3BA480AE00203008DA6D6 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/TestWindow.nib; sourceTree = "<group>"; };
 		53FDF4B40ADD56A100331622 /* TrackView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TrackView.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
 				53E3BA470AE00203008DA6D6 /* TestWindow.nib */,
+				2C982B8C153C1DF000E3C760 /* Window.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				53E3BA490AE00203008DA6D6 /* TestWindow.nib in Resources */,
 				534BD3D10AE801B3008AC902 /* ReadMe.rtf in Resources */,
 				5391F4F20B9751B2004E0351 /* LakeDonPedro.jpg in Resources */,
+				2C982B8D153C1DF000E3C760 /* Window.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
