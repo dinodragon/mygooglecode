@@ -79,9 +79,12 @@ void showWindow1()
     //[win setContentView:view];
     [[win contentView] addSubview:button];
     NSColor * c = [NSColor colorWithCalibratedRed:100 green:100 blue:100 alpha:0.5];
-    [win setBackgroundColor:c]; //半透明
+    [win setBackgroundColor:c]; //半透明，不含标题栏。
     //[win center];
     [win setOpaque:NO];
+    [win setAlphaValue:0.5];
+    
+
     
     [button setBezelStyle:NSRoundedBezelStyle];
     [button setAutoresizingMask:NSViewMaxXMargin | NSViewMinXMargin | NSViewMaxYMargin];
