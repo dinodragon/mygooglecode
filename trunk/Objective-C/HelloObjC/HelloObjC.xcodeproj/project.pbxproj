@@ -58,6 +58,13 @@
 			remoteGlobalIDString = 2C8FE39815343C240068D654;
 			remoteInfo = RaiseMan;
 		};
+		2C953BDD153FE01300748B4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C953BD9153FE01200748B4E /* HelloApp2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C953BB8153FE01200748B4E;
+			remoteInfo = HelloApp2;
+		};
 		2C982B78153BEBB400E3C760 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2C982B74153BEBB300E3C760 /* RenRenMenu.xcodeproj */;
@@ -117,6 +124,7 @@
 		2C8B7B50152EF0AF00AA9EB8 /* todoList.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = todoList.xcodeproj; path = todoList/todoList.xcodeproj; sourceTree = "<group>"; };
 		2C8FE354153416C80068D654 /* kvcWnd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = kvcWnd.xcodeproj; path = kvcWnd/kvcWnd.xcodeproj; sourceTree = "<group>"; };
 		2C8FE3BC15343C240068D654 /* RaiseMan.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RaiseMan.xcodeproj; path = RaiseMan/RaiseMan.xcodeproj; sourceTree = "<group>"; };
+		2C953BD9153FE01200748B4E /* HelloApp2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HelloApp2.xcodeproj; path = HelloApp2/HelloApp2.xcodeproj; sourceTree = "<group>"; };
 		2C982B74153BEBB300E3C760 /* RenRenMenu.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RenRenMenu.xcodeproj; path = RenRenMenu/RenRenMenu.xcodeproj; sourceTree = "<group>"; };
 		2CA451811533E0B1003CB75A /* helloKVC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = helloKVC.xcodeproj; path = helloKVC/helloKVC.xcodeproj; sourceTree = "<group>"; };
 		2CD5C47B15203F8100CF3214 /* HelloApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HelloApp.xcodeproj; path = HelloApp/HelloApp.xcodeproj; sourceTree = "<group>"; };
@@ -229,6 +237,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2C953BDA153FE01200748B4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C953BDE153FE01300748B4E /* HelloApp2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2C982B75153BEBB300E3C760 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +353,7 @@
 				2CD5C47B15203F8100CF3214 /* HelloApp.xcodeproj */,
 				2CDF0D1E151B1E450094D241 /* HelloAppKit.xcodeproj */,
 				2C51CDEE152D8D1B00893B57 /* ControlDemo.xcodeproj */,
+				2C953BD9153FE01200748B4E /* HelloApp2.xcodeproj */,
 			);
 			name = AppKit;
 			sourceTree = "<group>";
@@ -395,6 +412,10 @@
 				{
 					ProductGroup = 2CD5C47C15203F8100CF3214 /* Products */;
 					ProjectRef = 2CD5C47B15203F8100CF3214 /* HelloApp.xcodeproj */;
+				},
+				{
+					ProductGroup = 2C953BDA153FE01200748B4E /* Products */;
+					ProjectRef = 2C953BD9153FE01200748B4E /* HelloApp2.xcodeproj */;
 				},
 				{
 					ProductGroup = 2CDF0D1F151B1E450094D241 /* Products */;
@@ -481,6 +502,13 @@
 			fileType = wrapper.application;
 			path = RaiseMan.app;
 			remoteRef = 2C8FE3C015343C250068D654 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2C953BDE153FE01300748B4E /* HelloApp2.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HelloApp2.app;
+			remoteRef = 2C953BDD153FE01300748B4E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		2C982B79153BEBB400E3C760 /* RenRenMenu.app */ = {

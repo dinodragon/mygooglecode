@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C953B5B153FC52700748B4E /* MyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C953B5A153FC52700748B4E /* MyController.m */; };
 		2CD5C45F15203F7B00CF3214 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD5C45E15203F7B00CF3214 /* Cocoa.framework */; };
 		2CD5C46B15203F7C00CF3214 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD5C46A15203F7C00CF3214 /* main.m */; };
 		2CFE0D181532F5C3005E7823 /* MyApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE0D171532F5C3005E7823 /* MyApp.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C953B59153FC52700748B4E /* MyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyController.h; sourceTree = "<group>"; };
+		2C953B5A153FC52700748B4E /* MyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyController.m; sourceTree = "<group>"; };
 		2CD5C45A15203F7A00CF3214 /* HelloApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD5C45E15203F7B00CF3214 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2CD5C46115203F7B00CF3214 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -77,6 +80,8 @@
 				2CD5C46A15203F7C00CF3214 /* main.m */,
 				2CD5C46515203F7C00CF3214 /* Supporting Files */,
 				2CFE0D171532F5C3005E7823 /* MyApp.xib */,
+				2C953B59153FC52700748B4E /* MyController.h */,
+				2C953B5A153FC52700748B4E /* MyController.m */,
 			);
 			path = HelloApp;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CD5C46B15203F7C00CF3214 /* main.m in Sources */,
+				2C953B5B153FC52700748B4E /* MyController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

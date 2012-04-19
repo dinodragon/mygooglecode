@@ -44,7 +44,7 @@ AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE),
 STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 
-Copyright © 2006-2007 Apple Inc. All Rights Reserved
+Copyright ï¿½ 2006-2007 Apple Inc. All Rights Reserved
 
 */
 
@@ -171,7 +171,7 @@ Copyright © 2006-2007 Apple Inc. All Rights Reserved
 {
 	// create a new menu from scratch and add it to the app's menu bar
     NSMenuItem* newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"Custom" action:NULL keyEquivalent:@""];
-    NSMenu* newMenu = [[NSMenu allocWithZone:[NSMenu menuZone]] initWithTitle:@"Custom"];
+    NSMenu* newMenu = [[NSMenu allocWithZone:[NSMenu menuZone]] initWithTitle:@"CustomSub"];
     [newItem setEnabled:YES];
 	[newItem setSubmenu:newMenu];
     [newMenu release];
@@ -231,30 +231,30 @@ Copyright © 2006-2007 Apple Inc. All Rights Reserved
 	// copy the custom NSMenu and its embedded NSViews
 	NSData* menuCopyData = [NSArchiver archivedDataWithRootObject:newMenu];
 	id menuCopy = [NSUnarchiver unarchiveObjectWithData:menuCopyData];
-	[menuCopy removeItemAtIndex:5];		// don't use the label view menu item here
+	//[menuCopy removeItemAtIndex:5];		// don't use the label view menu item here
 	[self addMenuItemViews: menuCopy];	// add the NSViews to all the menu items
 	[myPopupButton setMenu: menuCopy];	// set the newly copied menu to the popup button
-	
-	// setup more customized popup buttons from scratch:
-	[self createPopupButtons];
-	
-	// copy and add the custom menu to the popup button
-	menuCopyData = [NSArchiver archivedDataWithRootObject:menuCopy];
-	id finalMenu = [NSUnarchiver unarchiveObjectWithData:menuCopyData];
-	[self addMenuItemViews: finalMenu];			// add the NSViews to all the menu items
-	[myCustomPopupButton setMenu: finalMenu];	// set the newly copied menu to the popup button
-
-	// copy and add the custom menu to the pull down button
-	menuCopyData = [NSArchiver archivedDataWithRootObject:menuCopy];
-	finalMenu = [NSUnarchiver unarchiveObjectWithData:menuCopyData];
-	[self addMenuItemViews: finalMenu];			// add the NSViews to all the menu items
-	[myCustomPopupButtonPullDown setMenu: finalMenu];	// set the newly copied menu to the pulldown button
-	
-	// copy and add the custom menu as the NSImageView's contextual menu
-	menuCopyData = [NSArchiver archivedDataWithRootObject:menuCopy];
-	finalMenu = [NSUnarchiver unarchiveObjectWithData:menuCopyData];
-	[self addMenuItemViews: finalMenu];			// add the NSViews to all the menu items
-	[myImageView setMenu: finalMenu];			// set the newly copied menu to the image view
+//	
+//	// setup more customized popup buttons from scratch:
+//	[self createPopupButtons];
+//	
+//	// copy and add the custom menu to the popup button
+//	menuCopyData = [NSArchiver archivedDataWithRootObject:menuCopy];
+//	id finalMenu = [NSUnarchiver unarchiveObjectWithData:menuCopyData];
+//	[self addMenuItemViews: finalMenu];			// add the NSViews to all the menu items
+//	[myCustomPopupButton setMenu: finalMenu];	// set the newly copied menu to the popup button
+//
+//	// copy and add the custom menu to the pull down button
+//	menuCopyData = [NSArchiver archivedDataWithRootObject:menuCopy];
+//	finalMenu = [NSUnarchiver unarchiveObjectWithData:menuCopyData];
+//	[self addMenuItemViews: finalMenu];			// add the NSViews to all the menu items
+//	[myCustomPopupButtonPullDown setMenu: finalMenu];	// set the newly copied menu to the pulldown button
+//	
+//	// copy and add the custom menu as the NSImageView's contextual menu
+//	menuCopyData = [NSArchiver archivedDataWithRootObject:menuCopy];
+//	finalMenu = [NSUnarchiver unarchiveObjectWithData:menuCopyData];
+//	[self addMenuItemViews: finalMenu];			// add the NSViews to all the menu items
+//	[myImageView setMenu: finalMenu];			// set the newly copied menu to the image view
 }
 
 // -------------------------------------------------------------------------------
