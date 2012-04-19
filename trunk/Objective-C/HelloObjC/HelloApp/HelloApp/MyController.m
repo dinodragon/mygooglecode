@@ -13,5 +13,6 @@
 -(void) onButtonClicked:(id)sender
 {
     NSLog(@"onButtonClicked");
+    [NSApp terminate:NSApp];
 }
 @end
