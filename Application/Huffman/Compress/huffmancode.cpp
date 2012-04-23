@@ -116,24 +116,26 @@ int Huffman::Encode(unsigned char c)
 	int candidates[]={128,64,32,16,8,4,2,1};
 	int	i;
 
-	if(this->list[value]==NULL){//字符不存在于哈夫曼树中 
+	if(this->list[value]==NULL)//字符不存在于哈夫曼树中 
+	{
 		//输出转义码 
 		this->OutputEncode(CODE_ESCAPE); 
+		
 		//输出字符 
-		for(i=0;i<8;i++)this->OutputBit(value & candidates[i]); 
-
+		for(i=0;i<8;i++)
+			this->OutputBit(value & candidates[i]); 
 		this->InsertNewNode(value); 
-
-	}else{ 
+	}
+	else
+	{ 
 		//输出字符编码 
 		this->OutputEncode(value); 
-
 		//重新调整哈夫曼树 
 		this->BalanceNode(this->list[value]->parent); 
 	} 
 
 	//重组哈夫曼树 
-	if(this->root->count>=this->max_count) 
+	if(this->root->count >= this->max_count) 
 		this->RearrangeTree(); 
 
 	return 0; 
