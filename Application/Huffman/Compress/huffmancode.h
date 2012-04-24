@@ -105,6 +105,6 @@ public:
 
 	//析构函数 
 	virtual ~Huffman(); 
-}; 
+};
 
 #endif // !defined(AFX_HUFFMAN_H__B1F1A5A6_FB57_49B2_BB67_6D1764CC04AB__INCLUDED_) 
