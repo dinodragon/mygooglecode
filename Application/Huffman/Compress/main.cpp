@@ -1,42 +1,34 @@
 ﻿
 #include <stdio.h> 
 #include <string.h> 
-//#include <io.h>
 #include <fstream>
 #include <sys/stat.h> 
 #include <fcntl.h> 
 #include "Huffmancode.h"
 
-int a;
-std::ofstream g_writeFileHandle;
-std::ifstream readFileHandle; 
+std::ofstream targetFile;
+std::ifstream sourceFile; 
 
 bool Write(unsigned char *s,int len)
 { 
-    //	_write(writeFileHandle,s,len);
-    g_writeFileHandle.write((char *)s,len);
+    targetFile.write((char *)s,len);
 	return true; 
 } 
 
 bool OpenFile(char* source,char* target)
 {
-    //	int w_flag=_O_WRONLY | _O_CREAT | _O_EXCL | _O_BINARY; 
-    //	int r_flag=_O_RDONLY | _O_BINARY; 
-    
-    //	readFileHandle=_open(source,r_flag,_S_IREAD | _S_IWRITE); 
-    //	writeFileHandle=_open(target,w_flag,_S_IREAD | _S_IWRITE);
-    readFileHandle.open(source,std::ios::in|std::ios::binary);
-    g_writeFileHandle.open(target,std::ios::out|std::ios::binary);
-	if(!readFileHandle.is_open())
+    sourceFile.open(source,std::ios::in|std::ios::binary);
+    targetFile.open(target,std::ios::out|std::ios::binary);
+	if(!sourceFile.is_open())
     { 
-        readFileHandle.close(); 
-        printf("\n打开文件：'%s'失败!\n",target);
+        sourceFile.close(); 
+        printf("\n打开文件：'%s'失败!\n" ,target);
         return false; 
 	}
-    else if(!g_writeFileHandle.is_open())
+    else if(!targetFile.is_open())
     {
-        g_writeFileHandle.close();
-        printf("\n打开文件：'%s'失败!",source); 
+        targetFile.close();
+        printf("\n打开文件：'%s'失败!\n" ,source); 
         return false; 
 	}else
     { 
@@ -124,13 +116,12 @@ int main(int argc,char *args[]){
             h=new Huffman(&Write,true); 
             i=BUFFER_SIZE; 
             while(i==BUFFER_SIZE){ 
-                i=(int)readFileHandle.read((char *)buffer,BUFFER_SIZE).gcount();
-                //_read(readFileHandle,buffer,BUFFER_SIZE); 
+                i=(int)sourceFile.read((char *)buffer,BUFFER_SIZE).gcount();
                 h->Encode(buffer,i);
             } 
             delete h;
-            readFileHandle.close();
-            g_writeFileHandle.close();
+            sourceFile.close();
+            targetFile.close();
             printf("压缩完毕!"); 
             break;
             
@@ -140,12 +131,12 @@ int main(int argc,char *args[]){
             h=new Huffman(&Write,false); 
             i=BUFFER_SIZE; 
             while(i==BUFFER_SIZE){ 
-                i=(int)readFileHandle.read((char *)buffer,BUFFER_SIZE).gcount(); 
+                i=(int)sourceFile.read((char *)buffer,BUFFER_SIZE).gcount(); 
                 h->Decode(buffer,i); 
             } 
             delete h; 
-            readFileHandle.close();
-            g_writeFileHandle.close();
+            sourceFile.close();
+            targetFile.close();
             printf("解压缩完毕!"); 
             break; 
 	} 
