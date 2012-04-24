@@ -1,4 +1,4 @@
-// Huffman.cpp: implementation of the Huffman class. 
+ï»¿// Huffman.cpp: implementation of the Huffman class. 
 // 
 ////////////////////////////////////////////////////////////////////// 
 
@@ -15,13 +15,13 @@ Huffman::Huffman(Output *output,bool mode)
 
 	this->mode=mode; 
 
-	//ÉèÖÃÊä³öº¯Êı£¬µ±»º³åÇøÂúÊ±£¬½«µ÷ÓÃ¸Ãº¯ÊıÊä³ö 
+	//è®¾ç½®è¾“å‡ºå‡½æ•°ï¼Œå½“ç¼“å†²åŒºæ»¡æ—¶ï¼Œå°†è°ƒç”¨è¯¥å‡½æ•°è¾“å‡º 
 	this->output=output; 
 
-	//³õÊ¼»¯ÁĞ±í 
+	//åˆå§‹åŒ–åˆ—è¡¨ 
 	for(i=0;i<LIST_LENGTH;i++)this->list[i]=NULL; 
 
-	//³õÊ¼»¯¹ş·òÂüÊ÷ 
+	//åˆå§‹åŒ–å“ˆå¤«æ›¼æ ‘ 
 	this->root=this->NewNode(NOT_CHAR,LEFT,NULL); 
 	this->current=this->root; 
 	tmp=this->NewNode(CODE_ESCAPE,RIGHT,root); 
@@ -30,12 +30,12 @@ Huffman::Huffman(Output *output,bool mode)
 	tmp->count=0; 
 	root->count=root->child[LEFT]->count+root->child[RIGHT]->count; 
 
-	//ÉèÖÃ»º³åÇøÖ¸Õë 
+	//è®¾ç½®ç¼“å†²åŒºæŒ‡é’ˆ 
 	this->char_top=BOTTOM_BIT; 
 	this->bit_top=TOP_BIT; 
 	this->buffer[0]=0; 
 
-	//ÖØ¹¹¹ş·òÂüÊ÷µÄ×î´ó¼ÆÊıÖµ 
+	//é‡æ„å“ˆå¤«æ›¼æ ‘çš„æœ€å¤§è®¡æ•°å€¼ 
 	this->max_count=MAX_COUNT; 
 	this->shrink_factor=SHRINK_FACTOR; 
 	this->finished=false; 
@@ -43,16 +43,16 @@ Huffman::Huffman(Output *output,bool mode)
 
 Huffman::~Huffman() 
 { 
-	if(this->mode==true){//Èç¹ûÊÇ±àÂë 
-		//Êä³ö½áÊøÂë 
+	if(this->mode==true){//å¦‚æœæ˜¯ç¼–ç  
+		//è¾“å‡ºç»“æŸç  
 		this->OutputEncode(CODE_FINISH); 
 		this->char_top++; 
 	} 
 
-	//Ç¿ÖÆÇå¿Õ»º³åÇø 
+	//å¼ºåˆ¶æ¸…ç©ºç¼“å†²åŒº 
 	this->Flush(); 
 
-	//ÊÍ·Å¿Õ¼ä 
+	//é‡Šæ”¾ç©ºé—´ 
 	this->ReleaseNode(this->root); 
 } 
 
@@ -80,7 +80,7 @@ void Huffman::ReleaseNode(Hbtree *node)
 	} 
 } 
 
-//Êä³öÒ»Î»±àÂë 
+//è¾“å‡ºä¸€ä½ç¼–ç  
 int Huffman::OutputBit(int bit) 
 { 
 	unsigned char candidates[]={1,2,4,8,16,32,64,128}; 
@@ -92,7 +92,7 @@ int Huffman::OutputBit(int bit)
 		this->bit_top=TOP_BIT; 
 		this->char_top++; 
 
-		if(this->char_top >= BUFFER_SIZE){//Êä³ö»º³åÇø 
+		if(this->char_top >= BUFFER_SIZE){//è¾“å‡ºç¼“å†²åŒº 
 			this->output(this->buffer,BUFFER_SIZE); 
 			this->char_top=0; 
 		} 
@@ -102,7 +102,7 @@ int Huffman::OutputBit(int bit)
 	return 0; 
 } 
 
-//Êä³ö»º³åÇø 
+//è¾“å‡ºç¼“å†²åŒº 
 int Huffman::Flush() 
 { 
 	this->output(this->buffer,this->char_top); 
@@ -116,25 +116,25 @@ int Huffman::Encode(unsigned char c)
 	int candidates[]={128,64,32,16,8,4,2,1};
 	int	i;
 
-	if(this->list[value]==NULL)//×Ö·û²»´æÔÚÓÚ¹ş·òÂüÊ÷ÖĞ 
+	if(this->list[value]==NULL)//å­—ç¬¦ä¸å­˜åœ¨äºå“ˆå¤«æ›¼æ ‘ä¸­ 
 	{
-		//Êä³ö×ªÒåÂë 
+		//è¾“å‡ºè½¬ä¹‰ç  
 		this->OutputEncode(CODE_ESCAPE); 
 		
-		//Êä³ö×Ö·û 
+		//è¾“å‡ºå­—ç¬¦ 
 		for(i=0;i<8;i++)
 			this->OutputBit(value & candidates[i]); 
 		this->InsertNewNode(value); 
 	}
 	else
 	{ 
-		//Êä³ö×Ö·û±àÂë 
+		//è¾“å‡ºå­—ç¬¦ç¼–ç  
 		this->OutputEncode(value); 
-		//ÖØĞÂµ÷Õû¹ş·òÂüÊ÷ 
+		//é‡æ–°è°ƒæ•´å“ˆå¤«æ›¼æ ‘ 
 		this->BalanceNode(this->list[value]->parent); 
 	} 
 
-	//ÖØ×é¹ş·òÂüÊ÷ 
+	//é‡ç»„å“ˆå¤«æ›¼æ ‘ 
 	if(this->root->count >= this->max_count) 
 		this->RearrangeTree(); 
 
@@ -147,14 +147,14 @@ void Huffman::BalanceNode(Hbtree *node)
 	int i,j; 
 
 	parent=node->parent; 
-	if(parent==NULL)return;//¸ù½ÚµãÎŞĞèµ÷Õû 
+	if(parent==NULL)return;//æ ¹èŠ‚ç‚¹æ— éœ€è°ƒæ•´ 
 
-	if(node->value==NOT_CHAR){//·ÇÒ¶×Ó½Úµã 
+	if(node->value==NOT_CHAR){//éå¶å­èŠ‚ç‚¹ 
 		child=node->child[LEFT]->count > node->child[RIGHT]->count ? 
 			node->child[LEFT] : node->child[RIGHT]; 
 
 		if(child->count > parent->count - node->count){ 
-			//Ê§ºâ 
+			//å¤±è¡¡ 
 
 			i=!(node->index); 
 			j=child->index; 
@@ -173,20 +173,20 @@ void Huffman::BalanceNode(Hbtree *node)
 	this->BalanceNode(parent); 
 } 
 
-//Êä³öÒ»¸ö×Ö·ûµÄ±àÂë 
+//è¾“å‡ºä¸€ä¸ªå­—ç¬¦çš„ç¼–ç  
 int Huffman::OutputEncode(int value) 
 { 
 	int stack[CODE_FINISH+2],top=0; 
 	Hbtree *tmp=this->list[value]; 
 
-	//Êä³ö±àÂë 
-	if(value<=MAX_VALUE){//×Ö·û 
+	//è¾“å‡ºç¼–ç  
+	if(value<=MAX_VALUE){//å­—ç¬¦ 
 		while(tmp!=NULL){ 
 			stack[top++]=tmp->index; 
 			tmp->count++; 
 			tmp=tmp->parent; 
 		} 
-	}else{//¿ØÖÆÂë 
+	}else{//æ§åˆ¶ç  
 		while(tmp!=NULL){ 
 			stack[top++]=tmp->index; 
 			tmp=tmp->parent; 
@@ -240,7 +240,7 @@ void Huffman::RearrangeTree()
 	int i,j,k; 
 	Hbtree *tmp,*tmp2; 
 
-	//ËùÓĞ·Ç¿ØÖÆÂëµÄ¼ÆÊıÖµÓÒÒÆshrink_factorÎ»£¬²¢É¾³ı¼ÆÊıÖµÎªÁãµÄ½Úµã 
+	//æ‰€æœ‰éæ§åˆ¶ç çš„è®¡æ•°å€¼å³ç§»shrink_factorä½ï¼Œå¹¶åˆ é™¤è®¡æ•°å€¼ä¸ºé›¶çš„èŠ‚ç‚¹ 
 	for(k=0;k<=MAX_VALUE;k++){ 
 		if(this->list[k]!=NULL){ 
 			tmp=this->list[k]; 
@@ -265,10 +265,10 @@ void Huffman::RearrangeTree()
 		} 
 	} 
 
-	//ÖØĞÂ¼ÆÊı 
+	//é‡æ–°è®¡æ•° 
 	this->RecountNode(this->root); 
 
-	//ÖØĞÂµ÷ÕûÆ½ºâ 
+	//é‡æ–°è°ƒæ•´å¹³è¡¡ 
 	for(i=0;i<=MAX_VALUE;i++){ 
 		if(this->list[i]!=NULL) 
 			this->BalanceNode(this->list[i]->parent); 
@@ -280,7 +280,7 @@ void Huffman::InsertNewNode(int value)
 	int i; 
 	Hbtree *tmp,*tmp2; 
 
-	//½«×Ö·û¼ÓÈë¹ş·òÂüÊ÷ 
+	//å°†å­—ç¬¦åŠ å…¥å“ˆå¤«æ›¼æ ‘ 
 	tmp2=this->list[CODE_FINISH]; 
 	tmp=this->NewNode(NOT_CHAR, tmp2->index, tmp2->parent); 
 	tmp->child[LEFT]=tmp2; 
@@ -291,7 +291,7 @@ void Huffman::InsertNewNode(int value)
 	tmp->count=tmp->child[LEFT]->count+tmp->child[RIGHT]->count; 
 	i=tmp2->count; 
 	while((tmp=tmp->parent)!=NULL)tmp->count+=i; 
-	//´Óµ×ÏòÉÏµ÷Õû¹ş·òÂüÊ÷ 
+	//ä»åº•å‘ä¸Šè°ƒæ•´å“ˆå¤«æ›¼æ ‘ 
 	this->BalanceNode(tmp2->parent); 
 } 
 
@@ -318,7 +318,7 @@ int Huffman::Decode(unsigned char c, int start)
 	if(this->finished)return 0; 
 
 	i=start; 
-	if(this->current==NULL){//×ªÒå×´Ì¬ÏÂ 
+	if(this->current==NULL){//è½¬ä¹‰çŠ¶æ€ä¸‹ 
 		while(this->remain >= 0 && i>=0){ 
 			if((candidates[i] & value) !=0){ 
 				this->literal |= candidates[this->remain]; 
@@ -327,17 +327,17 @@ int Huffman::Decode(unsigned char c, int start)
 			i--; 
 		} 
 
-		if(this->remain < 0){//×Ö·ûÊä³öÍê±Ï 
+		if(this->remain < 0){//å­—ç¬¦è¾“å‡ºå®Œæ¯• 
 
-			//Êä³ö×Ö·û 
+			//è¾“å‡ºå­—ç¬¦ 
 			this->OutputChar(this->literal); 
-			//½«×Ö·û²åÈë¹ş·òÂüÊ÷ 
+			//å°†å­—ç¬¦æ’å…¥å“ˆå¤«æ›¼æ ‘ 
 			this->InsertNewNode(literal); 
-			//ÖØ×é¹ş·òÂüÊ÷ 
+			//é‡ç»„å“ˆå¤«æ›¼æ ‘ 
 			if(this->root->count>=this->max_count) 
 				this->RearrangeTree(); 
 
-			//ÉèÖÃ»·¾³ 
+			//è®¾ç½®ç¯å¢ƒ 
 			this->current=this->root; 
 		} 
 	}else{ 
@@ -350,34 +350,34 @@ int Huffman::Decode(unsigned char c, int start)
 			i--; 
 		} 
 
-		if(tmp->value==NOT_CHAR){//ÖĞ¼ä½Úµã 
+		if(tmp->value==NOT_CHAR){//ä¸­é—´èŠ‚ç‚¹ 
 			this->current=tmp; 
 		}else{ 
-			if(tmp->value<=MAX_VALUE){//±àÂëÄÚÈİ 
+			if(tmp->value<=MAX_VALUE){//ç¼–ç å†…å®¹ 
 				j=tmp->value; 
 				this->OutputChar((unsigned char)j); 
 
-				//ĞŞ¸Ä¼ÆÊıÆ÷ 
+				//ä¿®æ”¹è®¡æ•°å™¨ 
 				tmp=this->list[j]; 
 				while(tmp!=NULL){ 
 					tmp->count++; 
 					tmp=tmp->parent; 
 				} 
-				//µ÷ÕûÆ½ºâ¶È 
+				//è°ƒæ•´å¹³è¡¡åº¦ 
 				this->BalanceNode(this->list[j]->parent); 
 
-				//ÖØ×é¹ş·òÂüÊ÷ 
+				//é‡ç»„å“ˆå¤«æ›¼æ ‘ 
 				if(this->root->count>=this->max_count) 
 					this->RearrangeTree(); 
 
-				//ÉèÖÃ»·¾³ 
+				//è®¾ç½®ç¯å¢ƒ 
 				this->current=this->root; 
 			}else{ 
-				if(tmp->value==CODE_ESCAPE){//×ªÒåÂë 
+				if(tmp->value==CODE_ESCAPE){//è½¬ä¹‰ç  
 					this->current=NULL; 
 					this->remain=7; 
 					this->literal=0; 
-				}else{//½áÊøÂë 
+				}else{//ç»“æŸç  
 					this->finished=true; 
 					return 0; 
 				} 
@@ -393,7 +393,7 @@ int Huffman::Decode(unsigned char c, int start)
 int Huffman::OutputChar(unsigned char c) 
 { 
 	this->buffer[this->char_top++]=c; 
-	if(this->char_top>=BUFFER_SIZE){//Êä³ö»º³åÇø 
+	if(this->char_top>=BUFFER_SIZE){//è¾“å‡ºç¼“å†²åŒº 
 		this->output(this->buffer,BUFFER_SIZE); 
 		this->char_top=0; 
 	} 

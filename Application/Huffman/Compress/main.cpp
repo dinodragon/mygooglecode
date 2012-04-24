@@ -1,4 +1,4 @@
-#include <stdio.h> 
+ï»¿#include <stdio.h> 
 #include <string.h> 
 #include <io.h> 
 #include <sys/stat.h> 
@@ -25,11 +25,11 @@ bool OpenFile(char* source,char* target)
 	if(readFileHandle==-1 || writeFileHandle==-1){ 
 		if(readFileHandle!=-1){ 
 			_close(readFileHandle); 
-			printf("\n´ò¿ªÎÄ¼ş£º'%s'Ê§°Ü!",target); 
+			printf("\næ‰“å¼€æ–‡ä»¶ï¼š'%s'å¤±è´¥!",target); 
 		} 
 		if(writeFileHandle!=-1){ 
 			_close(writeFileHandle); 
-			printf("\n´ò¿ªÎÄ¼ş£º'%s'Ê§°Ü!",source); 
+			printf("\næ‰“å¼€æ–‡ä»¶ï¼š'%s'å¤±è´¥!",source); 
 		} 
 
 		return false; 
@@ -39,10 +39,10 @@ bool OpenFile(char* source,char* target)
 } 
 
 void PrintUsage(){ 
-	printf("\nÒÔ¶¯Ì¬¹ş·òÂüËã·¨Ñ¹Ëõ»ò½âÑ¹ËõÎÄ¼ş¡£\n\n"); 
-	printf("\thfm -?\t\t\t\tÏÔÊ¾°ïÖúĞÅÏ¢\n"); 
-	printf("\thfm -e -i source -o target\tÑ¹ËõÎÄ¼ş\n"); 
-	printf("\thfm -d -i source -o target\t½âÑ¹ËõÎÄ¼ş\n\n"); 
+	printf("\nä»¥åŠ¨æ€å“ˆå¤«æ›¼ç®—æ³•å‹ç¼©æˆ–è§£å‹ç¼©æ–‡ä»¶ã€‚\n\n"); 
+	printf("\thfm -?\t\t\t\tæ˜¾ç¤ºå¸®åŠ©ä¿¡æ¯\n"); 
+	printf("\thfm -e -i source -o target\tå‹ç¼©æ–‡ä»¶\n"); 
+	printf("\thfm -d -i source -o target\tè§£å‹ç¼©æ–‡ä»¶\n\n"); 
 } 
 
 void main(int argc,char *args[]){ 
@@ -57,21 +57,21 @@ void main(int argc,char *args[]){
 		if(args[i][0]=='-' || args[i][0]=='/'){ 
 			switch(args[i][1]){ 
 case '?': 
-	mode=0;//°ïÖú 
+	mode=0;//å¸®åŠ© 
 	break; 
 case 'e': 
 case 'E': 
-	mode=1;//Ñ¹Ëõ 
+	mode=1;//å‹ç¼© 
 	break; 
 case 'd': 
 case 'D': 
-	mode=2;//½âÑ¹Ëõ 
+	mode=2;//è§£å‹ç¼© 
 	break; 
 case 'o': 
 case 'O': 
 	if(i+1>=argc){ 
 		mode=0; 
-	}else{//Êä³öÎÄ¼ş 
+	}else{//è¾“å‡ºæ–‡ä»¶ 
 		j=0; 
 		while(args[i+1][j]!='\0' && j<4096){ 
 			target[j++]=args[i+1][j]; 
@@ -88,7 +88,7 @@ case 'i':
 case 'I': 
 	if(i+1>=argc){ 
 		mode=0; 
-	}else{//ÊäÈëÎÄ¼ş 
+	}else{//è¾“å…¥æ–‡ä»¶ 
 		j=0; 
 		while(args[i+1][j]!='\0' && j<4096){ 
 			src[j++]=args[i+1][j]; 
@@ -111,7 +111,7 @@ case 'I':
 case 0: 
 	PrintUsage(); 
 	return; 
-case 1://Ñ¹Ëõ 
+case 1://å‹ç¼© 
 	if(!OpenFile(src,target))
 		return; 
 	
@@ -124,10 +124,10 @@ case 1://Ñ¹Ëõ
 	delete h; 
 	_close(readFileHandle); 
 	_close(writeFileHandle); 
-	printf("Ñ¹ËõÍê±Ï!"); 
+	printf("å‹ç¼©å®Œæ¯•!"); 
 	break;
 
-case 2://½âÑ¹Ëõ 
+case 2://è§£å‹ç¼© 
 	if(!OpenFile(src,target))return; 
 	h=new Huffman(&Write,false); 
 	i=BUFFER_SIZE; 
@@ -138,7 +138,7 @@ case 2://½âÑ¹Ëõ
 	delete h; 
 	_close(readFileHandle); 
 	_close(writeFileHandle); 
-	printf("½âÑ¹ËõÍê±Ï!"); 
+	printf("è§£å‹ç¼©å®Œæ¯•!"); 
 	break; 
 	} 
 
