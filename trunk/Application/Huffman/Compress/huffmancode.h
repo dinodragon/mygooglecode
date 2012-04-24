@@ -1,4 +1,4 @@
-// Huffman.h: interface for the Huffman class. 
+ï»¿// Huffman.h: interface for the Huffman class. 
 // 
 ////////////////////////////////////////////////////////////////////// 
 
@@ -13,27 +13,27 @@
 #pragma once 
 #endif // _MSC_VER > 1000 
 
-#define MAX_COUNT 65536 //×î´ó¼ÆÊıÖµ£¬´óÓÚ´ËÖµÊ± 
-#define MAX_VALUE 255 //±àÂëµÄ×î´óÖµ 
-#define CODE_ESCAPE MAX_VALUE+1 //×ªÒåÂë 
-#define CODE_FINISH MAX_VALUE+2 //½áÊøÂë 
-#define LIST_LENGTH MAX_VALUE+3 //±àÂëÁĞ±í³¤¶È 
-#define SHRINK_FACTOR 2 //¼õĞ¡µÄ±ÈÀı£¬Í¨¹ıÓÒÒÆÎ»ÊµÏÖ 
-#define LEFT 0 //×óº¢×ÓË÷Òı 
-#define RIGHT 1 //ÓÒº¢×ÓË÷Òı 
-#define NOT_CHAR -1 //·Ç×Ö·û 
+#define MAX_COUNT 65536 //æœ€å¤§è®¡æ•°å€¼ï¼Œå¤§äºæ­¤å€¼æ—¶ 
+#define MAX_VALUE 255 //ç¼–ç çš„æœ€å¤§å€¼ 
+#define CODE_ESCAPE MAX_VALUE+1 //è½¬ä¹‰ç  
+#define CODE_FINISH MAX_VALUE+2 //ç»“æŸç  
+#define LIST_LENGTH MAX_VALUE+3 //ç¼–ç åˆ—è¡¨é•¿åº¦ 
+#define SHRINK_FACTOR 2 //å‡å°çš„æ¯”ä¾‹ï¼Œé€šè¿‡å³ç§»ä½å®ç° 
+#define LEFT 0 //å·¦å­©å­ç´¢å¼• 
+#define RIGHT 1 //å³å­©å­ç´¢å¼• 
+#define NOT_CHAR -1 //éå­—ç¬¦ 
 
-#define TOP_BIT 7 //×Ö·û×î¸ßÎ» 
-#define BOTTOM_BIT 0 //×Ö·û×îµÍÎ» 
-#define BUFFER_SIZE 81920 //»º³åÇø´óĞ¡ 
+#define TOP_BIT 7 //å­—ç¬¦æœ€é«˜ä½ 
+#define BOTTOM_BIT 0 //å­—ç¬¦æœ€ä½ä½ 
+#define BUFFER_SIZE 81920 //ç¼“å†²åŒºå¤§å° 
 
-//Êä³öº¯Êı 
+//è¾“å‡ºå‡½æ•° 
 typedef bool (Output)(unsigned char *s,int len); 
 
-//¹ş·òÂüÊ÷µÄ½Úµã¶¨Òå 
+//å“ˆå¤«æ›¼æ ‘çš„èŠ‚ç‚¹å®šä¹‰ 
 typedef struct Hnode{ 
-	int count;//¼ÆÊıÆ÷ 
-	int index;//¸¸½ÚµãµÄº¢×ÓË÷Òı£¨0--×óº¢×Ó£¬1--ÓÒº¢×Ó£© 
+	int count;//è®¡æ•°å™¨ 
+	int index;//çˆ¶èŠ‚ç‚¹çš„å­©å­ç´¢å¼•ï¼ˆ0--å·¦å­©å­ï¼Œ1--å³å­©å­ï¼‰ 
 	Hnode* child[2]; 
 	Hnode* parent; 
 	int value; 
@@ -42,68 +42,68 @@ typedef struct Hnode{
 class Huffman 
 { 
 private: 
-	//Êä³öÒ»¸ö½âÂëµÄ×Ö·û 
+	//è¾“å‡ºä¸€ä¸ªè§£ç çš„å­—ç¬¦ 
 	int OutputChar(unsigned char c); 
-	//´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼½âÂë 
+	//ä»æŒ‡å®šä½ç½®å¼€å§‹è§£ç  
 	int Decode(unsigned char c,int start); 
-	//²åÈëÒ»¸öĞÂ½Úµã 
+	//æ’å…¥ä¸€ä¸ªæ–°èŠ‚ç‚¹ 
 	void InsertNewNode(int value); 
-	//ÖØĞÂµ÷Õû¹ş·òÂüÊ÷¹¹ĞÍ 
+	//é‡æ–°è°ƒæ•´å“ˆå¤«æ›¼æ ‘æ„å‹ 
 	void RearrangeTree(); 
-	//¶Ô¸÷½ÚµãÖØĞÂ¼ÆÊı 
+	//å¯¹å„èŠ‚ç‚¹é‡æ–°è®¡æ•° 
 	int RecountNode(Hbtree *node); 
-	//´òÓ¡¹ş·òÂüÊ÷½Úµã 
+	//æ‰“å°å“ˆå¤«æ›¼æ ‘èŠ‚ç‚¹ 
 	void PrintNode(Hbtree *node,int level); 
-	//Êä³öÒ»¸öÖµµÄ±àÂë 
+	//è¾“å‡ºä¸€ä¸ªå€¼çš„ç¼–ç  
 	int OutputEncode(int value); 
-	//µ÷½Ú¹ş·òÂüÊ÷½ÚµãÊ¹Ö®Æ½ºâ 
+	//è°ƒèŠ‚å“ˆå¤«æ›¼æ ‘èŠ‚ç‚¹ä½¿ä¹‹å¹³è¡¡ 
 	void BalanceNode(Hbtree *node); 
-	//Êä³öÒ»Î»±àÂë 
+	//è¾“å‡ºä¸€ä½ç¼–ç  
 	int OutputBit(int bit); 
-	//ÊÍ·Å¹ş·òÂüÊ÷½Úµã 
+	//é‡Šæ”¾å“ˆå¤«æ›¼æ ‘èŠ‚ç‚¹ 
 	void ReleaseNode(Hbtree *node); 
-	//ĞÂ½¨Ò»¸ö½Úµã 
+	//æ–°å»ºä¸€ä¸ªèŠ‚ç‚¹ 
 	Hbtree *NewNode(int value,int index, Hbtree *parent); 
-	//Êä³öº¯ÊıµØÖ· 
+	//è¾“å‡ºå‡½æ•°åœ°å€ 
 	Output *output; 
-	//¹ş·òÂüÊ÷¸ùµØÖ· 
+	//å“ˆå¤«æ›¼æ ‘æ ¹åœ°å€ 
 	Hbtree *root; 
-	//¹ş·òÂü±àÂëµ¥ÔªÁĞ±í 
+	//å“ˆå¤«æ›¼ç¼–ç å•å…ƒåˆ—è¡¨ 
 	Hbtree *list[LIST_LENGTH]; 
-	//Êä³ö»º³åÇø 
+	//è¾“å‡ºç¼“å†²åŒº 
 	unsigned char buffer[BUFFER_SIZE]; 
-	//»º³åÇø¶¥ 
+	//ç¼“å†²åŒºé¡¶ 
 	int char_top,bit_top; 
-	//ÊÕËõ¹ş·òÂüÊ÷²ÎÊı 
+	//æ”¶ç¼©å“ˆå¤«æ›¼æ ‘å‚æ•° 
 	int max_count,shrink_factor; 
-	//¹¤×÷Ä£Ê½£¬true--±àÂë£¬false--½âÂë 
+	//å·¥ä½œæ¨¡å¼ï¼Œtrue--ç¼–ç ï¼Œfalse--è§£ç  
 	bool mode; 
-	//½âÂëµÄµ±Ç°½Úµã 
+	//è§£ç çš„å½“å‰èŠ‚ç‚¹ 
 	Hbtree *current; 
-	int remain;//µ±Ç°×Ö·ûÊ£ÓàµÄÎ»Êı 
-	unsigned char literal;//°´Î»Êä³öµÄ×Ö·û 
+	int remain;//å½“å‰å­—ç¬¦å‰©ä½™çš„ä½æ•° 
+	unsigned char literal;//æŒ‰ä½è¾“å‡ºçš„å­—ç¬¦ 
 	bool finished; 
 
 
 public: 
 
-	//½âÂëÖ¸¶¨³¤¶ÈµÄ×Ö·û´® 
+	//è§£ç æŒ‡å®šé•¿åº¦çš„å­—ç¬¦ä¸² 
 	int Decode(unsigned char *s,int len); 
-	//½âÂëÒ»¸ö×Ö·û 
+	//è§£ç ä¸€ä¸ªå­—ç¬¦ 
 	int Decode(unsigned char c); 
-	//´òÓ¡¹ş·òÂüÊ÷ 
+	//æ‰“å°å“ˆå¤«æ›¼æ ‘ 
 	void PrintTree(); 
-	//±àÂëÖ¸¶¨³¤¶ÈµÄ×Ö·û´® 
+	//ç¼–ç æŒ‡å®šé•¿åº¦çš„å­—ç¬¦ä¸² 
 	int Encode(unsigned char *s,int len); 
-	//±àÂëÒ»¸ö×Ö·û 
+	//ç¼–ç ä¸€ä¸ªå­—ç¬¦ 
 	int Encode(unsigned char c); 
-	//Çå¿Õ»º³åÇø 
+	//æ¸…ç©ºç¼“å†²åŒº 
 	int Flush(); 
 
-	//outputÖ¸Êä³öº¯Êı£¬modeÖ¸¹¤×÷Ä£Ê½£¬true--±àÂë£¬false--½âÂë 
+	//outputæŒ‡è¾“å‡ºå‡½æ•°ï¼ŒmodeæŒ‡å·¥ä½œæ¨¡å¼ï¼Œtrue--ç¼–ç ï¼Œfalse--è§£ç  
 	Huffman(Output *output,bool mode); 
 
-	//Îö¹¹º¯Êı 
+	//ææ„å‡½æ•° 
 	virtual ~Huffman(); 
 }; 
 
