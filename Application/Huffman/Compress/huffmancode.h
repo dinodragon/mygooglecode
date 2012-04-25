@@ -28,7 +28,7 @@
 #define BUFFER_SIZE 81920 //缓冲区大小 
 
 //输出函数 
-typedef bool (Output)(unsigned char *s,int len); 
+typedef bool (Output)(const unsigned char *s,const size_t len); 
 
 //哈夫曼树的节点定义 
 typedef struct Hnode{ 

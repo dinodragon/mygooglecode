@@ -1,6 +1,7 @@
 ﻿
 #include <stdio.h> 
 #include <string.h> 
+#include <iostream>
 #include <fstream>
 #include <sys/stat.h> 
 #include <fcntl.h>
@@ -9,34 +10,34 @@
 #include "Huffmancode.h"
 
 std::ofstream targetFile;
-std::ifstream sourceFile; 
+//std::ifstream sourceFile; 
 
-bool Write(unsigned char *s,int len)
+bool Write(const unsigned char *s,const size_t len)
 { 
-    targetFile.write((char *)s,len);
+	targetFile.write((const char *)s,(std::streamsize)len);
 	return true; 
 } 
 
-bool OpenFile(char* source,char* target)
-{
-    sourceFile.open(source,std::ios::in|std::ios::binary);
-    targetFile.open(target,std::ios::out|std::ios::binary);
-	if(!sourceFile.is_open())
-    { 
-        sourceFile.close(); 
-        printf("\n打开文件：'%s'失败!\n" ,target);
-        return false; 
-	}
-    else if(!targetFile.is_open())
-    {
-        targetFile.close();
-        printf("\n打开文件：'%s'失败!\n" ,source); 
-        return false; 
-	}else
-    { 
-		return true; 
-	} 
-}
+//bool OpenFile(char* source,char* target)
+//{
+//    sourceFile.open(source,std::ios::in|std::ios::binary);
+//    targetFile.open(target,std::ios::out|std::ios::binary);
+//	if(!sourceFile.is_open())
+//    { 
+//        sourceFile.close(); 
+//        printf("\n打开文件：'%s'失败!\n" ,target);
+//        return false; 
+//	}
+//    else if(!targetFile.is_open())
+//    {
+//        targetFile.close();
+//        printf("\n打开文件：'%s'失败!\n" ,source); 
+//        return false; 
+//	}else
+//    { 
+//		return true; 
+//	} 
+//}
 //0 帮助 1 压缩 2 解压缩
 int CommandLineParser(int argc,char *args[],std::vector<std::string> &inFiles,std::string &outFile)
 {
@@ -45,7 +46,7 @@ int CommandLineParser(int argc,char *args[],std::vector<std::string> &inFiles,st
 	{
 		commands.push_back(std::string(args[i]));
 	}
-	int iCmdSize = commands.size();
+	size_t iCmdSize = commands.size();
 	int mode = 0;
 	if (iCmdSize < 1)
 	{
@@ -59,7 +60,7 @@ int CommandLineParser(int argc,char *args[],std::vector<std::string> &inFiles,st
 	if (iCmdSize > 1)
 	{
 		mode = 1;//压缩
-		for (int i = 0;i < iCmdSize - 1;++i)
+		for (unsigned i = 0;i < iCmdSize - 1;++i)
 		{
 			inFiles.push_back(commands[i]);
 		}
@@ -74,39 +75,83 @@ void PrintUsage(){
 	printf("\thfm -e -i source -o target\t压缩文件\n"); 
 	printf("\thfm -d -i source -o target\t解压缩文件\n\n"); 
 }
-typedef struct _FileStruct
-{
-	char * fileName;
-	int fileSize;
-}FileStruct;
 
-typedef struct _FilesStruct
+class FileList
 {
-	int contentOffset;//表示文件内容偏移量
-	FileStruct *filesList;
+public:
+	typedef struct _FileStruct
+	{
+		std::string fileName;
+		long fileSize;
+	}FileStruct;
+
+private:
+	size_t offset;
+	std::vector<FileStruct> filelist;
+public:
+	std::vector<FileStruct> GetList()
+	{
+		return filelist;
+	}
+
+	void AddFile(std::string fileName)
+	{
+		FileStruct fs;
+		fs.fileName = fileName;
+		fs.fileSize = 0;
+		std::ifstream targetFile;
+		targetFile.open(fileName.c_str(),std::ios::in|std::ios::binary);
+		if (targetFile.is_open())
+		{
+			targetFile.seekg(0, std::ios::end);
+			std::streamoff length = targetFile.tellg();
+			fs.fileSize = length;
+		}
+		targetFile.close();
+		filelist.push_back(fs);
+	}
+
+	std::vector<unsigned char> serialization()
+	{
+		std::stringstream ssfiles;
+		for (unsigned i = 0;i < filelist.size(); ++i)
+		{
+			ssfiles << ";" << filelist[i].fileName.c_str();
+			ssfiles << "," << filelist[i].fileSize;
+		}
+		offset = ssfiles.str().size() + sizeof(offset);
+		std::vector<unsigned char> ss;
+		ss.resize(offset);
+		memcpy_s((char *)&(ss[0]),sizeof(offset),(const char *)(&offset),sizeof(offset));
+		memcpy_s((char *)&(ss[sizeof(offset)]),
+			ssfiles.str().size(),
+			ssfiles.str().c_str(),
+			ssfiles.str().length());
+		return ss;
+	}
 };
 
-
+bool Compress(const std::vector<std::string> & inFiles ,const std::string & outFile);
 int main(int argc,char *args[])
 {
-	int i,j,K=0; 
-	char src[4096]; 
-	char target[4096]; 
-	unsigned char buffer[BUFFER_SIZE]; 
-	Huffman *h; 
+	//int i,j,K=0; 
+	//char src[4096]; 
+	//char target[4096]; 
+	//unsigned char buffer[BUFFER_SIZE]; 
+	//Huffman * h; 
 	std::vector<std::string> inFiles;
 	std::string outFile;
 	int mode = CommandLineParser(argc,args,inFiles,outFile);
-	targetFile.open(outFile.c_str(),std::ios::out|std::ios::binary);
-	std::stringstream filelist;
-	for (int i = 0;i < inFiles.size(); ++i)
+	switch(mode)
 	{
-		filelist << ";" << inFiles[i].c_str();
-		filelist << "," << inFiles[i].length();
+	case 1:
+			bool r = Compress(inFiles,outFile);
+			if (!r)
+			{
+				return 1;
+			}
 	}
-	targetFile << filelist.str().length();
-	targetFile << filelist.str();
-	targetFile.close();
+
 	//switch(mode){ 
  //       case 0: 
  //           PrintUsage(); 
@@ -142,5 +187,42 @@ int main(int argc,char *args[])
  //           printf("解压缩完毕!"); 
  //           break; 
 	//} 
-    
+  
 } 
+
+bool Compress(const std::vector<std::string> & inFiles ,const std::string & outFile)
+{
+	FileList fl;
+	for (unsigned i = 0;i < inFiles.size(); ++i)
+	{
+		fl.AddFile(inFiles[i]);
+	}
+	std::vector<unsigned char> ls = fl.serialization();
+	targetFile.open(outFile.c_str(),std::ios::out|std::ios::binary);
+	if (!targetFile.is_open())
+	{
+		std::cout<<"打开文件:"<<outFile.c_str()<<"失败!"<<std::endl;
+		return false;
+	}
+	Write((unsigned char *)&ls[0],ls.size());
+	//文件压缩
+	Huffman * h=new Huffman(&Write,true);
+	unsigned char * buffer = new unsigned char[BUFFER_SIZE];
+	std::vector<FileList::FileStruct> sourcelist = fl.GetList();
+	for (size_t i = 0;i < sourcelist.size();++i)
+	{
+		std::ifstream sourceFile;
+		sourceFile.open(sourcelist[i].fileName.c_str(),std::ios::in|std::ios::binary);
+		std::streamsize readlength=BUFFER_SIZE;
+		while(readlength==BUFFER_SIZE)
+		{
+			readlength=(int)sourceFile.read((char *)buffer,BUFFER_SIZE).gcount();
+			h->Encode(buffer,readlength);
+		}
+		sourceFile.close();
+	}
+	delete[] buffer;
+	delete h;
+	targetFile.close();
+	return true;
+}
