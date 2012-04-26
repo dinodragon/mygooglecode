@@ -175,11 +175,19 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\filelist.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\huffmancode.cpp"
 				>
 			</File>
 			<File
 				RelativePath=".\main.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\utilities.cpp"
 				>
 			</File>
 		</Filter>
@@ -189,7 +197,15 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
+				RelativePath=".\filelist.h"
+				>
+			</File>
+			<File
 				RelativePath=".\huffmancode.h"
+				>
+			</File>
+			<File
+				RelativePath=".\utilities.h"
 				>
 			</File>
 		</Filter>

@@ -1,4 +1,4 @@
-//
+﻿//
 //  utilities.cpp
 //  Huffman
 //
