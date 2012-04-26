@@ -1,4 +1,4 @@
-﻿//
+//
 //  utilities.cpp
 //  Huffman
 //
@@ -10,14 +10,6 @@
 #include "filelist.h"
 #include "Huffmancode.h"
 
-std::ofstream targetFile;
-//std::ifstream sourceFile; 
-
-bool Write(const unsigned char *s,const size_t len)
-{ 
-	targetFile.write((const char *)s,(std::streamsize)len);
-	return true; 
-}
 
 void PrintUsage(){ 
 	printf("\n以动态哈夫曼算法压缩或解压缩文件。\n\n"); 
@@ -57,6 +49,14 @@ int CommandLineParser(int argc,char *args[],std::vector<std::string> &inFiles,st
 	return mode;
 }
 
+
+std::ofstream targetFile;
+bool CompressWrite(const unsigned char *s,const size_t len)
+{ 
+	targetFile.write((const char *)s,(std::streamsize)len);
+	return true; 
+}
+
 bool Compress(const std::vector<std::string> & inFiles ,const std::string & outFile)
 {
 	FileList fl;
@@ -65,15 +65,15 @@ bool Compress(const std::vector<std::string> & inFiles ,const std::string & outF
 		fl.AddFile(inFiles[i]);
 	}
 	std::vector<unsigned char> ls = fl.serialization();
-	targetFile.open(outFile.c_str(),std::ios::out|std::ios::binary);
+	targetFile.open(outFile.c_str(),std::ios::out|std::ios::binary|std::ios::trunc);
 	if (!targetFile.is_open())
 	{
 		std::cout<<"打开文件:"<<outFile.c_str()<<"失败!"<<std::endl;
 		return false;
 	}
-	Write((unsigned char *)&ls[0],ls.size());
+	CompressWrite((unsigned char *)&ls[0],ls.size());
 	//文件压缩
-	Huffman * h=new Huffman(&Write,true);
+	Huffman * h=new Huffman(&CompressWrite,true);
 	unsigned char * buffer = new unsigned char[BUFFER_SIZE];
 	std::vector<FileList::FileStruct> sourcelist = fl.GetList();
 	for (size_t i = 0;i < sourcelist.size();++i)
@@ -94,20 +94,66 @@ bool Compress(const std::vector<std::string> & inFiles ,const std::string & outF
 	return true;
 }
 
+std::vector<FileList::FileStruct> defilelist;
+bool DecompressWrite(const unsigned char *s,const size_t len)
+{
+    static size_t bufStart = 0;
+    static int curfileindex = -1;//当前打开的文件
+    static int fileindex = 0;//操作文件序列
+    bufStart = 0;
+    while(bufStart < len)
+    {
+        static std::ofstream sourceFile;
+        if (curfileindex != fileindex) {
+            sourceFile.open(defilelist[fileindex].fileName.c_str(),std::ios::out|std::ios::binary|std::ios::trunc);
+            curfileindex = fileindex;
+        }
+        std::streamoff yetlength = sourceFile.tellp();
+        int remaininglength = defilelist[curfileindex].fileSize - yetlength;
+        if (remaininglength <= len - bufStart) {
+            //buffer数据较多，还未用完。            
+            sourceFile.write((const char *)(s + bufStart), remaininglength);
+            sourceFile.close();
+            bufStart += remaininglength;
+            ++fileindex;//下次该写下一文件了
+        }
+        else {
+            //这个文件未写完，下次仍需要写这个文件
+            sourceFile.write((const char *)(s + bufStart), len - bufStart);
+            bufStart = len;
+        }
+    }
+	return true; 
+}
+
 bool Decompress(const std::string & tarFile)
 {
-    //           if(!OpenFile(src,target))
-    //               return 1; 
-    //           h=new Huffman(&Write,false); 
-    //           i=BUFFER_SIZE; 
-    //           while(i==BUFFER_SIZE){ 
-    //               i=(int)sourceFile.read((char *)buffer,BUFFER_SIZE).gcount(); 
-    //               h->Decode(buffer,i); 
-    //           } 
-    //           delete h; 
-    //           sourceFile.close();
-    //           targetFile.close();
-    //           printf("解压缩完毕!"); 
-    //           break; 
+    std::ifstream tarstream;
+    tarstream.open(tarFile.c_str(),std::ios::in | std::ios::binary);
+    if (!tarstream.is_open()) {
+        std::cout<<"打开文件:"<<tarFile.c_str()<<"失败!"<<std::endl;
+        return false;
+    }
+    size_t offset = 0;
+    tarstream.read((char *)&offset,sizeof(offset));
+#ifdef DEBUG
+    std::cout<<"offset:"<<offset<<std::endl;
+#endif
+    offset -= sizeof(offset);
+    char * listbuffer = new char[offset];
+    tarstream.read(listbuffer, offset);
+    FileList g_defl;
+    g_defl.deserialization(listbuffer,offset);
+    delete[] listbuffer;
+    defilelist = g_defl.GetList();
+    unsigned char * buffer = new unsigned char[BUFFER_SIZE];
+    std::auto_ptr<Huffman> h(new Huffman(&DecompressWrite,false));
+    std::streamsize readlength=BUFFER_SIZE;
+    while (readlength == BUFFER_SIZE) {
+        readlength=(int)tarstream.read((char *)buffer,BUFFER_SIZE).gcount(); 
+        h->Decode(buffer,readlength);
+    }
+    delete[] buffer;
+    tarstream.close();
     return false;
 }

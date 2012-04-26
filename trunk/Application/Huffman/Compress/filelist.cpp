@@ -37,8 +37,7 @@ std::vector<unsigned char> FileList::serialization()
     std::stringstream ssfiles;
     for (unsigned i = 0;i < filelist.size(); ++i)
     {
-        ssfiles << ";" << filelist[i].fileName.c_str();
-        ssfiles << "," << filelist[i].fileSize;
+        ssfiles << filelist[i].fileName.c_str()<<","<<filelist[i].fileSize<<"\n";
     }
     offset = ssfiles.str().size() + sizeof(offset);
     std::vector<unsigned char> ss;
@@ -48,4 +47,23 @@ std::vector<unsigned char> FileList::serialization()
            ssfiles.str().c_str(),
            ssfiles.str().length());
     return ss;
+};
+
+void FileList::deserialization(const char * listbuffer,size_t buffsize)
+{
+    offset = buffsize + sizeof(offset);
+    std::string liststr(listbuffer,buffsize);
+#ifdef DEBUG
+    printf("filelist:%s",liststr.c_str());
+#endif
+    std::stringstream ss(liststr);
+    std::string afileinfo;
+    while (getline(ss,afileinfo)) {
+        FileList::FileStruct fs;
+        size_t dotindex = afileinfo.find(',');
+        fs.fileName = afileinfo.substr(0,dotindex);
+        fs.fileSize = atoi(afileinfo.substr(dotindex + 1).c_str());
+        filelist.push_back(fs);
+    }
+    return;
 };

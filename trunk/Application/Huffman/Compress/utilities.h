@@ -20,5 +20,4 @@ bool Compress(const std::vector<std::string> & inFiles ,const std::string & outF
 bool Decompress(const std::string & tarFile);
 void PrintUsage();
 
-
 #endif
