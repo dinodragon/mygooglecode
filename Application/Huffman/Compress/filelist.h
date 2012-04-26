@@ -28,6 +28,7 @@ public:
 	std::vector<FileStruct> GetList();
 	void AddFile(std::string fileName);
 	std::vector<unsigned char> serialization();
+    void deserialization(const char * listbuffer,size_t buffsize);
 };
 
 #endif
