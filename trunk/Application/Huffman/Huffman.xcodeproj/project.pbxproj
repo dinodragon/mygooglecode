@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2C921BE21546A33D0005FF17 /* huffmancode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C921BDF1546A33D0005FF17 /* huffmancode.cpp */; };
 		2C921BE31546A33D0005FF17 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C921BE11546A33D0005FF17 /* main.cpp */; };
+		2C922FEC1548EF270086B06E /* utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C922FEB1548EF270086B06E /* utilities.cpp */; };
+		2C922FEF1548F0E30086B06E /* filelist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C922FEE1548F0E30086B06E /* filelist.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		2C921BDF1546A33D0005FF17 /* huffmancode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = huffmancode.cpp; path = Compress/huffmancode.cpp; sourceTree = "<group>"; };
 		2C921BE01546A33D0005FF17 /* huffmancode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = huffmancode.h; path = Compress/huffmancode.h; sourceTree = "<group>"; };
 		2C921BE11546A33D0005FF17 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Compress/main.cpp; sourceTree = "<group>"; };
+		2C922FE91548EF1B0086B06E /* utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utilities.h; sourceTree = "<group>"; };
+		2C922FEB1548EF270086B06E /* utilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utilities.cpp; sourceTree = "<group>"; };
+		2C922FED1548F0D10086B06E /* filelist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = filelist.h; sourceTree = "<group>"; };
+		2C922FEE1548F0E30086B06E /* filelist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filelist.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 				2C921BE01546A33D0005FF17 /* huffmancode.h */,
 				2C921BDF1546A33D0005FF17 /* huffmancode.cpp */,
 				2C921BE11546A33D0005FF17 /* main.cpp */,
+				2C922FE91548EF1B0086B06E /* utilities.h */,
+				2C922FEB1548EF270086B06E /* utilities.cpp */,
+				2C922FED1548F0D10086B06E /* filelist.h */,
+				2C922FEE1548F0E30086B06E /* filelist.cpp */,
 			);
 			name = Compress;
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			files = (
 				2C921BE21546A33D0005FF17 /* huffmancode.cpp in Sources */,
 				2C921BE31546A33D0005FF17 /* main.cpp in Sources */,
+				2C922FEC1548EF270086B06E /* utilities.cpp in Sources */,
+				2C922FEF1548F0E30086B06E /* filelist.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +141,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -140,7 +152,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -155,12 +167,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
