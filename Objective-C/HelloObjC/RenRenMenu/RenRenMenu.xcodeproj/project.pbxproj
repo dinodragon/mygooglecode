@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C95CE4B1541125F00EE0905 /* NotifyWnd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C95CE4A1541125F00EE0905 /* NotifyWnd.m */; };
+		2C95CE4E15414D0A00EE0905 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C95CE4D15414D0A00EE0905 /* QuartzCore.framework */; };
 		2C982B58153BEBB300E3C760 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C982B57153BEBB300E3C760 /* Cocoa.framework */; };
 		2C982B62153BEBB300E3C760 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C982B60153BEBB300E3C760 /* InfoPlist.strings */; };
 		2C982B64153BEBB300E3C760 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C982B63153BEBB300E3C760 /* main.m */; };
@@ -18,9 +20,13 @@
 		2C982B80153BEEDF00E3C760 /* qq2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C982B7E153BEEDF00E3C760 /* qq2.png */; };
 		2C982B82153BEEF400E3C760 /* unread.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C982B81153BEEF400E3C760 /* unread.png */; };
 		2C982B86153BFFEF00E3C760 /* MessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C982B85153BFFEF00E3C760 /* MessageView.m */; };
+		2CEDA1891545364D00667025 /* close_btn1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CEDA1881545364D00667025 /* close_btn1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C95CE491541125F00EE0905 /* NotifyWnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyWnd.h; sourceTree = "<group>"; };
+		2C95CE4A1541125F00EE0905 /* NotifyWnd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyWnd.m; sourceTree = "<group>"; };
+		2C95CE4D15414D0A00EE0905 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2C982B53153BEBB300E3C760 /* RenRenMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenRenMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C982B57153BEBB300E3C760 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2C982B5A153BEBB300E3C760 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -41,6 +47,7 @@
 		2C982B81153BEEF400E3C760 /* unread.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unread.png; path = RenRenMenu/unread.png; sourceTree = "<group>"; };
 		2C982B84153BFFEF00E3C760 /* MessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageView.h; sourceTree = "<group>"; };
 		2C982B85153BFFEF00E3C760 /* MessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageView.m; sourceTree = "<group>"; };
+		2CEDA1881545364D00667025 /* close_btn1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close_btn1.png; path = RenRenMenu/Resource/close_btn1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C95CE4E15414D0A00EE0905 /* QuartzCore.framework in Frameworks */,
 				2C982B58153BEBB300E3C760 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +66,7 @@
 		2C982B48153BEBB200E3C760 = {
 			isa = PBXGroup;
 			children = (
+				2C95CE4D15414D0A00EE0905 /* QuartzCore.framework */,
 				2C982B83153BEEFD00E3C760 /* Resource */,
 				2C982B5D153BEBB300E3C760 /* RenRenMenu */,
 				2C982B56153BEBB300E3C760 /* Frameworks */,
@@ -103,6 +112,8 @@
 				2C982B7B153BEC6600E3C760 /* MainWindowController.m */,
 				2C982B84153BFFEF00E3C760 /* MessageView.h */,
 				2C982B85153BFFEF00E3C760 /* MessageView.m */,
+				2C95CE491541125F00EE0905 /* NotifyWnd.h */,
+				2C95CE4A1541125F00EE0905 /* NotifyWnd.m */,
 			);
 			path = RenRenMenu;
 			sourceTree = "<group>";
@@ -122,6 +133,7 @@
 		2C982B83153BEEFD00E3C760 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				2CEDA1881545364D00667025 /* close_btn1.png */,
 				2C982B81153BEEF400E3C760 /* unread.png */,
 				2C982B7D153BEEDF00E3C760 /* qq.png */,
 				2C982B7E153BEEDF00E3C760 /* qq2.png */,
@@ -185,6 +197,7 @@
 				2C982B7F153BEEDF00E3C760 /* qq.png in Resources */,
 				2C982B80153BEEDF00E3C760 /* qq2.png in Resources */,
 				2C982B82153BEEF400E3C760 /* unread.png in Resources */,
+				2CEDA1891545364D00667025 /* close_btn1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +212,7 @@
 				2C982B6B153BEBB300E3C760 /* AppDelegate.m in Sources */,
 				2C982B7C153BEC6600E3C760 /* MainWindowController.m in Sources */,
 				2C982B86153BFFEF00E3C760 /* MessageView.m in Sources */,
+				2C95CE4B1541125F00EE0905 /* NotifyWnd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +332,7 @@
 				2C982B73153BEBB300E3C760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

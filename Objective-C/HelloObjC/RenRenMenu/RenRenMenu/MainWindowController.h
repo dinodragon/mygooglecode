@@ -17,7 +17,6 @@
     IBOutlet NSTextField * msg;
 }
 
--(IBAction) AddUnRead:(id)sender;
 -(IBAction) ReduceUnRead:(id)sender;
 -(IBAction) Send:(id)sender;
 -(void) AddStatuItem;

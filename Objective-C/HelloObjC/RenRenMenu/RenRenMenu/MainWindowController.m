@@ -8,10 +8,8 @@
 
 #import "MainWindowController.h"
 #import "MessageView.h"
+#import "NotifyWnd.h"
 
-@interface MainWindowController ()
-
-@end
 
 @implementation MainWindowController
 
@@ -62,10 +60,24 @@
     NSImage *myImage = [NSImage imageNamed:@"qq2.png"];
     [myButtonView setImage:myImage setUserName:[userName stringValue] setMsg:[msg stringValue]];
     [myButtonView InitView];
-    
 	[item setView: myButtonView];
     [myButtonView retain];
-    [self UpdateMenuState];    
+    [self UpdateMenuState];
+    
+    NSScreen * scr = [NSScreen mainScreen];
+    int x = scr.frame.origin.x + scr.frame.size.width - 280;
+    int y = scr.frame.origin.y + scr.frame.size.height - 40 - 124 * unReadMsg;
+    NSRect rc = NSMakeRect(x, y, 260, 84);
+
+    //NSUInteger uiStyle = NSTitledWindowMask | NSResizableWindowMask | NSClosableWindowMask;
+    NSUInteger uiStyle = NSBorderlessWindowMask;
+    NSBackingStoreType backingStoreStyle = NSBackingStoreBuffered;
+    NotifyWnd* win = [[NotifyWnd alloc] initWithContentRect:rc styleMask:uiStyle backing:backingStoreStyle defer:NO];
+    [win setImage:myImage setUserName:[userName stringValue] setMsg:[msg stringValue]];
+    [win InitView];
+    [win setTitle:@"HelloWinTest"];
+    [win orderFront:win];
+
 }
 
 - (void) AddStatuItem

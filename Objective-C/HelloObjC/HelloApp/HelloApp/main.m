@@ -69,36 +69,40 @@ void showWindow1()
     NSUInteger uiStyle = NSTitledWindowMask | NSResizableWindowMask | NSClosableWindowMask;
     NSBackingStoreType backingStoreStyle = NSBackingStoreBuffered;
     NSWindow* win = [[NSWindow alloc] initWithContentRect:rc styleMask:uiStyle backing:backingStoreStyle defer:NO];
-    [win setTitle:@"HelloWinTest"];
-    [win makeKeyAndOrderFront:win];
-    [win makeMainWindow];
-    NSButton* button = [[NSButton alloc] initWithFrame:NSMakeRect(120, 70, 100, 40)];
-    [button setTitle:@"Quit Application"];
-    //NSView * view = [[NSView alloc] init];
-    //[view addSubview:button];
-    //[win setContentView:view];
-    [[win contentView] addSubview:button];
-    NSColor * c = [NSColor colorWithCalibratedRed:100 green:100 blue:100 alpha:0.5];
-    [win setBackgroundColor:c]; //半透明，不含标题栏。
-    //[win center];
-    [win setOpaque:NO];
-    [win setAlphaValue:0.5];
-    
 
-    
-    [button setBezelStyle:NSRoundedBezelStyle];
-    [button setAutoresizingMask:NSViewMaxXMargin | NSViewMinXMargin | NSViewMaxYMargin];
-    
-    //Set delegate to application object
-    MyDelegate* myDelegate = [[MyDelegate alloc] init];
-    //Use the same delegate object to window object
-    [win setDelegate:myDelegate];
-    [NSApp setDelegate:myDelegate];
-    [myDelegate autorelease];
-    
-    MyController* controller = [[MyController alloc] init];
-    [button setTarget:controller];
-    [button setAction:@selector(onButtonClicked:)];
+//    NSButton* button = [[NSButton alloc] initWithFrame:NSMakeRect(120, 70, 100, 40)];
+//    [button setTitle:@"Quit Application"];
+//    //NSView * view = [[NSView alloc] init];
+//    //[view addSubview:button];
+//    //[win setContentView:view];
+//    [[win contentView] addSubview:button];
+//    NSColor * c = [NSColor colorWithCalibratedRed:100 green:100 blue:100 alpha:0.5];
+//    [win setBackgroundColor:c]; //半透明，不含标题栏。
+//    //[win center];
+//    [win setOpaque:NO];
+//    [win setAlphaValue:0.5];
+//    
+//
+//    
+//    [button setBezelStyle:NSRoundedBezelStyle];
+//    [button setAutoresizingMask:NSViewMaxXMargin | NSViewMinXMargin | NSViewMaxYMargin];
+//    
+//    //Set delegate to application object
+//    MyDelegate* myDelegate = [[MyDelegate alloc] init];
+//    //Use the same delegate object to window object
+//    [win setDelegate:myDelegate];
+//    [NSApp setDelegate:myDelegate];
+//    [myDelegate autorelease];
+//    
+//    MyController* controller = [[MyController alloc] init];
+//    [button setTarget:controller];
+//    [button setAction:@selector(onButtonClicked:)];
+    NSTableView *tableView = [[NSTableView alloc] initWithFrame:[[win contentView] frame]];
+    [tableView addTableColumn:[[NSTableColumn alloc] initWithIdentifier:@"field1"]];
+     
+    NSScrollView *scrollView = [[NSScrollView alloc] initWithFrame:[[win contentView] frame]];
+    [scrollView setDocumentView:tableView];
+    [[win contentView] addSubview:scrollView];
 }
 
 //方法二 加载一个xib文件

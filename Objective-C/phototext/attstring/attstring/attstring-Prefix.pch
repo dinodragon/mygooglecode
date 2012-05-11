@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'attstring' target in the 'attstring' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

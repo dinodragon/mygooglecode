@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C948B0C154BCBF40030289B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C948B0B154BCBF40030289B /* Cocoa.framework */; };
+		2C948B16154BCBF40030289B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C948B14154BCBF40030289B /* InfoPlist.strings */; };
+		2C948B18154BCBF40030289B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C948B17154BCBF40030289B /* main.m */; };
+		2C948B1C154BCBF40030289B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2C948B1A154BCBF40030289B /* Credits.rtf */; };
+		2C948B2A154BCD3D0030289B /* MyMainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C948B29154BCD3D0030289B /* MyMainWindow.m */; };
+		2C948B30154BD1110030289B /* PhotoTextControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C948B2F154BD1110030289B /* PhotoTextControl.m */; };
+		2C948B37154BD4AA0030289B /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C948B36154BD4AA0030289B /* MainWindowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C948B07154BCBF40030289B /* phototext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phototext.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C948B0B154BCBF40030289B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2C948B0E154BCBF40030289B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2C948B0F154BCBF40030289B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2C948B10154BCBF40030289B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2C948B13154BCBF40030289B /* phototext-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "phototext-Info.plist"; sourceTree = "<group>"; };
+		2C948B15154BCBF40030289B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C948B17154BCBF40030289B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C948B19154BCBF40030289B /* phototext-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "phototext-Prefix.pch"; sourceTree = "<group>"; };
+		2C948B1B154BCBF40030289B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2C948B28154BCD3D0030289B /* MyMainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMainWindow.h; sourceTree = "<group>"; };
+		2C948B29154BCD3D0030289B /* MyMainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMainWindow.m; sourceTree = "<group>"; };
+		2C948B2E154BD1110030289B /* PhotoTextControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTextControl.h; sourceTree = "<group>"; };
+		2C948B2F154BD1110030289B /* PhotoTextControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTextControl.m; sourceTree = "<group>"; };
+		2C948B35154BD4AA0030289B /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		2C948B36154BD4AA0030289B /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C948B04154BCBF40030289B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C948B0C154BCBF40030289B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C948AFC154BCBF40030289B = {
+			isa = PBXGroup;
+			children = (
+				2C948B11154BCBF40030289B /* phototext */,
+				2C948B0A154BCBF40030289B /* Frameworks */,
+				2C948B08154BCBF40030289B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C948B08154BCBF40030289B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C948B07154BCBF40030289B /* phototext.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C948B0A154BCBF40030289B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C948B0B154BCBF40030289B /* Cocoa.framework */,
+				2C948B0D154BCBF40030289B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C948B0D154BCBF40030289B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C948B0E154BCBF40030289B /* AppKit.framework */,
+				2C948B0F154BCBF40030289B /* CoreData.framework */,
+				2C948B10154BCBF40030289B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		2C948B11154BCBF40030289B /* phototext */ = {
+			isa = PBXGroup;
+			children = (
+				2C948B17154BCBF40030289B /* main.m */,
+				2C948B12154BCBF40030289B /* Supporting Files */,
+				2C948B28154BCD3D0030289B /* MyMainWindow.h */,
+				2C948B29154BCD3D0030289B /* MyMainWindow.m */,
+				2C948B2E154BD1110030289B /* PhotoTextControl.h */,
+				2C948B2F154BD1110030289B /* PhotoTextControl.m */,
+				2C948B35154BD4AA0030289B /* MainWindowController.h */,
+				2C948B36154BD4AA0030289B /* MainWindowController.m */,
+			);
+			path = phototext;
+			sourceTree = "<group>";
+		};
+		2C948B12154BCBF40030289B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C948B13154BCBF40030289B /* phototext-Info.plist */,
+				2C948B14154BCBF40030289B /* InfoPlist.strings */,
+				2C948B19154BCBF40030289B /* phototext-Prefix.pch */,
+				2C948B1A154BCBF40030289B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C948B06154BCBF40030289B /* phototext */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C948B25154BCBF50030289B /* Build configuration list for PBXNativeTarget "phototext" */;
+			buildPhases = (
+				2C948B03154BCBF40030289B /* Sources */,
+				2C948B04154BCBF40030289B /* Frameworks */,
+				2C948B05154BCBF40030289B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = phototext;
+			productName = phototext;
+			productReference = 2C948B07154BCBF40030289B /* phototext.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C948AFE154BCBF40030289B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2C948B01154BCBF40030289B /* Build configuration list for PBXProject "phototext" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2C948AFC154BCBF40030289B;
+			productRefGroup = 2C948B08154BCBF40030289B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C948B06154BCBF40030289B /* phototext */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C948B05154BCBF40030289B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C948B16154BCBF40030289B /* InfoPlist.strings in Resources */,
+				2C948B1C154BCBF40030289B /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C948B03154BCBF40030289B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C948B18154BCBF40030289B /* main.m in Sources */,
+				2C948B2A154BCD3D0030289B /* MyMainWindow.m in Sources */,
+				2C948B30154BD1110030289B /* PhotoTextControl.m in Sources */,
+				2C948B37154BD4AA0030289B /* MainWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C948B14154BCBF40030289B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C948B15154BCBF40030289B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2C948B1A154BCBF40030289B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C948B1B154BCBF40030289B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C948B23154BCBF50030289B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2C948B24154BCBF50030289B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2C948B26154BCBF50030289B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "phototext/phototext-Prefix.pch";
+				INFOPLIST_FILE = "phototext/phototext-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2C948B27154BCBF50030289B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "phototext/phototext-Prefix.pch";
+				INFOPLIST_FILE = "phototext/phototext-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C948B01154BCBF40030289B /* Build configuration list for PBXProject "phototext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C948B23154BCBF50030289B /* Debug */,
+				2C948B24154BCBF50030289B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C948B25154BCBF50030289B /* Build configuration list for PBXNativeTarget "phototext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C948B26154BCBF50030289B /* Debug */,
+				2C948B27154BCBF50030289B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C948AFE154BCBF40030289B /* Project object */;
+}

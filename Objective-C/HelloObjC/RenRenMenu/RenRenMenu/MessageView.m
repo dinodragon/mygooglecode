@@ -46,7 +46,7 @@
     [head setImage:myImage];
     [userName setStringValue:strUserName];
     [msg setStringValue:strMsg];
-    [self setAlphaValue:0.1];
+    //[self setAlphaValue:0.1];
 }
 
 - (void)mouseEntered:(NSEvent *)theEvent

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "test">
+      <FileRef
+         location = "group:phototext/phototext.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:attstring/attstring.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:rtfstring/rtfstring.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>

@@ -64,8 +64,9 @@
             row:(int)row
 {
     NSString *v = [voicelist objectAtIndex:row];
-    NSDictionary *dict = [NSSpeechSynthesizer attributesForVoice:v]; 
-    return [dict objectForKey:NSVoiceName];
+    NSDictionary *dict = [NSSpeechSynthesizer attributesForVoice:v];
+    id obj = [dict objectForKey:NSVoiceName];
+    return obj;
 }
 
 
