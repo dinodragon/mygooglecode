@@ -1,10 +1,10 @@
-#include <iostream>
+#include <stdio.h>
 
 int main()
 {
 	int a=0,b=0;
-	while(std::cin>>a>>b)
+	while(scanf("%d %d",&a,&b) != EOF)
 	{
-		std::cout<<a + b<<std::endl;
+		printf("%d\n",a + b);
 	}
 }
